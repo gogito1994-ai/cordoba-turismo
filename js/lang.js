@@ -20,6 +20,7 @@ const CATEGORY_I18N = {
   Museo: { en: "Museum", fr: "Musée" },
   Plaza: { en: "Square", fr: "Place" },
   "Yacimiento arqueológico": { en: "Archaeological site", fr: "Site archéologique" },
+  Iglesia: { en: "Church", fr: "Église" },
 };
 
 function t(key, vars) {

@@ -160,6 +160,136 @@ const DATA_I18N = {
         precio: "Gratuit (réservation préalable requise), bus touristique en option",
       },
     },
+    "molino-albolafia": {
+      en: {
+        nombre: "Albolafia Water Mill",
+        descripcion:
+          "A former Islamic-era waterwheel on the Guadalquivir, next to the Roman Bridge. Its wheel has appeared on the city's coat of arms since the 14th century.",
+        horario: "Viewed from the outside, 24h",
+        precio: "Free",
+      },
+      fr: {
+        nombre: "Moulin de l'Albolafia",
+        descripcion:
+          "Ancienne noria d'époque islamique sur le Guadalquivir, à côté du pont romain. Sa roue figure sur le blason de la ville depuis le XIVe siècle.",
+        horario: "Se contemple de l'extérieur, 24h/24",
+        precio: "Gratuit",
+      },
+    },
+    "puerta-puente": {
+      en: {
+        nombre: "Bridge Gate",
+        descripcion:
+          "A former gate in the Roman city wall, remodeled in the 16th century as a triumphal arch for the visit of Philip II. Includes a viewpoint overlooking the monumental center.",
+        horario: "Daily 10am-2pm (viewpoint and exhibition hall)",
+        precio: "€1 (free under age 4)",
+      },
+      fr: {
+        nombre: "Puerta del Puente",
+        descripcion:
+          "Ancienne porte de la muraille romaine, remaniée au XVIe siècle en arc de triomphe pour la visite de Philippe II. Comprend un belvédère avec vue sur le centre monumental.",
+        horario: "Tous les jours 10h-14h (belvédère et salle d'exposition)",
+        precio: "1 € (gratuit pour les moins de 4 ans)",
+      },
+    },
+    "banos-califales": {
+      en: {
+        nombre: "Caliphal Baths",
+        descripcion:
+          "10th-century Arab baths commissioned by Al-Hakam II next to the old Andalusi Alcázar, with well-preserved cold, warm and hot rooms.",
+        horario:
+          "Tue-Fri 8:15am-8:15pm, Sat 9:30am-5:30pm, Sun & holidays 8:15am-2:15pm (winter; varies in summer)",
+        precio: "€3 (students €1.50, under 13 free)",
+      },
+      fr: {
+        nombre: "Bains califaux",
+        descripcion:
+          "Bains arabes du Xe siècle commandés par Al-Hakam II à côté de l'ancien Alcázar andalou, avec leurs salles froide, tiède et chaude bien conservées.",
+        horario:
+          "Mar-ven 8h15-20h15, sam 9h30-17h30, dim et jours fériés 8h15-14h15 (hiver ; variable en été)",
+        precio: "3 € (étudiants 1,50 €, gratuit moins de 13 ans)",
+      },
+    },
+    tendillas: {
+      en: {
+        nombre: "Plaza de las Tendillas",
+        descripcion:
+          "The commercial and social heart of modern Córdoba, with the equestrian statue of El Gran Capitán and a curious clock that chimes flamenco guitar instead of bells.",
+        horario: "Open 24h",
+        precio: "Free",
+      },
+      fr: {
+        nombre: "Plaza de las Tendillas",
+        descripcion:
+          "Le cœur commercial et social de la Cordoue moderne, avec la statue équestre du Grand Capitaine et une horloge insolite qui sonne à la guitare flamenca au lieu de cloches.",
+        horario: "Ouvert 24h/24",
+        precio: "Gratuit",
+      },
+    },
+    "casa-sefarad": {
+      en: {
+        nombre: "Casa de Sefarad",
+        descripcion:
+          "A cultural center in the heart of the Jewish Quarter dedicated to Sephardic memory, with rooms on the synagogue, Maimonides, music and everyday Judeo-Spanish life.",
+        horario: "Tue-Sat 11am-6pm",
+        precio: "€4.50 (students €3.50)",
+      },
+      fr: {
+        nombre: "Casa de Sefarad",
+        descripcion:
+          "Centre culturel au cœur du quartier juif consacré à la mémoire séfarade, avec des salles sur la synagogue, Maïmonide, la musique et la vie quotidienne judéo-espagnole.",
+        horario: "Mar-sam 11h-18h",
+        precio: "4,50 € (étudiants 3,50 €)",
+      },
+    },
+    "museo-arqueologico": {
+      en: {
+        nombre: "Archaeological and Ethnological Museum",
+        descripcion:
+          "Archaeological and ethnological collection housed in the Renaissance Palacio de los Páez de Castillejo, with important Roman and Islamic-era pieces.",
+        horario: "Tue-Sat 9am-8pm, Sun & holidays 9am-3pm (shorter hours in summer)",
+        precio: "Free (EU citizens), €1.50 others",
+      },
+      fr: {
+        nombre: "Musée archéologique et ethnologique",
+        descripcion:
+          "Collection archéologique et ethnologique installée dans le palais Renaissance des Páez de Castillejo, avec d'importantes pièces romaines et islamiques.",
+        horario: "Mar-sam 9h-20h, dim et jours fériés 9h-15h (horaires réduits en été)",
+        precio: "Gratuit (citoyens UE), 1,50 € pour les autres",
+      },
+    },
+    "san-lorenzo": {
+      en: {
+        nombre: "Church of San Lorenzo",
+        descripcion:
+          "One of the 13th-century Fernandine churches, in Gothic-Mudejar style, with a notable rose window and a Renaissance bell tower by Hernán Ruiz II.",
+        horario: "Open for worship; visiting hours vary",
+        precio: "Free",
+      },
+      fr: {
+        nombre: "Église Saint-Laurent",
+        descripcion:
+          "L'une des églises fernandines du XIIIe siècle, de style gothico-mudéjar, avec une belle rosace et un clocher Renaissance de Hernán Ruiz II.",
+        horario: "Ouverte au culte ; horaires de visite variables",
+        precio: "Gratuit",
+      },
+    },
+    "torre-malmuerta": {
+      en: {
+        nombre: "Malmuerta Tower",
+        descripcion:
+          "A 15th-century defensive tower built to guard the Axerquía city wall, wrapped in a famous tragic Córdoba legend.",
+        horario: "Viewed from the outside, 24h",
+        precio: "Free",
+      },
+      fr: {
+        nombre: "Tour de la Malmuerta",
+        descripcion:
+          "Tour de défense du XVe siècle construite pour protéger la muraille de l'Axerquía, entourée d'une célèbre légende tragique cordouane.",
+        horario: "Se contemple de l'extérieur, 24h/24",
+        precio: "Gratuit",
+      },
+    },
   },
 
   events: {

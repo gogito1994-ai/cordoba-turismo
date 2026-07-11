@@ -146,6 +146,118 @@ const PLACES = [
     precio: "Gratis (entrada con reserva previa), autobús turístico opcional",
     ticketUrl: "https://www.museosdeandalucia.es/web/conjuntoarqueologicomadinatalzahra/",
   },
+  {
+    id: "molino-albolafia",
+    nombre: "Molino de la Albolafia",
+    categoria: "Monumento",
+    icono: "landmark",
+    lat: 37.8768,
+    lng: -4.78,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Molino_de_la_Albolafia_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg/500px-Molino_de_la_Albolafia_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg",
+    descripcion:
+      "Antigua noria islámica de origen almohade sobre el Guadalquivir, junto al Puente Romano. Su rueda figura en el escudo de la ciudad desde el siglo XIV.",
+    horario: "Se contempla desde el exterior las 24h",
+    precio: "Gratis",
+  },
+  {
+    id: "puerta-puente",
+    nombre: "Puerta del Puente",
+    categoria: "Monumento",
+    icono: "landmark",
+    lat: 37.8776,
+    lng: -4.779,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Puerta_del_Puente%2C_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg/500px-Puerta_del_Puente%2C_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg",
+    descripcion:
+      "Antigua puerta de la muralla romana, remodelada en el siglo XVI a modo de arco triunfal para la visita de Felipe II. Incluye un mirador con vistas al conjunto monumental.",
+    horario: "Lun-Dom 10:00-14:00 (mirador y sala de exposiciones)",
+    precio: "1€ (gratis menores de 4 años)",
+  },
+  {
+    id: "banos-califales",
+    nombre: "Baños del Alcázar Califal",
+    categoria: "Museo",
+    icono: "building",
+    lat: 37.8779,
+    lng: -4.7823,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ba%C3%B1os_califales_de_C%C3%B3rdoba_03.jpg/500px-Ba%C3%B1os_califales_de_C%C3%B3rdoba_03.jpg",
+    descripcion:
+      "Baños árabes del siglo X mandados construir por Al-Hakam II junto al antiguo Alcázar andalusí, con sus salas fría, templada y caliente bien conservadas.",
+    horario: "Mar-Vie 8:15-20:15, Sáb 9:30-17:30, Dom y festivos 8:15-14:15 (invierno; varía en verano)",
+    precio: "3€ (estudiantes 1,50€, menores de 13 gratis)",
+  },
+  {
+    id: "tendillas",
+    nombre: "Plaza de las Tendillas",
+    categoria: "Plaza",
+    icono: "map-pin",
+    lat: 37.884491,
+    lng: -4.779565,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Plaza_de_las_Tendillas._Panoramica.jpg/500px-Plaza_de_las_Tendillas._Panoramica.jpg",
+    descripcion:
+      "El corazón comercial y social de la Córdoba moderna, con la estatua ecuestre del Gran Capitán y un curioso reloj que suena por soleares en vez de campanadas.",
+    horario: "Abierto 24h",
+    precio: "Gratis",
+  },
+  {
+    id: "casa-sefarad",
+    nombre: "Casa de Sefarad",
+    categoria: "Museo",
+    icono: "building",
+    lat: 37.87986,
+    lng: -4.78331,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Casa_de_Sefarad_%28C%C3%B3rdoba%2C_Spain%29.jpg/500px-Casa_de_Sefarad_%28C%C3%B3rdoba%2C_Spain%29.jpg",
+    descripcion:
+      "Centro cultural en plena Judería dedicado a recuperar la memoria sefardí, con salas sobre la sinagoga, Maimónides, la música y la vida cotidiana judeoespañola.",
+    horario: "Mar-Sáb 11:00-18:00",
+    precio: "4,50€ (estudiantes 3,50€)",
+  },
+  {
+    id: "museo-arqueologico",
+    nombre: "Museo Arqueológico y Etnológico",
+    categoria: "Museo",
+    icono: "building",
+    lat: 37.881966,
+    lng: -4.777881,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Portada_del_Museo_Arqueol%C3%B3gico_y_Etnol%C3%B3gico_de_C%C3%B3rdoba.jpg/500px-Portada_del_Museo_Arqueol%C3%B3gico_y_Etnol%C3%B3gico_de_C%C3%B3rdoba.jpg",
+    descripcion:
+      "Colección arqueológica y etnológica alojada en el renacentista Palacio de los Páez de Castillejo, con importantes piezas de época romana e islámica.",
+    horario: "Mar-Sáb 9:00-20:00, Dom y festivos 9:00-15:00 (horario reducido en verano)",
+    precio: "Gratis (ciudadanos UE), 1,50€ resto",
+  },
+  {
+    id: "san-lorenzo",
+    nombre: "Iglesia de San Lorenzo",
+    categoria: "Iglesia",
+    icono: "landmark",
+    lat: 37.888559,
+    lng: -4.768894,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Iglesia_de_San_Lorenzo_-_C%C3%B3rdoba_%28Espa%C3%B1a%29.jpg/500px-Iglesia_de_San_Lorenzo_-_C%C3%B3rdoba_%28Espa%C3%B1a%29.jpg",
+    descripcion:
+      "Una de las iglesias fernandinas del siglo XIII, de estilo gótico-mudéjar, con un notable rosetón y un campanario renacentista obra de Hernán Ruiz II.",
+    horario: "Abierta al culto; horario de visita variable",
+    precio: "Gratis",
+  },
+  {
+    id: "torre-malmuerta",
+    nombre: "Torre de la Malmuerta",
+    categoria: "Monumento",
+    icono: "landmark",
+    lat: 37.891731,
+    lng: -4.777658,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Torre_de_la_Malmuerta_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg/500px-Torre_de_la_Malmuerta_%28C%C3%B3rdoba%2C_Espa%C3%B1a%29.jpg",
+    descripcion:
+      "Torre albarrana del siglo XV construida para defender la muralla de la Axerquía, envuelta en una célebre leyenda trágica cordobesa.",
+    horario: "Se contempla desde el exterior las 24h",
+    precio: "Gratis",
+  },
 ];
 
 const EVENTS = [
