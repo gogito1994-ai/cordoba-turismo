@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eventos — Descubre Córdoba</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="eventos" data-i18n-title="events_title">
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo"><span class="logo-arch">🕌</span> <span data-i18n="brand">Descubre Córdoba</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
+      <li><a href="mapa.html" data-page="mapa" data-i18n="nav_map">Mapa</a></li>
+      <li><a href="rutas.html" data-page="rutas" data-i18n="nav_routes">Rutas</a></li>
+      <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
+      <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
+      <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
+      <li><a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar">🔍</a></li>
+      <li class="lang-switch">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section container">
+  <h2 class="section-title" data-i18n="events_title">Eventos y agenda cultural</h2>
+  <p class="section-subtitle" data-i18n="events_subtitle">Festivales y celebraciones que marcan el calendario cordobés.</p>
+  <div class="grid" id="events-grid"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><span data-i18n="footer_text">Descubre Córdoba — Guía turística no oficial.</span> © <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n-ui.js"></script>
+<script src="js/i18n-data.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

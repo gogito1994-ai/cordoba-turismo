@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Descubre Córdoba — Guía turística</title>
+<meta name="description" content="Guía turística de Córdoba, España: lugares, mapa, rutas, eventos, gastronomía y transporte." />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo"><span class="logo-arch">🕌</span> <span data-i18n="brand">Descubre Córdoba</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
+      <li><a href="mapa.html" data-page="mapa" data-i18n="nav_map">Mapa</a></li>
+      <li><a href="rutas.html" data-page="rutas" data-i18n="nav_routes">Rutas</a></li>
+      <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
+      <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
+      <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
+      <li><a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar">🔍</a></li>
+      <li class="lang-switch">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <h1 data-i18n="home_title">Descubre Córdoba</h1>
+    <p data-i18n="home_subtitle">Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="lugares.html" data-i18n="home_cta_places">🕌 Ver lugares</a>
+      <a class="btn btn-outline" href="mapa.html" data-i18n="home_cta_map">🗺️ Abrir mapa</a>
+    </div>
+    <div class="hero-arches">﴾ ﴾ ﴾ ﴾ ﴾</div>
+  </div>
+</section>
+
+<section class="section container">
+  <h2 class="section-title" data-i18n="home_section_title">Explora la ciudad</h2>
+  <p class="section-subtitle" data-i18n="home_section_subtitle">Elige por dónde empezar tu visita a Córdoba.</p>
+  <div class="home-links">
+    <a class="home-link-card" href="lugares.html">
+      <span class="card-icon">🕌</span>
+      <h3 data-i18n="home_card_places_title">Lugares</h3>
+      <p data-i18n="home_card_places_desc">Monumentos, museos y rincones imprescindibles</p>
+    </a>
+    <a class="home-link-card" href="mapa.html">
+      <span class="card-icon">🗺️</span>
+      <h3 data-i18n="home_card_map_title">Mapa interactivo</h3>
+      <p data-i18n="home_card_map_desc">Ubica todos los puntos de interés</p>
+    </a>
+    <a class="home-link-card" href="rutas.html">
+      <span class="card-icon">🚶</span>
+      <h3 data-i18n="home_card_routes_title">Rutas</h3>
+      <p data-i18n="home_card_routes_desc">Itinerarios temáticos para organizar tu visita</p>
+    </a>
+    <a class="home-link-card" href="eventos.html">
+      <span class="card-icon">🎉</span>
+      <h3 data-i18n="home_card_events_title">Eventos</h3>
+      <p data-i18n="home_card_events_desc">Festivales, ferias y agenda cultural</p>
+    </a>
+    <a class="home-link-card" href="gastronomia.html">
+      <span class="card-icon">🍅</span>
+      <h3 data-i18n="home_card_gastronomy_title">Gastronomía</h3>
+      <p data-i18n="home_card_gastronomy_desc">Salmorejo, flamenquín y la mejor cocina local</p>
+    </a>
+    <a class="home-link-card" href="transporte.html">
+      <span class="card-icon">🚌</span>
+      <h3 data-i18n="home_card_transport_title">Transporte</h3>
+      <p data-i18n="home_card_transport_desc">Cómo moverte por la ciudad y llegar hasta ella</p>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><span data-i18n="footer_text">Descubre Córdoba — Guía turística no oficial.</span> © <span id="year"></span></p>
+    <p class="footer-credit" data-i18n="footer_credit_full">Fotografías: Wikimedia Commons · Mapa: OpenStreetMap</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n-ui.js"></script>
+<script src="js/i18n-data.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
