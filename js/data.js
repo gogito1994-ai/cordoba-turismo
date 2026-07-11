@@ -352,6 +352,8 @@ const FOOD = [
     nombre: "Berenjenas con miel de caña",
     icono: "utensils",
     tipo: "Tapa",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Berenjenas_con_miel_de_ca%C3%B1a_La_Gamba_de_ORO.jpg/500px-Berenjenas_con_miel_de_ca%C3%B1a_La_Gamba_de_ORO.jpg",
     descripcion:
       "Berenjenas cortadas en tiras finas, fritas y bañadas en miel de caña. Una tapa dulce-salada muy popular en las tabernas.",
   },
@@ -360,6 +362,8 @@ const FOOD = [
     nombre: "Vino Montilla-Moriles",
     icono: "wine",
     tipo: "Bebida",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Detalle_botellas_Cooperativa_La_Uni%C3%B3n_de_Montilla.jpg/500px-Detalle_botellas_Cooperativa_La_Uni%C3%B3n_de_Montilla.jpg",
     descripcion:
       "Vino con Denominación de Origen propia de la provincia, elaborado con uva Pedro Ximénez. Ideal para acompañar el tapeo.",
   },
