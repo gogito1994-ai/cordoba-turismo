@@ -378,13 +378,23 @@ h1, h2, h3 {
   padding: 140px 0 60px;
 }
 
-.hero-bg {
+.hero-bg-slideshow {
   position: absolute;
   inset: 0;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosque_Cordoba_edited.jpg/1920px-Mosque_Cordoba_edited.jpg");
+}
+
+.hero-bg-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center 60%;
   transform: scale(1.05);
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.hero-bg-slide.active {
+  opacity: 1;
 }
 
 .hero-overlay {

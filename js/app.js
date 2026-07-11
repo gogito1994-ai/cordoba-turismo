@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRipple();
   setupReveal();
   setupFooterYear();
+  setupHeroSlideshow();
 });
 
 function setupStaticIcons() {
@@ -187,4 +188,16 @@ function setupReveal() {
   observeAll();
   const mo = new MutationObserver(() => observeAll());
   mo.observe(document.body, { childList: true, subtree: true });
+}
+
+function setupHeroSlideshow() {
+  const slides = document.querySelectorAll("#hero-slideshow .hero-bg-slide");
+  if (slides.length < 2) return;
+
+  let index = 0;
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 6000);
 }
