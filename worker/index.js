@@ -16,6 +16,8 @@ const REQUEST_TIMEOUT_MS = 15000;
 // Orígenes permitidos a llamar este Worker. Añade aquí tu dominio de GitHub
 // Pages si usas uno distinto, y quita localhost cuando ya no lo necesites.
 const ALLOWED_ORIGINS = [
+  "https://cordobapp.com",
+  "https://www.cordobapp.com",
   "https://gogito1994-ai.github.io",
   "http://localhost:8765",
 ];

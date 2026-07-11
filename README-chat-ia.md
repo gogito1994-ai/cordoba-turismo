@@ -65,6 +65,7 @@ Cloudflare te da una URL del tipo `https://cordoba-chat.tu-usuario.workers.dev`.
 
 Por seguridad, el Worker solo acepta peticiones desde los dominios indicados en
 `worker/index.js`, en la constante `ALLOWED_ORIGINS`. Ya incluye
+`https://cordobapp.com`, `https://www.cordobapp.com`,
 `https://gogito1994-ai.github.io` y `http://localhost:8765` (para pruebas locales).
 Si en el futuro cambias de dominio, añade la nueva URL a esa lista, vuelve a pegar
 el código actualizado en el editor de Cloudflare y haz "Deploy" de nuevo.
