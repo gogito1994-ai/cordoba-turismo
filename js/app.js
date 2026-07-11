@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRipple();
   setupReveal();
   setupFooterYear();
-  setupHeroSearch();
 });
 
 function setupStaticIcons() {
@@ -188,16 +187,4 @@ function setupReveal() {
   observeAll();
   const mo = new MutationObserver(() => observeAll());
   mo.observe(document.body, { childList: true, subtree: true });
-}
-
-function setupHeroSearch() {
-  const form = document.getElementById("hero-search-form");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const input = document.getElementById("hero-search-input");
-    const q = encodeURIComponent(input.value.trim());
-    window.location.href = q ? `buscar.html?q=${q}` : "buscar.html";
-  });
 }

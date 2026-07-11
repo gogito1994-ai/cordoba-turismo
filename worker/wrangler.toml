@@ -1,0 +1,8 @@
+name = "cordoba-chat"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+# La API key de Anthropic NO se pone aquí.
+# Se configura como secreto con:
+#   wrangler secret put ANTHROPIC_API_KEY
+# o desde el dashboard de Cloudflare (Settings -> Variables and Secrets).
