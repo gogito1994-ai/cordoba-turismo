@@ -25,12 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
         id: p.id,
         esFavoriteable: true,
       })),
-      ...ROUTES.map((r) => ({
-        tipo: t("type_ruta"),
-        icono: r.icono,
-        nombre: tr(r, "routes", "nombre"),
-        descripcion: tr(r, "routes", "descripcion"),
-      })),
       ...EVENTS.map((e) => ({
         tipo: t("type_evento"),
         icono: e.icono,

@@ -175,7 +175,7 @@ function setupReveal() {
 
   function observeAll() {
     document
-      .querySelectorAll(".card, .route-card, .home-link-card")
+      .querySelectorAll(".card, .home-link-card")
       .forEach((el) => {
         if (!el.classList.contains("reveal") && !el.classList.contains("in-view")) {
           el.classList.add("reveal");
