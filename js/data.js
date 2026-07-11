@@ -155,9 +155,23 @@ const ROUTES = [
     icono: "route",
     duracion: "3-4 horas",
     dificultad: "Fácil",
+    distancia: "Aprox. 3 km a pie",
     descripcion:
       "Recorre el legado musulmán de Córdoba, desde su monumento más icónico hasta los rincones de la Judería.",
     paradas: ["mezquita", "juderia", "sinagoga", "puente-romano", "calahorra"],
+    tiemposParadas: ["1h 30 min", "45 min", "20 min", "30 min", "45 min"],
+    notasParadas: [
+      "Empieza en la apertura para disfrutar de la luz de la mañana entre las columnas y evitar las aglomeraciones.",
+      "Piérdete por sus callejones empedrados camino a la Sinagoga; en primavera, aprovecha para fotografiar los patios con flores.",
+      "Visita breve pero imprescindible, con una de las decoraciones mudéjares mejor conservadas de España.",
+      "Cruza a pie hasta el otro extremo para conseguir las mejores vistas de la Mezquita-Catedral.",
+      "Termina el recorrido con el museo y sube a la torre para ver la puesta de sol sobre el Guadalquivir.",
+    ],
+    consejos: [
+      "Empieza sobre las 9:00 para evitar el calor y las colas de la Mezquita.",
+      "Lleva calzado cómodo: buena parte del recorrido es empedrado.",
+      "Combina bien con una parada para tapear en la Judería a media mañana.",
+    ],
   },
   {
     id: "patios",
@@ -165,9 +179,19 @@ const ROUTES = [
     icono: "route",
     duracion: "2-3 horas",
     dificultad: "Fácil",
+    distancia: "Aprox. 2 km a pie",
     descripcion:
       "Descubre la tradición de los patios cordobeses, Patrimonio Inmaterial de la Humanidad, con paseos por San Basilio y el Alcázar Viejo.",
     paradas: ["palacio-viana", "alcazar"],
+    tiemposParadas: ["1h 30 min", "1 h"],
+    notasParadas: [
+      "Recorre con calma sus doce patios: cada uno tiene un carácter y una vegetación distintos.",
+      "Los jardines con estanques son el broche perfecto, especialmente al atardecer.",
+    ],
+    consejos: [
+      "Si visitas en mayo, combínala con el Festival de los Patios para ver también los de vecinos particulares.",
+      "En temporada alta, reserva la entrada del Alcázar online para evitar colas.",
+    ],
   },
   {
     id: "romana",
@@ -175,9 +199,19 @@ const ROUTES = [
     icono: "route",
     duracion: "2 horas",
     dificultad: "Fácil",
+    distancia: "Aprox. 1,5 km a pie",
     descripcion:
       "Sigue las huellas de la Corduba romana, capital de la Bética, a través de sus restos arqueológicos mejor conservados.",
     paradas: ["templo-romano", "puente-romano"],
+    tiemposParadas: ["20 min", "45 min"],
+    notasParadas: [
+      "Se contempla bien desde la calle, junto al Ayuntamiento; sus columnas corintias fueron reconstruidas en el siglo XX.",
+      "Camina hasta el centro del puente para las fotografías más clásicas de la ciudad.",
+    ],
+    consejos: [
+      "Ruta corta, ideal para combinar con otra por la tarde.",
+      "Buena opción si dispones de poco tiempo en la ciudad.",
+    ],
   },
   {
     id: "califal-extramuros",
@@ -185,9 +219,19 @@ const ROUTES = [
     icono: "route",
     duracion: "Medio día",
     dificultad: "Media (requiere transporte)",
+    distancia: "8 km desde el centro (en autobús o coche)",
     descripcion:
       "Una excursión imprescindible a las afueras de la ciudad para conocer el esplendor de la corte califal en Medina Azahara.",
     paradas: ["medina-azahara"],
+    tiemposParadas: ["Medio día"],
+    notasParadas: [
+      "El autobús turístico sale del centro de interpretación; reserva la visita con antelación por ser gratuita.",
+    ],
+    consejos: [
+      "Reserva la entrada gratuita con antelación en la web oficial.",
+      "Lleva agua y protección solar: es un yacimiento al aire libre sin apenas sombra.",
+      "El autobús turístico desde el centro es la forma más cómoda de llegar sin coche propio.",
+    ],
   },
   {
     id: "barroca",
@@ -195,9 +239,19 @@ const ROUTES = [
     icono: "route",
     duracion: "2-3 horas",
     dificultad: "Fácil",
+    distancia: "Aprox. 2 km a pie",
     descripcion:
       "Un paseo por las plazas y palacios de los siglos XVI al XVIII, con la peculiar Plaza de la Corredera como protagonista.",
     paradas: ["corredera", "palacio-viana"],
+    tiemposParadas: ["1 h", "1h 30 min"],
+    notasParadas: [
+      "Aprovecha para tapear en alguno de sus bares con soportales; por las mañanas hay mercado de abastos.",
+      "Cierra la ruta con calma recorriendo los doce patios del palacio.",
+    ],
+    consejos: [
+      "La Plaza de la Corredera tiene mercado de abastos por las mañanas.",
+      "Combina bien con una parada para comer entre ambos puntos.",
+    ],
   },
 ];
 

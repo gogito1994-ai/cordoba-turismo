@@ -62,6 +62,11 @@ const UI_STRINGS = {
 
     routes_title: "Rutas e itinerarios",
     routes_subtitle: "Recorridos temáticos para organizar tu visita a Córdoba.",
+    route_view_details: "Ver itinerario completo",
+    route_distance_label: "Distancia",
+    route_itinerary_heading: "Itinerario paso a paso",
+    route_tips_heading: "Consejos prácticos",
+    route_stop_label: "Parada",
 
     events_title: "Eventos y agenda cultural",
     events_subtitle: "Festivales y celebraciones que marcan el calendario cordobés.",
@@ -168,6 +173,11 @@ const UI_STRINGS = {
 
     routes_title: "Routes & itineraries",
     routes_subtitle: "Themed routes to help you plan your visit to Córdoba.",
+    route_view_details: "See full itinerary",
+    route_distance_label: "Distance",
+    route_itinerary_heading: "Step-by-step itinerary",
+    route_tips_heading: "Practical tips",
+    route_stop_label: "Stop",
 
     events_title: "Events & cultural agenda",
     events_subtitle: "Festivals and celebrations that shape Córdoba's calendar.",
@@ -274,6 +284,11 @@ const UI_STRINGS = {
 
     routes_title: "Itinéraires",
     routes_subtitle: "Des parcours thématiques pour organiser votre visite de Cordoue.",
+    route_view_details: "Voir l'itinéraire complet",
+    route_distance_label: "Distance",
+    route_itinerary_heading: "Itinéraire détaillé",
+    route_tips_heading: "Conseils pratiques",
+    route_stop_label: "Étape",
 
     events_title: "Événements et agenda culturel",
     events_subtitle: "Festivals et célébrations qui rythment le calendrier cordouan.",

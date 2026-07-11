@@ -168,15 +168,43 @@ const DATA_I18N = {
         nombre: "Caliphate Route",
         duracion: "3-4 hours",
         dificultad: "Easy",
+        distancia: "About 3 km on foot",
         descripcion:
           "Trace Córdoba's Muslim legacy, from its most iconic monument to the corners of the Jewish Quarter.",
+        tiemposParadas: ["1h 30 min", "45 min", "20 min", "30 min", "45 min"],
+        notasParadas: [
+          "Arrive at opening time to enjoy the morning light between the columns and avoid the crowds.",
+          "Wander through its cobbled lanes on the way to the Synagogue; in spring, photograph the flower-filled patios.",
+          "A brief but essential visit, with some of the best-preserved Mudejar plasterwork in Spain.",
+          "Walk to the far end for the best views of the Mosque-Cathedral.",
+          "Finish with the museum and climb the tower for sunset over the Guadalquivir.",
+        ],
+        consejos: [
+          "Start around 9am to avoid the heat and the queues at the Mosque.",
+          "Wear comfortable shoes: much of the route is cobblestone.",
+          "Pairs well with a mid-morning tapas stop in the Jewish Quarter.",
+        ],
       },
       fr: {
         nombre: "Itinéraire du Califat",
         duracion: "3-4 heures",
         dificultad: "Facile",
+        distancia: "Environ 3 km à pied",
         descripcion:
           "Suivez l'héritage musulman de Cordoue, depuis son monument le plus emblématique jusqu'aux recoins du quartier juif.",
+        tiemposParadas: ["1h30", "45 min", "20 min", "30 min", "45 min"],
+        notasParadas: [
+          "Arrivez à l'ouverture pour profiter de la lumière du matin entre les colonnes et éviter l'affluence.",
+          "Flânez dans ses ruelles pavées en direction de la synagogue ; au printemps, photographiez les patios fleuris.",
+          "Une visite brève mais incontournable, avec l'un des décors mudéjars les mieux conservés d'Espagne.",
+          "Marchez jusqu'à l'autre extrémité pour la meilleure vue sur la Mosquée-cathédrale.",
+          "Terminez par le musée et montez à la tour pour admirer le coucher de soleil sur le Guadalquivir.",
+        ],
+        consejos: [
+          "Commencez vers 9h pour éviter la chaleur et les files d'attente à la Mosquée.",
+          "Portez des chaussures confortables : une grande partie du parcours est pavée.",
+          "À combiner avec une pause tapas en milieu de matinée dans le quartier juif.",
+        ],
       },
     },
     patios: {
@@ -184,15 +212,35 @@ const DATA_I18N = {
         nombre: "Patios Route",
         duracion: "2-3 hours",
         dificultad: "Easy",
+        distancia: "About 2 km on foot",
         descripcion:
           "Discover the tradition of Córdoba's patios, an Intangible Cultural Heritage, with walks through San Basilio and the Alcázar Viejo.",
+        tiemposParadas: ["1h 30 min", "1 hour"],
+        notasParadas: [
+          "Take your time through its twelve patios: each has its own character and greenery.",
+          "The gardens with pools are the perfect finishing touch, especially at sunset.",
+        ],
+        consejos: [
+          "Visiting in May? Pair it with the Patios Festival to see private neighborhood patios too.",
+          "In high season, book the Alcázar ticket online to skip the queue.",
+        ],
       },
       fr: {
         nombre: "Itinéraire des Patios",
         duracion: "2-3 heures",
         dificultad: "Facile",
+        distancia: "Environ 2 km à pied",
         descripcion:
           "Découvrez la tradition des patios cordouans, patrimoine culturel immatériel, en vous promenant dans San Basilio et l'Alcázar Viejo.",
+        tiemposParadas: ["1h30", "1 heure"],
+        notasParadas: [
+          "Prenez le temps de parcourir ses douze patios : chacun a son propre caractère et sa végétation.",
+          "Les jardins avec bassins sont la touche finale parfaite, surtout au coucher du soleil.",
+        ],
+        consejos: [
+          "En visite en mai ? Combinez avec le Festival des Patios pour voir aussi ceux des habitants.",
+          "En haute saison, réservez le billet de l'Alcázar en ligne pour éviter la file d'attente.",
+        ],
       },
     },
     romana: {
@@ -200,15 +248,35 @@ const DATA_I18N = {
         nombre: "Roman Route",
         duracion: "2 hours",
         dificultad: "Easy",
+        distancia: "About 1.5 km on foot",
         descripcion:
           "Follow the footsteps of Roman Corduba, capital of Baetica, through its best-preserved archaeological remains.",
+        tiemposParadas: ["20 min", "45 min"],
+        notasParadas: [
+          "Best seen from the street next to City Hall; its Corinthian columns were reconstructed in the 20th century.",
+          "Walk to the middle of the bridge for the classic postcard view of the city.",
+        ],
+        consejos: [
+          "A short route, ideal to pair with another one in the afternoon.",
+          "A good option if you're short on time in the city.",
+        ],
       },
       fr: {
         nombre: "Itinéraire romain",
         duracion: "2 heures",
         dificultad: "Facile",
+        distancia: "Environ 1,5 km à pied",
         descripcion:
           "Suivez les traces de la Corduba romaine, capitale de la Bétique, à travers ses vestiges archéologiques les mieux conservés.",
+        tiemposParadas: ["20 min", "45 min"],
+        notasParadas: [
+          "Se contemple bien depuis la rue, à côté de l'hôtel de ville ; ses colonnes corinthiennes ont été reconstruites au XXe siècle.",
+          "Marchez jusqu'au milieu du pont pour la vue la plus emblématique de la ville.",
+        ],
+        consejos: [
+          "Un itinéraire court, idéal à combiner avec un autre l'après-midi.",
+          "Une bonne option si vous avez peu de temps dans la ville.",
+        ],
       },
     },
     "califal-extramuros": {
@@ -216,15 +284,35 @@ const DATA_I18N = {
         nombre: "Caliphal Route Beyond the Walls",
         duracion: "Half a day",
         dificultad: "Moderate (transport required)",
+        distancia: "8 km from downtown (bus or car)",
         descripcion:
           "An essential excursion outside the city to discover the splendor of the caliphal court at Medina Azahara.",
+        tiemposParadas: ["Half a day"],
+        notasParadas: [
+          "The tourist bus departs from the visitor center; book ahead since the site is free to visit.",
+        ],
+        consejos: [
+          "Book the free ticket in advance on the official website.",
+          "Bring water and sun protection: it's an open-air site with little shade.",
+          "The tourist bus from downtown is the easiest way to get there without a car.",
+        ],
       },
       fr: {
         nombre: "Itinéraire califal hors les murs",
         duracion: "Une demi-journée",
         dificultad: "Moyenne (transport nécessaire)",
+        distancia: "8 km depuis le centre (bus ou voiture)",
         descripcion:
           "Une excursion incontournable hors de la ville pour découvrir la splendeur de la cour califale à Medina Azahara.",
+        tiemposParadas: ["Une demi-journée"],
+        notasParadas: [
+          "Le bus touristique part du centre d'interprétation ; réservez à l'avance car la visite est gratuite.",
+        ],
+        consejos: [
+          "Réservez le billet gratuit à l'avance sur le site officiel.",
+          "Prévoyez de l'eau et une protection solaire : c'est un site en plein air avec peu d'ombre.",
+          "Le bus touristique depuis le centre est le moyen le plus simple d'y arriver sans voiture.",
+        ],
       },
     },
     barroca: {
@@ -232,15 +320,35 @@ const DATA_I18N = {
         nombre: "Renaissance & Baroque Route",
         duracion: "2-3 hours",
         dificultad: "Easy",
+        distancia: "About 2 km on foot",
         descripcion:
           "A stroll through the squares and palaces of the 16th to 18th centuries, with the unique Corredera Square as the star.",
+        tiemposParadas: ["1 hour", "1h 30 min"],
+        notasParadas: [
+          "Have tapas at one of its arcaded bars; there's a food market here in the mornings.",
+          "Close the route at your own pace through the palace's twelve patios.",
+        ],
+        consejos: [
+          "Corredera Square hosts a food market in the mornings.",
+          "Pairs well with a lunch stop between both spots.",
+        ],
       },
       fr: {
         nombre: "Itinéraire Renaissance et baroque",
         duracion: "2-3 heures",
         dificultad: "Facile",
+        distancia: "Environ 2 km à pied",
         descripcion:
           "Une promenade à travers les places et palais du XVIe au XVIIIe siècle, avec la singulière place de la Corredera en vedette.",
+        tiemposParadas: ["1 heure", "1h30"],
+        notasParadas: [
+          "Prenez des tapas dans l'un de ses bars à arcades ; un marché s'y tient le matin.",
+          "Terminez l'itinéraire tranquillement à travers les douze patios du palais.",
+        ],
+        consejos: [
+          "La place de la Corredera accueille un marché le matin.",
+          "À combiner avec une pause déjeuner entre les deux étapes.",
+        ],
       },
     },
   },
