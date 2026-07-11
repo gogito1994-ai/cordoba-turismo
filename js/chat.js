@@ -4,7 +4,7 @@
  * IMPORTANTE: sustituye WORKER_URL por la URL de tu Cloudflare Worker
  * una vez desplegado. Instrucciones completas en README-chat-ia.md.
  */
-const WORKER_URL = "https://cordoba-chat.YOUR-SUBDOMAIN.workers.dev";
+const WORKER_URL = "https://damp-water-c6b3.gogito1994.workers.dev/";
 
 document.addEventListener("DOMContentLoaded", () => {
   const launcher = document.getElementById("chat-launcher");
