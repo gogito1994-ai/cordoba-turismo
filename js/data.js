@@ -273,7 +273,8 @@ const FOOD = [
     nombre: "Flamenquín",
     icono: "utensils",
     tipo: "Plato típico",
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flamenquines.jpg",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flamenqu%C3%ADn%2C_C%C3%B3rdoba%2C_2016.jpg/500px-Flamenqu%C3%ADn%2C_C%C3%B3rdoba%2C_2016.jpg",
     descripcion:
       "Rollo de lomo de cerdo envuelto en jamón serrano, empanado y frito. Se sirve normalmente con patatas fritas y alioli.",
   },
