@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function render() {
     grid.innerHTML = TRANSPORT.map(
-      (t2) => `
+      (item) => `
         <article class="card">
           <div class="card-body">
-            <span class="card-icon">${t2.icono}</span>
-            <h3>${tr(t2, "transport", "nombre")}</h3>
-            <p>${tr(t2, "transport", "descripcion")}</p>
-            <div class="meta">ℹ️ ${tr(t2, "transport", "info")}</div>
+            <span class="card-icon">${Icon(item.icono)}</span>
+            <h3>${tr(item, "transport", "nombre")}</h3>
+            <p>${tr(item, "transport", "descripcion")}</p>
+            <div class="meta">${Icon("info")} ${tr(item, "transport", "info")}</div>
           </div>
         </article>`
     ).join("");

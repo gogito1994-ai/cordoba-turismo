@@ -5,7 +5,7 @@ const PLACES = [
     id: "mezquita",
     nombre: "Mezquita-Catedral de Córdoba",
     categoria: "Monumento",
-    icono: "🕌",
+    icono: "landmark",
     lat: 37.8790,
     lng: -4.7794,
     imagen:
@@ -20,7 +20,7 @@ const PLACES = [
     id: "alcazar",
     nombre: "Alcázar de los Reyes Cristianos",
     categoria: "Monumento",
-    icono: "🏰",
+    icono: "landmark",
     lat: 37.8763,
     lng: -4.7807,
     imagen:
@@ -35,7 +35,7 @@ const PLACES = [
     id: "puente-romano",
     nombre: "Puente Romano",
     categoria: "Monumento",
-    icono: "🌉",
+    icono: "landmark",
     lat: 37.8770,
     lng: -4.7791,
     imagen:
@@ -49,7 +49,7 @@ const PLACES = [
     id: "juderia",
     nombre: "Judería de Córdoba",
     categoria: "Barrio histórico",
-    icono: "🏘️",
+    icono: "map-pin",
     lat: 37.8797,
     lng: -4.7815,
     imagen:
@@ -63,7 +63,7 @@ const PLACES = [
     id: "sinagoga",
     nombre: "Sinagoga de Córdoba",
     categoria: "Monumento",
-    icono: "✡️",
+    icono: "landmark",
     lat: 37.8802,
     lng: -4.7810,
     imagen:
@@ -77,7 +77,7 @@ const PLACES = [
     id: "palacio-viana",
     nombre: "Palacio de Viana",
     categoria: "Museo",
-    icono: "🏛️",
+    icono: "building",
     lat: 37.8862,
     lng: -4.7746,
     imagen:
@@ -92,7 +92,7 @@ const PLACES = [
     id: "templo-romano",
     nombre: "Templo Romano",
     categoria: "Monumento",
-    icono: "🏛️",
+    icono: "landmark",
     lat: 37.8827,
     lng: -4.7793,
     imagen:
@@ -106,7 +106,7 @@ const PLACES = [
     id: "calahorra",
     nombre: "Torre de la Calahorra",
     categoria: "Museo",
-    icono: "🗼",
+    icono: "building",
     lat: 37.8752,
     lng: -4.7783,
     imagen:
@@ -121,7 +121,7 @@ const PLACES = [
     id: "corredera",
     nombre: "Plaza de la Corredera",
     categoria: "Plaza",
-    icono: "🏟️",
+    icono: "map-pin",
     lat: 37.8838,
     lng: -4.7756,
     imagen:
@@ -135,7 +135,7 @@ const PLACES = [
     id: "medina-azahara",
     nombre: "Medina Azahara",
     categoria: "Yacimiento arqueológico",
-    icono: "🏺",
+    icono: "compass",
     lat: 37.9046,
     lng: -4.8734,
     imagen:
@@ -152,7 +152,7 @@ const ROUTES = [
   {
     id: "califato",
     nombre: "Ruta del Califato",
-    icono: "☪️",
+    icono: "route",
     duracion: "3-4 horas",
     dificultad: "Fácil",
     descripcion:
@@ -162,7 +162,7 @@ const ROUTES = [
   {
     id: "patios",
     nombre: "Ruta de los Patios",
-    icono: "🌸",
+    icono: "route",
     duracion: "2-3 horas",
     dificultad: "Fácil",
     descripcion:
@@ -172,7 +172,7 @@ const ROUTES = [
   {
     id: "romana",
     nombre: "Ruta Romana",
-    icono: "🏛️",
+    icono: "route",
     duracion: "2 horas",
     dificultad: "Fácil",
     descripcion:
@@ -182,7 +182,7 @@ const ROUTES = [
   {
     id: "califal-extramuros",
     nombre: "Ruta Califal Extramuros",
-    icono: "🏺",
+    icono: "route",
     duracion: "Medio día",
     dificultad: "Media (requiere transporte)",
     descripcion:
@@ -192,7 +192,7 @@ const ROUTES = [
   {
     id: "barroca",
     nombre: "Ruta Renacentista y Barroca",
-    icono: "⛪",
+    icono: "route",
     duracion: "2-3 horas",
     dificultad: "Fácil",
     descripcion:
@@ -205,7 +205,7 @@ const EVENTS = [
   {
     id: "patios-fest",
     nombre: "Festival de los Patios de Córdoba",
-    icono: "🌺",
+    icono: "calendar",
     fecha: "Primeras dos semanas de mayo",
     lugar: "Barrios de San Basilio, Alcázar Viejo y otros",
     descripcion:
@@ -214,7 +214,7 @@ const EVENTS = [
   {
     id: "cruces-mayo",
     nombre: "Festival de las Cruces de Mayo",
-    icono: "✝️",
+    icono: "calendar",
     fecha: "Primeros días de mayo",
     lugar: "Plazas de toda la ciudad",
     descripcion:
@@ -223,7 +223,7 @@ const EVENTS = [
   {
     id: "feria-salud",
     nombre: "Feria de Nuestra Señora de la Salud",
-    icono: "🎡",
+    icono: "calendar",
     fecha: "Finales de mayo",
     lugar: "Recinto ferial El Arenal",
     descripcion:
@@ -232,7 +232,7 @@ const EVENTS = [
   {
     id: "noche-flamenco",
     nombre: "Noche Blanca del Flamenco",
-    icono: "💃",
+    icono: "calendar",
     fecha: "Mediados de junio",
     lugar: "Plazas y escenarios de todo el centro histórico",
     descripcion:
@@ -241,7 +241,7 @@ const EVENTS = [
   {
     id: "semana-santa",
     nombre: "Semana Santa de Córdoba",
-    icono: "🕯️",
+    icono: "calendar",
     fecha: "Marzo o abril (variable)",
     lugar: "Casco histórico",
     descripcion:
@@ -250,7 +250,7 @@ const EVENTS = [
   {
     id: "concurso-flamenco",
     nombre: "Concurso Nacional de Arte Flamenco",
-    icono: "🎸",
+    icono: "calendar",
     fecha: "Cada 3 años (próxima edición a confirmar)",
     lugar: "Gran Teatro de Córdoba",
     descripcion:
@@ -262,7 +262,7 @@ const FOOD = [
   {
     id: "salmorejo",
     nombre: "Salmorejo cordobés",
-    icono: "🍅",
+    icono: "utensils",
     tipo: "Plato típico",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmorejo_cordobes.jpg",
     descripcion:
@@ -271,7 +271,7 @@ const FOOD = [
   {
     id: "flamenquin",
     nombre: "Flamenquín",
-    icono: "🍖",
+    icono: "utensils",
     tipo: "Plato típico",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flamenquines.jpg",
     descripcion:
@@ -280,7 +280,7 @@ const FOOD = [
   {
     id: "rabo-toro",
     nombre: "Rabo de toro",
-    icono: "🍲",
+    icono: "utensils",
     tipo: "Plato típico",
     imagen:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Rabo_de_toro-Estofado_%2801%29.JPG/500px-Rabo_de_toro-Estofado_%2801%29.JPG",
@@ -290,7 +290,7 @@ const FOOD = [
   {
     id: "berenjenas-miel",
     nombre: "Berenjenas con miel de caña",
-    icono: "🍆",
+    icono: "utensils",
     tipo: "Tapa",
     descripcion:
       "Berenjenas cortadas en tiras finas, fritas y bañadas en miel de caña. Una tapa dulce-salada muy popular en las tabernas.",
@@ -298,7 +298,7 @@ const FOOD = [
   {
     id: "vino-montilla",
     nombre: "Vino Montilla-Moriles",
-    icono: "🍷",
+    icono: "wine",
     tipo: "Bebida",
     descripcion:
       "Vino con Denominación de Origen propia de la provincia, elaborado con uva Pedro Ximénez. Ideal para acompañar el tapeo.",
@@ -306,7 +306,7 @@ const FOOD = [
   {
     id: "mazamorra",
     nombre: "Mazamorra cordobesa",
-    icono: "🥣",
+    icono: "utensils",
     tipo: "Plato típico",
     descripcion:
       "Crema fría a base de almendras, pan y ajo, un antecedente del salmorejo con raíces árabes, servida con uvas pasas o manzana.",
@@ -317,7 +317,7 @@ const TRANSPORT = [
   {
     id: "aucorsa",
     nombre: "Autobús urbano (Aucorsa)",
-    icono: "🚌",
+    icono: "bus",
     descripcion:
       "Red de autobuses urbanos que conecta el centro histórico con el resto de la ciudad. Billete sencillo o tarjeta recargable Bus+.",
     info: "Tarifa sencilla aprox. 1,30€, bonos de varios viajes disponibles",
@@ -325,7 +325,7 @@ const TRANSPORT = [
   {
     id: "cordobici",
     nombre: "Bicicleta pública (Cordobici)",
-    icono: "🚲",
+    icono: "bike",
     descripcion:
       "Sistema de bicicletas compartidas con estaciones repartidas por la ciudad, ideal para moverse por el carril bici del centro.",
     info: "Registro necesario, primeros 30 min gratis según abono",
@@ -333,7 +333,7 @@ const TRANSPORT = [
   {
     id: "taxi",
     nombre: "Taxi",
-    icono: "🚕",
+    icono: "taxi",
     descripcion:
       "Paradas de taxi en puntos clave como la Mezquita, la estación de tren y la Plaza de las Tendillas. También disponibles por app.",
     info: "Tarifa mínima aprox. 4€, aeropuerto y polígonos con tarifa especial",
@@ -341,7 +341,7 @@ const TRANSPORT = [
   {
     id: "tren",
     nombre: "Tren (Estación de Córdoba)",
-    icono: "🚄",
+    icono: "train",
     descripcion:
       "Estación bien conectada por AVE con Madrid (menos de 2h) y Sevilla (45 min), además de servicios regionales por Andalucía.",
     info: "A 15-20 min a pie del centro histórico, o bus/taxi",
@@ -349,7 +349,7 @@ const TRANSPORT = [
   {
     id: "aeropuerto",
     nombre: "Aeropuerto",
-    icono: "✈️",
+    icono: "plane",
     descripcion:
       "Córdoba cuenta con aeropuerto propio pero con vuelos muy limitados. La opción habitual es volar a Sevilla (~140 km) y llegar en tren o autobús.",
     info: "Aeropuerto de Sevilla: aprox. 1h20 en coche o AVE/autobús",
@@ -357,7 +357,7 @@ const TRANSPORT = [
   {
     id: "parking",
     nombre: "Aparcamiento",
-    icono: "🅿️",
+    icono: "parking",
     descripcion:
       "El centro histórico tiene acceso restringido a vehículos (zona ZBE). Se recomienda usar parkings públicos en el perímetro del casco antiguo.",
     info: "Parkings recomendados: San Basilio, Aparcamiento Norte, Vial Norte",
@@ -368,7 +368,7 @@ const RESTAURANTS = [
   {
     id: "noor",
     nombre: "Noor",
-    icono: "⭐",
+    icono: "star",
     distincion: "3 Estrellas Michelin",
     tipo: "Alta cocina andalusí de autor",
     chef: "Paco Morales",
@@ -385,7 +385,7 @@ const RESTAURANTS = [
   {
     id: "choco",
     nombre: "Choco",
-    icono: "⭐",
+    icono: "star",
     distincion: "1 Estrella Michelin",
     tipo: "Cocina andaluza de autor",
     chef: "Kisko García",
@@ -401,7 +401,7 @@ const RESTAURANTS = [
   {
     id: "el-churrasco",
     nombre: "El Churrasco",
-    icono: "🍽️",
+    icono: "utensils",
     distincion: "Selección Guía Michelin",
     tipo: "Cocina cordobesa tradicional (parrilla)",
     direccion: "Calle Romero, 16 (Judería)",
@@ -417,7 +417,7 @@ const RESTAURANTS = [
   {
     id: "bodegas-campos",
     nombre: "Bodegas Campos",
-    icono: "🍽️",
+    icono: "utensils",
     distincion: "Taberna histórica desde 1908",
     tipo: "Cocina cordobesa tradicional",
     direccion: "Calle Lineros, 32",
@@ -433,7 +433,7 @@ const RESTAURANTS = [
   {
     id: "taberna-salinas",
     nombre: "Taberna Salinas",
-    icono: "🍽️",
+    icono: "utensils",
     distincion: "Taberna histórica desde 1924",
     tipo: "Cocina cordobesa tradicional",
     direccion: "Calle Tundidores, 3",
@@ -449,7 +449,7 @@ const RESTAURANTS = [
   {
     id: "casa-pepe-juderia",
     nombre: "Casa Pepe de la Judería",
-    icono: "🍽️",
+    icono: "utensils",
     distincion: "Selección Guía Michelin, desde 1928",
     tipo: "Cocina cordobesa tradicional",
     direccion: "Calle Romero, 1 (Judería)",
@@ -469,7 +469,7 @@ const TAPAS = [
   {
     id: "bodegas-mezquita-cespedes",
     nombre: "Bodegas Mezquita Céspedes",
-    icono: "🏆",
+    icono: "trophy",
     distincion: "Mejor restaurante del mundo 2025 (TripAdvisor Traveler's Choice)",
     tipo: "Bar de tapas andaluzas",
     direccion: "Calle Céspedes (Judería)",
@@ -484,7 +484,7 @@ const TAPAS = [
   {
     id: "casa-rubio",
     nombre: "Casa Rubio",
-    icono: "🍢",
+    icono: "utensils",
     distincion: "Taberna histórica desde 1920",
     tipo: "Bar de tapas con terraza en azotea",
     direccion: "Puerta de Almodóvar (Judería)",
@@ -499,7 +499,7 @@ const TAPAS = [
   {
     id: "sociedad-plateros",
     nombre: "Sociedad de Plateros (San Francisco)",
-    icono: "🍢",
+    icono: "utensils",
     distincion: "Taberna cordobesa desde 1874",
     tipo: "Taberna tradicional con patio",
     direccion: "Calle Romero Barros, 6",
@@ -510,7 +510,7 @@ const TAPAS = [
   {
     id: "bar-santos",
     nombre: "Bar Santos",
-    icono: "🍢",
+    icono: "utensils",
     distincion: "Icónico desde 1966, junto a la Mezquita",
     tipo: "Bar de tapas de barra (solo efectivo)",
     direccion: "Calle Magistral González Francés, 3",
@@ -521,7 +521,7 @@ const TAPAS = [
   {
     id: "bodega-guzman",
     nombre: "Bodega Guzmán",
-    icono: "🍢",
+    icono: "wine",
     distincion: "Bodega centenaria en la Judería",
     tipo: "Bodega de vinos a granel",
     direccion: "Calle Judíos, 7",

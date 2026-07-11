@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
            ${
              it.esFavoriteable
                ? `<button class="favorite-btn${isFav ? " active" : ""}" data-id="${it.id}" data-name="${it.nombre}" aria-label="${t("aria_favorite")}">
-                    <span class="heart-icon"></span>
+                    ${Icon("heart")}
                   </button>`
                : ""
            }
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <article class="card">
         ${media}
         <div class="card-body">
-          <span class="card-icon">${it.icono}</span>
+          <span class="card-icon">${Icon(it.icono)}</span>
           <span class="tag">${it.tipo}</span>
           <h3>${it.nombre}</h3>
           <p>${it.descripcion}</p>
@@ -109,7 +109,11 @@ document.addEventListener("DOMContentLoaded", () => {
       </article>`;
   }
 
+  const params = new URLSearchParams(location.search);
+  const initialQuery = params.get("q") || "";
+  if (initialQuery) input.value = initialQuery;
+
   input.addEventListener("input", () => render(input.value));
   document.addEventListener("lang-changed", () => render(input.value));
-  render("");
+  render(initialQuery);
 });

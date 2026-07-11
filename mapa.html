@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Mapa — Descubre Córdoba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 <link
   rel="stylesheet"
@@ -16,8 +19,7 @@
 
 <header class="site-header">
   <nav class="nav-bar">
-    <a href="index.html" class="logo"><span class="logo-arch">🕌</span> <span data-i18n="brand">Descubre Córdoba</span></a>
-    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu">☰</button>
+    <a href="index.html" class="logo"><span data-icon="landmark"></span> <span data-i18n="brand">Descubre Córdoba</span></a>
     <ul class="nav-links">
       <li><a href="index.html" data-page="home" data-i18n="nav_home">Inicio</a></li>
       <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
@@ -26,13 +28,16 @@
       <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
       <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
       <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
-      <li><a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar">🔍</a></li>
-      <li class="lang-switch">
+    </ul>
+    <div class="nav-utils">
+      <a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar"><span data-icon="search"></span></a>
+      <div class="lang-switch">
         <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu"><span data-icon="menu"></span></button>
   </nav>
 </header>
 
@@ -44,8 +49,37 @@
 </section>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="container footer-main">
+    <div>
+      <a href="index.html" class="footer-brand"><span data-icon="landmark"></span> <span data-i18n="brand">Descubre Córdoba</span></a>
+      <p class="footer-tagline" data-i18n="footer_tagline">Guía turística independiente de Córdoba, con cariño por sus calles, su historia y su gastronomía.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/turismodecordobaesp/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span data-icon="instagram"></span></a>
+        <a href="https://www.facebook.com/TurismoCordobaESP/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span data-icon="facebook"></span></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading" data-i18n="footer_explore_heading">Explora</h3>
+      <ul class="footer-links">
+        <li><a href="lugares.html" data-i18n="nav_places">Lugares</a></li>
+        <li><a href="mapa.html" data-i18n="nav_map">Mapa</a></li>
+        <li><a href="rutas.html" data-i18n="nav_routes">Rutas</a></li>
+        <li><a href="eventos.html" data-i18n="nav_events">Eventos</a></li>
+        <li><a href="gastronomia.html" data-i18n="nav_gastronomy">Gastronomía</a></li>
+        <li><a href="transporte.html" data-i18n="nav_transport">Transporte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading" data-i18n="footer_location_heading">Ubicación</h3>
+      <p style="margin:0 0 12px;color:rgba(253,249,241,.72);" data-i18n="footer_location_city">Córdoba, España</p>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps?q=Mezquita-Catedral+de+C%C3%B3rdoba&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Córdoba"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <p><span data-i18n="footer_text">Descubre Córdoba — Guía turística no oficial.</span> © <span id="year"></span></p>
+    <p class="footer-credit" data-i18n="footer_credit_photos">Fotografías: Wikimedia Commons</p>
   </div>
 </footer>
 
@@ -55,6 +89,7 @@
   crossorigin=""
 ></script>
 <script src="js/data.js"></script>
+<script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>

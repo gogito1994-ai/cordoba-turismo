@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
       (e) => `
         <article class="card">
           <div class="card-body">
-            <span class="card-icon">${e.icono}</span>
+            <span class="card-icon">${Icon(e.icono)}</span>
             <h3>${tr(e, "events", "nombre")}</h3>
             <p>${tr(e, "events", "descripcion")}</p>
-            <div class="meta">📅 ${tr(e, "events", "fecha")}</div>
-            <div class="meta">📍 ${tr(e, "events", "lugar")}</div>
+            <div class="meta">${Icon("calendar")} ${tr(e, "events", "fecha")}</div>
+            <div class="meta">${Icon("map-pin")} ${tr(e, "events", "lugar")}</div>
           </div>
         </article>`
     ).join("");

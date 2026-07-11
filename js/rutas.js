@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const paradas = r.paradas
         .map((id) => placeById[id])
         .filter(Boolean)
-        .map((p) => `<span class="stop-pill">${tr(p, "places", "nombre")}</span>`)
+        .map((p) => `<span class="stop-pill">${Icon("map-pin")} ${tr(p, "places", "nombre")}</span>`)
         .join("");
 
       return `
         <article class="route-card">
           <div class="route-head">
-            <h3>${r.icono} ${tr(r, "routes", "nombre")}</h3>
+            <h3><span class="card-icon">${Icon(r.icono)}</span> ${tr(r, "routes", "nombre")}</h3>
             <div class="route-badges">
-              <span class="badge">⏱️ ${tr(r, "routes", "duracion")}</span>
-              <span class="badge">📶 ${tr(r, "routes", "dificultad")}</span>
+              <span class="badge">${Icon("clock")} ${tr(r, "routes", "duracion")}</span>
+              <span class="badge">${Icon("compass")} ${tr(r, "routes", "dificultad")}</span>
             </div>
           </div>
           <p>${tr(r, "routes", "descripcion")}</p>

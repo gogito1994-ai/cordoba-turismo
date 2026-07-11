@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filtersEl.innerHTML = `${catBtns}<button class="filter-btn favorite-filter${
       soloFavoritos ? " active" : ""
-    }" id="fav-filter">${t("filter_favorites")}</button>`;
+    }" id="fav-filter">${Icon("heart")} ${t("filter_favorites")}</button>`;
 
     filtersEl.querySelectorAll(".filter-btn[data-cat]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -57,25 +57,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<div class="card-media">
            <img src="${p.imagen}" alt="${nombre}" />
            <button class="favorite-btn${isFav ? " active" : ""}" data-id="${p.id}" data-name="${nombre}" aria-label="${t("aria_favorite")}">
-             <span class="heart-icon"></span>
+             ${Icon("heart")}
            </button>
          </div>`
       : "";
 
     const ticketBtn = p.ticketUrl
-      ? `<a class="btn btn-primary btn-ticket" href="${p.ticketUrl}" target="_blank" rel="noopener noreferrer">${t("ticket_button")}</a>`
+      ? `<a class="btn btn-primary btn-ticket" href="${p.ticketUrl}" target="_blank" rel="noopener noreferrer">${Icon("ticket")} ${t("ticket_button")}</a>`
       : "";
 
     return `
       <article class="card">
         ${media}
         <div class="card-body">
-          <span class="card-icon">${p.icono}</span>
+          <span class="card-icon">${Icon(p.icono)}</span>
           <span class="tag">${trCategory(p.categoria)}</span>
           <h3>${nombre}</h3>
           <p>${tr(p, "places", "descripcion")}</p>
-          <div class="meta">${t("label_schedule")} ${tr(p, "places", "horario")}</div>
-          <div class="meta">${t("label_price")} ${tr(p, "places", "precio")}</div>
+          <div class="meta">${Icon("clock")} ${tr(p, "places", "horario")}</div>
+          <div class="meta">${Icon("tag")} ${tr(p, "places", "precio")}</div>
           ${ticketBtn}
         </div>
       </article>`;

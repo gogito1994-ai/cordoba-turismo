@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  setupStaticIcons();
   setupNav();
+  setupHeaderScroll();
   setupBackToTop();
   setupLightbox();
   setupFavorites();
   setupRipple();
   setupReveal();
   setupFooterYear();
+  setupHeroSearch();
 });
+
+function setupStaticIcons() {
+  document.querySelectorAll("[data-icon]").forEach((el) => {
+    el.innerHTML = Icon(el.dataset.icon);
+  });
+}
 
 function setupNav() {
   const toggle = document.querySelector(".nav-toggle");
@@ -21,6 +30,22 @@ function setupNav() {
   });
 }
 
+function setupHeaderScroll() {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+
+  const isHome = document.body.dataset.page === "home";
+
+  if (!isHome) {
+    header.classList.add("solid");
+    return;
+  }
+
+  const update = () => header.classList.toggle("solid", window.scrollY > 60);
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
+
 function setupFooterYear() {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -31,7 +56,7 @@ function setupBackToTop() {
   btn.className = "back-to-top";
   btn.dataset.i18nAria = "aria_back_to_top";
   btn.setAttribute("aria-label", t("aria_back_to_top"));
-  btn.textContent = "↑";
+  btn.innerHTML = Icon("arrow-up");
   document.body.appendChild(btn);
 
   window.addEventListener("scroll", () => {
@@ -47,7 +72,7 @@ function setupLightbox() {
   const overlay = document.createElement("div");
   overlay.className = "lightbox";
   overlay.innerHTML = `
-    <button class="lightbox-close" data-i18n-aria="aria_close" aria-label="${t("aria_close")}">✕</button>
+    <button class="lightbox-close" data-i18n-aria="aria_close" aria-label="${t("aria_close")}">${Icon("x")}</button>
     <img src="" alt="" />
   `;
   document.body.appendChild(overlay);
@@ -163,4 +188,16 @@ function setupReveal() {
   observeAll();
   const mo = new MutationObserver(() => observeAll());
   mo.observe(document.body, { childList: true, subtree: true });
+}
+
+function setupHeroSearch() {
+  const form = document.getElementById("hero-search-form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const input = document.getElementById("hero-search-input");
+    const q = encodeURIComponent(input.value.trim());
+    window.location.href = q ? `buscar.html?q=${q}` : "buscar.html";
+  });
 }

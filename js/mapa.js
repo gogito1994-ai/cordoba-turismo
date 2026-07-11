@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lista.forEach((p) => {
       const marker = L.marker([p.lat, p.lng]).addTo(map);
       marker.bindPopup(
-        `<h4>${p.icono} ${tr(p, "places", "nombre")}</h4><p>${trCategory(p.categoria)}</p><p>${tr(p, "places", "descripcion")}</p>`
+        `<h4>${Icon(p.icono)} ${tr(p, "places", "nombre")}</h4><p>${trCategory(p.categoria)}</p><p>${tr(p, "places", "descripcion")}</p>`
       );
       markers.push(marker);
     });

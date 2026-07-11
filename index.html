@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Descubre Córdoba — Guía turística</title>
 <meta name="description" content="Guía turística de Córdoba, España: lugares, mapa, rutas, eventos, gastronomía y transporte." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-page="home">
 
 <header class="site-header">
   <nav class="nav-bar">
-    <a href="index.html" class="logo"><span class="logo-arch">🕌</span> <span data-i18n="brand">Descubre Córdoba</span></a>
-    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu">☰</button>
+    <a href="index.html" class="logo"><span data-icon="landmark"></span> <span data-i18n="brand">Descubre Córdoba</span></a>
     <ul class="nav-links">
       <li><a href="index.html" data-page="home" data-i18n="nav_home">Inicio</a></li>
       <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
@@ -21,13 +23,16 @@
       <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
       <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
       <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
-      <li><a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar">🔍</a></li>
-      <li class="lang-switch">
+    </ul>
+    <div class="nav-utils">
+      <a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar"><span data-icon="search"></span></a>
+      <div class="lang-switch">
         <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu"><span data-icon="menu"></span></button>
   </nav>
 </header>
 
@@ -35,47 +40,53 @@
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="container">
+    <span class="hero-kicker" data-i18n="hero_kicker">Andalucía · España</span>
     <h1 data-i18n="home_title">Descubre Córdoba</h1>
     <p data-i18n="home_subtitle">Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="lugares.html" data-i18n="home_cta_places">🕌 Ver lugares</a>
-      <a class="btn btn-outline" href="mapa.html" data-i18n="home_cta_map">🗺️ Abrir mapa</a>
+      <a class="btn btn-primary" href="lugares.html"><span data-icon="landmark"></span> <span data-i18n="home_cta_places">Ver lugares</span></a>
+      <a class="btn btn-outline" href="mapa.html"><span data-icon="map"></span> <span data-i18n="home_cta_map">Abrir mapa</span></a>
     </div>
-    <div class="hero-arches">﴾ ﴾ ﴾ ﴾ ﴾</div>
+    <form class="hero-search" id="hero-search-form">
+      <span data-icon="search"></span>
+      <input type="text" id="hero-search-input" data-i18n-placeholder="hero_search_placeholder" placeholder="¿Qué quieres descubrir? Mezquita, salmorejo, flamenco..." />
+      <button type="submit" class="btn btn-primary" data-i18n="search_button">Buscar</button>
+    </form>
   </div>
+  <a href="#explore" class="hero-scroll-cue" aria-hidden="true"><span data-icon="chevronDown"></span></a>
 </section>
 
-<section class="section container">
+<section class="section container" id="explore">
   <h2 class="section-title" data-i18n="home_section_title">Explora la ciudad</h2>
   <p class="section-subtitle" data-i18n="home_section_subtitle">Elige por dónde empezar tu visita a Córdoba.</p>
   <div class="home-links">
     <a class="home-link-card" href="lugares.html">
-      <span class="card-icon">🕌</span>
+      <span class="card-icon" data-icon="landmark"></span>
       <h3 data-i18n="home_card_places_title">Lugares</h3>
       <p data-i18n="home_card_places_desc">Monumentos, museos y rincones imprescindibles</p>
     </a>
     <a class="home-link-card" href="mapa.html">
-      <span class="card-icon">🗺️</span>
+      <span class="card-icon" data-icon="map"></span>
       <h3 data-i18n="home_card_map_title">Mapa interactivo</h3>
       <p data-i18n="home_card_map_desc">Ubica todos los puntos de interés</p>
     </a>
     <a class="home-link-card" href="rutas.html">
-      <span class="card-icon">🚶</span>
+      <span class="card-icon" data-icon="route"></span>
       <h3 data-i18n="home_card_routes_title">Rutas</h3>
       <p data-i18n="home_card_routes_desc">Itinerarios temáticos para organizar tu visita</p>
     </a>
     <a class="home-link-card" href="eventos.html">
-      <span class="card-icon">🎉</span>
+      <span class="card-icon" data-icon="calendar"></span>
       <h3 data-i18n="home_card_events_title">Eventos</h3>
       <p data-i18n="home_card_events_desc">Festivales, ferias y agenda cultural</p>
     </a>
     <a class="home-link-card" href="gastronomia.html">
-      <span class="card-icon">🍅</span>
+      <span class="card-icon" data-icon="utensils"></span>
       <h3 data-i18n="home_card_gastronomy_title">Gastronomía</h3>
       <p data-i18n="home_card_gastronomy_desc">Salmorejo, flamenquín y la mejor cocina local</p>
     </a>
     <a class="home-link-card" href="transporte.html">
-      <span class="card-icon">🚌</span>
+      <span class="card-icon" data-icon="bus"></span>
       <h3 data-i18n="home_card_transport_title">Transporte</h3>
       <p data-i18n="home_card_transport_desc">Cómo moverte por la ciudad y llegar hasta ella</p>
     </a>
@@ -83,13 +94,42 @@
 </section>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="container footer-main">
+    <div>
+      <a href="index.html" class="footer-brand"><span data-icon="landmark"></span> <span data-i18n="brand">Descubre Córdoba</span></a>
+      <p class="footer-tagline" data-i18n="footer_tagline">Guía turística independiente de Córdoba, con cariño por sus calles, su historia y su gastronomía.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/turismodecordobaesp/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span data-icon="instagram"></span></a>
+        <a href="https://www.facebook.com/TurismoCordobaESP/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span data-icon="facebook"></span></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading" data-i18n="footer_explore_heading">Explora</h3>
+      <ul class="footer-links">
+        <li><a href="lugares.html" data-i18n="nav_places">Lugares</a></li>
+        <li><a href="mapa.html" data-i18n="nav_map">Mapa</a></li>
+        <li><a href="rutas.html" data-i18n="nav_routes">Rutas</a></li>
+        <li><a href="eventos.html" data-i18n="nav_events">Eventos</a></li>
+        <li><a href="gastronomia.html" data-i18n="nav_gastronomy">Gastronomía</a></li>
+        <li><a href="transporte.html" data-i18n="nav_transport">Transporte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading" data-i18n="footer_location_heading">Ubicación</h3>
+      <p style="margin:0 0 12px;color:rgba(253,249,241,.72);" data-i18n="footer_location_city">Córdoba, España</p>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps?q=Mezquita-Catedral+de+C%C3%B3rdoba&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Córdoba"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <p><span data-i18n="footer_text">Descubre Córdoba — Guía turística no oficial.</span> © <span id="year"></span></p>
-    <p class="footer-credit" data-i18n="footer_credit_full">Fotografías: Wikimedia Commons · Mapa: OpenStreetMap</p>
+    <p class="footer-credit" data-i18n="footer_credit_photos">Fotografías: Wikimedia Commons</p>
   </div>
 </footer>
 
 <script src="js/data.js"></script>
+<script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>
