@@ -13,9 +13,40 @@ document.addEventListener("DOMContentLoaded", () => {
   setupSeasonalTheme();
   setupHeroSlideshow();
   setupMonthHighlight();
+  setupHomeWeather();
   setupServiceWorker();
   setupInstallBanner();
 });
+
+function setupHomeWeather() {
+  const widget = document.getElementById("home-weather");
+  if (!widget) return;
+
+  const CORDOBA_LAT = 37.8882;
+  const CORDOBA_LNG = -4.7794;
+  const WEATHER_ICON = {
+    0: "☀", 1: "🌤", 2: "⛅", 3: "☁",
+    45: "🌫", 48: "🌫",
+    51: "🌦", 53: "🌦", 55: "🌦",
+    61: "🌧", 63: "🌧", 65: "🌧",
+    71: "🌨", 73: "🌨", 75: "🌨",
+    80: "🌦", 81: "🌦", 82: "🌧",
+    95: "⛈", 96: "⛈", 99: "⛈",
+  };
+
+  fetch(
+    `https://api.open-meteo.com/v1/forecast?latitude=${CORDOBA_LAT}&longitude=${CORDOBA_LNG}&current=temperature_2m,weather_code&timezone=Europe%2FMadrid`
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      const current = data && data.current;
+      if (!current) throw new Error("sin datos");
+      widget.querySelector(".home-weather-icon").textContent = WEATHER_ICON[current.weather_code] || "🌡";
+      widget.querySelector(".home-weather-temp").textContent = `${Math.round(current.temperature_2m)}°C`;
+      widget.hidden = false;
+    })
+    .catch(() => {});
+}
 
 function setupSeasonalTheme() {
   const hero = document.querySelector(".hero");

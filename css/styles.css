@@ -364,6 +364,25 @@ h1, h2, h3 {
     display: none !important;
   }
 
+  .nav-bar {
+    justify-content: space-between;
+    padding: 14px 16px;
+    gap: 8px;
+  }
+
+  .logo span:last-child {
+    display: none;
+  }
+
+  .nav-utils {
+    gap: 2px;
+    padding: 4px;
+  }
+
+  .lang-btn {
+    padding: 6px 5px;
+  }
+
   body {
     padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
   }
@@ -3729,7 +3748,16 @@ body.event-modal-open {
 
 /* ---------- banner de temporada (portada) ---------- */
 
-.season-banner {
+.hero-top-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.season-banner,
+.home-weather-chip {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -3737,10 +3765,27 @@ body.event-modal-open {
   border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(6px);
   border-radius: 999px;
-  padding: 8px 10px 8px 16px;
-  margin-bottom: 18px;
+  padding: 8px 16px;
   color: var(--blanco);
   font-size: 0.88rem;
+}
+
+.season-banner {
+  padding: 8px 10px 8px 16px;
+}
+
+.home-weather-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.home-weather-temp {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.home-weather-place {
+  opacity: 0.85;
 }
 
 .season-banner-icon {
@@ -3787,8 +3832,13 @@ body.event-modal-open {
 }
 
 @media (max-width: 640px) {
-  .season-banner {
+  .season-banner,
+  .home-weather-chip {
     font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .season-banner {
     padding: 6px 8px 6px 12px;
   }
 

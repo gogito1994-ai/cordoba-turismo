@@ -20,7 +20,6 @@
   <nav class="nav-bar">
     <a href="index.html" class="logo"><span data-icon="landmark"></span> <span data-i18n="brand">Descubre Córdoba</span></a>
     <ul class="nav-links">
-      <li><a href="index.html" data-page="home" data-i18n="nav_home">Inicio</a></li>
       <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
       <li><a href="mapa.html" data-page="mapa" data-i18n="nav_map">Mapa</a></li>
       <li><a href="planificar.html" data-page="planificar" data-i18n="nav_planner">Planificar</a></li>
@@ -53,7 +52,14 @@
   </div>
   <div class="hero-overlay"></div>
   <div class="container">
-    <div id="season-banner-slot"></div>
+    <div class="hero-top-widgets">
+      <div id="season-banner-slot"></div>
+      <div class="home-weather-chip" id="home-weather" hidden>
+        <span class="home-weather-icon" aria-hidden="true"></span>
+        <span class="home-weather-temp"></span>
+        <span class="home-weather-place" data-i18n="ahora_weather_place">Córdoba, ahora mismo</span>
+      </div>
+    </div>
     <span class="hero-kicker" data-i18n="hero_kicker">Andalucía · España</span>
     <h1 data-i18n="home_title">Descubre Córdoba</h1>
     <p data-i18n="home_subtitle">Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.</p>
