@@ -57,6 +57,8 @@ const ICON_PATHS = {
   chat: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v7a2.5 2.5 0 0 1-2.5 2.5H10l-4.8 3.6a.5.5 0 0 1-.8-.4v-3.2A2.5 2.5 0 0 1 4 12.5Z"/>',
   send: '<path d="M20.5 3.5 3 10.2c-.7.3-.6 1.3.1 1.5l6.8 2 2 6.8c.2.7 1.2.8 1.5.1L20.5 3.5Z"/><path d="M10 13.5 20.5 3.5"/>',
   bot: '<rect x="4.5" y="9" width="15" height="11" rx="3"/><circle cx="9" cy="14.5" r="1.2"/><circle cx="15" cy="14.5" r="1.2"/><path d="M12 9V5.5M9.5 5.5h5"/>',
+  suitcase:
+    '<rect x="3.5" y="7.5" width="17" height="12.5" rx="2"/><path d="M9 7.5V5.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3.5 13h17M11 13v2"/>',
 };
 
 function Icon(name, className) {

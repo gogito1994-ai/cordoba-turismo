@@ -1,4 +1,8 @@
-name = "cordoba-chat"
+# IMPORTANTE: este nombre debe coincidir EXACTAMENTE con el de tu Worker ya
+# desplegado (la parte antes de ".gogito1994.workers.dev" en su URL actual:
+# https://damp-water-c6b3.gogito1994.workers.dev/). Así "wrangler deploy"
+# actualiza ese mismo Worker en vez de crear uno nuevo.
+name = "damp-water-c6b3"
 main = "index.js"
 compatibility_date = "2026-01-01"
 

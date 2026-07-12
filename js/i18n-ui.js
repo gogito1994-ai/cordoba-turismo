@@ -47,6 +47,13 @@ const UI_STRINGS = {
     home_card_transport_title: "Transporte",
     home_card_transport_desc: "Cómo moverte por la ciudad y llegar hasta ella",
 
+    partner_kicker: "Recomendado por Descubre Córdoba",
+    partner_title: "Guarda tus maletas con Dcanlock",
+    partner_description:
+      "Consigna de maletas en pleno centro de Córdoba, a 15 minutos andando de la estación de tren. Taquillas seguras con vigilancia 24h para que explores la ciudad sin cargar equipaje.",
+    partner_discount: "20% de descuento con el código",
+    partner_cta: "Reservar taquilla",
+
     places_title: "Lugares para visitar",
     places_subtitle: "Monumentos, museos y barrios imprescindibles de Córdoba.",
     filter_all: "Todos",
@@ -146,6 +153,13 @@ const UI_STRINGS = {
     home_card_transport_title: "Transport",
     home_card_transport_desc: "How to get around and reach the city",
 
+    partner_kicker: "Recommended by Discover Córdoba",
+    partner_title: "Store your luggage with Dcanlock",
+    partner_description:
+      "Luggage storage in the heart of Córdoba, a 15-minute walk from the train station. Secure lockers with 24h surveillance so you can explore the city hands-free.",
+    partner_discount: "20% off with code",
+    partner_cta: "Book a locker",
+
     places_title: "Places to visit",
     places_subtitle: "Must-see monuments, museums and neighborhoods in Córdoba.",
     filter_all: "All",
@@ -243,6 +257,13 @@ const UI_STRINGS = {
     home_card_gastronomy_desc: "Salmorejo, flamenquín et la meilleure cuisine locale",
     home_card_transport_title: "Transports",
     home_card_transport_desc: "Comment se déplacer et rejoindre la ville",
+
+    partner_kicker: "Recommandé par Découvrez Cordoue",
+    partner_title: "Déposez vos bagages chez Dcanlock",
+    partner_description:
+      "Consigne à bagages en plein centre de Cordoue, à 15 minutes à pied de la gare. Casiers sécurisés avec surveillance 24h/24 pour explorer la ville les mains libres.",
+    partner_discount: "20 % de réduction avec le code",
+    partner_cta: "Réserver un casier",
 
     places_title: "Lieux à visiter",
     places_subtitle: "Monuments, musées et quartiers incontournables de Cordoue.",

@@ -1526,3 +1526,100 @@ body.chat-open {
     border-radius: 0;
   }
 }
+
+/* ============ Partner banner ============ */
+
+.partner-banner {
+  background: linear-gradient(120deg, var(--anil), var(--anil-dark));
+  border-radius: var(--radio);
+  padding: 40px;
+  color: var(--blanco-cal);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: var(--sombra);
+}
+
+.partner-banner-icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-banner-icon .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.partner-banner-content {
+  flex: 1;
+  min-width: 240px;
+}
+
+.partner-banner-kicker {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ocre-light);
+  margin-bottom: 8px;
+}
+
+.partner-banner-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.partner-banner-desc {
+  color: rgba(253, 249, 241, 0.82);
+  margin: 0 0 18px;
+  max-width: 540px;
+  font-size: 0.98rem;
+}
+
+.partner-banner-discount {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.partner-banner-discount .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.partner-banner-discount code {
+  background: var(--ocre);
+  color: var(--texto);
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.partner-banner-actions {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .partner-banner {
+    padding: 28px 22px;
+  }
+}
