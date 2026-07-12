@@ -21,6 +21,11 @@ const CATEGORY_I18N = {
   Plaza: { en: "Square", fr: "Place" },
   "Yacimiento arqueológico": { en: "Archaeological site", fr: "Site archéologique" },
   Iglesia: { en: "Church", fr: "Église" },
+  Restaurante: { en: "Restaurant", fr: "Restaurant" },
+  Tapas: { en: "Tapas", fr: "Tapas" },
+  Mirador: { en: "Viewpoint", fr: "Point de vue" },
+  Consigna: { en: "Luggage storage", fr: "Consigne à bagages" },
+  Transporte: { en: "Transport", fr: "Transport" },
 };
 
 function t(key, vars) {

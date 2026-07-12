@@ -40,11 +40,42 @@
   </nav>
 </header>
 
-<section class="section container">
+<section class="section container map-section">
   <h2 class="section-title" data-i18n="map_title">Mapa interactivo</h2>
   <p class="section-subtitle" data-i18n="map_subtitle">Todos los puntos de interés de Córdoba en un solo lugar.</p>
-  <div class="filters" id="map-filters"></div>
-  <div id="map"></div>
+
+  <div class="map-shell">
+    <div class="map-toolbar">
+      <div class="map-search">
+        <span class="map-search-icon" data-icon="search"></span>
+        <input
+          type="text"
+          id="map-search-input"
+          data-i18n-placeholder="map_search_placeholder"
+          placeholder="Busca un lugar, restaurante, mirador..."
+          autocomplete="off"
+        />
+        <div class="map-search-results" id="map-search-results"></div>
+      </div>
+      <button class="map-locate-btn" id="map-locate-btn">
+        <span data-icon="compass"></span>
+        <span data-i18n="map_locate_button">¿Qué hay cerca de mí?</span>
+      </button>
+    </div>
+
+    <div class="map-chips" id="map-filters"></div>
+    <div class="map-routes-panel" id="map-routes-panel"></div>
+
+    <div id="map"></div>
+
+    <div class="map-sheet" id="map-sheet" aria-hidden="true">
+      <div class="map-sheet-handle"></div>
+      <button class="map-sheet-close" id="map-sheet-close" data-i18n-aria="aria_close" aria-label="Cerrar">
+        <span data-icon="x"></span>
+      </button>
+      <div class="map-sheet-content" id="map-sheet-content"></div>
+    </div>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -87,6 +118,7 @@
   crossorigin=""
 ></script>
 <script src="js/data.js"></script>
+<script src="js/map-data.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
