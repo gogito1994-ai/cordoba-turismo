@@ -151,4 +151,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("lang-changed", renderSuggestions);
+
+  const askParam = new URLSearchParams(window.location.search).get("ask");
+  if (askParam) {
+    openChat();
+    sendMessage(askParam);
+    const url = new URL(window.location.href);
+    url.searchParams.delete("ask");
+    window.history.replaceState({}, "", url);
+  }
 });

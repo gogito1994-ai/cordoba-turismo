@@ -15,6 +15,24 @@ const PLACES = [
     horario: "Lun-Sáb 10:00-19:00, Dom 8:30-11:30 y 15:00-19:00",
     precio: "13€ (visita diurna), gratis 8:30-9:30 (excepto domingos)",
     ticketUrl: "https://tickets.mezquita-catedraldecordoba.es/",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosque_Cordoba_edited.jpg/500px-Mosque_Cordoba_edited.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mezquita-catedral_de_C%C3%B3rdoba_interior_17.jpg/500px-Mezquita-catedral_de_C%C3%B3rdoba_interior_17.jpg",
+    ],
+    tiempoVisita: "1-1,5 horas",
+    comoLlegar: "En pleno centro histórico; 10 min a pie desde la Plaza de las Tendillas",
+    porQueVisitar:
+      "Es el monumento más importante de Córdoba y una de las mayores joyas del arte islámico en Occidente: un bosque de más de 850 columnas con arcos bicolores que no se parece a nada más en el mundo.",
+    historia:
+      "Construida a partir del año 785 sobre una antigua basílica visigoda, la mezquita se fue ampliando durante dos siglos hasta convertirse en una de las más grandes del islam. Tras la conquista cristiana de 1236 se consagró como catedral, y en el siglo XVI se insertó en su centro una catedral renacentista, decisión que generó polémica ya en su época. Desde 1984 es Patrimonio de la Humanidad.",
+    consejoLocal: [
+      "Entra a primera hora de la mañana para verla casi vacía y con buena luz.",
+      "El Patio de los Naranjos, gratuito, ya merece una parada aunque no entres al interior.",
+      "Combínala con un paseo por la Judería, a solo dos minutos andando.",
+    ],
+    esGratis: false,
+    imprescindible: true,
+    accesibilidad: "Accesible en silla de ruedas por la puerta principal; consulta rampas puntuales en la web oficial.",
   },
   {
     id: "alcazar",
@@ -30,6 +48,24 @@ const PLACES = [
     horario: "Mar-Dom 8:15-20:00 (verano), horarios reducidos en invierno",
     precio: "5€, gratis los martes tarde (según temporada)",
     ticketUrl: "https://alcazardelosreyescristianos.cordoba.es/",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Spain_Cordoba_quality_image.jpg/500px-Spain_Cordoba_quality_image.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Gardens_of_the_Alc%C3%A1zar_de_los_Reyes_Cristianos_-_C%C3%B3rdoba%2C_Spain.jpg/500px-Gardens_of_the_Alc%C3%A1zar_de_los_Reyes_Cristianos_-_C%C3%B3rdoba%2C_Spain.jpg",
+    ],
+    tiempoVisita: "1-1,5 horas",
+    comoLlegar: "A 5 min a pie de la Mezquita, junto al río",
+    porQueVisitar:
+      "Sus jardines andalusíes escalonados con estanques y surtidores son de los más bonitos de España, y las murallas ofrecen algunas de las mejores vistas de la ciudad.",
+    historia:
+      "Construido en el siglo XIV sobre restos de una fortaleza almohade anterior, fue residencia de los Reyes Católicos, desde donde planificaron la conquista de Granada y recibieron a Cristóbal Colón antes de su viaje a América. Posteriormente fue sede del Tribunal de la Inquisición durante más de tres siglos, y a comienzos del siglo XX funcionó incluso como prisión.",
+    consejoLocal: [
+      "Sube a la Torre del Homenaje para las mejores vistas del conjunto de jardines.",
+      "Confirma en la web oficial si hay descuento o entrada gratuita los martes tarde según la temporada.",
+      "Al atardecer, la luz sobre los estanques es especialmente bonita.",
+    ],
+    esGratis: false,
+    imprescindible: true,
+    accesibilidad: "El palacio y buena parte de los jardines son accesibles; algunas zonas de las murallas tienen escalones estrechos.",
   },
   {
     id: "puente-romano",
@@ -44,6 +80,24 @@ const PLACES = [
       "Puente de origen romano (siglo I a.C.) sobre el río Guadalquivir, con vistas privilegiadas de la Mezquita y la Torre de la Calahorra. Uno de los rincones más fotografiados de la ciudad.",
     horario: "Abierto 24h (peatonal)",
     precio: "Gratis",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Puente_Romano_Cordoba.jpg/500px-Puente_Romano_Cordoba.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Puente_sobre_el_Guadalquivir_de_noche_con_la_Mezquita_de_C%C3%B3rdoba_iluminada_al_fondo.jpg/500px-Puente_sobre_el_Guadalquivir_de_noche_con_la_Mezquita_de_C%C3%B3rdoba_iluminada_al_fondo.jpg",
+    ],
+    tiempoVisita: "20-30 min",
+    comoLlegar: "Justo a los pies de la Mezquita, cruzando la Puerta del Puente",
+    porQueVisitar:
+      "Es la imagen más fotografiada de Córdoba: un puente de origen romano con vistas directas a la Mezquita y la Torre de la Calahorra a ambos lados del Guadalquivir.",
+    historia:
+      "Construido en el siglo I a.C. como parte de la Vía Augusta, fue durante casi dos mil años el único puente de la ciudad sobre el Guadalquivir. Ha sido reconstruido varias veces a lo largo de la historia, conservando su trazado y 16 arcos originales. En su extremo sur se alza la estatua de San Rafael, patrón de la ciudad.",
+    consejoLocal: [
+      "El atardecer, con la Mezquita iluminada de fondo, es el mejor momento para fotografiarlo.",
+      "Camina hasta el centro exacto del puente para el encuadre clásico.",
+      "Desde la Torre de la Calahorra, en la otra orilla, la perspectiva conjunta es aún mejor.",
+    ],
+    esGratis: true,
+    imprescindible: true,
+    accesibilidad: "Totalmente accesible, superficie plana y peatonal.",
   },
   {
     id: "juderia",
@@ -58,6 +112,24 @@ const PLACES = [
       "Barrio medieval de calles estrechas y encaladas, patios floridos y plazoletas con encanto. Fue el antiguo barrio judío y hoy es Patrimonio de la Humanidad.",
     horario: "Abierto 24h",
     precio: "Gratis",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cordoba%2C_Spain_%2811174916253%29.jpg/500px-Cordoba%2C_Spain_%2811174916253%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Calleja_de_las_Flores_%28C%C3%B3rdoba%29.jpg/500px-Calleja_de_las_Flores_%28C%C3%B3rdoba%29.jpg",
+    ],
+    tiempoVisita: "1-2 horas paseando",
+    comoLlegar: "Rodea la Mezquita por el norte y el oeste",
+    porQueVisitar:
+      "Perderse por sus callejones blancos, patios floridos y plazoletas es de las experiencias más entrañables de Córdoba, sobre todo si viajas en primavera.",
+    historia:
+      "Fue el barrio judío de la ciudad desde la Edad Media hasta la expulsión de 1492, y conserva su trazado original de calles estrechas e irregulares pensado para dar sombra. Hoy conviven en él la Sinagoga, la Casa de Sefarad, tiendas de artesanía y algunas de las tabernas más antiguas de la ciudad.",
+    consejoLocal: [
+      "La Calleja de las Flores, con la torre de la Mezquita enmarcada al fondo, es la foto más icónica del barrio.",
+      "Ve temprano o al final de la tarde para evitar la multitud de grupos guiados.",
+      "En mayo, durante el Festival de los Patios, muchas casas particulares abren sus patios floridos.",
+    ],
+    esGratis: true,
+    imprescindible: true,
+    accesibilidad: "Calles empedradas y estrechas; puede resultar incómodo para sillas de ruedas o carritos en algunos tramos.",
   },
   {
     id: "sinagoga",
@@ -72,6 +144,19 @@ const PLACES = [
       "Una de las tres sinagogas medievales mejor conservadas de España, con decoración mudéjar de yeserías. Pequeña joya escondida en la Judería.",
     horario: "Mar-Dom 9:00-21:00",
     precio: "Gratis (ciudadanos UE), 0,30€ resto",
+    tiempoVisita: "15-20 min",
+    comoLlegar: "En el corazón de la Judería, a 3 min de la Mezquita",
+    porQueVisitar:
+      "Es una de las tres únicas sinagogas medievales que quedan en pie en toda España, con una decoración de yeserías mudéjares excepcional para su reducido tamaño.",
+    historia:
+      "Construida en 1315, es un raro ejemplo de arquitectura mudéjar aplicada a un edificio religioso judío. Tras la expulsión de los judíos en 1492 fue reutilizada como hospital, ermita y hasta escuela, lo que probablemente ayudó a conservarla. Fue declarada Monumento Nacional en 1885.",
+    consejoLocal: [
+      "Al ser tan pequeña, se visita rápido: combínala con la Casa de Sefarad, a un minuto andando.",
+      "Fíjate en las inscripciones en hebreo de los muros, entre las pocas que se conservan de su época.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Acceso con un escalón en la entrada; interior de un único ambiente sin desniveles.",
   },
   {
     id: "palacio-viana",
@@ -87,6 +172,24 @@ const PLACES = [
     horario: "Lun-Sáb 10:00-19:00, Dom 10:00-15:00",
     precio: "8€ (patios), 10€ (patios + casa)",
     ticketUrl: "https://entradas.palaciodeviana.com/",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Portada_del_Palacio_de_Viana%2C_C%C3%B3rdoba.jpg/500px-Portada_del_Palacio_de_Viana%2C_C%C3%B3rdoba.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Palacio_de_Viana_%28C%C3%B3rdoba%29._Patio_de_Recibo.jpg/500px-Palacio_de_Viana_%28C%C3%B3rdoba%29._Patio_de_Recibo.jpg",
+    ],
+    tiempoVisita: "1-1,5 horas",
+    comoLlegar: "En el barrio de Santa Marina, a 10-15 min a pie del centro",
+    porQueVisitar:
+      "Ningún otro lugar de Córdoba reúne tantos patios distintos bajo un mismo techo: doce, cada uno con su propio carácter, y una de las mejores formas de entender la tradición floral cordobesa sin coincidir con las aglomeraciones del Festival de los Patios.",
+    historia:
+      "Palacio señorial construido a partir del siglo XIV y ampliado por sucesivas generaciones familiares hasta el siglo XVIII, cuando pasó a manos de los marqueses de Viana. Fue donado a una entidad bancaria en 1980 y convertido en museo, conservando mobiliario, tapices y una importante colección de armas y porcelanas.",
+    consejoLocal: [
+      "Si tienes poco tiempo, elige la visita de 'solo patios', más económica y suficiente para disfrutar lo esencial.",
+      "La glicina en flor (abril-mayo) en el Patio de la Alberca es uno de los rincones más fotografiados.",
+      "Combina la visita con un paseo por la cercana Plaza de Capuchinos y el Cristo de los Faroles.",
+    ],
+    esGratis: false,
+    imprescindible: true,
+    accesibilidad: "Los patios en planta baja son accesibles; el interior de la casa tiene escaleras sin ascensor.",
   },
   {
     id: "templo-romano",
@@ -101,6 +204,19 @@ const PLACES = [
       "Restos monumentales de un templo romano del siglo I, con columnas corintias reconstruidas, ubicado junto al Ayuntamiento.",
     horario: "Exterior visible 24h",
     precio: "Gratis",
+    tiempoVisita: "10 min",
+    comoLlegar: "Junto al Ayuntamiento, a 5 min de la Plaza de las Tendillas",
+    porQueVisitar:
+      "Sus columnas corintias reconstruidas, iluminadas de noche, son un recordatorio inesperado de que Córdoba (Corduba) fue capital de la Bética romana.",
+    historia:
+      "Data del siglo I d.C. y estuvo dedicado al culto imperial. Permaneció oculto bajo edificios posteriores hasta que fue descubierto en 1950 durante unas obras de ampliación del Ayuntamiento, y sus columnas se reconstruyeron parcialmente para dar idea de su volumen original.",
+    consejoLocal: [
+      "De noche, iluminado, es uno de los rincones con más encanto del centro y casi siempre está vacío.",
+      "Se ve perfectamente desde la calle, sin necesidad de entrada ni horario.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Se observa desde la acera; totalmente accesible al ser un exterior a pie de calle.",
   },
   {
     id: "calahorra",
@@ -116,6 +232,19 @@ const PLACES = [
     horario: "Todos los días 10:00-18:00 (varía según temporada)",
     precio: "4,50€",
     ticketUrl: "https://www.torrecalahorra.es/horario-tarifas/",
+    tiempoVisita: "45 min - 1 hora",
+    comoLlegar: "Al otro lado del Puente Romano, orilla sur del río",
+    porQueVisitar:
+      "Además del museo sobre la convivencia de culturas, subir a su torre ofrece una de las postales más bonitas de Córdoba: el Puente Romano y la Mezquita desde el otro lado del río.",
+    historia:
+      "Fortificación de origen almohade (siglo XII) que defendía el acceso sur al puente romano. Fue reconstruida por orden de Enrique II de Castilla en el siglo XIV para controlar la entrada a la ciudad. Desde 1936 alberga un museo dedicado a la convivencia de musulmanes, judíos y cristianos en la Córdoba medieval.",
+    consejoLocal: [
+      "Sube a la terraza superior para la mejor vista del puente y la Mezquita juntos.",
+      "Es una buena opción para el mediodía, cuando el sol de frente dificulta las fotos desde el puente.",
+    ],
+    esGratis: false,
+    imprescindible: false,
+    accesibilidad: "El interior tiene escaleras estrechas de caracol en varios tramos; no accesible en silla de ruedas.",
   },
   {
     id: "corredera",
@@ -130,6 +259,19 @@ const PLACES = [
       "Gran plaza porticada de estilo castellano, poco habitual en Andalucía. Antiguo escenario de corridas de toros y hoy llena de bares y un mercado de abastos.",
     horario: "Abierto 24h",
     precio: "Gratis",
+    tiempoVisita: "20-30 min",
+    comoLlegar: "A 8 min a pie de la Mezquita, en el barrio de la Axerquía",
+    porQueVisitar:
+      "Es la única plaza mayor porticada de estilo castellano en toda Andalucía, con un ambiente de tapeo muy auténtico, lejos del circuito turístico más denso.",
+    historia:
+      "Construida en el siglo XVII sobre el antiguo Corral de Comedias y una plaza de mercado, fue durante siglos escenario de corridas de toros, ejecuciones públicas y fiestas reales. Hoy conserva su mercado de abastos cubierto en uno de sus laterales.",
+    consejoLocal: [
+      "Por las mañanas hay mercado de abastos; por las tardes-noches se llena de terrazas.",
+      "Es un buen lugar para tapear alejado de los precios turísticos de la zona de la Mezquita.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Plaza completamente llana y accesible, con soportales.",
   },
   {
     id: "medina-azahara",
@@ -145,6 +287,24 @@ const PLACES = [
     horario: "Mar-Sáb 9:00-18:30, Dom 9:00-15:30 (varía según temporada)",
     precio: "Gratis (entrada con reserva previa), autobús turístico opcional",
     ticketUrl: "https://www.museosdeandalucia.es/web/conjuntoarqueologicomadinatalzahra/",
+    galeria: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Puerta_del_primer_ministro.JPG/500px-Puerta_del_primer_ministro.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Sal%C3%B3n_Rico_-_Medina_Azahara%2C_C%C3%B3rdoba.jpg/500px-Sal%C3%B3n_Rico_-_Medina_Azahara%2C_C%C3%B3rdoba.jpg",
+    ],
+    tiempoVisita: "2-3 horas (incluye traslado)",
+    comoLlegar: "A 8 km del centro; autobús turístico desde el Centro de Interpretación (Paseo de la Victoria) o coche propio",
+    porQueVisitar:
+      "Es el yacimiento arqueológico más importante de la España musulmana: una ciudad palatina entera construida para deslumbrar, que muestra la escala real del poder del Califato de Córdoba en su momento de máximo esplendor.",
+    historia:
+      "Mandada construir en el año 936 por Abderramán III para trasladar la capital del califato fuera de Córdoba, llegó a albergar administración, ejército y una lujosa corte con miles de habitantes. Fue destruida y saqueada en las guerras civiles de comienzos del siglo XI, apenas 70 años después de su fundación, y quedó sepultada y olvidada durante siglos hasta que las excavaciones sistemáticas comenzaron en 1911. Se calcula que solo se ha excavado una décima parte del yacimiento total.",
+    consejoLocal: [
+      "Reserva la entrada gratuita con antelación en la web oficial; las plazas se agotan en temporada alta.",
+      "Empieza siempre por el museo del centro de interpretación: ayuda mucho a entender las ruinas.",
+      "Ve a primera hora en verano: apenas hay sombra en el yacimiento.",
+    ],
+    esGratis: true,
+    imprescindible: true,
+    accesibilidad: "El centro de interpretación es accesible; el yacimiento tiene tramos de terreno irregular.",
   },
   {
     id: "molino-albolafia",
@@ -159,6 +319,19 @@ const PLACES = [
       "Antigua noria islámica de origen almohade sobre el Guadalquivir, junto al Puente Romano. Su rueda figura en el escudo de la ciudad desde el siglo XIV.",
     horario: "Se contempla desde el exterior las 24h",
     precio: "Gratis",
+    tiempoVisita: "10 min",
+    comoLlegar: "Junto al Puente Romano, orilla norte",
+    porQueVisitar:
+      "Es uno de los símbolos históricos de la ciudad (aparece en su escudo) y un buen recordatorio de la ingeniería hidráulica andalusí.",
+    historia:
+      "De origen almohade (siglos XII-XIII), se utilizó para elevar agua del Guadalquivir hasta los jardines del Alcázar. Cuenta la leyenda que la reina Isabel la Católica ordenó desmontar parte del mecanismo porque el ruido de la rueda no la dejaba dormir.",
+    consejoLocal: [
+      "Se ve muy bien desde el propio Puente Romano; no hace falta acercarse más.",
+      "Combínalo con la Puerta del Puente, a menos de un minuto caminando.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Se observa desde el puente o la orilla; exterior accesible.",
   },
   {
     id: "puerta-puente",
@@ -173,6 +346,19 @@ const PLACES = [
       "Antigua puerta de la muralla romana, remodelada en el siglo XVI a modo de arco triunfal para la visita de Felipe II. Incluye un mirador con vistas al conjunto monumental.",
     horario: "Lun-Dom 10:00-14:00 (mirador y sala de exposiciones)",
     precio: "1€ (gratis menores de 4 años)",
+    tiempoVisita: "15-20 min",
+    comoLlegar: "En el extremo norte del Puente Romano",
+    porQueVisitar:
+      "Su mirador interior ofrece una perspectiva elevada poco habitual del Puente Romano y la Mezquita, por un precio simbólico.",
+    historia:
+      "Construida en el siglo XVI por Hernán Ruiz III como arco triunfal para la visita de Felipe II, sustituyó a una puerta medieval anterior de la muralla romana. Formaba parte del recinto amurallado que protegía el acceso al puente.",
+    consejoLocal: [
+      "Subir al mirador interior es rápido y barato, y regala una vista distinta a la del propio puente.",
+      "Buena parada de 10 minutos si vienes o vas hacia la Torre de la Calahorra.",
+    ],
+    esGratis: false,
+    imprescindible: false,
+    accesibilidad: "El mirador se accede por escaleras; no apto para sillas de ruedas.",
   },
   {
     id: "banos-califales",
@@ -187,6 +373,19 @@ const PLACES = [
       "Baños árabes del siglo X mandados construir por Al-Hakam II junto al antiguo Alcázar andalusí, con sus salas fría, templada y caliente bien conservadas.",
     horario: "Mar-Vie 8:15-20:15, Sáb 9:30-17:30, Dom y festivos 8:15-14:15 (invierno; varía en verano)",
     precio: "3€ (estudiantes 1,50€, menores de 13 gratis)",
+    tiempoVisita: "30-45 min",
+    comoLlegar: "Junto al Alcázar, en el Campo Santo de los Mártires",
+    porQueVisitar:
+      "Es uno de los conjuntos termales islámicos mejor conservados de España, y ayuda a imaginar la vida cotidiana de la corte califal más allá de los grandes monumentos.",
+    historia:
+      "Construidos en el siglo X por orden de Al-Hakam II junto al Alcázar andalusí, seguían el modelo de las termas romanas con salas fría, templada y caliente. Permanecieron ocultos hasta que unas obras de jardinería los sacaron a la luz en 1903; se excavaron en profundidad entre 1961 y 1964.",
+    consejoLocal: [
+      "Se visita en poco tiempo: combínalo con el Alcázar, justo al lado.",
+      "Fíjate en las estrellas caladas de las bóvedas, que dejaban pasar la luz para marcar las horas.",
+    ],
+    esGratis: false,
+    imprescindible: false,
+    accesibilidad: "Espacio en un único nivel, aunque con algunos escalones puntuales entre salas.",
   },
   {
     id: "tendillas",
@@ -201,6 +400,19 @@ const PLACES = [
       "El corazón comercial y social de la Córdoba moderna, con la estatua ecuestre del Gran Capitán y un curioso reloj que suena por soleares en vez de campanadas.",
     horario: "Abierto 24h",
     precio: "Gratis",
+    tiempoVisita: "15-20 min",
+    comoLlegar: "En el centro comercial de la ciudad, a 10 min a pie de la Mezquita",
+    porQueVisitar:
+      "Es el punto de encuentro de los cordobeses de toda la vida, con un reloj tan peculiar que merece la pena esperar a que suene en punto.",
+    historia:
+      "Su nombre viene de las pequeñas tiendas ('tendillas') que tuvo la Orden de Calatrava desde el siglo XIV. Adoptó su forma actual en los años 20 del siglo XX, tras derribar el antiguo Hotel Suizo, y desde 1961 su reloj toca las horas con una guitarra flamenca en vez de campanadas.",
+    consejoLocal: [
+      "Si estás cerca en una hora en punto, párate un momento a escuchar el reloj por soleares.",
+      "Es un buen punto de referencia para orientarse: de aquí salen las principales calles comerciales.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Plaza totalmente llana y accesible.",
   },
   {
     id: "casa-sefarad",
@@ -215,6 +427,19 @@ const PLACES = [
       "Centro cultural en plena Judería dedicado a recuperar la memoria sefardí, con salas sobre la sinagoga, Maimónides, la música y la vida cotidiana judeoespañola.",
     horario: "Mar-Sáb 11:00-18:00",
     precio: "4,50€ (estudiantes 3,50€)",
+    tiempoVisita: "45 min - 1 hora",
+    comoLlegar: "En plena Judería, a 2 min de la Sinagoga",
+    porQueVisitar:
+      "Complementa perfectamente la visita a la Sinagoga, con salas temáticas sobre la vida y la cultura judeoespañola que ayudan a entender el barrio en el que estás caminando.",
+    historia:
+      "Abrió en 2006 en un conjunto de casas del siglo XIV rehabilitadas, muy cerca de la Sinagoga. Su colección reúne objetos rituales, documentos y música tradicional sefardí, además de una sala dedicada al filósofo cordobés Maimónides, una de las figuras judías más importantes de la Edad Media.",
+    consejoLocal: [
+      "Visítala justo después de la Sinagoga para tener el contexto histórico fresco.",
+      "Algunos días organizan pequeños conciertos de música sefardí: consulta la agenda en su web.",
+    ],
+    esGratis: false,
+    imprescindible: false,
+    accesibilidad: "Casa histórica con varios desniveles y escalones entre salas.",
   },
   {
     id: "museo-arqueologico",
@@ -229,6 +454,19 @@ const PLACES = [
       "Colección arqueológica y etnológica alojada en el renacentista Palacio de los Páez de Castillejo, con importantes piezas de época romana e islámica.",
     horario: "Mar-Sáb 9:00-20:00, Dom y festivos 9:00-15:00 (horario reducido en verano)",
     precio: "Gratis (ciudadanos UE), 1,50€ resto",
+    tiempoVisita: "1-1,5 horas",
+    comoLlegar: "A 5 min a pie de la Plaza de las Tendillas",
+    porQueVisitar:
+      "Reúne algunas de las piezas romanas e islámicas más importantes encontradas en la ciudad, en un edificio renacentista que es una obra de arte en sí mismo.",
+    historia:
+      "Instalado desde 1868 en el Palacio de los Páez de Castillejo, un palacio renacentista del siglo XVI diseñado por Hernán Ruiz II. Sus fondos abarcan desde la prehistoria hasta la época islámica, con una notable colección de mosaicos, esculturas romanas y cerámica califal.",
+    consejoLocal: [
+      "La entrada es gratuita para ciudadanos de la UE: lleva el DNI o pasaporte.",
+      "No te pierdas el patio interior del propio palacio, con sus arcos mudéjares.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Cuenta con ascensor y accesos adaptados en la mayor parte del recorrido.",
   },
   {
     id: "san-lorenzo",
@@ -243,6 +481,19 @@ const PLACES = [
       "Una de las iglesias fernandinas del siglo XIII, de estilo gótico-mudéjar, con un notable rosetón y un campanario renacentista obra de Hernán Ruiz II.",
     horario: "Abierta al culto; horario de visita variable",
     precio: "Gratis",
+    tiempoVisita: "15-20 min",
+    comoLlegar: "A 15 min a pie al noreste del centro, barrio de San Lorenzo",
+    porQueVisitar:
+      "Es de las mejor conservadas entre las 'iglesias fernandinas' de Córdoba, con un rosetón gótico que pocos turistas llegan a ver por estar fuera del circuito más transitado.",
+    historia:
+      "Construida en el siglo XIII tras la conquista cristiana de la ciudad, sobre una antigua mezquita de barrio, como parte del programa de doce iglesias que Fernando III mandó levantar. Su campanario renacentista, añadido en el siglo XVI, es obra de Hernán Ruiz II, el mismo arquitecto de la torre de la Mezquita-Catedral.",
+    consejoLocal: [
+      "Se sale un poco del centro turístico, así que suele estar tranquila.",
+      "Combínala con un paseo por el barrio de San Lorenzo, de los más auténticos y menos masificados.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Acceso con escalón en la puerta principal; interior de nave única sin grandes desniveles.",
   },
   {
     id: "torre-malmuerta",
@@ -257,6 +508,47 @@ const PLACES = [
       "Torre albarrana del siglo XV construida para defender la muralla de la Axerquía, envuelta en una célebre leyenda trágica cordobesa.",
     horario: "Se contempla desde el exterior las 24h",
     precio: "Gratis",
+    tiempoVisita: "10 min",
+    comoLlegar: "A 15 min a pie al norte del centro, junto a la Ronda de los Tejares",
+    porQueVisitar:
+      "Es una de las torres defensivas mejor conservadas de la antigua muralla, con una leyenda trágica que los cordobeses todavía cuentan.",
+    historia:
+      "Construida entre 1406 y 1408 por orden de Enrique III de Castilla para reforzar la muralla de la Axerquía, formaba parte del sistema defensivo que rodeaba la ciudad medieval. Su nombre proviene de una leyenda del siglo XIX sobre un noble que, tras matar por error a su esposa creyéndola infiel, quedó atormentado y encerrado en la torre.",
+    consejoLocal: [
+      "Se ve bien desde la calle sin necesidad de entrar (normalmente no tiene visitas al interior).",
+      "Es un buen punto de paso si caminas desde el centro hacia la estación de tren.",
+    ],
+    esGratis: true,
+    imprescindible: false,
+    accesibilidad: "Se observa desde el exterior; entorno urbano accesible.",
+  },
+  {
+    id: "caballerizas-reales",
+    nombre: "Caballerizas Reales",
+    categoria: "Monumento",
+    icono: "landmark",
+    lat: 37.8757,
+    lng: -4.7803,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Caballerizas_Reales_de_C%C3%B3rdoba.jpg/500px-Caballerizas_Reales_de_C%C3%B3rdoba.jpg",
+    descripcion:
+      "Cuadras reales del siglo XVI donde nació la raza de caballo español (Pura Raza Española), junto al Alcázar. Hoy ofrecen espectáculos ecuestres y visitas guiadas.",
+    horario: "Mar 10:00-13:30 y 16:30-19:30, Mié-Sáb 10:00-13:30 y 17:30-20:30",
+    precio: "16,50€ adultos, 11,50€ niños 3-12 años, gratis menores de 3",
+    ticketUrl: "https://caballerizasreales.com/",
+    tiempoVisita: "45 min - 1 hora (más si hay espectáculo)",
+    comoLlegar: "Junto al Alcázar, a 5 min a pie de la Mezquita",
+    porQueVisitar:
+      "Es el lugar de nacimiento del caballo andaluz (Pura Raza Español), con una nave que García Lorca comparó con 'una catedral para caballos'.",
+    historia:
+      "Fundadas en 1572 por Felipe II para criar caballos para la Casa Real, dieron origen al Pura Raza Español cruzando ejemplares locales con caballos árabes y berberiscos. Un incendio a mediados del siglo XVIII obligó a reconstruirlas casi por completo. Fueron declaradas Monumento Histórico Nacional en 1929.",
+    consejoLocal: [
+      "Si te gustan los caballos, reserva con antelación alguno de los espectáculos ecuestres.",
+      "La nave principal, con sus tres naves de bóveda de arista, merece la visita aunque no haya espectáculo.",
+    ],
+    esGratis: false,
+    imprescindible: false,
+    accesibilidad: "Nave principal accesible en superficie llana.",
   },
 ];
 

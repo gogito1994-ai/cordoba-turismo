@@ -45,10 +45,24 @@ document.addEventListener("DOMContentLoaded", () => {
     lista.forEach((p) => {
       const marker = L.marker([p.lat, p.lng]).addTo(map);
       marker.bindPopup(
-        `<h4>${Icon(p.icono)} ${tr(p, "places", "nombre")}</h4><p>${trCategory(p.categoria)}</p><p>${tr(p, "places", "descripcion")}</p>`
+        `<h4>${Icon(p.icono)} ${tr(p, "places", "nombre")}</h4><p>${trCategory(p.categoria)}</p><p>${tr(p, "places", "descripcion")}</p><a class="leaflet-popup-link" href="lugar.html?id=${p.id}">${t("map_popup_link")}</a>`
       );
+      marker._placeId = p.id;
       markers.push(marker);
     });
+  }
+
+  function focusPlace(id) {
+    const target = PLACES.find((p) => p.id === id);
+    if (!target) return;
+    if (activa !== "Todos" && target.categoria !== activa) {
+      activa = "Todos";
+      renderFiltros();
+      renderMarkers();
+    }
+    map.setView([target.lat, target.lng], 17);
+    const marker = markers.find((m) => m._placeId === id);
+    if (marker) marker.openPopup();
   }
 
   document.addEventListener("lang-changed", () => {
@@ -58,4 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderFiltros();
   renderMarkers();
+
+  const focusId = new URLSearchParams(window.location.search).get("focus");
+  if (focusId) focusPlace(focusId);
 });
