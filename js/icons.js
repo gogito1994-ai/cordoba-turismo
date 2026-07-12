@@ -61,6 +61,9 @@ const ICON_PATHS = {
     '<rect x="3.5" y="7.5" width="17" height="12.5" rx="2"/><path d="M9 7.5V5.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3.5 13h17M11 13v2"/>',
   cart: '<circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/><path d="M3 4h2.2l2.2 12.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6L21 8.2H6.4"/>',
   pharmacy: '<rect x="4" y="4" width="16" height="16" rx="5"/><path d="M12 8.2v7.6M8.2 12h7.6"/>',
+  user: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/>',
+  users:
+    '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.6 2.7-6.5 6-6.5s6 2.9 6 6.5"/><circle cx="17.5" cy="9" r="2.6"/><path d="M21 20c0-2.9-1.8-5.3-4.2-6.1"/>',
 };
 
 function Icon(name, className) {

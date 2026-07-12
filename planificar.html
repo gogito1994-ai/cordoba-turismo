@@ -3,13 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Transporte — Descubre Córdoba</title>
+<title>Planifica tu visita — Descubre Córdoba</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
 </head>
-<body data-page="transporte" data-i18n-title="transport_title">
+<body data-page="planificar" data-i18n-title="planner_title">
 
 <header class="site-header">
   <nav class="nav-bar">
@@ -35,10 +41,12 @@
   </nav>
 </header>
 
-<section class="section container">
-  <h2 class="section-title" data-i18n="transport_title">Cómo moverte</h2>
-  <p class="section-subtitle" data-i18n="transport_subtitle">Transporte dentro de Córdoba y cómo llegar a la ciudad.</p>
-  <div class="grid" id="transport-grid"></div>
+<section class="section container planner-section">
+  <h2 class="section-title" data-i18n="planner_title">Planifica tu visita</h2>
+  <p class="section-subtitle" data-i18n="planner_subtitle">Responde 5 preguntas rápidas y recibe un itinerario a medida por Córdoba.</p>
+
+  <div id="planner-quiz" class="planner-quiz"></div>
+  <div id="planner-result" class="planner-result" hidden></div>
 </section>
 
 <footer class="site-footer">
@@ -76,13 +84,19 @@
   </div>
 </footer>
 
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
 <script src="js/data.js"></script>
+<script src="js/map-data.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>
 <script src="js/lang.js"></script>
-<script src="js/transporte.js"></script>
+<script src="js/planificador.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
