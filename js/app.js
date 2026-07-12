@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupStaticIcons();
   setupThemeToggle();
   setupNav();
+  setupBottomNav();
   setupHeaderScroll();
   setupBackToTop();
   setupLightbox();
@@ -10,7 +11,88 @@ document.addEventListener("DOMContentLoaded", () => {
   setupReveal();
   setupFooterYear();
   setupHeroSlideshow();
+  setupServiceWorker();
+  setupInstallBanner();
 });
+
+function setupServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+
+function setupInstallBanner() {
+  let deferredPrompt = null;
+  const dismissed = localStorage.getItem("cordoba-install-dismissed");
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (dismissed) return;
+    showInstallBanner();
+  });
+
+  function showInstallBanner() {
+    if (document.querySelector(".install-banner")) return;
+    const banner = document.createElement("div");
+    banner.className = "install-banner";
+    banner.innerHTML = `
+      <span class="install-banner-icon">${Icon("landmark")}</span>
+      <div class="install-banner-text">
+        <strong>${t("install_banner_title")}</strong>
+        <p>${t("install_banner_desc")}</p>
+      </div>
+      <button class="btn btn-primary install-banner-btn" type="button">${t("install_banner_cta")}</button>
+      <button class="install-banner-close" type="button" aria-label="${t("aria_close")}">${Icon("x")}</button>
+    `;
+    document.body.appendChild(banner);
+    void banner.offsetWidth;
+    banner.classList.add("show");
+
+    banner.querySelector(".install-banner-btn").addEventListener("click", () => {
+      banner.remove();
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.finally(() => {
+        deferredPrompt = null;
+      });
+    });
+    banner.querySelector(".install-banner-close").addEventListener("click", () => {
+      localStorage.setItem("cordoba-install-dismissed", "1");
+      banner.remove();
+    });
+  }
+}
+
+function setupBottomNav() {
+  if (document.querySelector(".bottom-nav")) return;
+  const nav = document.createElement("nav");
+  nav.className = "bottom-nav";
+  nav.setAttribute("aria-label", "Navegación principal");
+  nav.innerHTML = `
+    <a href="index.html" data-page="home" class="bottom-nav-item"><span data-icon="home"></span><span data-i18n="nav_home">Inicio</span></a>
+    <a href="mapa.html" data-page="mapa" class="bottom-nav-item"><span data-icon="map"></span><span data-i18n="nav_map">Mapa</span></a>
+    <a href="planificar.html" data-page="planificar" class="bottom-nav-item"><span data-icon="route"></span><span data-i18n="nav_planner">Planificar</span></a>
+    <a href="index.html?chat=1" class="bottom-nav-item"><span data-icon="chat"></span><span data-i18n="nav_assistant">Asistente</span></a>
+  `;
+  document.body.appendChild(nav);
+  nav.querySelectorAll("[data-icon]").forEach((el) => {
+    el.innerHTML = Icon(el.dataset.icon);
+  });
+  nav.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.dataset.i18n);
+  });
+
+  const current = document.body.dataset.page;
+  nav.querySelectorAll(".bottom-nav-item[data-page]").forEach((a) => {
+    if (a.dataset.page === current) a.classList.add("active");
+  });
+
+  document.addEventListener("lang-changed", () => {
+    nav.querySelectorAll("[data-i18n]").forEach((el) => {
+      el.textContent = t(el.dataset.i18n);
+    });
+  });
+}
 
 function setupThemeToggle() {
   const btn = document.querySelector(".theme-toggle");

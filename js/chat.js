@@ -152,12 +152,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("lang-changed", renderSuggestions);
 
-  const askParam = new URLSearchParams(window.location.search).get("ask");
+  const params = new URLSearchParams(window.location.search);
+  const askParam = params.get("ask");
   if (askParam) {
     openChat();
     sendMessage(askParam);
     const url = new URL(window.location.href);
     url.searchParams.delete("ask");
+    window.history.replaceState({}, "", url);
+  } else if (params.get("chat")) {
+    openChat();
+    const url = new URL(window.location.href);
+    url.searchParams.delete("chat");
     window.history.replaceState({}, "", url);
   }
 });

@@ -3,23 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lugar — Descubre Córdoba</title>
+<title>Ahora mismo en Córdoba — Descubre Córdoba</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
-<script>(function(){var t=localStorage.getItem('cordoba-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
 <link rel="manifest" href="manifest.json" />
 <meta name="theme-color" content="#bd4e2a" />
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
+<script>(function(){var t=localStorage.getItem('cordoba-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
 </head>
-<body data-page="lugares">
+<body data-page="ahora" data-i18n-title="ahora_title">
 
 <header class="site-header">
   <nav class="nav-bar">
@@ -47,8 +41,28 @@
   </nav>
 </header>
 
-<section class="section container" id="lugar-content">
-  <p class="empty-state" data-i18n="lugar_loading">Cargando...</p>
+<section class="section container ahora-section">
+  <h2 class="section-title" data-i18n="ahora_title">Ahora mismo en Córdoba</h2>
+  <p class="section-subtitle" data-i18n="ahora_subtitle">Pensado para consultar en la calle: clima, consejo del día, qué tienes cerca y qué está abierto.</p>
+
+  <div class="ahora-top-grid">
+    <div class="ahora-weather-card" id="ahora-weather">
+      <p class="empty-state" data-i18n="ahora_loading">Cargando...</p>
+    </div>
+    <div class="ahora-tip-card" id="ahora-tip"></div>
+  </div>
+
+  <div class="ahora-nearby-block">
+    <button class="btn btn-primary" id="ahora-nearby-btn">
+      <span data-icon="compass"></span> <span data-i18n="ahora_nearby_button">¿Qué tengo cerca?</span>
+    </button>
+    <div id="ahora-nearby-results" class="ahora-nearby-results"></div>
+  </div>
+
+  <div class="ahora-open-block">
+    <h3 data-i18n="ahora_open_heading">Abierto ahora</h3>
+    <div class="ahora-open-list" id="ahora-open-list"></div>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -67,7 +81,6 @@
         <li><a href="lugares.html" data-i18n="nav_places">Lugares</a></li>
         <li><a href="mapa.html" data-i18n="nav_map">Mapa</a></li>
         <li><a href="planificar.html" data-i18n="nav_planner">Planificar</a></li>
-        <li><a href="ahora.html" data-i18n="nav_ahora">Ahora</a></li>
         <li><a href="eventos.html" data-i18n="nav_events">Eventos</a></li>
         <li><a href="gastronomia.html" data-i18n="nav_gastronomy">Gastronomía</a></li>
         <li><a href="transporte.html" data-i18n="nav_transport">Transporte</a></li>
@@ -87,18 +100,14 @@
   </div>
 </footer>
 
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
 <script src="js/data.js"></script>
+<script src="js/map-data.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>
 <script src="js/lang.js"></script>
-<script src="js/lugar.js"></script>
+<script src="js/ahora.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
