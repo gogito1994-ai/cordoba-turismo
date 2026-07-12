@@ -3423,3 +3423,389 @@ body.chat-open {
   width: 26px;
   height: 26px;
 }
+
+/* ============ Eventos: "este mes", calendario, fichas y temporada ============ */
+
+.events-subheading {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 40px 0 18px;
+}
+
+.month-highlight {
+  background: var(--crema);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 24px 28px;
+  margin: 0 0 12px;
+}
+
+.month-highlight .events-subheading,
+.month-highlight .section-title {
+  margin-top: 0;
+}
+
+.month-highlight-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.month-highlight-cta {
+  flex-shrink: 0;
+  color: var(--terracota);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.month-highlight-cta:hover {
+  text-decoration: underline;
+}
+
+.month-highlight-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.month-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 10px 16px;
+  text-decoration: none;
+  color: var(--texto);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.month-highlight-item:hover {
+  border-color: var(--terracota);
+  transform: translateY(-1px);
+}
+
+.month-highlight-item strong {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.month-highlight-item small {
+  display: block;
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+}
+
+.month-highlight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--crema);
+  color: var(--terracota);
+  flex-shrink: 0;
+}
+
+.month-highlight-icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.events-calendar {
+  margin: 40px 0 0;
+}
+
+.events-month-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.events-month-pill {
+  border: 1px solid var(--borde);
+  background: var(--blanco);
+  color: var(--texto);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.events-month-pill.is-current {
+  border-color: var(--terracota);
+}
+
+.events-month-pill.active {
+  background: var(--terracota);
+  border-color: var(--terracota);
+  color: var(--blanco);
+}
+
+.events-month-pill:hover:not(.active) {
+  border-color: var(--terracota);
+}
+
+.event-card-media {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background: var(--ocre);
+}
+
+.event-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-card-badge {
+  display: inline-block;
+  background: var(--ocre-light);
+  color: var(--texto);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-top: 4px;
+}
+
+.event-card-btn {
+  margin-top: 14px;
+  width: 100%;
+  justify-content: center;
+}
+
+.events-punctual-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-punctual-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 14px 18px;
+}
+
+a:has(> .event-punctual-item) {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.event-punctual-date {
+  flex-shrink: 0;
+  min-width: 110px;
+  font-weight: 600;
+  color: var(--terracota);
+  font-size: 0.88rem;
+}
+
+.event-punctual-item strong {
+  display: block;
+  color: var(--texto);
+}
+
+.event-punctual-item p {
+  margin: 2px 0 0;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+/* ---------- modal de ficha de evento ---------- */
+
+.event-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.event-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.event-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 14, 10, 0.55);
+}
+
+.event-modal-panel {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--blanco-cal);
+  border-radius: var(--radio);
+  box-shadow: 0 30px 70px rgba(20, 14, 10, 0.45);
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+
+.event-modal.open .event-modal-panel {
+  transform: translateY(0) scale(1);
+}
+
+.event-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(20, 14, 10, 0.45);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.event-modal-media {
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-modal-body {
+  padding: 24px 26px 30px;
+}
+
+.event-modal-body h2 {
+  font-family: var(--font-display);
+  margin: 10px 0 4px;
+}
+
+.event-modal-body h4 {
+  margin: 22px 0 8px;
+  font-size: 1rem;
+}
+
+.event-modal-tips {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--texto-suave);
+}
+
+.event-modal-tips li {
+  margin-bottom: 6px;
+}
+
+body.event-modal-open {
+  overflow: hidden;
+}
+
+/* ---------- banner de temporada (portada) ---------- */
+
+.season-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 999px;
+  padding: 8px 10px 8px 16px;
+  margin-bottom: 18px;
+  color: var(--blanco);
+  font-size: 0.88rem;
+}
+
+.season-banner-icon {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.season-banner-icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.season-banner-cta {
+  flex-shrink: 0;
+  background: var(--blanco);
+  color: var(--texto);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+:root[data-season="patios"] .season-banner-cta,
+:root[data-season="feria"] .season-banner-cta {
+  color: #8c3a22;
+}
+
+:root[data-season="semana-santa"] .season-banner {
+  background: rgba(91, 58, 110, 0.35);
+}
+
+:root[data-season="semana-santa"] .season-banner-cta {
+  color: #5b3a6e;
+}
+
+:root[data-season="navidad"] .season-banner {
+  background: rgba(47, 107, 79, 0.35);
+}
+
+:root[data-season="navidad"] .season-banner-cta {
+  color: #2f6b4f;
+}
+
+@media (max-width: 640px) {
+  .season-banner {
+    font-size: 0.8rem;
+    padding: 6px 8px 6px 12px;
+  }
+
+  .month-highlight {
+    padding: 18px 20px;
+  }
+
+  .month-highlight-items {
+    flex-direction: column;
+  }
+
+  .event-punctual-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .event-punctual-date {
+    min-width: 0;
+  }
+}

@@ -739,100 +739,256 @@ const DATA_I18N = {
   },
 
   events: {
-    "patios-fest": {
-      en: {
-        nombre: "Córdoba Patios Festival",
-        fecha: "First two weeks of May",
-        lugar: "San Basilio, Alcázar Viejo and other neighborhoods",
-        descripcion:
-          "Locals open the doors of their patios, decorated with potted flowers. A UNESCO Intangible Cultural Heritage.",
-      },
-      fr: {
-        nombre: "Festival des Patios de Cordoue",
-        fecha: "Deux premières semaines de mai",
-        lugar: "Quartiers de San Basilio, Alcázar Viejo et autres",
-        descripcion:
-          "Les Cordouans ouvrent les portes de leurs patios ornés de fleurs en pots. Patrimoine culturel immatériel de l'UNESCO.",
-      },
-    },
     "cruces-mayo": {
       en: {
         nombre: "Festival of the May Crosses",
-        fecha: "Early May",
-        lugar: "Squares across the city",
-        descripcion:
-          "Flower-decked crosses compete across different neighborhoods, accompanied by stalls with music and traditional food.",
+        fechaTexto: "Last days of April and early May",
+        queEs:
+          "Crosses decorated with flowers, shawls and silverware compete in patios and squares across the city. Each cross is usually paired with a stall offering live music, dancing and fino wine.",
+        consejos: [
+          "Visit several neighborhoods at once: San Basilio, San Lorenzo and the Jewish Quarter usually have the best-kept crosses.",
+          "Go at dusk, when the crosses light up and the stall atmosphere picks up.",
+          "It's a good appetizer before the Patios: it lasts just a few days and kicks off the big May season.",
+        ],
+        impacto:
+          "Being the first of May's festivities, it doesn't yet crowd the city like the Patios or the Fair, but it coincides with the start of rising accommodation prices for the month.",
       },
       fr: {
         nombre: "Fête des Croix de Mai",
-        fecha: "Début mai",
-        lugar: "Places de toute la ville",
-        descripcion:
-          "Des croix ornées de fleurs s'affrontent dans différents quartiers, accompagnées de stands de musique et de gastronomie traditionnelle.",
+        fechaTexto: "Derniers jours d'avril et début mai",
+        queEs:
+          "Des croix ornées de fleurs, de châles et d'argenterie s'affrontent dans les patios et les places de toute la ville. Chaque croix est en général accompagnée d'un stand avec musique en direct, danse et vin fino.",
+        consejos: [
+          "Parcourez plusieurs quartiers à la fois : San Basilio, San Lorenzo et la Judería ont souvent les croix les plus soignées.",
+          "Allez-y au coucher du soleil, quand les croix s'illuminent et que l'ambiance des stands s'anime.",
+          "C'est une bonne mise en bouche avant les Patios : ça ne dure que quelques jours et marque le début de la grande saison de mai.",
+        ],
+        impacto:
+          "Étant la première des fêtes de mai, elle ne sature pas encore la ville comme les Patios ou la Feria, mais coïncide avec le début de la hausse des prix des hébergements du mois.",
+      },
+    },
+    "patios-fest": {
+      en: {
+        nombre: "Córdoba Patios Festival",
+        fechaTexto: "First two weeks of May (exact dates each year at patios.cordoba.es)",
+        queEs:
+          "Locals open the doors of their private patios, decked with hundreds of pots of geraniums and carnations around centuries-old wells. Declared UNESCO Intangible Cultural Heritage in 2012.",
+        consejos: [
+          "Go early in the morning or at dusk: at midday, queues at the most famous patios can exceed an hour.",
+          "San Basilio and Alcázar Viejo have the most award-winning patios, but Naranjo or Santa Marina are less crowded.",
+          "Bring water and a hat: the May sun is already strong and most of the route is on foot outdoors.",
+        ],
+        impacto:
+          "This is the tourist peak of the year: accommodation in the centre typically rises 30-50% (with spikes of up to double during the busiest week) and rooms sell out months in advance, so book as early as possible if visiting then.",
+      },
+      fr: {
+        nombre: "Festival des Patios de Cordoue",
+        fechaTexto: "Deux premières semaines de mai (dates exactes chaque année sur patios.cordoba.es)",
+        queEs:
+          "Les Cordouans ouvrent les portes de leurs patios privés, ornés de centaines de pots de géraniums et d'œillets autour de puits centenaires. Patrimoine culturel immatériel de l'UNESCO depuis 2012.",
+        consejos: [
+          "Allez-y tôt le matin ou au coucher du soleil : à midi, les files d'attente aux patios les plus célèbres peuvent dépasser une heure.",
+          "San Basilio et Alcázar Viejo concentrent les patios les plus primés, mais ceux du Naranjo ou de Santa Marina sont moins fréquentés.",
+          "Prévoyez de l'eau et un chapeau : le soleil de mai tape déjà fort et une bonne partie du parcours se fait à pied en extérieur.",
+        ],
+        impacto:
+          "C'est le pic touristique de l'année : les hébergements du centre augmentent en général de 30 à 50 % (avec des pics ponctuels allant jusqu'au double pendant la semaine centrale) et les chambres se réservent des mois à l'avance.",
+      },
+    },
+    "cata-vino": {
+      en: {
+        nombre: "Montilla-Moriles Fino Wine Tasting Fair",
+        fechaTexto: "A weekend in May, coinciding with the Fair",
+        queEs:
+          "A wine fair in Plaza de la Corredera dedicated to the fino wines of the Montilla-Moriles designation of origin, with stalls from local wineries, guided tastings and tapas.",
+        consejos: [
+          "Combine it with a visit to Plaza de la Corredera itself, Andalusia's only arcaded main square.",
+          "Order the fino wine well chilled with ham or cheese, the classic Córdoba pairing.",
+          "If you enjoyed it, Montilla and Lucena (less than an hour from Córdoba) can be visited to see their wineries.",
+        ],
+        impacto:
+          "It overlaps with Fair week, so the centre and the fairground are especially busy in the evenings.",
+      },
+      fr: {
+        nombre: "Dégustation de vin fino Montilla-Moriles",
+        fechaTexto: "Un week-end de mai, en même temps que la Feria",
+        queEs:
+          "Une foire aux vins sur la Plaza de la Corredera dédiée aux vins fino de l'appellation Montilla-Moriles, avec des stands de bodegas locales, des dégustations guidées et des tapas.",
+        consejos: [
+          "Associez-la à une visite de la Plaza de la Corredera elle-même, la seule place à arcades d'Andalousie.",
+          "Demandez le vin fino bien frais, accompagné de jambon ou de fromage, l'accord classique cordouan.",
+          "Si vous avez aimé, Montilla et Lucena (à moins d'une heure de Cordoue) se visitent pour découvrir leurs bodegas.",
+        ],
+        impacto:
+          "Elle coïncide avec la semaine de la Feria, donc le centre et le champ de foire sont particulièrement animés le soir.",
       },
     },
     "feria-salud": {
       en: {
         nombre: "Our Lady of Health Fair",
-        fecha: "Late May",
-        lugar: "El Arenal fairground",
-        descripcion:
-          "Córdoba's big annual fair, with stalls, rides, flamenco and the traditional daytime fair on Paseo de la Victoria.",
+        fechaTexto: "Last week of May (sometimes runs into early June)",
+        queEs:
+          "Córdoba's big annual fair: a fairground in El Arenal with stalls, rides and night concerts, plus the traditional daytime fair with horse rides and flamenco dresses on Paseo de la Victoria.",
+        consejos: [
+          "The daytime fair (Paseo de la Victoria, in the morning) is free and more family-friendly than the fairground at night.",
+          "Many stalls (casetas) are private: to enter without an invitation, look for the municipal ones, open to any visitor.",
+          "Traffic and bus routes change that week: check transporte.html before getting around the city.",
+        ],
+        impacto:
+          "Along with the Patios, this is the busiest hotel-occupancy week of the year in Córdoba; nighttime noise and activity in the centre also rise noticeably.",
       },
       fr: {
-        nombre: "Foire de Nuestra Señora de la Salud",
-        fecha: "Fin mai",
-        lugar: "Champ de foire El Arenal",
-        descripcion:
-          "La grande foire annuelle de Cordoue, avec stands, attractions, flamenco et la traditionnelle foire de jour sur le Paseo de la Victoria.",
+        nombre: "Feria de Nuestra Señora de la Salud",
+        fechaTexto: "Dernière semaine de mai (déborde parfois début juin)",
+        queEs:
+          "La grande foire annuelle de Cordoue : un champ de foire à El Arenal avec stands, attractions et concerts nocturnes, plus la traditionnelle foire de jour avec promenades à cheval et robes de flamenca sur le Paseo de la Victoria.",
+        consejos: [
+          "La foire de jour (Paseo de la Victoria, le matin) est gratuite et plus familiale que le champ de foire de nuit.",
+          "De nombreuses casetas sont privées : pour entrer sans invitation, cherchez les casetas municipales, ouvertes à tous.",
+          "La circulation et les lignes de bus changent cette semaine-là : consultez transporte.html avant de vous déplacer.",
+        ],
+        impacto:
+          "Avec les Patios, c'est la semaine de plus forte occupation hôtelière de l'année à Cordoue ; l'animation et le bruit nocturnes dans le centre augmentent aussi nettement.",
       },
     },
     "noche-flamenco": {
       en: {
         nombre: "White Night of Flamenco",
-        fecha: "Mid-June",
-        lugar: "Squares and stages across the historic center",
-        descripcion:
-          "A whole night dedicated to free live flamenco, with dozens of performances held around the city.",
+        fechaTexto: "Mid or late June (one Saturday, all night)",
+        queEs:
+          "A single night with dozens of free live flamenco performances spread across squares and stages throughout the historic centre, lasting until dawn.",
+        consejos: [
+          "Get the programme with times and stages in advance: there are too many simultaneous performances to catch them all.",
+          "Arrive early at the smaller, more central stages, which fill up before the bigger ones.",
+          "Wear comfortable shoes: it's common to walk between several stages throughout the night.",
+        ],
+        impacto:
+          "It's a very busy night in the centre, but being a single-day event it doesn't usually push up accommodation prices the way the Patios or the Fair do.",
       },
       fr: {
         nombre: "Nuit blanche du flamenco",
-        fecha: "Mi-juin",
-        lugar: "Places et scènes dans tout le centre historique",
-        descripcion:
-          "Toute une nuit dédiée au flamenco en direct et gratuit, avec des dizaines de représentations dans toute la ville.",
+        fechaTexto: "Mi ou fin juin (un samedi, toute la nuit)",
+        queEs:
+          "Une seule nuit avec des dizaines de représentations de flamenco en direct et gratuites, réparties sur des places et des scènes de tout le centre historique, jusqu'au petit matin.",
+        consejos: [
+          "Procurez-vous le programme avec les horaires et les scènes à l'avance : il y a trop de représentations simultanées pour toutes les voir.",
+          "Arrivez tôt aux scènes les plus petites et centrales, qui se remplissent avant les grandes.",
+          "Portez des chaussures confortables : il est courant de se déplacer à pied entre plusieurs scènes toute la nuit.",
+        ],
+        impacto:
+          "C'est une nuit très fréquentée dans le centre, mais étant un événement d'un seul jour, elle ne fait généralement pas grimper les prix des hébergements comme les Patios ou la Feria.",
       },
     },
-    "semana-santa": {
+    "festival-guitarra": {
       en: {
-        nombre: "Holy Week in Córdoba",
-        fecha: "March or April (variable)",
-        lugar: "Historic center",
-        descripcion:
-          "Declared of National Tourist Interest, with centuries-old brotherhoods processing through the streets of the center.",
+        nombre: "Córdoba International Guitar Festival",
+        fechaTexto: "First two weeks of July",
+        queEs:
+          "One of the world's longest-running guitar festivals (held since 1981), with classical, flamenco and rock guitar concerts across the city, plus international courses and workshops.",
+        consejos: [
+          "Check the free street programme as well as the paid concerts: there are usually open performances in central squares.",
+          "The July heat is strong during the day; concerts are mostly at night, so use the mornings for other plans.",
+          "The courses and masterclasses attract guitar students from all over the world, so the musical atmosphere is noticeable across the city those weeks.",
+        ],
+        impacto:
+          "It increases hotel occupancy in the middle of July, though more moderately than May's festivities, since it coincides with the summer heat's regular high season.",
       },
       fr: {
-        nombre: "Semaine sainte de Cordoue",
-        fecha: "Mars ou avril (variable)",
-        lugar: "Centre historique",
-        descripcion:
-          "Déclarée d'intérêt touristique national, avec des confréries centenaires défilant dans les rues du centre.",
+        nombre: "Festival International de la Guitare de Cordoue",
+        fechaTexto: "Deux premières semaines de juillet",
+        queEs:
+          "L'un des festivals de guitare les plus anciens au monde (organisé depuis 1981), avec des concerts de guitare classique, flamenca et rock dans toute la ville, ainsi que des cours et ateliers internationaux.",
+        consejos: [
+          "Consultez la programmation gratuite dans la rue en plus des concerts payants : il y a souvent des représentations ouvertes sur les places du centre.",
+          "En juillet la chaleur est forte la journée ; les concerts sont surtout nocturnes, profitez donc des matinées pour le reste.",
+          "Les cours et masterclasses attirent des étudiants en guitare du monde entier, l'ambiance musicale se ressent dans toute la ville ces semaines-là.",
+        ],
+        impacto:
+          "Il augmente l'occupation hôtelière en plein juillet, mais de façon plus modérée que les fêtes de mai, car il coïncide avec la haute saison estivale habituelle liée à la chaleur.",
       },
     },
     "concurso-flamenco": {
       en: {
         nombre: "National Flamenco Art Competition",
-        fecha: "Every 3 years (next edition TBC)",
-        lugar: "Gran Teatro de Córdoba",
-        descripcion:
-          "One of the most prestigious flamenco competitions in the world, held in Córdoba since 1956.",
+        fechaTexto: "No fixed schedule; the last edition was held in November 2025",
+        queEs:
+          "One of the most prestigious flamenco competitions in the world, held in Córdoba since 1956 at the Gran Teatro. It launches new figures in flamenco singing, dancing and guitar.",
+        consejos: [
+          "It doesn't have a fixed date every year: check the Gran Teatro de Córdoba website to see if it coincides with your visit.",
+          "Tickets for the finals sell out in advance among flamenco fans from across Spain.",
+          "If it doesn't coincide with your visit, the flamenco tablaos in the centre offer live shows year-round.",
+        ],
+        impacto:
+          "Since it's not annual or fixed-date, it has no predictable effect on accommodation prices except on the specific days of the final.",
       },
       fr: {
         nombre: "Concours national d'art flamenco",
-        fecha: "Tous les 3 ans (prochaine édition à confirmer)",
-        lugar: "Gran Teatro de Córdoba",
-        descripcion:
-          "L'un des concours de flamenco les plus prestigieux au monde, organisé à Cordoue depuis 1956.",
+        fechaTexto: "Sans périodicité fixe ; la dernière édition a eu lieu en novembre 2025",
+        queEs:
+          "L'un des concours de flamenco les plus prestigieux au monde, organisé à Cordoue depuis 1956 au Gran Teatro. Il révèle de nouvelles figures du chant, de la danse et de la guitare flamenca.",
+        consejos: [
+          "Il n'a pas de date fixe chaque année : consultez le site du Gran Teatro de Córdoba pour savoir s'il coïncide avec votre visite.",
+          "Les billets pour les finales se vendent à l'avance parmi les amateurs de flamenco de toute l'Espagne.",
+          "Si cela ne coïncide pas avec votre visite, les tablaos flamencos du centre proposent des spectacles en direct toute l'année.",
+        ],
+        impacto:
+          "N'étant ni annuel ni à date fixe, il n'a pas d'effet prévisible sur les prix des hébergements, sauf les jours précis de la finale.",
+      },
+    },
+    "semana-santa": {
+      en: {
+        nombre: "Holy Week in Córdoba",
+        fechaTexto: "A movable week in March or April (depends on the liturgical calendar)",
+        queEs:
+          "Declared a Fiesta of National Tourist Interest. Centuries-old brotherhoods process with their floats of Christ and the Virgin through the streets of the historic centre, often at dawn, accompanied by marching bands and the scent of incense and orange blossom.",
+        consejos: [
+          "Check each brotherhood's official route: some floats pass emblematic spots like the Mosque-Cathedral or the Roman Bridge.",
+          "The Madrugá (the night from Holy Thursday to Good Friday) features the most solemn and crowded floats.",
+          "Many streets in the centre close to traffic and change their usual route: check the map before getting around those days.",
+        ],
+        impacto:
+          "The historic centre fills with chairs and barriers for the processions; accommodation prices rise and booking ahead is worthwhile, though more moderately than in May.",
+      },
+      fr: {
+        nombre: "Semaine sainte de Cordoue",
+        fechaTexto: "Semaine mobile de mars ou avril (selon le calendrier liturgique)",
+        queEs:
+          "Déclarée Fête d'Intérêt Touristique National. Des confréries centenaires processionnent avec leurs pasos du Christ et de la Vierge dans les rues du centre historique, souvent à l'aube, accompagnées de fanfares et du parfum d'encens et de fleurs d'oranger.",
+        consejos: [
+          "Consultez l'itinéraire officiel de chaque confrérie : certains pasos passent par des lieux emblématiques comme la Mosquée-Cathédrale ou le Pont Romain.",
+          "La Madrugada (nuit du Jeudi saint au Vendredi saint) rassemble les pasos les plus solennels et les plus fréquentés.",
+          "De nombreuses rues du centre coupent la circulation et changent leur parcours habituel : consultez le plan avant de vous déplacer ces jours-là.",
+        ],
+        impacto:
+          "Le centre historique se remplit de chaises et de barrières pour les processions ; les prix des hébergements augmentent et il vaut mieux réserver à l'avance, quoique de façon plus modérée qu'en mai.",
+      },
+    },
+    navidad: {
+      en: {
+        nombre: "Christmas in Córdoba",
+        fechaTexto: "All of December, until the Three Kings' Parade on 5 January",
+        queEs:
+          "The city lights up with Christmas decorations downtown, the Municipal Nativity Scene is set up, and squares host markets and concerts, until the Three Kings' Parade on the night of 5 January.",
+        consejos: [
+          "The lights are usually switched on in late November or early December: a good time for an evening walk downtown.",
+          "The Municipal Nativity Scene and those of the brotherhoods and churches are free and spread across the historic centre.",
+          "December is low season for sun tourism, so accommodation prices are usually more affordable than in May, except on New Year's Eve.",
+        ],
+        impacto:
+          "It's low season compared to May or Holy Week, with generally better accommodation prices, though the centre gets especially lively on weekends and New Year's Eve.",
+      },
+      fr: {
+        nombre: "Noël à Cordoue",
+        fechaTexto: "Tout le mois de décembre, jusqu'au défilé des Rois Mages le 5 janvier",
+        queEs:
+          "La ville s'illumine avec les décorations de Noël du centre, la Crèche Municipale est installée, et les places accueillent marchés et concerts, jusqu'au défilé des Rois Mages dans la nuit du 5 janvier.",
+        consejos: [
+          "L'illumination a généralement lieu fin novembre ou début décembre : un bon moment pour une balade nocturne dans le centre.",
+          "La Crèche Municipale et celles des confréries et des églises sont gratuites et réparties dans tout le centre historique.",
+          "Décembre est une basse saison pour le tourisme balnéaire, les prix des hébergements sont donc en général plus abordables qu'en mai, sauf le soir du Nouvel An.",
+        ],
+        impacto:
+          "C'est une basse saison comparée à mai ou à la semaine sainte, avec de meilleurs prix d'hébergement en général, bien que le centre soit particulièrement animé les week-ends et le soir du Nouvel An.",
       },
     },
   },

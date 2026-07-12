@@ -44,8 +44,20 @@
 <section class="section container">
   <h2 class="section-title" data-i18n="events_title">Eventos y agenda cultural</h2>
   <p class="section-subtitle" data-i18n="events_subtitle">Festivales y celebraciones que marcan el calendario cordobés.</p>
-  <div class="grid" id="events-grid"></div>
+
+  <div class="month-highlight" id="events-this-month"></div>
+  <div class="events-calendar" id="events-calendar"></div>
+  <div id="events-fixed-grid"></div>
+  <div id="events-punctual-list"></div>
 </section>
+
+<div class="event-modal" id="event-modal" aria-hidden="true">
+  <div class="event-modal-backdrop" id="event-modal-backdrop"></div>
+  <div class="event-modal-panel" role="dialog" aria-modal="true" aria-label="Evento">
+    <button class="event-modal-close" id="event-modal-close" data-i18n-aria="aria_close" aria-label="Cerrar"><span data-icon="x"></span></button>
+    <div id="event-modal-content"></div>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="container footer-main">
@@ -84,6 +96,7 @@
 </footer>
 
 <script src="js/data.js"></script>
+<script src="js/events-data.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>

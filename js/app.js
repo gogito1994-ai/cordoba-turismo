@@ -10,10 +10,48 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRipple();
   setupReveal();
   setupFooterYear();
+  setupSeasonalTheme();
   setupHeroSlideshow();
+  setupMonthHighlight();
   setupServiceWorker();
   setupInstallBanner();
 });
+
+function setupSeasonalTheme() {
+  const hero = document.querySelector(".hero");
+  const slot = document.getElementById("season-banner-slot");
+  if (!hero || !slot || typeof getCurrentSeason !== "function") return;
+
+  const season = getCurrentSeason(new Date());
+  if (!season) return;
+
+  document.documentElement.dataset.season = season.id;
+
+  const slideshow = document.getElementById("hero-slideshow");
+  if (slideshow) {
+    slideshow.querySelectorAll(".hero-bg-slide").forEach((s) => s.classList.remove("active"));
+    const seasonSlide = document.createElement("div");
+    seasonSlide.className = "hero-bg-slide active";
+    seasonSlide.style.backgroundImage = `url('${season.heroImage}')`;
+    slideshow.insertBefore(seasonSlide, slideshow.firstChild);
+  }
+
+  slot.innerHTML = `
+    <div class="season-banner">
+      <span class="season-banner-icon">${Icon("star")}</span>
+      <span class="season-banner-text" data-i18n="${season.bannerKey}"></span>
+      <a class="season-banner-cta" href="${season.ctaHref}" data-i18n="season_cta"></a>
+    </div>
+  `;
+  applyStaticI18n();
+}
+
+function setupMonthHighlight() {
+  const container = document.getElementById("events-this-month");
+  if (!container || typeof renderThisMonthBlock !== "function") return;
+  renderThisMonthBlock(container, { compact: true });
+  document.addEventListener("lang-changed", () => renderThisMonthBlock(container, { compact: true }));
+}
 
 function setupServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
