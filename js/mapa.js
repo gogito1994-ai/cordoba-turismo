@@ -389,9 +389,30 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRoutesPanel();
 
   const params = new URLSearchParams(window.location.search);
-  const focusId = params.get("focus");
-  if (focusId) {
-    const target = ALL_POINTS.find((p) => p.id === focusId);
-    if (target) goToPoint(target);
+  const focusParam = params.get("focus");
+  if (focusParam) {
+    const focusIds = focusParam.split(",").map((id) => id.trim()).filter(Boolean);
+    const targets = focusIds
+      .map((id) => ALL_POINTS.find((p) => p.id === id))
+      .filter(Boolean);
+    if (targets.length === 1) {
+      goToPoint(targets[0]);
+    } else if (targets.length > 1) {
+      let changed = false;
+      targets.forEach((point) => {
+        if (!activeCategories.has(point.categoria)) {
+          activeCategories.add(point.categoria);
+          changed = true;
+        }
+      });
+      if (changed) {
+        renderChips();
+        renderMarkers();
+      }
+      map.fitBounds(
+        L.latLngBounds(targets.map((p) => [p.lat, p.lng])),
+        { padding: [60, 60], maxZoom: 16 }
+      );
+    }
   }
 });

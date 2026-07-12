@@ -104,6 +104,20 @@ para mayor tranquilidad puedes:
 - Si el gasto se dispara, puedes desactivar el Worker temporalmente desde el
   dashboard de Cloudflare sin tocar el resto de la web.
 
+## Actualizar el Worker tras un cambio en `worker/index.js`
+
+Cada vez que este proyecto modifique `worker/index.js` (como con el asistente
+de nivel superior: streaming, contexto de página y tarjetas de lugares), hay
+que volver a desplegarlo para que el cambio tenga efecto:
+
+- **Opción A:** copia de nuevo todo el contenido de `worker/index.js`, pégalo
+  en el editor de Cloudflare (Workers y Pages → tu Worker → "Edit code") y haz
+  "Deploy" otra vez.
+- **Opción B:** desde la carpeta `worker`, ejecuta `wrangler deploy`.
+
+Mientras no lo hagas, el chat seguirá funcionando con el comportamiento
+anterior (sin streaming ni respuestas enriquecidas).
+
 ## Solución de problemas
 
 - **El chat responde "El asistente todavía no está configurado"**: no has
