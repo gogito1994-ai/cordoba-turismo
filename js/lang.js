@@ -26,6 +26,8 @@ const CATEGORY_I18N = {
   Mirador: { en: "Viewpoint", fr: "Point de vue" },
   Consigna: { en: "Luggage storage", fr: "Consigne à bagages" },
   Transporte: { en: "Transport", fr: "Transport" },
+  Supermercado: { en: "Supermarket", fr: "Supermarché" },
+  Farmacia: { en: "Pharmacy", fr: "Pharmacie" },
 };
 
 function t(key, vars) {

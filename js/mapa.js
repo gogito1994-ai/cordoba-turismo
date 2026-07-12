@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ...MIRADORES.map((m) => ({ ...m, collection: "miradores" })),
     ...CONSIGNAS.map((c) => ({ ...c, collection: "consignas" })),
     ...TRANSPORT_HUBS.map((h) => ({ ...h, collection: "transporte" })),
+    ...SUPERMERCADOS.map((s) => ({ ...s, collection: "supermercados" })),
+    ...FARMACIAS.map((f) => ({ ...f, collection: "farmacias" })),
   ];
 
   const categoriasPresentes = [...new Set(ALL_POINTS.map((p) => p.categoria))];

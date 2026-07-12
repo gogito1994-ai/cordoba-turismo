@@ -59,6 +59,8 @@ const ICON_PATHS = {
   bot: '<rect x="4.5" y="9" width="15" height="11" rx="3"/><circle cx="9" cy="14.5" r="1.2"/><circle cx="15" cy="14.5" r="1.2"/><path d="M12 9V5.5M9.5 5.5h5"/>',
   suitcase:
     '<rect x="3.5" y="7.5" width="17" height="12.5" rx="2"/><path d="M9 7.5V5.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3.5 13h17M11 13v2"/>',
+  cart: '<circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/><path d="M3 4h2.2l2.2 12.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6L21 8.2H6.4"/>',
+  pharmacy: '<rect x="4" y="4" width="16" height="16" rx="5"/><path d="M12 8.2v7.6M8.2 12h7.6"/>',
 };
 
 function Icon(name, className) {
