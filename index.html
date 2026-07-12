@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<script>(function(){var t=localStorage.getItem('cordoba-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
 </head>
 <body data-page="home">
 
@@ -31,6 +32,7 @@
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
       </div>
+      <button class="theme-toggle" id="theme-toggle" data-i18n-aria="aria_theme_toggle" aria-label="Cambiar tema"><span data-icon="moon"></span></button>
     </div>
     <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu"><span data-icon="menu"></span></button>
   </nav>
@@ -50,9 +52,28 @@
     <span class="hero-kicker" data-i18n="hero_kicker">Andalucía · España</span>
     <h1 data-i18n="home_title">Descubre Córdoba</h1>
     <p data-i18n="home_subtitle">Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="lugares.html"><span data-icon="landmark"></span> <span data-i18n="home_cta_places">Ver lugares</span></a>
-      <a class="btn btn-outline" href="mapa.html"><span data-icon="map"></span> <span data-i18n="home_cta_map">Abrir mapa</span></a>
+    <div class="hero-access-cards">
+      <a class="hero-access-card" href="lugares.html">
+        <span class="hero-access-arch">
+          <svg viewBox="0 0 100 100" class="arch-shape" aria-hidden="true"><path d="M15 92 V45 A45 45 0 1 1 85 45 V92 Z" /></svg>
+          <span class="hero-access-icon" data-icon="landmark"></span>
+        </span>
+        <span data-i18n="nav_places">Lugares</span>
+      </a>
+      <a class="hero-access-card" href="mapa.html">
+        <span class="hero-access-arch">
+          <svg viewBox="0 0 100 100" class="arch-shape" aria-hidden="true"><path d="M15 92 V45 A45 45 0 1 1 85 45 V92 Z" /></svg>
+          <span class="hero-access-icon" data-icon="map"></span>
+        </span>
+        <span data-i18n="nav_map">Mapa</span>
+      </a>
+      <a class="hero-access-card" href="planificar.html">
+        <span class="hero-access-arch">
+          <svg viewBox="0 0 100 100" class="arch-shape" aria-hidden="true"><path d="M15 92 V45 A45 45 0 1 1 85 45 V92 Z" /></svg>
+          <span class="hero-access-icon" data-icon="route"></span>
+        </span>
+        <span data-i18n="home_cta_planner">Planificar mi visita</span>
+      </a>
     </div>
     <div class="hero-search hero-chat-launcher" id="chat-launcher" role="button" tabindex="0">
       <span data-icon="chat"></span>

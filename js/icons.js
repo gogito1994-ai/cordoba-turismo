@@ -64,6 +64,8 @@ const ICON_PATHS = {
   user: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/>',
   users:
     '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.6 2.7-6.5 6-6.5s6 2.9 6 6.5"/><circle cx="17.5" cy="9" r="2.6"/><path d="M21 20c0-2.9-1.8-5.3-4.2-6.1"/>',
+  sun: '<circle cx="12" cy="12" r="4.3"/><path d="M12 2.5v3M12 18.5v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2.5 12h3M18.5 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/>',
+  moon: '<path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/>',
 };
 
 function Icon(name, className) {

@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<script>(function(){var t=localStorage.getItem('cordoba-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
 </head>
 <body data-page="buscar" data-i18n-title="search_title">
 
@@ -30,6 +31,7 @@
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
       </div>
+      <button class="theme-toggle" id="theme-toggle" data-i18n-aria="aria_theme_toggle" aria-label="Cambiar tema"><span data-icon="moon"></span></button>
     </div>
     <button class="nav-toggle" aria-label="Abrir menú" data-i18n-aria="aria_open_menu"><span data-icon="menu"></span></button>
   </nav>

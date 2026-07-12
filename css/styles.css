@@ -21,6 +21,28 @@
   --header-h: 74px;
 }
 
+:root[data-theme="dark"] {
+  --crema: #1c1712;
+  --blanco-cal: #241e17;
+  --blanco: #2c251c;
+  --texto: #f3ead9;
+  --texto-suave: #c9b9a0;
+  --borde: #3d3327;
+  --sombra: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --sombra-hover: 0 18px 36px rgba(0, 0, 0, 0.55);
+}
+
+body,
+.site-header,
+.card,
+.btn,
+.map-sheet,
+.lugar-info-card,
+input,
+.filter-btn {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -206,6 +228,38 @@ h1, h2, h3 {
 }
 
 .site-header.solid .nav-search-link:hover {
+  background: var(--blanco);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: var(--blanco);
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.15s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(15deg);
+}
+
+.theme-toggle .icon {
+  width: 17px;
+  height: 17px;
+}
+
+.site-header.solid .theme-toggle {
+  color: var(--terracota-dark);
+}
+
+.site-header.solid .theme-toggle:hover {
   background: var(--blanco);
 }
 
@@ -493,6 +547,69 @@ h1, h2, h3 {
   white-space: nowrap;
 }
 
+.hero-access-cards {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+
+.hero-access-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 148px;
+  padding: 20px 14px 18px;
+  background: rgba(253, 249, 241, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radio);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-align: center;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-access-card:hover {
+  transform: translateY(-6px);
+  background: rgba(253, 249, 241, 0.24);
+  box-shadow: var(--sombra-hover);
+}
+
+.hero-access-arch {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.hero-access-arch .arch-shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--ocre);
+}
+
+.hero-access-icon {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.hero-access-icon .icon {
+  width: 22px;
+  height: 22px;
+  color: var(--blanco);
+}
+
 .hero-scroll-cue {
   position: absolute;
   bottom: 26px;
@@ -531,6 +648,27 @@ h1, h2, h3 {
 
 .section {
   padding: 64px 0;
+  position: relative;
+}
+
+.section:nth-of-type(even)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23bd4e2a' stroke-width='1'%3E%3Crect x='10' y='10' width='40' height='40'/%3E%3Crect x='10' y='10' width='40' height='40' transform='rotate(45 30 30)'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+:root[data-theme="dark"] .section:nth-of-type(even)::before {
+  opacity: 0.07;
+}
+
+.section:nth-of-type(even) > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section-eyebrow {
@@ -1093,9 +1231,14 @@ h1, h2, h3 {
 }
 
 .map-chip.active {
-  background: var(--chip-color, var(--terracota));
+  background: color-mix(in srgb, var(--chip-color, var(--terracota)) 20%, var(--blanco-cal));
   border-color: var(--chip-color, var(--terracota));
-  color: var(--blanco);
+  color: var(--texto);
+  font-weight: 700;
+}
+
+.map-chip.active .icon {
+  color: var(--chip-color, var(--terracota));
 }
 
 .map-route-chip {

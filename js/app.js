@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupStaticIcons();
+  setupThemeToggle();
   setupNav();
   setupHeaderScroll();
   setupBackToTop();
@@ -10,6 +11,27 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFooterYear();
   setupHeroSlideshow();
 });
+
+function setupThemeToggle() {
+  const btn = document.querySelector(".theme-toggle");
+  if (!btn) return;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    btn.innerHTML = Icon(theme === "dark" ? "sun" : "moon");
+  }
+
+  const stored = localStorage.getItem("cordoba-theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  let theme = stored || (prefersDark ? "dark" : "light");
+  applyTheme(theme);
+
+  btn.addEventListener("click", () => {
+    theme = theme === "dark" ? "light" : "dark";
+    localStorage.setItem("cordoba-theme", theme);
+    applyTheme(theme);
+  });
+}
 
 function setupStaticIcons() {
   document.querySelectorAll("[data-icon]").forEach((el) => {
@@ -180,6 +202,11 @@ function setupReveal() {
       .forEach((el) => {
         if (!el.classList.contains("reveal") && !el.classList.contains("in-view")) {
           el.classList.add("reveal");
+          const siblings = Array.from(el.parentElement.children).filter((c) =>
+            c.classList.contains("card") || c.classList.contains("home-link-card")
+          );
+          const index = siblings.indexOf(el);
+          el.style.transitionDelay = `${Math.min(index, 8) * 70}ms`;
           observer.observe(el);
         }
       });
