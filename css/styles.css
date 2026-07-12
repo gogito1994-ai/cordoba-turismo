@@ -370,10 +370,6 @@ h1, h2, h3 {
     gap: 8px;
   }
 
-  .logo span:last-child {
-    display: none;
-  }
-
   .nav-utils {
     gap: 2px;
     padding: 4px;
