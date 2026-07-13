@@ -57,19 +57,28 @@
   </nav>
 </header>
 
-<section class="section container">
+<nav class="gastro-quicknav container" data-i18n-aria="gastro_quicknav_aria" aria-label="Ir a sección">
+  <a href="#platos" class="gastro-quicknav-link"><span data-icon="utensils"></span><span data-i18n="gastro_quicknav_dishes">Platos</span></a>
+  <a href="#tabernas-historicas" class="gastro-quicknav-link"><span data-icon="landmark"></span><span data-i18n="gastronomy_historic_taverns_title">Tabernas históricas</span></a>
+  <a href="#ruta-tapa" class="gastro-quicknav-link"><span data-icon="route"></span><span data-i18n="gastronomy_tapa_route_title">Ruta de la tapa</span></a>
+  <a href="#restaurantes" class="gastro-quicknav-link"><span data-icon="star"></span><span data-i18n="gastro_quicknav_restaurants">Restaurantes</span></a>
+  <a href="#tapas" class="gastro-quicknav-link"><span data-icon="wine"></span><span data-i18n="gastro_quicknav_tapas">Tapas</span></a>
+  <a href="#glosario" class="gastro-quicknav-link"><span data-icon="info"></span><span data-i18n="gastro_quicknav_glossary">Glosario</span></a>
+</nav>
+
+<section class="section container" id="platos">
   <h2 class="section-title" data-i18n="gastronomy_title">Gastronomía cordobesa</h2>
   <p class="section-subtitle" data-i18n="gastronomy_subtitle">Platos, tapas y bebidas típicas que no te puedes perder.</p>
   <div class="grid" id="food-grid"></div>
 </section>
 
-<section class="section container section-divider">
+<section class="section container section-divider" id="tabernas-historicas">
   <h2 class="section-title" data-i18n="gastronomy_historic_taverns_title">Tabernas históricas</h2>
   <p class="section-subtitle" data-i18n="gastronomy_historic_taverns_subtitle">Locales centenarios que son parte de la historia de Córdoba.</p>
   <div class="grid" id="historic-grid"></div>
 </section>
 
-<section class="section container section-divider">
+<section class="section container section-divider" id="ruta-tapa">
   <div id="tapa-route-cta"></div>
 </section>
 
@@ -77,16 +86,16 @@
   <h2 class="section-title" data-i18n="gastronomy_filters_title">Filtros prácticos</h2>
   <div class="gastro-filters" id="gastro-filters"></div>
 
-  <h3 class="events-subheading" data-i18n="restaurants_title">Restaurantes mejor valorados</h3>
+  <h3 class="events-subheading" id="restaurantes" data-i18n="restaurants_title">Restaurantes mejor valorados</h3>
   <p class="section-subtitle" data-i18n="restaurants_subtitle">Una selección de los restaurantes más reconocidos de la ciudad, con su carta.</p>
   <div class="grid" id="restaurants-grid"></div>
 
-  <h3 class="events-subheading" data-i18n="tapas_title">Mejores bares de tapas</h3>
+  <h3 class="events-subheading" id="tapas" data-i18n="tapas_title">Mejores bares de tapas</h3>
   <p class="section-subtitle" data-i18n="tapas_subtitle">Tabernas y bodegas históricas donde tapear como un cordobés.</p>
   <div class="grid" id="tapas-grid"></div>
 </section>
 
-<section class="section container section-divider">
+<section class="section container section-divider" id="glosario">
   <h2 class="section-title" data-i18n="gastronomy_glossary_title">Glosario para visitantes</h2>
   <p class="section-subtitle" data-i18n="gastronomy_glossary_subtitle">Palabras y costumbres útiles si vienes de fuera de España.</p>
   <div class="glossary-list" id="glossary-list"></div>
