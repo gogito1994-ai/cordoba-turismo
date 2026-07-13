@@ -1,6 +1,6 @@
 {
-  "name": "Descubre Córdoba — Guía turística",
-  "short_name": "Descubre Córdoba",
+  "name": "Cordobapp — Guía turística",
+  "short_name": "Cordobapp",
   "description": "Guía turística independiente de Córdoba, España: lugares, mapa, planificador de itinerarios, gastronomía y transporte.",
   "start_url": "./index.html",
   "id": "./index.html",

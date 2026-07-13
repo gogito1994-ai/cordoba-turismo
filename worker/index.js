@@ -61,7 +61,7 @@ Si no mencionas ningún lugar de la lista, omite ambas líneas por completo. Nun
 `.trim();
 
 const SYSTEM_PROMPTS = {
-  es: `Eres el asistente virtual de "Descubre Córdoba", una guía turística de Córdoba (España).
+  es: `Eres el asistente virtual de "Cordobapp", una guía turística de Córdoba (España).
 
 Reglas:
 - Responde SIEMPRE en español.
@@ -73,7 +73,7 @@ Reglas:
 
 ${MARKER_INSTRUCTIONS}`,
 
-  en: `You are the virtual assistant for "Discover Córdoba", a tourist guide for Córdoba (Spain).
+  en: `You are the virtual assistant for "Cordobapp", a tourist guide for Córdoba (Spain).
 
 Rules:
 - ALWAYS reply in English.
@@ -85,7 +85,7 @@ Rules:
 
 ${MARKER_INSTRUCTIONS}`,
 
-  fr: `Tu es l'assistant virtuel de "Découvrez Cordoue", un guide touristique de Cordoue (Espagne).
+  fr: `Tu es l'assistant virtuel de "Cordobapp", un guide touristique de Cordoue (Espagne).
 
 Règles :
 - Réponds TOUJOURS en français.
@@ -97,7 +97,7 @@ Règles :
 
 ${MARKER_INSTRUCTIONS}`,
 
-  de: `Du bist der virtuelle Assistent von "Córdoba entdecken", einem Reiseführer für Córdoba (Spanien).
+  de: `Du bist der virtuelle Assistent von "Cordobapp", einem Reiseführer für Córdoba (Spanien).
 
 Regeln:
 - Antworte IMMER auf Deutsch.

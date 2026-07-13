@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setMetaTag("name", "description", desc);
     setMetaTag("property", "og:type", "website");
-    setMetaTag("property", "og:site_name", "Descubre Córdoba");
+    setMetaTag("property", "og:site_name", "Cordobapp");
     setMetaTag("property", "og:title", nombre);
     setMetaTag("property", "og:description", desc);
     setMetaTag("property", "og:url", url);

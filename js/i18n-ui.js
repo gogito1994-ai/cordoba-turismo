@@ -1,6 +1,6 @@
 const UI_STRINGS = {
   es: {
-    brand: "Descubre Córdoba",
+    brand: "Cordobapp",
     nav_home: "Inicio",
     nav_places: "Lugares",
     nav_map: "Mapa",
@@ -22,7 +22,7 @@ const UI_STRINGS = {
     aria_send: "Enviar",
 
     hero_kicker: "Andalucía · España",
-    home_title: "Descubre Córdoba",
+    home_title: "Cordobapp",
     home_subtitle:
       "Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.",
     home_cta_planner: "Planificar mi visita",
@@ -74,7 +74,7 @@ const UI_STRINGS = {
     home_card_transport_title: "Transporte",
     home_card_transport_desc: "Cómo moverte por la ciudad y llegar hasta ella",
 
-    partner_kicker: "Recomendado por Descubre Córdoba",
+    partner_kicker: "Recomendado por Cordobapp",
     partner_title: "Guarda tus maletas con Dcanlock",
     partner_description:
       "Consigna de maletas en pleno centro de Córdoba, a 15 minutos andando de la estación de tren. Taquillas seguras con vigilancia 24h para que explores la ciudad sin cargar equipaje.",
@@ -285,7 +285,7 @@ const UI_STRINGS = {
     footer_follow_heading: "Síguenos",
     footer_location_heading: "Ubicación",
     footer_location_city: "Córdoba, España",
-    footer_text: "Descubre Córdoba — Guía turística no oficial.",
+    footer_text: "Cordobapp — Guía turística no oficial.",
     footer_credit_photos: "Fotografías: Wikimedia Commons",
     footer_credit_full: "Fotografías: Wikimedia Commons · Mapa: OpenStreetMap",
 
@@ -294,7 +294,7 @@ const UI_STRINGS = {
   },
 
   en: {
-    brand: "Discover Córdoba",
+    brand: "Cordobapp",
     nav_home: "Home",
     nav_places: "Places",
     nav_map: "Map",
@@ -316,7 +316,7 @@ const UI_STRINGS = {
     aria_send: "Send",
 
     hero_kicker: "Andalusia · Spain",
-    home_title: "Discover Córdoba",
+    home_title: "Cordobapp",
     home_subtitle:
       "A guide to exploring the city of the Caliphs: age-old monuments, flower-filled patios, great food and living tradition.",
     home_cta_planner: "Plan my visit",
@@ -368,7 +368,7 @@ const UI_STRINGS = {
     home_card_transport_title: "Transport",
     home_card_transport_desc: "How to get around and reach the city",
 
-    partner_kicker: "Recommended by Discover Córdoba",
+    partner_kicker: "Recommended by Cordobapp",
     partner_title: "Store your luggage with Dcanlock",
     partner_description:
       "Luggage storage in the heart of Córdoba, a 15-minute walk from the train station. Secure lockers with 24h surveillance so you can explore the city hands-free.",
@@ -578,7 +578,7 @@ const UI_STRINGS = {
     footer_follow_heading: "Follow us",
     footer_location_heading: "Location",
     footer_location_city: "Córdoba, Spain",
-    footer_text: "Discover Córdoba — Unofficial tourist guide.",
+    footer_text: "Cordobapp — Unofficial tourist guide.",
     footer_credit_photos: "Photos: Wikimedia Commons",
     footer_credit_full: "Photos: Wikimedia Commons · Map: OpenStreetMap",
 
@@ -587,7 +587,7 @@ const UI_STRINGS = {
   },
 
   fr: {
-    brand: "Découvrez Cordoue",
+    brand: "Cordobapp",
     nav_home: "Accueil",
     nav_places: "Lieux",
     nav_map: "Carte",
@@ -609,7 +609,7 @@ const UI_STRINGS = {
     aria_send: "Envoyer",
 
     hero_kicker: "Andalousie · Espagne",
-    home_title: "Découvrez Cordoue",
+    home_title: "Cordobapp",
     home_subtitle:
       "Un guide pour explorer la ville des Califes : monuments millénaires, patios fleuris, bonne table et tradition vivante.",
     home_cta_planner: "Planifier ma visite",
@@ -661,7 +661,7 @@ const UI_STRINGS = {
     home_card_transport_title: "Transports",
     home_card_transport_desc: "Comment se déplacer et rejoindre la ville",
 
-    partner_kicker: "Recommandé par Découvrez Cordoue",
+    partner_kicker: "Recommandé par Cordobapp",
     partner_title: "Déposez vos bagages chez Dcanlock",
     partner_description:
       "Consigne à bagages en plein centre de Cordoue, à 15 minutes à pied de la gare. Casiers sécurisés avec surveillance 24h/24 pour explorer la ville les mains libres.",
@@ -872,7 +872,7 @@ const UI_STRINGS = {
     footer_follow_heading: "Suivez-nous",
     footer_location_heading: "Emplacement",
     footer_location_city: "Cordoue, Espagne",
-    footer_text: "Découvrez Cordoue — Guide touristique non officiel.",
+    footer_text: "Cordobapp — Guide touristique non officiel.",
     footer_credit_photos: "Photos : Wikimedia Commons",
     footer_credit_full: "Photos : Wikimedia Commons · Carte : OpenStreetMap",
 
@@ -881,7 +881,7 @@ const UI_STRINGS = {
   },
 
   de: {
-    brand: "Córdoba entdecken",
+    brand: "Cordobapp",
     nav_home: "Startseite",
     nav_places: "Orte",
     nav_map: "Karte",
@@ -903,7 +903,7 @@ const UI_STRINGS = {
     aria_send: "Senden",
 
     hero_kicker: "Andalusien · Spanien",
-    home_title: "Córdoba entdecken",
+    home_title: "Cordobapp",
     home_subtitle:
       "Ein Reiseführer durch die Stadt der Kalifen: jahrtausendealte Monumente, blühende Patios, gutes Essen und lebendige Tradition.",
     home_cta_planner: "Meinen Besuch planen",
@@ -955,7 +955,7 @@ const UI_STRINGS = {
     home_card_transport_title: "Transport",
     home_card_transport_desc: "Wie man sich in der Stadt bewegt und sie erreicht",
 
-    partner_kicker: "Empfohlen von Córdoba entdecken",
+    partner_kicker: "Empfohlen von Cordobapp",
     partner_title: "Geben Sie Ihr Gepäck bei Dcanlock ab",
     partner_description:
       "Gepäckaufbewahrung mitten im Zentrum von Córdoba, 15 Gehminuten vom Bahnhof entfernt. Sichere Schließfächer mit 24-Stunden-Überwachung, damit Sie die Stadt ohne Gepäck erkunden können.",
@@ -1166,7 +1166,7 @@ const UI_STRINGS = {
     footer_follow_heading: "Folgen Sie uns",
     footer_location_heading: "Standort",
     footer_location_city: "Córdoba, Spanien",
-    footer_text: "Córdoba entdecken — Inoffizieller Reiseführer.",
+    footer_text: "Cordobapp — Inoffizieller Reiseführer.",
     footer_credit_photos: "Fotos: Wikimedia Commons",
     footer_credit_full: "Fotos: Wikimedia Commons · Karte: OpenStreetMap",
 
