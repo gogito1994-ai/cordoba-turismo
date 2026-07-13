@@ -731,6 +731,13 @@ const TRANSPORT = [
     descripcion:
       "Red de autobuses urbanos que conecta el centro histórico con el resto de la ciudad. Billete sencillo o tarjeta recargable Bus+.",
     info: "Tarifa sencilla aprox. 1,30€, bonos de varios viajes disponibles",
+    detalle: [
+      {
+        nombre: "Cómo pagar",
+        descripcion:
+          "Puedes pagar en efectivo al subir o usar la tarjeta recargable Bus+, que también permite hacer trasbordos con descuento. Consulta líneas y horarios en aucorsa.es.",
+      },
+    ],
   },
   {
     id: "cordobici",
@@ -739,6 +746,13 @@ const TRANSPORT = [
     descripcion:
       "Sistema de bicicletas compartidas con estaciones repartidas por la ciudad, ideal para moverse por el carril bici del centro.",
     info: "Registro necesario, primeros 30 min gratis según abono",
+    detalle: [
+      {
+        nombre: "Cómo usarlo",
+        descripcion:
+          "Regístrate en una estación o mediante la app del servicio para retirar una bicicleta, y devuélvela en cualquier otra estación de la red repartida por la ciudad.",
+      },
+    ],
   },
   {
     id: "taxi",
@@ -747,6 +761,13 @@ const TRANSPORT = [
     descripcion:
       "Paradas de taxi en puntos clave como la Mezquita, la estación de tren y la Plaza de las Tendillas. También disponibles por app.",
     info: "Tarifa mínima aprox. 4€, aeropuerto y polígonos con tarifa especial",
+    detalle: [
+      {
+        nombre: "Cómo pedirlo",
+        descripcion:
+          "Puedes parar uno en la calle, acudir a una parada oficial o pedirlo por teléfono o app. Los trayectos cortos dentro del centro histórico suelen rondar la tarifa mínima.",
+      },
+    ],
   },
   {
     id: "tren",
@@ -755,6 +776,13 @@ const TRANSPORT = [
     descripcion:
       "Estación bien conectada por AVE con Madrid (menos de 2h) y Sevilla (45 min), además de servicios regionales por Andalucía.",
     info: "A 15-20 min a pie del centro histórico, o bus/taxi",
+    detalle: [
+      {
+        nombre: "Comprar el billete",
+        descripcion:
+          "Los billetes se compran en renfe.com, en las máquinas de la estación o en taquilla. La estación tiene parada de autobuses urbanos y taxis justo en la puerta.",
+      },
+    ],
   },
   {
     id: "aeropuerto",
@@ -763,6 +791,13 @@ const TRANSPORT = [
     descripcion:
       "Córdoba cuenta con aeropuerto propio pero con vuelos muy limitados. La opción habitual es volar a Sevilla (~140 km) y llegar en tren o autobús.",
     info: "Aeropuerto de Sevilla: aprox. 1h20 en coche o AVE/autobús",
+    detalle: [
+      {
+        nombre: "Desde el aeropuerto de Sevilla",
+        descripcion:
+          "Hay autobuses y trenes de cercanías hasta la estación de Santa Justa, donde puedes coger el AVE o el Avant hasta Córdoba en menos de 45 minutos.",
+      },
+    ],
   },
   {
     id: "parking",
@@ -770,7 +805,33 @@ const TRANSPORT = [
     icono: "parking",
     descripcion:
       "El centro histórico tiene acceso restringido a vehículos (zona ZBE). Se recomienda usar parkings públicos en el perímetro del casco antiguo.",
-    info: "Parkings recomendados: San Basilio, Aparcamiento Norte, Vial Norte",
+    info: "Parkings recomendados: IC Centro Histórico, La Mezquita, Puerta Sevilla, La Ribera",
+    detalle: [
+      {
+        nombre: "Parking IC Centro Histórico",
+        direccion: "Avenida de los Custodios, 2",
+        descripcion:
+          "Junto al barrio de San Basilio y el Alcázar; unos 10 minutos andando hasta la Mezquita-Catedral.",
+      },
+      {
+        nombre: "Parking La Mezquita",
+        direccion: "Avenida de Doctor Fleming, 1",
+        descripcion:
+          "Junto a los Jardines de la Agricultura, a orillas del Guadalquivir; unos 8 minutos andando hasta la Mezquita-Catedral.",
+      },
+      {
+        nombre: "Parking Puerta Sevilla",
+        direccion: "Calle Puerta Sevilla, 5",
+        descripcion:
+          "En el barrio de San Basilio, en pleno casco histórico; a pocos minutos andando de la Judería y la Mezquita-Catedral.",
+      },
+      {
+        nombre: "Parking La Ribera",
+        direccion: "Paseo de la Ribera, 1",
+        descripcion:
+          "Junto al Puente Romano, en pleno centro histórico; a pocos minutos andando de la Mezquita-Catedral y el Alcázar.",
+      },
+    ],
   },
 ];
 
@@ -829,6 +890,8 @@ const RESTAURANTS = [
     id: "el-churrasco",
     nombre: "El Churrasco",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/El_Churrasco_-_panoramio.jpg/500px-El_Churrasco_-_panoramio.jpg",
     categoria: "Restaurante",
     lat: 37.8800938,
     lng: -4.7819054,
@@ -853,6 +916,8 @@ const RESTAURANTS = [
     id: "bodegas-campos",
     nombre: "Bodegas Campos",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Restaurante_Bodegas_Campos.jpg/500px-Restaurante_Bodegas_Campos.jpg",
     categoria: "Restaurante",
     lat: 37.8808857,
     lng: -4.7740519,
@@ -959,6 +1024,8 @@ const RESTAURANTS = [
     id: "puerta-sevilla",
     nombre: "Restaurante Puerta Sevilla",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Restaurante_Puerta_Sevilla_%2852004283720%29.jpg/500px-Restaurante_Puerta_Sevilla_%2852004283720%29.jpg",
     categoria: "Restaurante",
     lat: 37.8751531,
     lng: -4.7854436,
@@ -978,6 +1045,8 @@ const RESTAURANTS = [
     id: "ermita-candelaria",
     nombre: "Ermita de la Candelaria",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/WLM14ES_-_18102009_125058_CRDB_1853_-_.jpg/500px-WLM14ES_-_18102009_125058_CRDB_1853_-_.jpg",
     categoria: "Restaurante",
     lat: 37.8821932,
     lng: -4.7738550,
@@ -1067,6 +1136,8 @@ const TAPAS = [
     id: "casa-rubio",
     nombre: "Casa Rubio",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cordoba_Capital_-_289_%2830673458086%29.jpg/500px-Cordoba_Capital_-_289_%2830673458086%29.jpg",
     categoria: "Tapas",
     lat: 37.8807125,
     lng: -4.7838236,
@@ -1117,6 +1188,8 @@ const TAPAS = [
     id: "bar-santos",
     nombre: "Bar Santos",
     icono: "utensils",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Bar_Santos_-_C%C3%B3rdoba_%28Espa%C3%B1a%29.jpg",
     categoria: "Tapas",
     lat: 37.8799749,
     lng: -4.7792390,
@@ -1140,6 +1213,8 @@ const TAPAS = [
     id: "bodega-guzman",
     nombre: "Bodega Guzmán",
     icono: "wine",
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bodega_Guzm%C3%A1n%2C_C%C3%B3rdoba.jpg/500px-Bodega_Guzm%C3%A1n%2C_C%C3%B3rdoba.jpg",
     categoria: "Tapas",
     lat: 37.8804554,
     lng: -4.7836796,

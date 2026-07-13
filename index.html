@@ -38,7 +38,6 @@
       <li><a href="lugares.html" data-page="lugares" data-i18n="nav_places">Lugares</a></li>
       <li><a href="mapa.html" data-page="mapa" data-i18n="nav_map">Mapa</a></li>
       <li><a href="planificar.html" data-page="planificar" data-i18n="nav_planner">Planificar</a></li>
-      <li><a href="ahora.html" data-page="ahora" data-i18n="nav_ahora">Ahora</a></li>
       <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
       <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
       <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
@@ -76,8 +75,14 @@
         <span class="home-weather-place" data-i18n="ahora_weather_place">Córdoba, ahora mismo</span>
       </div>
     </div>
+    <div class="home-tip-banner" id="home-tip" hidden>
+      <span class="home-tip-banner-icon" data-icon="info" aria-hidden="true"></span>
+      <div>
+        <strong data-i18n="ahora_tip_heading">Consejo del día</strong>
+        <p id="home-tip-text"></p>
+      </div>
+    </div>
     <span class="hero-kicker" data-i18n="hero_kicker">Andalucía · España</span>
-    <h1 data-i18n="home_title">Cordobapp</h1>
     <p data-i18n="home_subtitle">Una guía para explorar la ciudad de los Califas: monumentos milenarios, patios floridos, buena mesa y tradición viva.</p>
     <div class="hero-access-cards">
       <a class="hero-access-card" href="lugares.html">
@@ -100,6 +105,13 @@
           <span class="hero-access-icon" data-icon="route"></span>
         </span>
         <span data-i18n="home_cta_planner">Planificar mi visita</span>
+      </a>
+      <a class="hero-access-card" href="gastronomia.html">
+        <span class="hero-access-arch">
+          <svg viewBox="0 0 100 100" class="arch-shape" aria-hidden="true"><path d="M15 92 V45 A45 45 0 1 1 85 45 V92 Z" /></svg>
+          <span class="hero-access-icon" data-icon="utensils"></span>
+        </span>
+        <span data-i18n="nav_gastronomy">Gastronomía</span>
       </a>
     </div>
     <div class="hero-search hero-chat-launcher" id="chat-launcher" role="button" tabindex="0">
@@ -249,7 +261,6 @@
         <li><a href="lugares.html" data-i18n="nav_places">Lugares</a></li>
         <li><a href="mapa.html" data-i18n="nav_map">Mapa</a></li>
         <li><a href="planificar.html" data-i18n="nav_planner">Planificar</a></li>
-        <li><a href="ahora.html" data-i18n="nav_ahora">Ahora</a></li>
         <li><a href="eventos.html" data-i18n="nav_events">Eventos</a></li>
         <li><a href="gastronomia.html" data-i18n="nav_gastronomy">Gastronomía</a></li>
         <li><a href="transporte.html" data-i18n="nav_transport">Transporte</a></li>

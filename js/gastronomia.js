@@ -57,8 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- tabernas históricas ---------- */
 
   function historicCard(v, collection) {
+    const media = v.imagen
+      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}" loading="lazy" /></div>`
+      : "";
     return `
       <article class="card">
+        ${media}
         <div class="card-body">
           <span class="card-icon">${Icon(v.icono)}</span>
           <span class="tag">${tr(v, collection, "distincion")}</span>
@@ -99,9 +103,13 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<a class="btn btn-primary btn-ticket" href="${v.web}" target="_blank" rel="noopener noreferrer">${Icon("external-link")} ${t("web_reserve_button")}</a>`
       : "";
     const verificar = v.verificar ? `<p class="map-sheet-flag">${t("gastronomy_hours_unverified")}</p>` : "";
+    const media = v.imagen
+      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}" loading="lazy" /></div>`
+      : "";
 
     return `
       <article class="card">
+        ${media}
         <div class="card-body">
           <span class="card-icon">${Icon(v.icono)}</span>
           <span class="tag">${tr(v, collection, "distincion")}</span>

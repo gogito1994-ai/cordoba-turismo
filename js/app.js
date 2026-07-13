@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setupHomeWeather() {
   const widget = document.getElementById("home-weather");
-  if (!widget) return;
+  const tipBanner = document.getElementById("home-tip");
+  const tipTextEl = document.getElementById("home-tip-text");
+  if (!widget && !tipBanner) return;
 
   const CORDOBA_LAT = 37.8882;
   const CORDOBA_LNG = -4.7794;
@@ -34,6 +36,52 @@ function setupHomeWeather() {
     95: "⛈", 96: "⛈", 99: "⛈",
   };
 
+  let lastTemp = null;
+
+  function easterDate(year) {
+    const a = year % 19;
+    const b = Math.floor(year / 100);
+    const c = year % 100;
+    const d = Math.floor(b / 4);
+    const e = b % 4;
+    const f = Math.floor((b + 8) / 25);
+    const g = Math.floor((b - f + 1) / 3);
+    const h = (19 * a + b - d - g + 15) % 30;
+    const i = Math.floor(c / 4);
+    const k = c % 4;
+    const l = (32 + 2 * e + 2 * i - h - k) % 7;
+    const m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const month = Math.floor((h + l - 7 * m + 114) / 31);
+    const day = ((h + l - 7 * m + 114) % 31) + 1;
+    return new Date(year, month - 1, day);
+  }
+
+  function renderTip() {
+    if (!tipBanner) return;
+    const now = new Date();
+    const hour = now.getHours();
+    const month = now.getMonth() + 1;
+    const day = now.getDate();
+    const easter = easterDate(now.getFullYear());
+    const semanaSantaStart = new Date(easter);
+    semanaSantaStart.setDate(easter.getDate() - 6);
+
+    let tipKey = "ahora_tip_default";
+
+    if (now >= semanaSantaStart && now <= easter) {
+      tipKey = "ahora_tip_semana_santa";
+    } else if (month === 5 && day <= 14) {
+      tipKey = "ahora_tip_patios";
+    } else if (lastTemp !== null && lastTemp >= 32 && hour >= 13 && hour < 18) {
+      tipKey = "ahora_tip_heat";
+    } else if (hour < 9 || hour >= 21) {
+      tipKey = "ahora_tip_closed_hours";
+    }
+
+    if (tipTextEl) tipTextEl.textContent = t(tipKey);
+    tipBanner.hidden = false;
+  }
+
   fetch(
     `https://api.open-meteo.com/v1/forecast?latitude=${CORDOBA_LAT}&longitude=${CORDOBA_LNG}&current=temperature_2m,weather_code&timezone=Europe%2FMadrid`
   )
@@ -41,11 +89,19 @@ function setupHomeWeather() {
     .then((data) => {
       const current = data && data.current;
       if (!current) throw new Error("sin datos");
-      widget.querySelector(".home-weather-icon").textContent = WEATHER_ICON[current.weather_code] || "🌡";
-      widget.querySelector(".home-weather-temp").textContent = `${Math.round(current.temperature_2m)}°C`;
-      widget.hidden = false;
+      lastTemp = current.temperature_2m;
+      if (widget) {
+        widget.querySelector(".home-weather-icon").textContent = WEATHER_ICON[current.weather_code] || "🌡";
+        widget.querySelector(".home-weather-temp").textContent = `${Math.round(current.temperature_2m)}°C`;
+        widget.hidden = false;
+      }
+      renderTip();
     })
-    .catch(() => {});
+    .catch(() => {
+      renderTip();
+    });
+
+  document.addEventListener("lang-changed", renderTip);
 }
 
 function setupSeasonalTheme() {

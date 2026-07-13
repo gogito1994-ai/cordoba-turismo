@@ -1609,18 +1609,39 @@ const DATA_I18N = {
         descripcion:
           "The urban bus network connects the historic center with the rest of the city. Single ticket or rechargeable Bus+ card.",
         info: "Single fare approx. €1.30, multi-trip passes available",
+        detalle: [
+          {
+            nombre: "How to pay",
+            descripcion:
+              "You can pay in cash when boarding or use the rechargeable Bus+ card, which also gives discounted transfers. Check routes and timetables at aucorsa.es.",
+          },
+        ],
       },
       fr: {
         nombre: "Bus urbain (Aucorsa)",
         descripcion:
           "Le réseau de bus urbains relie le centre historique au reste de la ville. Ticket simple ou carte rechargeable Bus+.",
         info: "Tarif simple environ 1,30 €, forfaits multi-trajets disponibles",
+        detalle: [
+          {
+            nombre: "Comment payer",
+            descripcion:
+              "Vous pouvez payer en espèces en montant ou utiliser la carte rechargeable Bus+, qui permet aussi des correspondances à tarif réduit. Consultez les lignes et horaires sur aucorsa.es.",
+          },
+        ],
       },
       de: {
         nombre: "Stadtbus (Aucorsa)",
         descripcion:
           "Das städtische Busnetz verbindet die Altstadt mit dem Rest der Stadt. Einzelfahrschein oder aufladbare Bus+-Karte.",
         info: "Einzelfahrt ca. 1,30 €, Mehrfahrtenkarten erhältlich",
+        detalle: [
+          {
+            nombre: "Bezahlung",
+            descripcion:
+              "Sie können beim Einsteigen bar bezahlen oder die aufladbare Bus+-Karte nutzen, mit der auch vergünstigte Umstiege möglich sind. Linien und Fahrpläne unter aucorsa.es.",
+          },
+        ],
       },
     },
     cordobici: {
@@ -1629,18 +1650,39 @@ const DATA_I18N = {
         descripcion:
           "A bike-share system with stations across the city, ideal for getting around on the city center's bike lanes.",
         info: "Registration required, first 30 min free depending on plan",
+        detalle: [
+          {
+            nombre: "How to use it",
+            descripcion:
+              "Register at a station or through the service's app to pick up a bike, and return it at any other station in the network across the city.",
+          },
+        ],
       },
       fr: {
         nombre: "Vélos en libre-service (Cordobici)",
         descripcion:
           "Système de vélos partagés avec des stations dans toute la ville, idéal pour circuler sur les pistes cyclables du centre.",
         info: "Inscription requise, 30 premières minutes gratuites selon l'abonnement",
+        detalle: [
+          {
+            nombre: "Comment l'utiliser",
+            descripcion:
+              "Inscrivez-vous à une station ou via l'application du service pour retirer un vélo, et restituez-le à n'importe quelle autre station du réseau réparti dans la ville.",
+          },
+        ],
       },
       de: {
         nombre: "Öffentliches Fahrradverleihsystem (Cordobici)",
         descripcion:
           "Ein Fahrradverleihsystem mit Stationen in der ganzen Stadt, ideal um sich auf den Radwegen der Innenstadt fortzubewegen.",
         info: "Anmeldung erforderlich, je nach Tarif die ersten 30 Minuten kostenlos",
+        detalle: [
+          {
+            nombre: "So funktioniert es",
+            descripcion:
+              "Melden Sie sich an einer Station oder über die App des Anbieters an, um ein Fahrrad zu entnehmen, und geben Sie es an einer beliebigen anderen Station im Netz der Stadt zurück.",
+          },
+        ],
       },
     },
     taxi: {
@@ -1649,18 +1691,39 @@ const DATA_I18N = {
         descripcion:
           "Taxi ranks at key spots such as the Mosque-Cathedral, the train station and Plaza de las Tendillas. Also available via app.",
         info: "Minimum fare approx. €4, special rates for airport and industrial areas",
+        detalle: [
+          {
+            nombre: "How to get one",
+            descripcion:
+              "You can hail one on the street, go to an official rank, or book by phone or app. Short rides within the historic center are usually close to the minimum fare.",
+          },
+        ],
       },
       fr: {
         nombre: "Taxi",
         descripcion:
           "Stations de taxis à des endroits clés comme la Mosquée-cathédrale, la gare et la Plaza de las Tendillas. Également disponibles via application.",
         info: "Tarif minimum environ 4 €, tarifs spéciaux pour l'aéroport et zones industrielles",
+        detalle: [
+          {
+            nombre: "Comment en prendre un",
+            descripcion:
+              "Vous pouvez en héler un dans la rue, aller à une station officielle ou en réserver un par téléphone ou application. Les courtes courses dans le centre historique avoisinent généralement le tarif minimum.",
+          },
+        ],
       },
       de: {
         nombre: "Taxi",
         descripcion:
           "Taxistände an wichtigen Orten wie der Mezquita-Catedral, dem Bahnhof und der Plaza de las Tendillas. Auch per App verfügbar.",
         info: "Mindestpreis ca. 4 €, Sondertarife für Flughafen und Industriegebiete",
+        detalle: [
+          {
+            nombre: "So bekommen Sie eins",
+            descripcion:
+              "Sie können eins auf der Straße anhalten, zu einem offiziellen Taxistand gehen oder telefonisch bzw. per App bestellen. Kurze Fahrten innerhalb der Altstadt liegen meist nahe am Mindestpreis.",
+          },
+        ],
       },
     },
     tren: {
@@ -1669,18 +1732,39 @@ const DATA_I18N = {
         descripcion:
           "A station well connected by high-speed AVE trains to Madrid (under 2h) and Seville (45 min), plus regional services across Andalusia.",
         info: "15-20 min walk to the historic center, or bus/taxi",
+        detalle: [
+          {
+            nombre: "Buying tickets",
+            descripcion:
+              "Tickets can be bought at renfe.com, at the station's machines or at the ticket office. The station also has an urban bus stop and taxi rank right at the entrance.",
+          },
+        ],
       },
       fr: {
         nombre: "Train (gare de Cordoue)",
         descripcion:
           "Gare bien desservie par le TGV espagnol (AVE) vers Madrid (moins de 2h) et Séville (45 min), ainsi que par des services régionaux dans toute l'Andalousie.",
         info: "15-20 min à pied du centre historique, ou bus/taxi",
+        detalle: [
+          {
+            nombre: "Acheter le billet",
+            descripcion:
+              "Les billets s'achètent sur renfe.com, aux distributeurs de la gare ou au guichet. La gare dispose aussi d'un arrêt de bus urbain et d'une station de taxis juste à la sortie.",
+          },
+        ],
       },
       de: {
         nombre: "Zug (Bahnhof Córdoba)",
         descripcion:
           "Ein Bahnhof mit guter Anbindung durch AVE-Hochgeschwindigkeitszüge nach Madrid (unter 2 Std.) und Sevilla (45 Min.) sowie Regionalverbindungen in ganz Andalusien.",
         info: "15-20 Min. zu Fuß zur Altstadt, oder Bus/Taxi",
+        detalle: [
+          {
+            nombre: "Fahrkarten kaufen",
+            descripcion:
+              "Fahrkarten gibt es auf renfe.com, an den Automaten im Bahnhof oder am Schalter. Direkt am Eingang befinden sich auch eine Stadtbushaltestelle und ein Taxistand.",
+          },
+        ],
       },
     },
     aeropuerto: {
@@ -1689,18 +1773,39 @@ const DATA_I18N = {
         descripcion:
           "Córdoba has its own airport but with very limited flights. The usual option is to fly into Seville (~140 km) and continue by train or bus.",
         info: "Seville airport: approx. 1h20 by car or AVE/bus",
+        detalle: [
+          {
+            nombre: "From Seville airport",
+            descripcion:
+              "There are buses and commuter trains to Santa Justa station, where you can catch the AVE or Avant train to Córdoba in under 45 minutes.",
+          },
+        ],
       },
       fr: {
         nombre: "Aéroport",
         descripcion:
           "Cordoue possède son propre aéroport, mais avec des vols très limités. L'option habituelle consiste à voler vers Séville (~140 km) puis à continuer en train ou en bus.",
         info: "Aéroport de Séville : environ 1h20 en voiture ou en AVE/bus",
+        detalle: [
+          {
+            nombre: "Depuis l'aéroport de Séville",
+            descripcion:
+              "Des bus et des trains de banlieue relient la gare de Santa Justa, d'où vous pouvez prendre l'AVE ou l'Avant jusqu'à Cordoue en moins de 45 minutes.",
+          },
+        ],
       },
       de: {
         nombre: "Flughafen",
         descripcion:
           "Córdoba hat einen eigenen Flughafen, jedoch mit sehr begrenztem Flugangebot. Üblicherweise fliegt man nach Sevilla (~140 km) und fährt von dort mit dem Zug oder Bus weiter.",
         info: "Flughafen Sevilla: ca. 1 Std. 20 Min. mit dem Auto oder per AVE/Bus",
+        detalle: [
+          {
+            nombre: "Vom Flughafen Sevilla aus",
+            descripcion:
+              "Busse und Nahverkehrszüge fahren zum Bahnhof Santa Justa, von wo aus Sie in weniger als 45 Minuten mit dem AVE oder Avant nach Córdoba gelangen.",
+          },
+        ],
       },
     },
     parking: {
@@ -1708,19 +1813,97 @@ const DATA_I18N = {
         nombre: "Parking",
         descripcion:
           "The historic center has restricted vehicle access (low-emission zone). Public parking on the edge of the old town is recommended.",
-        info: "Recommended car parks: San Basilio, Aparcamiento Norte, Vial Norte",
+        info: "Recommended car parks: IC Centro Histórico, La Mezquita, Puerta Sevilla, La Ribera",
+        detalle: [
+          {
+            nombre: "Parking IC Centro Histórico",
+            direccion: "Avenida de los Custodios, 2",
+            descripcion:
+              "By the San Basilio neighborhood and the Alcázar; about a 10-minute walk to the Mosque-Cathedral.",
+          },
+          {
+            nombre: "Parking La Mezquita",
+            direccion: "Avenida de Doctor Fleming, 1",
+            descripcion:
+              "By the Jardines de la Agricultura, on the banks of the Guadalquivir; about an 8-minute walk to the Mosque-Cathedral.",
+          },
+          {
+            nombre: "Parking Puerta Sevilla",
+            direccion: "Calle Puerta Sevilla, 5",
+            descripcion:
+              "In the San Basilio neighborhood, right in the historic quarter; a few minutes' walk from the Jewish Quarter and the Mosque-Cathedral.",
+          },
+          {
+            nombre: "Parking La Ribera",
+            direccion: "Paseo de la Ribera, 1",
+            descripcion:
+              "By the Roman Bridge, right in the historic center; a few minutes' walk from the Mosque-Cathedral and the Alcázar.",
+          },
+        ],
       },
       fr: {
         nombre: "Stationnement",
         descripcion:
           "Le centre historique a un accès restreint aux véhicules (zone à faibles émissions). Il est recommandé d'utiliser les parkings publics en périphérie de la vieille ville.",
-        info: "Parkings recommandés : San Basilio, Aparcamiento Norte, Vial Norte",
+        info: "Parkings recommandés : IC Centro Histórico, La Mezquita, Puerta Sevilla, La Ribera",
+        detalle: [
+          {
+            nombre: "Parking IC Centro Histórico",
+            direccion: "Avenida de los Custodios, 2",
+            descripcion:
+              "Près du quartier de San Basilio et de l'Alcázar ; environ 10 minutes à pied de la Mosquée-cathédrale.",
+          },
+          {
+            nombre: "Parking La Mezquita",
+            direccion: "Avenida de Doctor Fleming, 1",
+            descripcion:
+              "Près des Jardines de la Agricultura, au bord du Guadalquivir ; environ 8 minutes à pied de la Mosquée-cathédrale.",
+          },
+          {
+            nombre: "Parking Puerta Sevilla",
+            direccion: "Calle Puerta Sevilla, 5",
+            descripcion:
+              "Dans le quartier de San Basilio, en plein centre historique ; à quelques minutes à pied de la Judería et de la Mosquée-cathédrale.",
+          },
+          {
+            nombre: "Parking La Ribera",
+            direccion: "Paseo de la Ribera, 1",
+            descripcion:
+              "Près du Pont Romain, en plein centre historique ; à quelques minutes à pied de la Mosquée-cathédrale et de l'Alcázar.",
+          },
+        ],
       },
       de: {
         nombre: "Parken",
         descripcion:
           "Die Altstadt hat eingeschränkten Fahrzeugzugang (Umweltzone). Empfohlen werden öffentliche Parkplätze am Rand der Altstadt.",
-        info: "Empfohlene Parkhäuser: San Basilio, Aparcamiento Norte, Vial Norte",
+        info: "Empfohlene Parkhäuser: IC Centro Histórico, La Mezquita, Puerta Sevilla, La Ribera",
+        detalle: [
+          {
+            nombre: "Parking IC Centro Histórico",
+            direccion: "Avenida de los Custodios, 2",
+            descripcion:
+              "Beim Stadtviertel San Basilio und dem Alcázar; etwa 10 Gehminuten zur Moschee-Kathedrale.",
+          },
+          {
+            nombre: "Parking La Mezquita",
+            direccion: "Avenida de Doctor Fleming, 1",
+            descripcion:
+              "Bei den Jardines de la Agricultura, am Ufer des Guadalquivir; etwa 8 Gehminuten zur Moschee-Kathedrale.",
+          },
+          {
+            nombre: "Parking Puerta Sevilla",
+            direccion: "Calle Puerta Sevilla, 5",
+            descripcion:
+              "Im Stadtviertel San Basilio, mitten in der Altstadt; wenige Gehminuten von der Judería und der Moschee-Kathedrale entfernt.",
+          },
+          {
+            nombre: "Parking La Ribera",
+            direccion: "Paseo de la Ribera, 1",
+            descripcion:
+              "Bei der Römischen Brücke, mitten im historischen Zentrum; wenige Gehminuten von der Moschee-Kathedrale und dem Alcázar entfernt.",
+          },
+        ],
       },
     },
   },
