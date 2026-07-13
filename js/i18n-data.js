@@ -1344,6 +1344,88 @@ const DATA_I18N = {
         queDeberiaPedir: "Le salmorejo, puis la mazamorra en dessert : deux versions de la même recette à des siècles d'écart.",
       },
     },
+    "cuchara-san-lorenzo": {
+      en: {
+        distincion: "Bib Gourmand, Michelin Guide",
+        tipo: "Market-driven Córdoba cuisine",
+        precio: "Mid-range (~€35 per person)",
+        carta: ["Salmorejo", "Veal croquettes", "Mini patatas bravas", "Flamenquín", "Oxtail stew", "Mazamorra"],
+      },
+      fr: {
+        distincion: "Bib Gourmand, Guide Michelin",
+        tipo: "Cuisine cordouane de marché",
+        precio: "Moyen (~35 € par personne)",
+        carta: ["Salmorejo", "Croquettes de veau", "Mini patatas bravas", "Flamenquín", "Queue de taureau", "Mazamorra"],
+      },
+    },
+    "puerta-sevilla": {
+      en: {
+        distincion: "Centuries-old manor house",
+        tipo: "Traditional Córdoba cuisine",
+        precio: "Mid-range (set lunch ~€20)",
+        carta: ["Fried eggplant with honey", "Flamenquín", "Fresh fish of the day", "Weekday set lunch"],
+      },
+      fr: {
+        distincion: "Demeure seigneuriale centenaire",
+        tipo: "Cuisine cordouane traditionnelle",
+        precio: "Moyen (menu déjeuner ~20 €)",
+        carta: ["Aubergines au miel", "Flamenquín", "Poisson frais du jour", "Menu du jour en semaine"],
+      },
+    },
+    "ermita-candelaria": {
+      en: {
+        distincion: "Housed in a 15th-century hermitage",
+        tipo: "Author's Córdoba cuisine",
+        precio: "Mid-high",
+        carta: ["Homemade pisto", "Montilla-style artichokes", "Partridge with onions"],
+      },
+      fr: {
+        distincion: "Installé dans un ermitage du XVe siècle",
+        tipo: "Cuisine cordouane d'auteur",
+        precio: "Moyen-élevé",
+        carta: ["Pisto maison", "Artichauts à la montillana", "Perdrix aux oignons"],
+      },
+    },
+    almudaina: {
+      en: {
+        distincion: "16th-century palace, in the Jewish Quarter",
+        tipo: "Traditional Córdoba cuisine",
+        precio: "Mid-high",
+        carta: [
+          "Salmorejo",
+          "Córdoba-style flamenquín",
+          "Almudaina-style oxtail stew",
+          "Lamb tagine with plums",
+          "Eggplant mille-feuille with foie and goat cheese",
+        ],
+      },
+      fr: {
+        distincion: "Palais du XVIe siècle, dans la Judería",
+        tipo: "Cuisine cordouane traditionnelle",
+        precio: "Moyen-élevé",
+        carta: [
+          "Salmorejo",
+          "Flamenquín à la cordouane",
+          "Queue de taureau façon Almudaina",
+          "Tajine d'agneau aux pruneaux",
+          "Millefeuille d'aubergine au foie gras et fromage de chèvre",
+        ],
+      },
+    },
+    "casa-mazal": {
+      en: {
+        distincion: "Sephardic cuisine in a 14th-century house",
+        tipo: "Sephardic and Andalusi cuisine",
+        precio: "Mid-high",
+        carta: ["Sephardic and Andalusi tasting menus", "Vegetarian and vegan dishes", "Dairy-free desserts"],
+      },
+      fr: {
+        distincion: "Cuisine séfarade dans une maison du XIVe siècle",
+        tipo: "Cuisine séfarade et andalouse",
+        precio: "Moyen-élevé",
+        carta: ["Menus dégustation séfarades et andalous", "Plats végétariens et végans", "Desserts sans lactose"],
+      },
+    },
   },
 
   tapas: {
@@ -1449,6 +1531,156 @@ const DATA_I18N = {
         tipo: "Bar à vin tiré au fût",
         precio: "Économique",
         carta: ["Vin Amargoso et Fino tiré au fût", "Salmorejo", "Charcuterie et tapas froides"],
+      },
+    },
+    "cerveceria-califa": {
+      en: {
+        distincion: "Córdoba's first craft brewery",
+        tipo: "Craft brewery with its own taproom",
+        precio: "Budget-mid",
+        carta: ["Premium Lager", "Toasted Red Ale", "Double Malt", "Punch IPA", "Croquettes and cheese board"],
+      },
+      fr: {
+        distincion: "Première brasserie artisanale de Cordoue",
+        tipo: "Brasserie artisanale avec sa propre salle de dégustation",
+        precio: "Économique-moyen",
+        carta: ["Lager Premium", "Rousse grillée", "Double Malt", "Punch IPA", "Croquettes et plateau de fromages"],
+      },
+    },
+    "trapperia-beer-shop": {
+      en: {
+        distincion: "Specializes only in beer",
+        tipo: "Beer bar with rotating national and imported selection",
+        precio: "Budget-mid",
+        carta: ["Rotating craft beers", "Tapas and shared plates"],
+      },
+      fr: {
+        distincion: "Spécialisé uniquement dans la bière",
+        tipo: "Bar à bières avec sélection tournante nationale et importée",
+        precio: "Économique-moyen",
+        carta: ["Bières artisanales tournantes", "Tapas et plats à partager"],
+      },
+    },
+    "rafa-jimenez-cerveceria": {
+      en: {
+        distincion: "Known for its large terrace",
+        tipo: "Beer bar with national and international selection",
+        precio: "Mid-range",
+        carta: ["Flamenquín", "Croquettes", "Wide beer selection"],
+      },
+      fr: {
+        distincion: "Connu pour sa grande terrasse",
+        tipo: "Bar à bières avec sélection nationale et internationale",
+        precio: "Moyen",
+        carta: ["Flamenquín", "Croquettes", "Large sélection de bières"],
+      },
+    },
+    "taberna-fuenseca": {
+      en: {
+        distincion: "Historic tavern since 1852",
+        tipo: "Traditional tavern and flamenco peña",
+        precio: "Budget",
+        carta: ["Salmorejo", "Flamenquín", "Oxtail stew", "Mazamorra", "Fried eggplant with honey", "Iberian ham"],
+        historia:
+          "Opened in 1852, it's one of Córdoba's oldest taverns and a living flamenco peña: singing can break out spontaneously among regulars, with no stage or set schedule.",
+        queDeberiaPedir: "Salmorejo and flamenquín, with a Montilla-Moriles fino, and hopefully someone breaks into song.",
+      },
+      fr: {
+        distincion: "Taverne historique depuis 1852",
+        tipo: "Taverne traditionnelle et peña flamenca",
+        precio: "Économique",
+        carta: ["Salmorejo", "Flamenquín", "Queue de taureau", "Mazamorra", "Aubergines au miel", "Jambon ibérique"],
+        historia:
+          "Ouverte en 1852, c'est l'une des plus anciennes tavernes de Cordoue et une peña flamenca vivante : le chant peut jaillir spontanément parmi les habitués, sans scène ni horaire fixe.",
+        queDeberiaPedir: "Le salmorejo et le flamenquín, avec un fino de Montilla-Moriles, en espérant que quelqu'un se mette à chanter.",
+      },
+    },
+    "casa-bravo-1919": {
+      en: {
+        distincion: "Historic tavern since 1919",
+        tipo: "Traditional tavern by the Almodóvar Gate",
+        precio: "Budget",
+        carta: [
+          "Oxtail stew",
+          "Salmorejo",
+          "Garlic-fried giblets",
+          "Cortijero-style tripe with trotters",
+          "Homemade flamenquín",
+          "Pastel cordobés",
+        ],
+        historia:
+          "Founded in 1919 by the Puerta de Almodóvar, it keeps its original 1914 tilework with Mosque motifs. Family-run since it opened.",
+        queDeberiaPedir: "The oxtail stew and the garlic-fried giblets, finishing with a pastel cordobés for dessert.",
+      },
+      fr: {
+        distincion: "Taverne historique depuis 1919",
+        tipo: "Taverne traditionnelle près de la Puerta de Almodóvar",
+        precio: "Économique",
+        carta: [
+          "Queue de taureau",
+          "Salmorejo",
+          "Abats à l'ail",
+          "Tripes cortijero aux pieds de porc",
+          "Flamenquín maison",
+          "Pastel cordobés",
+        ],
+        historia:
+          "Fondée en 1919 près de la Puerta de Almodóvar, elle conserve son carrelage original de 1914 à motifs de la Mosquée. Familiale depuis son ouverture.",
+        queDeberiaPedir: "La queue de taureau et les abats à l'ail, en terminant par un pastel cordobés en dessert.",
+      },
+    },
+    "casa-el-pisto": {
+      en: {
+        distincion: "Historic tavern since 1880",
+        tipo: "Traditional tavern tied to bullfighting culture",
+        precio: "Budget-mid",
+        carta: ["Pisto", "Oxtail stew", "Pork trotters", "Iberian cheek stewed in old wine"],
+        historia:
+          "Opened in 1880 in Plaza de San Miguel, it has long been tied to bullfighting culture: the legendary Manolete's father was among its regulars. The López-Acedo family has run it since 1974.",
+        queDeberiaPedir: "The pisto that gives the house its name, and the oxtail stew.",
+      },
+      fr: {
+        distincion: "Taverne historique depuis 1880",
+        tipo: "Taverne traditionnelle liée au monde de la tauromachie",
+        precio: "Économique-moyen",
+        carta: ["Pisto", "Queue de taureau", "Pieds de porc", "Joue ibérique mijotée au vieux vin"],
+        historia:
+          "Ouverte en 1880 sur la Plaza de San Miguel, elle est depuis longtemps liée au monde de la tauromachie : le père du légendaire Manolete comptait parmi ses habitués. La famille López-Acedo la dirige depuis 1974.",
+        queDeberiaPedir: "Le pisto qui donne son nom à la maison, et la queue de taureau.",
+      },
+    },
+    "taberna-regina": {
+      en: {
+        distincion: "Historic tavern since 1904",
+        tipo: "Traditional tavern with a Cordoban courtyard",
+        precio: "Budget-mid",
+        carta: ["Patatas bravas", "Sherry-braised meat", "Tripe", "Oxtail stew", "Salmorejo", "Flamenquín"],
+        historia:
+          "Opened in 1904, it once had a discreet separate entrance for women, a social detail of the era that's now part of its history.",
+        queDeberiaPedir: "The patatas bravas and the sherry-braised meat, on the terrace or in the Cordoban courtyard.",
+      },
+      fr: {
+        distincion: "Taverne historique depuis 1904",
+        tipo: "Taverne traditionnelle avec patio cordouan",
+        precio: "Économique-moyen",
+        carta: ["Patatas bravas", "Viande au xérès", "Tripes", "Queue de taureau", "Salmorejo", "Flamenquín"],
+        historia:
+          "Ouverte en 1904, elle avait autrefois une entrée discrète séparée pour les femmes, un détail social de l'époque qui fait aujourd'hui partie de son histoire.",
+        queDeberiaPedir: "Les patatas bravas et la viande au xérès, sur la terrasse ou dans le patio cordouan.",
+      },
+    },
+    "bar-santa-marina": {
+      en: {
+        distincion: "One of Córdoba's oldest bars",
+        tipo: "Neighborhood bar in historic Santa Marina",
+        precio: "Budget",
+        carta: ["Salmorejo", "Flamenquín", "Moorish-style skewers", "Fried eggplant with honey", "Boletus croquettes"],
+      },
+      fr: {
+        distincion: "L'un des bars les plus anciens de Cordoue",
+        tipo: "Bar de quartier dans le historique Santa Marina",
+        precio: "Économique",
+        carta: ["Salmorejo", "Flamenquín", "Brochettes à la maure", "Aubergines au miel", "Croquettes de bolets"],
       },
     },
   },
