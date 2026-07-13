@@ -1078,6 +1078,20 @@ const DATA_I18N = {
           "Crème froide d'amandes, de pain et d'ail, ancêtre du salmorejo aux racines arabes, servie avec des raisins secs ou de la pomme.",
       },
     },
+    "pastel-cordobes": {
+      en: {
+        nombre: "Pastel cordobés",
+        tipo: "Pastry",
+        descripcion:
+          "A puff-pastry cake filled with cabello de ángel (candied pumpkin), topped with sugar and cinnamon. There's also a mini version called \"manolete\" and a savory version with ham.",
+      },
+      fr: {
+        nombre: "Pastel cordobés",
+        tipo: "Pâtisserie",
+        descripcion:
+          "Un feuilleté fourré au cabello de ángel (confiture de citrouille), saupoudré de sucre et de cannelle. Il existe aussi une version individuelle appelée « manolete » et une version salée au jambon.",
+      },
+    },
   },
 
   transport: {
@@ -1249,6 +1263,9 @@ const DATA_I18N = {
           "Trotters stuffed with foie and ham",
           "Fried milk with cinnamon ice cream",
         ],
+        historia:
+          "Founded in 1908 by Domingo Campos del Santo as a wine bodega; its dining rooms didn't open until 1964. It still has centuries-old Andalusian courtyards and a full Montilla-Moriles wine collection.",
+        queDeberiaPedir: "The oxtail stew and the molinera salad with cod and orange, paired with a house fino.",
       },
       fr: {
         distincion: "Taverne historique depuis 1908",
@@ -1260,6 +1277,9 @@ const DATA_I18N = {
           "Pieds farcis au foie gras et jambon",
           "Lait frit et glace à la cannelle",
         ],
+        historia:
+          "Fondée en 1908 par Domingo Campos del Santo comme bodega de vins ; ses salles à manger n'ont ouvert qu'en 1964. Elle conserve des patios andalous centenaires et une collection complète de vins de Montilla-Moriles.",
+        queDeberiaPedir: "La queue de taureau et la salade molinera à la morue et à l'orange, accompagnées d'un fino maison.",
       },
     },
     "taberna-salinas": {
@@ -1273,6 +1293,9 @@ const DATA_I18N = {
           "Braised oxtail stew",
           "Fried eggplant with cane honey",
         ],
+        historia:
+          "Opened in 1924 by Francisco de Paula Salinas next to the old market; it closed in 1982 and reopened in 1988 under Manuel Jiménez Montoro. Its tiled courtyard is one of the most photographed in the city.",
+        queDeberiaPedir: "The ajo blanco to start, and flamenquín as a main.",
       },
       fr: {
         distincion: "Taverne historique depuis 1924",
@@ -1284,6 +1307,9 @@ const DATA_I18N = {
           "Ragoût de queue de taureau",
           "Aubergines frites au miel de canne",
         ],
+        historia:
+          "Ouverte en 1924 par Francisco de Paula Salinas près de l'ancien marché ; fermée en 1982, elle a rouvert en 1988 sous la direction de Manuel Jiménez Montoro. Son patio carrelé est l'un des plus photographiés de la ville.",
+        queDeberiaPedir: "L'ajo blanco en entrée, puis le flamenquín en plat principal.",
       },
     },
     "casa-pepe-juderia": {
@@ -1298,6 +1324,9 @@ const DATA_I18N = {
           "Mazamorra",
           "Fried eggplant with cane honey",
         ],
+        historia:
+          "A family-run tavern opened in 1928 in the heart of the Jewish Quarter, right by the Synagogue, recognized by the Michelin Guide for its traditional Córdoba cuisine.",
+        queDeberiaPedir: "Salmorejo, then mazamorra for dessert: two versions of the same recipe centuries apart.",
       },
       fr: {
         distincion: "Sélection du Guide Michelin, depuis 1928",
@@ -1310,6 +1339,9 @@ const DATA_I18N = {
           "Mazamorra",
           "Aubergines frites au miel de canne",
         ],
+        historia:
+          "Taverne familiale ouverte en 1928 au cœur de la Judería, tout près de la Synagogue, reconnue par le Guide Michelin pour sa cuisine cordouane traditionnelle.",
+        queDeberiaPedir: "Le salmorejo, puis la mazamorra en dessert : deux versions de la même recette à des siècles d'écart.",
       },
     },
   },
@@ -1347,6 +1379,9 @@ const DATA_I18N = {
           "Oxtail stew with potatoes",
           "Tapas of Sephardic roots",
         ],
+        historia:
+          "Opened in 1920 as \"Taberna de El Cojo de San Nicolás\" by the Puerta de Almodóvar; in 1932 José María Jiménez Márquez bought it and renamed it Casa Rubio, the name it still carries today.",
+        queDeberiaPedir: "The fried eggplant with cane honey on the rooftop terrace, overlooking the city walls.",
       },
       fr: {
         distincion: "Taverne historique depuis 1920",
@@ -1357,20 +1392,29 @@ const DATA_I18N = {
           "Queue de taureau aux pommes de terre",
           "Tapas aux racines séfarades",
         ],
+        historia:
+          "Ouverte en 1920 sous le nom de « Taberna de El Cojo de San Nicolás » près de la Puerta de Almodóvar ; en 1932, José María Jiménez Márquez l'a rachetée et rebaptisée Casa Rubio, nom qu'elle porte toujours.",
+        queDeberiaPedir: "Les aubergines frites au miel de canne sur la terrasse en rooftop, avec vue sur les remparts.",
       },
     },
     "sociedad-plateros": {
       en: {
-        distincion: "Córdoba tavern since 1874",
+        distincion: "Córdoba tavern since 1872",
         tipo: "Traditional tavern with courtyard",
         precio: "Budget",
         carta: ["Salmorejo", "Home-style stews", "Montilla-Moriles wines"],
+        historia:
+          "The silversmiths' mutual-aid society was founded in 1868, and its tavern opened in 1872 next to the San Francisco convent — today one of Córdoba's oldest taverns.",
+        queDeberiaPedir: "Salmorejo and whatever home-style stew is on that day, with a Montilla-Moriles wine.",
       },
       fr: {
-        distincion: "Taverne cordouane depuis 1874",
+        distincion: "Taverne cordouane depuis 1872",
         tipo: "Taverne traditionnelle avec patio",
         precio: "Économique",
         carta: ["Salmorejo", "Ragoûts maison", "Vins de Montilla-Moriles"],
+        historia:
+          "La société mutualiste des orfèvres a été fondée en 1868, et sa taverne a ouvert en 1872 à côté du couvent de San Francisco — aujourd'hui l'une des plus anciennes tavernes de Cordoue.",
+        queDeberiaPedir: "Le salmorejo et le ragoût maison du jour, accompagnés d'un vin de Montilla-Moriles.",
       },
     },
     "bar-santos": {
@@ -1379,12 +1423,18 @@ const DATA_I18N = {
         tipo: "Bar-counter tapas (cash only)",
         precio: "Budget",
         carta: ["Giant Spanish tortilla", "Cold bar tapas"],
+        historia:
+          "A counter bar opened in 1966 right by the Mosque-Cathedral, famous for its giant Spanish tortilla served in slices, cash only.",
+        queDeberiaPedir: "A slice of tortilla de patatas, eaten standing up while looking at the Mosque's walls.",
       },
       fr: {
         distincion: "Emblématique depuis 1966, à côté de la Mosquée-cathédrale",
         tipo: "Tapas au comptoir (paiement en espèces uniquement)",
         precio: "Économique",
         carta: ["Tortilla de pommes de terre géante", "Tapas froides au comptoir"],
+        historia:
+          "Un bar-comptoir ouvert en 1966 juste à côté de la Mosquée-cathédrale, célèbre pour sa tortilla de pommes de terre géante servie en parts, paiement en espèces uniquement.",
+        queDeberiaPedir: "Une part de tortilla de patatas, dégustée debout face aux remparts de la Mosquée.",
       },
     },
     "bodega-guzman": {

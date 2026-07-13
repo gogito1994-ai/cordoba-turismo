@@ -618,6 +618,11 @@ const FOOD = [
     imagen: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmorejo_cordobes.jpg",
     descripcion:
       "Crema fría de tomate, pan, ajo y aceite de oliva virgen extra, servida con huevo duro y jamón picado. El plato más emblemático de Córdoba.",
+    dondeProbar: [
+      { collection: "tapas", id: "bodegas-mezquita-cespedes" },
+      { collection: "tapas", id: "sociedad-plateros" },
+      { collection: "restaurants", id: "casa-pepe-juderia" },
+    ],
   },
   {
     id: "flamenquin",
@@ -628,6 +633,10 @@ const FOOD = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flamenqu%C3%ADn%2C_C%C3%B3rdoba%2C_2016.jpg/500px-Flamenqu%C3%ADn%2C_C%C3%B3rdoba%2C_2016.jpg",
     descripcion:
       "Rollo de lomo de cerdo envuelto en jamón serrano, empanado y frito. Se sirve normalmente con patatas fritas y alioli.",
+    dondeProbar: [
+      { collection: "restaurants", id: "taberna-salinas" },
+      { collection: "restaurants", id: "casa-pepe-juderia" },
+    ],
   },
   {
     id: "rabo-toro",
@@ -638,6 +647,11 @@ const FOOD = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Rabo_de_toro-Estofado_%2801%29.JPG/500px-Rabo_de_toro-Estofado_%2801%29.JPG",
     descripcion:
       "Guiso tradicional de rabo de toro estofado a fuego lento con vino, verduras y especias, hasta quedar tierno y meloso.",
+    dondeProbar: [
+      { collection: "restaurants", id: "el-churrasco" },
+      { collection: "restaurants", id: "bodegas-campos" },
+      { collection: "tapas", id: "casa-rubio" },
+    ],
   },
   {
     id: "berenjenas-miel",
@@ -648,6 +662,11 @@ const FOOD = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Berenjenas_con_miel_de_ca%C3%B1a_La_Gamba_de_ORO.jpg/500px-Berenjenas_con_miel_de_ca%C3%B1a_La_Gamba_de_ORO.jpg",
     descripcion:
       "Berenjenas cortadas en tiras finas, fritas y bañadas en miel de caña. Una tapa dulce-salada muy popular en las tabernas.",
+    dondeProbar: [
+      { collection: "tapas", id: "casa-rubio" },
+      { collection: "restaurants", id: "taberna-salinas" },
+      { collection: "restaurants", id: "casa-pepe-juderia" },
+    ],
   },
   {
     id: "vino-montilla",
@@ -658,6 +677,10 @@ const FOOD = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Detalle_botellas_Cooperativa_La_Uni%C3%B3n_de_Montilla.jpg/500px-Detalle_botellas_Cooperativa_La_Uni%C3%B3n_de_Montilla.jpg",
     descripcion:
       "Vino con Denominación de Origen propia de la provincia, elaborado con uva Pedro Ximénez. Ideal para acompañar el tapeo.",
+    dondeProbar: [
+      { collection: "tapas", id: "bodega-guzman" },
+      { collection: "tapas", id: "sociedad-plateros" },
+    ],
   },
   {
     id: "mazamorra",
@@ -666,6 +689,18 @@ const FOOD = [
     tipo: "Plato típico",
     descripcion:
       "Crema fría a base de almendras, pan y ajo, un antecedente del salmorejo con raíces árabes, servida con uvas pasas o manzana.",
+    dondeProbar: [{ collection: "restaurants", id: "casa-pepe-juderia" }],
+  },
+  {
+    id: "pastel-cordobes",
+    nombre: "Pastel cordobés",
+    icono: "utensils",
+    tipo: "Repostería",
+    descripcion:
+      "Hojaldre relleno de cabello de ángel (confitura de calabaza), rematado con azúcar y canela. Existe también una versión individual llamada \"manolete\" y una variante salada con jamón.",
+    dondeProbar: [
+      { nombre: "Confitería Savoy", zona: "Poniente Sur, Calle Lope de Rueda" },
+    ],
   },
 ];
 
@@ -740,6 +775,12 @@ const RESTAURANTS = [
       "Menú Taqadum",
       "Sésamo blanco Karim con caviar del desierto",
     ],
+    horario: "Mié-Sáb 13:30-15:30 20:30-23:00",
+    verificar: true,
+    vegetariano: false,
+    conNinos: false,
+    terraza: false,
+    cercaJuderia: false,
   },
   {
     id: "choco",
@@ -759,6 +800,11 @@ const RESTAURANTS = [
       "Cocina de raíces andaluzas con técnica actual",
       "Maridaje con vinos de la D.O. Montilla-Moriles",
     ],
+    horario: "Mié-Sáb 13:30-15:00 20:30-22:00, Dom 13:30-15:00",
+    vegetariano: false,
+    conNinos: false,
+    terraza: false,
+    cercaJuderia: false,
   },
   {
     id: "el-churrasco",
@@ -778,6 +824,11 @@ const RESTAURANTS = [
       "Gazpacho blanco con piñones",
       "Solomillo ibérico a la brasa",
     ],
+    horario: "Todos los días 13:00-16:00 20:00-23:30",
+    vegetariano: true,
+    conNinos: true,
+    terraza: false,
+    cercaJuderia: true,
   },
   {
     id: "bodegas-campos",
@@ -797,6 +848,16 @@ const RESTAURANTS = [
       "Manitas rellenas de foie y jamón",
       "Leche frita con helado de canela",
     ],
+    horario: "Lun-Sáb 13:00-16:00 20:00-23:00",
+    verificar: true,
+    vegetariano: false,
+    conNinos: true,
+    terraza: false,
+    cercaJuderia: false,
+    esHistorica: true,
+    historia:
+      "Fundada en 1908 por Domingo Campos del Santo como bodega de vinos; sus comedores no se abrieron hasta 1964. Conserva patios andaluces centenarios y una completa colección de vinos de Montilla-Moriles.",
+    queDeberiaPedir: "El rabo de toro y la ensalada molinera con bacalao y naranja, maridados con un fino de la casa.",
   },
   {
     id: "taberna-salinas",
@@ -816,6 +877,15 @@ const RESTAURANTS = [
       "Rabo de toro estofado",
       "Berenjenas fritas con miel de caña",
     ],
+    horario: "Lun-Vie 12:30-16:00 20:00-23:30, Sáb 12:30-16:00",
+    vegetariano: true,
+    conNinos: true,
+    terraza: false,
+    cercaJuderia: false,
+    esHistorica: true,
+    historia:
+      "Abierta en 1924 por Francisco de Paula Salinas junto al mercado de abastos; cerró en 1982 y reabrió en 1988 de la mano de Manuel Jiménez Montoro. Su patio con azulejos es uno de los más fotografiados de la ciudad.",
+    queDeberiaPedir: "El ajo blanco de entrante y el flamenquín como plato principal.",
   },
   {
     id: "casa-pepe-juderia",
@@ -836,6 +906,15 @@ const RESTAURANTS = [
       "Mazamorra",
       "Berenjenas con miel de caña",
     ],
+    horario: "Dom-Jue 13:00-16:00 20:00-23:00, Vie-Sáb 13:00-16:00 20:00-24:00",
+    vegetariano: true,
+    conNinos: true,
+    terraza: false,
+    cercaJuderia: true,
+    esHistorica: true,
+    historia:
+      "Taberna familiar abierta en 1928 en pleno corazón de la Judería, muy cerca de la Sinagoga, reconocida por la Guía Michelin por su cocina cordobesa tradicional.",
+    queDeberiaPedir: "El salmorejo y la mazamorra de postre: dos versiones de la misma receta con siglos de diferencia.",
   },
 ];
 
@@ -857,6 +936,11 @@ const TAPAS = [
       "Berenjenas califales al PX",
       "Rabo de toro a la cordobesa",
     ],
+    horario: "Todos los días 12:30-24:00",
+    vegetariano: true,
+    conNinos: true,
+    terraza: false,
+    cercaJuderia: true,
   },
   {
     id: "casa-rubio",
@@ -875,6 +959,15 @@ const TAPAS = [
       "Rabo de toro con patatas",
       "Tapas de raíz sefardí",
     ],
+    horario: "Lun 13:00-16:00 20:00-23:00, Jue-Dom 13:00-16:00 20:00-23:00",
+    vegetariano: true,
+    conNinos: true,
+    terraza: true,
+    cercaJuderia: true,
+    esHistorica: true,
+    historia:
+      "Abierta en 1920 como \"Taberna de El Cojo de San Nicolás\" junto a la Puerta de Almodóvar; en 1932 José María Jiménez Márquez la compró y le dio el nombre de Casa Rubio, con el que sigue funcionando.",
+    queDeberiaPedir: "Las berenjenas fritas con miel de caña en la terraza de la azotea, con vistas a la muralla.",
   },
   {
     id: "sociedad-plateros",
@@ -883,12 +976,21 @@ const TAPAS = [
     categoria: "Tapas",
     lat: 37.8811175,
     lng: -4.7756118,
-    distincion: "Taberna cordobesa desde 1874",
+    distincion: "Taberna cordobesa desde 1872",
     tipo: "Taberna tradicional con patio",
     direccion: "Calle Romero Barros, 6",
     precio: "Económico",
     web: "https://tabernaplateros.com/",
     carta: ["Salmorejo", "Guisos caseros de cuchara", "Vinos de Montilla-Moriles"],
+    horario: "Mar-Sáb 11:00-16:00 20:00-23:30, Dom 11:30-17:00",
+    vegetariano: true,
+    conNinos: true,
+    terraza: true,
+    cercaJuderia: false,
+    esHistorica: true,
+    historia:
+      "La sociedad mutualista de plateros nació en 1868 y su taberna abrió en 1872 junto al convento de San Francisco, en lo que hoy es una de las tabernas más veteranas de Córdoba.",
+    queDeberiaPedir: "El salmorejo y algún guiso casero de cuchara del día, acompañados de un vino de Montilla-Moriles.",
   },
   {
     id: "bar-santos",
@@ -903,6 +1005,15 @@ const TAPAS = [
     precio: "Económico",
     web: "https://www.facebook.com/barsantosCordoba/",
     carta: ["Tortilla de patatas gigante", "Tapas frías de barra"],
+    horario: "Lun-Jue 10:00-24:00, Vie-Dom 11:00-24:00",
+    vegetariano: true,
+    conNinos: false,
+    terraza: false,
+    cercaJuderia: true,
+    esHistorica: true,
+    historia:
+      "Bar de barra abierto en 1966 pegado a la Mezquita-Catedral, célebre por su tortilla de patatas gigante que se sirve en porciones y solo se paga en efectivo.",
+    queDeberiaPedir: "Una ración de tortilla de patatas para comer de pie, mirando la muralla de la Mezquita.",
   },
   {
     id: "bodega-guzman",
@@ -916,5 +1027,9 @@ const TAPAS = [
     direccion: "Calle Judíos, 7",
     precio: "Económico",
     carta: ["Vino Amargoso y Fino a granel", "Salmorejo", "Embutidos y tapas frías"],
+    vegetariano: true,
+    conNinos: false,
+    terraza: false,
+    cercaJuderia: true,
   },
 ];

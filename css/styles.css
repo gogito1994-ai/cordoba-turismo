@@ -3855,3 +3855,195 @@ body.event-modal-open {
     min-width: 0;
   }
 }
+
+/* ============ Gastronomía: dónde probarlo, tabernas, filtros, ruta, glosario ============ */
+
+.donde-probar,
+.deberia-pedir {
+  background: var(--crema);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 14px 16px;
+  margin-top: 12px;
+}
+
+.donde-probar strong,
+.deberia-pedir strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  color: var(--terracota-dark);
+  margin-bottom: 8px;
+}
+
+.donde-probar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.donde-probar li {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.donde-probar li:last-child {
+  margin-bottom: 0;
+}
+
+.donde-probar a {
+  color: var(--terracota-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.donde-probar a:hover {
+  text-decoration: underline;
+}
+
+.donde-probar small {
+  color: var(--texto-suave);
+}
+
+.deberia-pedir p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.venue-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.venue-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--crema);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.76rem;
+  color: var(--texto-suave);
+}
+
+.venue-badge .icon {
+  width: 13px;
+  height: 13px;
+}
+
+.venue-badge-open {
+  background: rgba(110, 123, 74, 0.15);
+  border-color: var(--oliva);
+  color: var(--oliva);
+}
+
+.venue-badge-closed {
+  opacity: 0.7;
+}
+
+.gastro-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.gastro-filter-chip {
+  border: 1px solid var(--borde);
+  background: var(--blanco);
+  color: var(--texto);
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.gastro-filter-chip:hover:not(.active) {
+  border-color: var(--terracota);
+}
+
+.gastro-filter-chip.active {
+  background: var(--terracota);
+  border-color: var(--terracota);
+  color: var(--blanco);
+}
+
+.gastro-route-cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--crema);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 28px 32px;
+}
+
+.gastro-route-cta h3 {
+  font-family: var(--font-display);
+  margin: 0 0 4px;
+}
+
+.gastro-route-cta p {
+  margin: 0;
+  color: var(--texto-suave);
+}
+
+.gastro-route-cta-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.glossary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.glossary-item {
+  background: var(--blanco-cal);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 18px 20px;
+}
+
+.glossary-item strong {
+  display: block;
+  font-family: var(--font-display);
+  color: var(--terracota-dark);
+  margin-bottom: 6px;
+}
+
+.glossary-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+@media (max-width: 640px) {
+  .gastro-route-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .gastro-route-cta-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .gastro-route-cta-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

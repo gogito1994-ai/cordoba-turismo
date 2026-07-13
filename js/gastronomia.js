@@ -1,7 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("food-grid");
+  const historicGrid = document.getElementById("historic-grid");
   const restaurantsGrid = document.getElementById("restaurants-grid");
   const tapasGrid = document.getElementById("tapas-grid");
+  const filtersEl = document.getElementById("gastro-filters");
+  const routeCtaEl = document.getElementById("tapa-route-cta");
+  const glossaryEl = document.getElementById("glossary-list");
+  if (!grid) return;
+
+  const filters = {
+    vegetariano: false,
+    conNinos: false,
+    terraza: false,
+    cercaJuderia: false,
+    abiertoAhora: false,
+  };
+
+  /* ---------- platos icónicos ---------- */
+
+  function dondeProbarHtml(f) {
+    const spots = resolveDondeProbar(f.dondeProbar);
+    if (!spots.length) return "";
+    const items = spots
+      .map((s) => {
+        const link = s.collection
+          ? `<a href="mapa.html?focus=${s.id}">${s.nombre}</a>`
+          : `<span>${s.nombre}</span>`;
+        return `<li>${link}<small>${s.zona || ""}${s.precio ? ` · ${s.precio}` : ""}</small></li>`;
+      })
+      .join("");
+    return `
+      <div class="donde-probar">
+        <strong>${t("gastronomy_where_to_try")}</strong>
+        <ul>${items}</ul>
+      </div>`;
+  }
 
   function foodCard(f) {
     const media = f.imagen
@@ -16,8 +49,47 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="tag">${tr(f, "food", "tipo")}</span>
           <h3>${tr(f, "food", "nombre")}</h3>
           <p>${tr(f, "food", "descripcion")}</p>
+          ${dondeProbarHtml(f)}
         </div>
       </article>`;
+  }
+
+  /* ---------- tabernas históricas ---------- */
+
+  function historicCard(v, collection) {
+    return `
+      <article class="card">
+        <div class="card-body">
+          <span class="card-icon">${Icon(v.icono)}</span>
+          <span class="tag">${tr(v, collection, "distincion")}</span>
+          <h3>${v.nombre}</h3>
+          <div class="meta">${Icon("map-pin")} ${v.direccion}</div>
+          <p>${tr(v, collection, "historia")}</p>
+          <div class="deberia-pedir">
+            <strong>${t("gastronomy_should_order")}</strong>
+            <p>${tr(v, collection, "queDeberiaPedir")}</p>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  /* ---------- restaurantes / tapas con filtros ---------- */
+
+  function venueBadges(v) {
+    const badges = [];
+    if (v.vegetariano) badges.push(`<span class="venue-badge">${Icon("utensils")} ${t("filter_vegetariano")}</span>`);
+    if (v.conNinos) badges.push(`<span class="venue-badge">${Icon("users")} ${t("filter_con_ninos")}</span>`);
+    if (v.terraza) badges.push(`<span class="venue-badge">${Icon("sun")} ${t("filter_terraza")}</span>`);
+    if (v.cercaJuderia) badges.push(`<span class="venue-badge">${Icon("map-pin")} ${t("filter_cerca_juderia")}</span>`);
+    if (v.horario) {
+      const status = gastroOpenStatus(v.horario, new Date());
+      if (status !== "unknown") {
+        badges.push(
+          `<span class="venue-badge venue-badge-${status}">${Icon("clock")} ${t(status === "open" ? "filter_abierto_ahora" : "ahora_closed_now")}</span>`
+        );
+      }
+    }
+    return badges.join("");
   }
 
   function venueCard(v, collection) {
@@ -26,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const webBtn = v.web
       ? `<a class="btn btn-primary btn-ticket" href="${v.web}" target="_blank" rel="noopener noreferrer">${Icon("external-link")} ${t("web_reserve_button")}</a>`
       : "";
+    const verificar = v.verificar ? `<p class="map-sheet-flag">${t("gastronomy_hours_unverified")}</p>` : "";
 
     return `
       <article class="card">
@@ -36,6 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${tr(v, collection, "tipo")}${v.chef ? ` · Chef ${v.chef}` : ""}</p>
           <div class="meta">${Icon("map-pin")} ${v.direccion}</div>
           <div class="meta">${Icon("tag")} ${tr(v, collection, "precio")}</div>
+          <div class="venue-badges">${venueBadges(v)}</div>
+          ${verificar}
           <div class="carta">
             <strong>${t("carta_label")}</strong>
             <ul>${cartaItems}</ul>
@@ -45,16 +120,86 @@ document.addEventListener("DOMContentLoaded", () => {
       </article>`;
   }
 
+  function renderVenueGrids() {
+    const filteredRestaurants = RESTAURANTS.filter((v) => matchesGastroFilters(v, filters));
+    const filteredTapas = TAPAS.filter((v) => matchesGastroFilters(v, filters));
+
+    restaurantsGrid.innerHTML =
+      filteredRestaurants.map((r) => venueCard(r, "restaurants")).join("") ||
+      `<p class="empty-state">${t("gastronomy_no_results")}</p>`;
+    tapasGrid.innerHTML =
+      filteredTapas.map((v) => venueCard(v, "tapas")).join("") ||
+      `<p class="empty-state">${t("gastronomy_no_results")}</p>`;
+  }
+
+  function renderFilters() {
+    const chips = [
+      ["vegetariano", "filter_vegetariano"],
+      ["conNinos", "filter_con_ninos"],
+      ["terraza", "filter_terraza"],
+      ["cercaJuderia", "filter_cerca_juderia"],
+      ["abiertoAhora", "filter_abierto_ahora"],
+    ];
+    filtersEl.innerHTML = chips
+      .map(
+        ([key, labelKey]) =>
+          `<button type="button" class="gastro-filter-chip${filters[key] ? " active" : ""}" data-filter="${key}">${t(labelKey)}</button>`
+      )
+      .join("");
+
+    filtersEl.querySelectorAll(".gastro-filter-chip").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.filter;
+        filters[key] = !filters[key];
+        renderFilters();
+        renderVenueGrids();
+      });
+    });
+  }
+
+  /* ---------- ruta de la tapa ---------- */
+
+  function renderTapaRouteCta() {
+    if (!routeCtaEl || typeof buildTapasRouteMapUrl !== "function") return;
+    const plannerUrl = buildTapasRoutePlannerUrl();
+    routeCtaEl.innerHTML = `
+      <div class="gastro-route-cta">
+        <span class="card-icon">${Icon("route")}</span>
+        <div>
+          <h3>${t("gastronomy_tapa_route_title")}</h3>
+          <p>${t("gastronomy_tapa_route_desc")}</p>
+        </div>
+        <div class="gastro-route-cta-actions">
+          <a class="btn btn-outline-dark" href="${buildTapasRouteMapUrl()}">${Icon("map")} ${t("gastronomy_tapa_route_map")}</a>
+          ${plannerUrl ? `<a class="btn btn-primary" href="${plannerUrl}">${Icon("route")} ${t("gastronomy_tapa_route_planner")}</a>` : ""}
+        </div>
+      </div>`;
+  }
+
+  /* ---------- glosario ---------- */
+
+  function renderGlossary() {
+    if (!glossaryEl) return;
+    glossaryEl.innerHTML = glossaryLang()
+      .map((entry) => `<div class="glossary-item"><strong>${entry.termino}</strong><p>${entry.significado}</p></div>`)
+      .join("");
+  }
+
   function render() {
-    if (grid) grid.innerHTML = FOOD.map(foodCard).join("");
-    if (restaurantsGrid) {
-      restaurantsGrid.innerHTML = RESTAURANTS.map((r) => venueCard(r, "restaurants")).join("");
+    grid.innerHTML = FOOD.map(foodCard).join("");
+    if (historicGrid) {
+      const historic = [...RESTAURANTS, ...TAPAS].filter((v) => v.esHistorica);
+      historicGrid.innerHTML = historic
+        .map((v) => historicCard(v, RESTAURANTS.includes(v) ? "restaurants" : "tapas"))
+        .join("");
     }
-    if (tapasGrid) {
-      tapasGrid.innerHTML = TAPAS.map((v) => venueCard(v, "tapas")).join("");
-    }
+    renderFilters();
+    renderVenueGrids();
+    renderTapaRouteCta();
+    renderGlossary();
   }
 
   document.addEventListener("lang-changed", render);
+
   render();
 });

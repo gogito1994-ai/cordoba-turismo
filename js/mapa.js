@@ -415,4 +415,19 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
+
+  const rutaParam = params.get("ruta");
+  if (rutaParam && WALKING_ROUTES.some((r) => r.id === rutaParam)) {
+    activeRouteId = rutaParam;
+    renderRoutesPanel();
+    renderRoute();
+    const route = WALKING_ROUTES.find((r) => r.id === rutaParam);
+    const stopPoints = route.paradas.map((ref) => resolveMapPoint(ref)).filter(Boolean);
+    if (stopPoints.length) {
+      map.fitBounds(
+        L.latLngBounds(stopPoints.map((p) => [p.lat, p.lng])),
+        { padding: [60, 60], maxZoom: 16 }
+      );
+    }
+  }
 });
