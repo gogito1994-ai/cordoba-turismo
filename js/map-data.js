@@ -69,14 +69,13 @@ const CONSIGNAS = [
     nombre: "Dcanlock",
     categoria: "Consigna",
     icono: "suitcase",
-    lat: 37.883,
-    lng: -4.778,
+    lat: 37.8851064,
+    lng: -4.7769327,
     descripcion:
-      "Consigna de maletas en pleno centro de Córdoba, a 15 min a pie de la estación. Taquillas seguras con vigilancia 24h. 20% de descuento con el código CORDOBAPP.",
+      "Consigna de maletas en Calle María Cristina, 3, en pleno centro de Córdoba, a 15 min a pie de la estación. Taquillas seguras con vigilancia 24h. 20% de descuento con el código CORDOBAPP.",
     horario: "Consultar disponibilidad en la web",
     precio: "Desde ~5-6€ por maleta y día",
     web: "https://dcanlock.com/",
-    verificar: true,
   },
   {
     id: "cordoba-locker-estacion",
