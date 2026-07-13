@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function foodCard(f) {
     const media = f.imagen
-      ? `<div class="card-media"><img src="${f.imagen}" alt="${tr(f, "food", "nombre")}" /></div>`
+      ? `<div class="card-media"><img src="${f.imagen}" alt="${tr(f, "food", "nombre")}" loading="lazy" /></div>`
       : "";
 
     return `
@@ -185,6 +185,31 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
+  function injectLocalBusinessJsonLd() {
+    const venues = [
+      ...RESTAURANTS.map((v) => ({ v, type: "Restaurant", collection: "restaurants" })),
+      ...TAPAS.map((v) => ({ v, type: "BarOrPub", collection: "tapas" })),
+    ];
+    const graph = venues.map(({ v, type, collection }) => ({
+      "@type": type,
+      name: v.nombre,
+      description: tr(v, collection, "tipo"),
+      address: { "@type": "PostalAddress", streetAddress: v.direccion, addressLocality: "Córdoba", addressCountry: "ES" },
+      ...(v.lat && v.lng ? { geo: { "@type": "GeoCoordinates", latitude: v.lat, longitude: v.lng } } : {}),
+      ...(v.web ? { url: v.web } : {}),
+      priceRange: tr(v, collection, "precio"),
+    }));
+
+    let ld = document.getElementById("venues-jsonld");
+    if (!ld) {
+      ld = document.createElement("script");
+      ld.type = "application/ld+json";
+      ld.id = "venues-jsonld";
+      document.head.appendChild(ld);
+    }
+    ld.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
+  }
+
   function render() {
     grid.innerHTML = FOOD.map(foodCard).join("");
     if (historicGrid) {
@@ -197,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderVenueGrids();
     renderTapaRouteCta();
     renderGlossary();
+    injectLocalBusinessJsonLd();
   }
 
   document.addEventListener("lang-changed", render);

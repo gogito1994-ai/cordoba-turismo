@@ -4047,3 +4047,32 @@ body.event-modal-open {
     justify-content: center;
   }
 }
+
+/* ============ FAQ (portada) ============ */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.faq-item {
+  background: var(--blanco-cal);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 16px 20px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--terracota-dark);
+  font-size: 1.05rem;
+}
+
+.faq-item p {
+  color: var(--texto-suave);
+  margin: 14px 0 0;
+}

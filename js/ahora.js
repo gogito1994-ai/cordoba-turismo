@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nearbyResultsEl.innerHTML = points
           .map(({ p, dist }) => {
             const name = tr(p, p.collection, "nombre");
-            const href = p.collection === "places" ? `lugar.html?id=${p.id}` : `mapa.html?focus=${p.id}`;
+            const href = p.collection === "places" ? `/lugares/${p.slug || p.id}.html` : `mapa.html?focus=${p.id}`;
             return `<a class="ahora-nearby-item" href="${href}">
               <span class="ahora-nearby-icon">${Icon(p.icono)}</span>
               <span><strong>${name}</strong><small>${Math.round(dist)} m</small></span>
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function itemHtml(p) {
       const name = tr(p, p.collection, "nombre");
-      const href = p.collection === "places" ? `lugar.html?id=${p.id}` : "mapa.html";
+      const href = p.collection === "places" ? `/lugares/${p.slug || p.id}.html` : "mapa.html";
       return `<a class="ahora-open-item" href="${href}">
         <span class="ahora-open-icon">${Icon(p.icono)}</span>
         <span>${name}</span>

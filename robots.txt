@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /buscar.html
+Disallow: /lugar.html
+
+Sitemap: https://cordobapp.com/sitemap.xml

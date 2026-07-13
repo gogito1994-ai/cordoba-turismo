@@ -1,6 +1,6 @@
 const Lang = {
   KEY: "cordoba-lang",
-  SUPPORTED: ["es", "en", "fr"],
+  SUPPORTED: ["es", "en", "fr", "de"],
 
   get() {
     const stored = localStorage.getItem(this.KEY);
@@ -15,20 +15,26 @@ const Lang = {
 };
 
 const CATEGORY_I18N = {
-  Monumento: { en: "Monument", fr: "Monument" },
-  "Barrio histórico": { en: "Historic neighborhood", fr: "Quartier historique" },
-  Museo: { en: "Museum", fr: "Musée" },
-  Plaza: { en: "Square", fr: "Place" },
-  "Yacimiento arqueológico": { en: "Archaeological site", fr: "Site archéologique" },
-  Iglesia: { en: "Church", fr: "Église" },
-  Restaurante: { en: "Restaurant", fr: "Restaurant" },
-  Tapas: { en: "Tapas", fr: "Tapas" },
-  Mirador: { en: "Viewpoint", fr: "Point de vue" },
-  Consigna: { en: "Luggage storage", fr: "Consigne à bagages" },
-  Transporte: { en: "Transport", fr: "Transport" },
-  Supermercado: { en: "Supermarket", fr: "Supermarché" },
-  Farmacia: { en: "Pharmacy", fr: "Pharmacie" },
+  Monumento: { en: "Monument", fr: "Monument", de: "Denkmal" },
+  "Barrio histórico": { en: "Historic neighborhood", fr: "Quartier historique", de: "Historisches Viertel" },
+  Museo: { en: "Museum", fr: "Musée", de: "Museum" },
+  Plaza: { en: "Square", fr: "Place", de: "Platz" },
+  "Yacimiento arqueológico": { en: "Archaeological site", fr: "Site archéologique", de: "Archäologische Stätte" },
+  Iglesia: { en: "Church", fr: "Église", de: "Kirche" },
+  Restaurante: { en: "Restaurant", fr: "Restaurant", de: "Restaurant" },
+  Tapas: { en: "Tapas", fr: "Tapas", de: "Tapas" },
+  Mirador: { en: "Viewpoint", fr: "Point de vue", de: "Aussichtspunkt" },
+  Consigna: { en: "Luggage storage", fr: "Consigne à bagages", de: "Gepäckaufbewahrung" },
+  Transporte: { en: "Transport", fr: "Transport", de: "Transport" },
+  Supermercado: { en: "Supermarket", fr: "Supermarché", de: "Supermarkt" },
+  Farmacia: { en: "Pharmacy", fr: "Pharmacie", de: "Apotheke" },
 };
+
+const LOCALE_BY_LANG = { es: "es-ES", fr: "fr-FR", de: "de-DE", en: "en-GB" };
+
+function localeForLang() {
+  return LOCALE_BY_LANG[Lang.get()] || LOCALE_BY_LANG.en;
+}
 
 function t(key, vars) {
   const lang = Lang.get();

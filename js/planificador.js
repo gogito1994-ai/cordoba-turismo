@@ -371,14 +371,14 @@ document.addEventListener("DOMContentLoaded", () => {
       ? tr(item, stop.collection, "tipo")
       : "";
     const media = item.imagen
-      ? `<div class="planner-stop-media"><img src="${item.imagen}" alt="${name}" /></div>`
+      ? `<div class="planner-stop-media"><img src="${item.imagen}" alt="${name}" loading="lazy" /></div>`
       : `<div class="planner-stop-media planner-stop-media-fallback">${Icon(item.icono)}</div>`;
     const duration = item.tiempoVisita
       ? `<span class="planner-stop-meta">${Icon("clock")} ${tr(item, stop.collection, "tiempoVisita")}</span>`
       : "";
     const ficha =
       stop.collection === "places"
-        ? `<a class="planner-stop-link" href="lugar.html?id=${item.id}">${t("map_sheet_view_place")}</a>`
+        ? `<a class="planner-stop-link" href="lugares/${item.slug || item.id}.html">${t("map_sheet_view_place")}</a>`
         : "";
 
     return `

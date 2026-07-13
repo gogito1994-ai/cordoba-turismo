@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : "";
     const media = p.imagen
       ? `<div class="card-media">
-           <img src="${p.imagen}" alt="${nombre}" />
+           <img src="${p.imagen}" alt="${nombre}" loading="lazy" />
            <button class="favorite-btn${isFav ? " active" : ""}" data-id="${p.id}" data-name="${nombre}" aria-label="${t("aria_favorite")}">
              ${Icon("heart")}
            </button>
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return `
       <article class="card card-clickable">
-        <a class="card-link" href="lugar.html?id=${p.id}" aria-label="${nombre}"></a>
+        <a class="card-link" href="lugares/${p.slug || p.id}.html" aria-label="${nombre}"></a>
         ${media}
         <div class="card-body">
           <span class="card-icon">${Icon(p.icono)}</span>

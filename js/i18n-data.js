@@ -39,6 +39,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Accessible en fauteuil roulant par la porte principale ; consultez le site officiel pour les rampes ponctuelles.",
       },
+      de: {
+        nombre: "Moschee-Kathedrale von Córdoba",
+        descripcion:
+          "UNESCO-Welterbe und das bedeutendste Wahrzeichen Córdobas. Eine ehemalige omayyadische Moschee mit einem beeindruckenden Wald aus Säulen und zweifarbigen Bögen, in deren Innerem sich eine Renaissance-Kathedrale befindet.",
+        horario: "Mo-Sa 10:00-19:00 Uhr, So 8:30-11:30 und 15:00-19:00 Uhr",
+        precio: "13 € (Tagesbesuch), kostenlos 8:30-9:30 Uhr (außer sonntags)",
+        tiempoVisita: "1-1,5 Stunden",
+        comoLlegar: "Mitten im historischen Zentrum; 10 Minuten zu Fuß von der Plaza de las Tendillas",
+        porQueVisitar:
+          "Es ist das bedeutendste Monument Córdobas und eines der größten Juwelen islamischer Kunst im Westen: ein Wald aus mehr als 850 Säulen mit zweifarbigen Bögen, der auf der Welt seinesgleichen sucht.",
+        historia:
+          "Ab dem Jahr 785 über einer alten westgotischen Basilika errichtet, wurde die Moschee im Laufe von zwei Jahrhunderten erweitert, bis sie zu einer der größten des Islam wurde. Nach der christlichen Eroberung von 1236 wurde sie zur Kathedrale geweiht, und im 16. Jahrhundert wurde in ihrem Zentrum eine Renaissance-Kathedrale eingefügt – eine Entscheidung, die schon damals für Kontroversen sorgte. Seit 1984 ist sie UNESCO-Welterbe.",
+        consejoLocal: [
+          "Besuchen Sie sie früh am Morgen, um sie fast menschenleer und im schönsten Licht zu erleben.",
+          "Der kostenlose Orangenhof (Patio de los Naranjos) lohnt schon für sich einen Halt, auch ohne das Innere zu besichtigen.",
+          "Verbinden Sie den Besuch mit einem Spaziergang durch die Judería, nur zwei Minuten zu Fuß entfernt.",
+        ],
+        accesibilidad: "Über den Haupteingang rollstuhlgerecht zugänglich; einzelne Rampen bitte auf der offiziellen Website prüfen.",
+      },
     },
     alcazar: {
       en: {
@@ -78,6 +97,25 @@ const DATA_I18N = {
           "Au coucher du soleil, la lumière sur les bassins est particulièrement belle.",
         ],
         accesibilidad: "Le palais et une grande partie des jardins sont accessibles ; certaines zones des remparts comportent des marches étroites.",
+      },
+      de: {
+        nombre: "Alcázar der Christlichen Könige",
+        descripcion:
+          "Mittelalterliche Festung, die einst Residenz der Katholischen Könige war. Zu ihren Highlights zählen die andalusischen Gärten mit Wasserbecken sowie die Stadtmauern mit Blick über die Stadt.",
+        horario: "Di-So 8:15-20:00 Uhr (Sommer), im Winter kürzere Öffnungszeiten",
+        precio: "5 €, dienstagnachmittags kostenlos (saisonabhängig)",
+        tiempoVisita: "1-1,5 Stunden",
+        comoLlegar: "5 Minuten zu Fuß von der Mezquita entfernt, direkt am Fluss",
+        porQueVisitar:
+          "Die terrassierten andalusischen Gärten mit Wasserbecken und Springbrunnen gehören zu den schönsten Spaniens, und die Stadtmauern bieten einige der besten Ausblicke auf die Stadt.",
+        historia:
+          "Im 14. Jahrhundert über den Resten einer früheren almohadischen Festung erbaut, war er Residenz der Katholischen Könige, von wo aus sie die Eroberung Granadas planten und Christoph Kolumbus vor seiner Reise nach Amerika empfingen. Später war er mehr als drei Jahrhunderte lang Sitz der Inquisition, und Anfang des 20. Jahrhunderts diente er sogar als Gefängnis.",
+        consejoLocal: [
+          "Steigen Sie auf den Torre del Homenaje für die besten Ausblicke auf die gesamte Gartenanlage.",
+          "Erkundigen Sie sich auf der offiziellen Website, ob dienstagnachmittags je nach Saison ein Rabatt oder freier Eintritt gilt.",
+          "Bei Sonnenuntergang ist das Licht auf den Wasserbecken besonders schön.",
+        ],
+        accesibilidad: "Der Palast und der Großteil der Gärten sind zugänglich; einige Bereiche der Stadtmauern haben schmale Stufen.",
       },
     },
     "puente-romano": {
@@ -119,6 +157,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Entièrement accessible, surface plane et piétonne.",
       },
+      de: {
+        nombre: "Römische Brücke",
+        descripcion:
+          "Eine Brücke römischen Ursprungs (1. Jahrhundert v. Chr.) über den Guadalquivir, mit einem privilegierten Blick auf die Mezquita und den Torre de la Calahorra. Einer der meistfotografierten Orte der Stadt.",
+        horario: "Rund um die Uhr geöffnet (Fußgängerbereich)",
+        precio: "Kostenlos",
+        tiempoVisita: "20-30 Minuten",
+        comoLlegar: "Direkt zu Füßen der Mezquita, über die Puerta del Puente",
+        porQueVisitar:
+          "Es ist das meistfotografierte Bild Córdobas: eine Brücke römischen Ursprungs mit direktem Blick auf die Mezquita und den Torre de la Calahorra beiderseits des Guadalquivir.",
+        historia:
+          "Im 1. Jahrhundert v. Chr. als Teil der Via Augusta erbaut, war sie fast zweitausend Jahre lang die einzige Brücke der Stadt über den Guadalquivir. Sie wurde im Laufe der Geschichte mehrfach wiederaufgebaut, wobei ihr ursprünglicher Verlauf und ihre 16 Originalbögen erhalten blieben. An ihrem südlichen Ende erhebt sich die Statue des Heiligen Rafael, des Schutzpatrons der Stadt.",
+        consejoLocal: [
+          "Der Sonnenuntergang, mit der beleuchteten Mezquita im Hintergrund, ist der beste Moment für ein Foto.",
+          "Gehen Sie bis zur genauen Mitte der Brücke für den klassischen Bildausschnitt.",
+          "Vom Torre de la Calahorra am anderen Ufer aus ist die Gesamtperspektive noch schöner.",
+        ],
+        accesibilidad: "Vollständig barrierefrei, ebene Fußgängerfläche.",
+      },
     },
     juderia: {
       en: {
@@ -159,6 +216,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Rues pavées et étroites ; peut être inconfortable par endroits pour les fauteuils roulants ou les poussettes.",
       },
+      de: {
+        nombre: "Judería von Córdoba",
+        descripcion:
+          "Mittelalterliches Viertel mit engen, weiß getünchten Gassen, blumengeschmückten Innenhöfen und charmanten kleinen Plätzen. Einst das alte jüdische Viertel, heute UNESCO-Welterbe.",
+        horario: "Rund um die Uhr geöffnet",
+        precio: "Kostenlos",
+        tiempoVisita: "1-2 Stunden Spaziergang",
+        comoLlegar: "Umgibt die Mezquita im Norden und Westen",
+        porQueVisitar:
+          "Sich in den weißen Gassen, blumengeschmückten Innenhöfen und kleinen Plätzen zu verlieren, gehört zu den schönsten Erlebnissen in Córdoba, besonders wenn Sie im Frühling reisen.",
+        historia:
+          "Vom Mittelalter bis zur Vertreibung im Jahr 1492 war dies das jüdische Viertel der Stadt, und es bewahrt bis heute seinen ursprünglichen Grundriss aus engen, unregelmäßigen, schattenspendend angelegten Gassen. Heute befinden sich hier die Synagoge, die Casa de Sefarad, Kunsthandwerksläden und einige der ältesten Tabernas der Stadt.",
+        consejoLocal: [
+          "Die Calleja de las Flores, mit dem Turm der Mezquita im Hintergrund, ist das ikonischste Foto des Viertels.",
+          "Gehen Sie früh morgens oder am späten Nachmittag hin, um den Andrang der geführten Gruppen zu vermeiden.",
+          "Im Mai, während des Patio-Festivals, öffnen viele Privathäuser ihre blumengeschmückten Innenhöfe.",
+        ],
+        accesibilidad: "Enge Kopfsteinpflastergassen; kann streckenweise für Rollstühle oder Kinderwagen unbequem sein.",
+      },
     },
     sinagoga: {
       en: {
@@ -196,6 +272,24 @@ const DATA_I18N = {
           "Observez les inscriptions en hébreu sur les murs, parmi les rares conservées de cette époque.",
         ],
         accesibilidad: "Accès avec une marche à l'entrée ; intérieur d'une seule pièce sans dénivelé.",
+      },
+      de: {
+        nombre: "Synagoge von Córdoba",
+        descripcion:
+          "Eine der drei am besten erhaltenen mittelalterlichen Synagogen Spaniens, mit mudéjar-Stuckverzierungen. Ein kleines verstecktes Juwel in der Judería.",
+        horario: "Di-So 9:00-21:00 Uhr",
+        precio: "Kostenlos (EU-Bürger), 0,30 € für alle anderen",
+        tiempoVisita: "15-20 Minuten",
+        comoLlegar: "Im Herzen der Judería, 3 Minuten von der Mezquita entfernt",
+        porQueVisitar:
+          "Sie ist eine von nur drei mittelalterlichen Synagogen, die in ganz Spanien noch erhalten sind, mit einer für ihre geringe Größe außergewöhnlichen mudéjar-Stuckverzierung.",
+        historia:
+          "1315 erbaut, ist sie ein seltenes Beispiel mudéjarischer Architektur an einem jüdischen Sakralbau. Nach der Vertreibung der Juden 1492 wurde sie als Hospital, Kapelle und sogar als Schule genutzt, was wahrscheinlich zu ihrer Erhaltung beitrug. 1885 wurde sie zum Nationaldenkmal erklärt.",
+        consejoLocal: [
+          "Da sie so klein ist, ist der Besuch schnell erledigt: Kombinieren Sie ihn mit der Casa de Sefarad, eine Minute zu Fuß entfernt.",
+          "Achten Sie auf die hebräischen Inschriften an den Wänden, die zu den wenigen aus dieser Zeit erhaltenen zählen.",
+        ],
+        accesibilidad: "Eine Stufe am Eingang; das Innere besteht aus einem einzigen Raum ohne Niveauunterschiede.",
       },
     },
     "palacio-viana": {
@@ -237,6 +331,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Les patios du rez-de-chaussée sont accessibles ; l'intérieur de la maison comporte des escaliers sans ascenseur.",
       },
+      de: {
+        nombre: "Palast von Viana",
+        descripcion:
+          "Palastmuseum mit zwölf unterschiedlichen Innenhöfen, jeder mit eigenem Stil und Garten. Einer der besten Orte, um die Patio-Tradition Córdobas zu verstehen.",
+        horario: "Mo-Sa 10:00-19:00 Uhr, So 10:00-15:00 Uhr",
+        precio: "8 € (Patios), 10 € (Patios + Haus)",
+        tiempoVisita: "1-1,5 Stunden",
+        comoLlegar: "Im Stadtviertel Santa Marina, 10-15 Minuten zu Fuß vom Zentrum entfernt",
+        porQueVisitar:
+          "Kein anderer Ort in Córdoba vereint so viele unterschiedliche Patios unter einem Dach: zwölf, jeder mit eigenem Charakter, und eine der besten Möglichkeiten, die Blumentradition Córdobas ohne das Gedränge des Patio-Festivals zu erleben.",
+        historia:
+          "Ein herrschaftlicher Palast, der ab dem 14. Jahrhundert erbaut und über mehrere Generationen der Familie bis ins 18. Jahrhundert erweitert wurde, als er in den Besitz der Marquis von Viana überging. 1980 wurde er einer Bankstiftung geschenkt und in ein Museum umgewandelt, das Mobiliar, Wandteppiche sowie eine bedeutende Waffen- und Porzellansammlung bewahrt.",
+        consejoLocal: [
+          "Wenn Sie wenig Zeit haben, wählen Sie das Ticket 'nur Patios' – günstiger und ausreichend, um das Wesentliche zu genießen.",
+          "Die blühende Glyzinie (April-Mai) im Patio de la Alberca ist einer der meistfotografierten Winkel.",
+          "Verbinden Sie den Besuch mit einem Spaziergang zur nahegelegenen Plaza de Capuchinos und dem Cristo de los Faroles.",
+        ],
+        accesibilidad: "Die Patios im Erdgeschoss sind zugänglich; das Innere des Hauses hat Treppen ohne Aufzug.",
+      },
     },
     "templo-romano": {
       en: {
@@ -274,6 +387,24 @@ const DATA_I18N = {
           "On le voit parfaitement depuis la rue, sans billet ni horaire nécessaire.",
         ],
         accesibilidad: "Se contemple depuis le trottoir ; totalement accessible puisqu'il s'agit d'un site extérieur de plain-pied.",
+      },
+      de: {
+        nombre: "Römischer Tempel",
+        descripcion:
+          "Monumentale Überreste eines römischen Tempels aus dem 1. Jahrhundert, mit rekonstruierten korinthischen Säulen, direkt neben dem Rathaus gelegen.",
+        horario: "Von außen rund um die Uhr sichtbar",
+        precio: "Kostenlos",
+        tiempoVisita: "10 Minuten",
+        comoLlegar: "Neben dem Rathaus, 5 Minuten von der Plaza de las Tendillas entfernt",
+        porQueVisitar:
+          "Seine rekonstruierten, nachts beleuchteten korinthischen Säulen sind eine unerwartete Erinnerung daran, dass Córdoba (Corduba) einst Hauptstadt der römischen Provinz Baetica war.",
+        historia:
+          "Er stammt aus dem 1. Jahrhundert n. Chr. und war dem Kaiserkult gewidmet. Er blieb unter späteren Gebäuden verborgen, bis er 1950 bei Erweiterungsarbeiten am Rathaus entdeckt wurde; seine Säulen wurden teilweise rekonstruiert, um einen Eindruck seines ursprünglichen Ausmaßes zu vermitteln.",
+        consejoLocal: [
+          "Nachts, beleuchtet, ist er einer der reizvollsten Winkel der Innenstadt und fast immer menschenleer.",
+          "Man sieht ihn perfekt von der Straße aus, ohne Eintritt oder Öffnungszeiten beachten zu müssen.",
+        ],
+        accesibilidad: "Vom Gehsteig aus zu betrachten; da es sich um einen ebenerdigen Außenbereich handelt, vollständig barrierefrei.",
       },
     },
     calahorra: {
@@ -313,6 +444,24 @@ const DATA_I18N = {
         ],
         accesibilidad: "L'intérieur comporte des escaliers en colimaçon étroits sur plusieurs tronçons ; non accessible en fauteuil roulant.",
       },
+      de: {
+        nombre: "Calahorra-Turm",
+        descripcion:
+          "Eine arabische Festung auf der anderen Seite der Römischen Brücke, in der sich ein Museum über das Zusammenleben der drei Kulturen (muslimisch, jüdisch und christlich) im mittelalterlichen Córdoba befindet.",
+        horario: "Täglich 10:00-18:00 Uhr (variiert je nach Saison)",
+        precio: "4,50 €",
+        tiempoVisita: "45 Minuten - 1 Stunde",
+        comoLlegar: "Auf der anderen Seite der Römischen Brücke, am Südufer des Flusses",
+        porQueVisitar:
+          "Neben dem Museum über das Zusammenleben der Kulturen bietet der Aufstieg auf den Turm eine der schönsten Ansichten Córdobas: die Römische Brücke und die Mezquita vom anderen Flussufer aus.",
+        historia:
+          "Eine Festungsanlage almohadischen Ursprungs (12. Jahrhundert), die den südlichen Zugang zur Römischen Brücke verteidigte. Sie wurde im 14. Jahrhundert im Auftrag Heinrichs II. von Kastilien wiederaufgebaut, um den Zugang zur Stadt zu kontrollieren. Seit 1936 beherbergt sie ein Museum, das dem Zusammenleben von Muslimen, Juden und Christen im mittelalterlichen Córdoba gewidmet ist.",
+        consejoLocal: [
+          "Steigen Sie auf die obere Terrasse für den besten Gesamtblick auf die Brücke und die Mezquita.",
+          "Sie ist eine gute Option für den Mittag, wenn die Sonne von vorne Fotos von der Brücke aus erschwert.",
+        ],
+        accesibilidad: "Das Innere hat in mehreren Abschnitten enge Wendeltreppen; nicht rollstuhlgerecht.",
+      },
     },
     corredera: {
       en: {
@@ -350,6 +499,24 @@ const DATA_I18N = {
           "C'est un bon endroit pour tapear, loin des prix touristiques du quartier de la Mosquée.",
         ],
         accesibilidad: "Place entièrement plane et accessible, avec des arcades.",
+      },
+      de: {
+        nombre: "Corredera-Platz",
+        descripcion:
+          "Ein großer, für Andalusien ungewöhnlicher Arkadenplatz im kastilischen Stil. Einst Schauplatz von Stierkämpfen, heute voller Bars und mit einem Lebensmittelmarkt.",
+        horario: "Rund um die Uhr geöffnet",
+        precio: "Kostenlos",
+        tiempoVisita: "20-30 Minuten",
+        comoLlegar: "8 Minuten zu Fuß von der Mezquita entfernt, im Stadtviertel Axerquía",
+        porQueVisitar:
+          "Es ist der einzige Arkadenhauptplatz im kastilischen Stil in ganz Andalusien, mit einer sehr authentischen Tapas-Atmosphäre, abseits des dichtesten Touristenrummels.",
+        historia:
+          "Im 17. Jahrhundert über dem alten Theater Corral de Comedias und einem Marktplatz erbaut, war er jahrhundertelang Schauplatz von Stierkämpfen, öffentlichen Hinrichtungen und königlichen Festen. Heute beherbergt er an einer seiner Seiten noch immer seinen überdachten Lebensmittelmarkt.",
+        consejoLocal: [
+          "Morgens findet hier ein Lebensmittelmarkt statt; abends füllt sich der Platz mit Terrassen.",
+          "Es ist ein guter Ort zum Tapas essen, abseits der touristischen Preise rund um die Mezquita.",
+        ],
+        accesibilidad: "Vollkommen ebener und barrierefreier Platz mit Arkadengängen.",
       },
     },
     "medina-azahara": {
@@ -391,6 +558,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Le centre d'interprétation est accessible ; le site présente des tronçons de terrain irrégulier.",
       },
+      de: {
+        nombre: "Medina Azahara",
+        descripcion:
+          "Eine kalifale Palaststadt aus dem 10. Jahrhundert, etwa 8 km vom Stadtzentrum entfernt. UNESCO-Welterbe. Ihre monumentalen Ruinen zeugen von der Pracht des Kalifats von Córdoba.",
+        horario: "Di-Sa 9:00-18:30 Uhr, So 9:00-15:30 Uhr (variiert je nach Saison)",
+        precio: "Kostenlos (Reservierung erforderlich), optionaler Touristenbus",
+        tiempoVisita: "2-3 Stunden (Anfahrt inbegriffen)",
+        comoLlegar: "8 km vom Zentrum entfernt; Touristenbus ab dem Besucherzentrum (Paseo de la Victoria) oder mit dem eigenen Auto",
+        porQueVisitar:
+          "Es ist die bedeutendste archäologische Stätte des muslimischen Spanien: eine gesamte Palaststadt, erbaut, um zu blenden, die das wahre Ausmaß der Macht des Kalifats von Córdoba auf seinem Höhepunkt zeigt.",
+        historia:
+          "Im Jahr 936 von Abd ar-Rahman III. in Auftrag gegeben, um die Hauptstadt des Kalifats aus Córdoba zu verlegen, beherbergte sie schließlich die Verwaltung, das Heer und einen prunkvollen Hof mit Tausenden Bewohnern. Sie wurde in den Bürgerkriegen Anfang des 11. Jahrhunderts, kaum 70 Jahre nach ihrer Gründung, zerstört und geplündert und blieb jahrhundertelang verschüttet und vergessen, bis 1911 systematische Ausgrabungen begannen. Man schätzt, dass bislang nur ein Zehntel der gesamten Anlage ausgegraben wurde.",
+        consejoLocal: [
+          "Reservieren Sie das kostenlose Ticket rechtzeitig auf der offiziellen Website; in der Hochsaison sind die Plätze schnell vergeben.",
+          "Beginnen Sie immer mit dem Museum im Besucherzentrum: Es hilft sehr, die Ruinen zu verstehen.",
+          "Gehen Sie im Sommer früh morgens hin: Auf dem Gelände gibt es kaum Schatten.",
+        ],
+        accesibilidad: "Das Besucherzentrum ist barrierefrei; die Ausgrabungsstätte hat Abschnitte mit unebenem Gelände.",
+      },
     },
     "molino-albolafia": {
       en: {
@@ -429,6 +615,24 @@ const DATA_I18N = {
         ],
         accesibilidad: "Se contemple depuis le pont ou la rive ; site extérieur accessible.",
       },
+      de: {
+        nombre: "Albolafia-Mühle",
+        descripcion:
+          "Ein ehemaliges islamisches Wasserrad am Guadalquivir, neben der Römischen Brücke. Sein Rad ziert seit dem 14. Jahrhundert das Wappen der Stadt.",
+        horario: "Von außen rund um die Uhr zu besichtigen",
+        precio: "Kostenlos",
+        tiempoVisita: "10 Minuten",
+        comoLlegar: "Neben der Römischen Brücke, am Nordufer",
+        porQueVisitar:
+          "Es ist eines der historischen Symbole der Stadt (es erscheint auf ihrem Wappen) und eine schöne Erinnerung an die andalusische Wasserbaukunst.",
+        historia:
+          "Almohadischen Ursprungs (12.-13. Jahrhundert), diente es dazu, Wasser aus dem Guadalquivir bis zu den Gärten des Alcázar zu heben. Der Legende nach ließ Königin Isabella die Katholische einen Teil des Mechanismus entfernen, weil das Geräusch des Rades sie am Schlafen hinderte.",
+        consejoLocal: [
+          "Man sieht es sehr gut von der Römischen Brücke selbst aus; ein näheres Herangehen ist nicht nötig.",
+          "Kombinieren Sie den Besuch mit der Puerta del Puente, weniger als eine Minute zu Fuß entfernt.",
+        ],
+        accesibilidad: "Von der Brücke oder dem Flussufer aus zu betrachten; barrierefreier Außenbereich.",
+      },
     },
     "puerta-puente": {
       en: {
@@ -466,6 +670,24 @@ const DATA_I18N = {
           "Un bon arrêt de 10 minutes si vous venez de la tour de la Calahorra ou vous y rendez.",
         ],
         accesibilidad: "Le belvédère est accessible par des escaliers ; non adapté aux fauteuils roulants.",
+      },
+      de: {
+        nombre: "Brückentor (Puerta del Puente)",
+        descripcion:
+          "Ein ehemaliges Tor der römischen Stadtmauer, im 16. Jahrhundert anlässlich des Besuchs Philipps II. zu einem Triumphbogen umgestaltet. Mit einem Aussichtspunkt, der einen Blick auf das monumentale Zentrum bietet.",
+        horario: "Täglich 10:00-14:00 Uhr (Aussichtspunkt und Ausstellungssaal)",
+        precio: "1 € (kostenlos für Kinder unter 4 Jahren)",
+        tiempoVisita: "15-20 Minuten",
+        comoLlegar: "Am nördlichen Ende der Römischen Brücke",
+        porQueVisitar:
+          "Der Aussichtspunkt im Inneren bietet für einen symbolischen Preis eine ungewöhnlich erhöhte Perspektive auf die Römische Brücke und die Mezquita.",
+        historia:
+          "Im 16. Jahrhundert von Hernán Ruiz III. als Triumphbogen für den Besuch Philipps II. erbaut, ersetzte es ein früheres mittelalterliches Tor der römischen Stadtmauer. Es war Teil der Mauerbefestigung, die den Zugang zur Brücke schützte.",
+        consejoLocal: [
+          "Der Aufstieg zum Aussichtspunkt im Inneren ist schnell und günstig und bietet einen anderen Blick als von der Brücke selbst.",
+          "Ein guter 10-minütiger Stopp, wenn Sie vom Torre de la Calahorra kommen oder dorthin unterwegs sind.",
+        ],
+        accesibilidad: "Der Aussichtspunkt ist nur über Treppen erreichbar; nicht rollstuhlgerecht.",
       },
     },
     "banos-califales": {
@@ -507,6 +729,25 @@ const DATA_I18N = {
         ],
         accesibilidad: "Espace de plain-pied, avec toutefois quelques marches ponctuelles entre les salles.",
       },
+      de: {
+        nombre: "Kalifale Bäder",
+        descripcion:
+          "Arabische Bäder aus dem 10. Jahrhundert, in Auftrag gegeben von Al-Hakam II., neben dem alten andalusischen Alcázar gelegen, mit gut erhaltenem Kalt-, Lauwarm- und Heißraum.",
+        horario:
+          "Di-Fr 8:15-20:15 Uhr, Sa 9:30-17:30 Uhr, So und Feiertage 8:15-14:15 Uhr (Winter; im Sommer abweichend)",
+        precio: "3 € (Studierende 1,50 €, kostenlos unter 13 Jahren)",
+        tiempoVisita: "30-45 Minuten",
+        comoLlegar: "Neben dem Alcázar, am Campo Santo de los Mártires",
+        porQueVisitar:
+          "Es ist eine der am besten erhaltenen islamischen Bäderanlagen Spaniens und hilft, sich das Alltagsleben des kalifalen Hofes jenseits der großen Monumente vorzustellen.",
+        historia:
+          "Im 10. Jahrhundert im Auftrag von Al-Hakam II. neben dem andalusischen Alcázar erbaut, folgten sie dem Vorbild der römischen Thermen mit Kalt-, Lauwarm- und Heißraum. Sie blieben verborgen, bis Gartenarbeiten sie 1903 ans Licht brachten; zwischen 1961 und 1964 wurden sie eingehend ausgegraben.",
+        consejoLocal: [
+          "Der Besuch dauert nicht lange: Kombinieren Sie ihn mit dem gleich nebenan gelegenen Alcázar.",
+          "Achten Sie auf die sternförmigen Durchbrüche in den Gewölben, die Licht einließen, um die Stunden anzuzeigen.",
+        ],
+        accesibilidad: "Ein ebenerdiger Raum, wenngleich mit einigen einzelnen Stufen zwischen den Sälen.",
+      },
     },
     tendillas: {
       en: {
@@ -544,6 +785,24 @@ const DATA_I18N = {
           "C'est un bon repère pour s'orienter : les principales rues commerçantes partent d'ici.",
         ],
         accesibilidad: "Place entièrement plane et accessible.",
+      },
+      de: {
+        nombre: "Plaza de las Tendillas",
+        descripcion:
+          "Das kommerzielle und soziale Herz des modernen Córdoba, mit der Reiterstatue des Gran Capitán und einer eigenwilligen Uhr, die statt mit Glockenschlägen mit Flamenco-Gitarre die Stunden schlägt.",
+        horario: "Rund um die Uhr geöffnet",
+        precio: "Kostenlos",
+        tiempoVisita: "15-20 Minuten",
+        comoLlegar: "Im Einkaufszentrum der Stadt, 10 Minuten zu Fuß von der Mezquita entfernt",
+        porQueVisitar:
+          "Es ist der traditionelle Treffpunkt der Cordobeser, mit einer so eigenwilligen Uhr, dass es sich lohnt zu warten, bis sie zur vollen Stunde erklingt.",
+        historia:
+          "Sein Name stammt von den kleinen Läden ('tendillas'), die der Calatrava-Orden dort seit dem 14. Jahrhundert besaß. Seine heutige Form erhielt der Platz in den 1920er Jahren, nach dem Abriss des alten Hotel Suizo, und seit 1961 schlägt seine Uhr die Stunden mit einer Flamenco-Gitarre statt mit Glocken.",
+        consejoLocal: [
+          "Wenn Sie sich zur vollen Stunde in der Nähe befinden, halten Sie kurz inne, um der Uhr beim Spielen von Soleares zuzuhören.",
+          "Er ist ein guter Orientierungspunkt: Von hier gehen die wichtigsten Einkaufsstraßen aus.",
+        ],
+        accesibilidad: "Vollkommen ebener und barrierefreier Platz.",
       },
     },
     "casa-sefarad": {
@@ -583,6 +842,24 @@ const DATA_I18N = {
         ],
         accesibilidad: "Maison historique avec plusieurs dénivelés et marches entre les salles.",
       },
+      de: {
+        nombre: "Casa de Sefarad",
+        descripcion:
+          "Ein Kulturzentrum mitten in der Judería, das der Erinnerung an das sephardische Erbe gewidmet ist, mit Räumen zur Synagoge, zu Maimonides, zur Musik und zum jüdisch-spanischen Alltagsleben.",
+        horario: "Di-Sa 11:00-18:00 Uhr",
+        precio: "4,50 € (Studierende 3,50 €)",
+        tiempoVisita: "45 Minuten - 1 Stunde",
+        comoLlegar: "Mitten in der Judería, 2 Minuten von der Synagoge entfernt",
+        porQueVisitar:
+          "Es ergänzt den Besuch der Synagoge perfekt, mit thematischen Räumen zum jüdisch-spanischen Leben und zur jüdisch-spanischen Kultur, die helfen, das Viertel zu verstehen, durch das man gerade geht.",
+        historia:
+          "Es öffnete 2006 in einer Gruppe restaurierter Häuser aus dem 14. Jahrhundert, ganz in der Nähe der Synagoge. Seine Sammlung vereint rituelle Gegenstände, Dokumente und traditionelle sephardische Musik sowie einen Raum, der dem in Córdoba geborenen Philosophen Maimonides gewidmet ist, einer der bedeutendsten jüdischen Persönlichkeiten des Mittelalters.",
+        consejoLocal: [
+          "Besuchen Sie es direkt im Anschluss an die Synagoge, solange der historische Kontext noch frisch ist.",
+          "An manchen Tagen finden hier kleine Konzerte mit sephardischer Musik statt: Prüfen Sie den Veranstaltungskalender auf der Website.",
+        ],
+        accesibilidad: "Historisches Haus mit mehreren Niveauunterschieden und Stufen zwischen den Räumen.",
+      },
     },
     "museo-arqueologico": {
       en: {
@@ -620,6 +897,24 @@ const DATA_I18N = {
           "Ne manquez pas la cour intérieure du palais lui-même, avec ses arcs mudéjars.",
         ],
         accesibilidad: "Il dispose d'un ascenseur et d'accès adaptés sur la majeure partie du parcours.",
+      },
+      de: {
+        nombre: "Archäologisches und Ethnologisches Museum",
+        descripcion:
+          "Archäologische und ethnologische Sammlung im Renaissance-Palast Palacio de los Páez de Castillejo, mit bedeutenden Stücken aus römischer und islamischer Zeit.",
+        horario: "Di-Sa 9:00-20:00 Uhr, So und Feiertage 9:00-15:00 Uhr (im Sommer kürzere Öffnungszeiten)",
+        precio: "Kostenlos (EU-Bürger), 1,50 € für alle anderen",
+        tiempoVisita: "1-1,5 Stunden",
+        comoLlegar: "5 Minuten zu Fuß von der Plaza de las Tendillas entfernt",
+        porQueVisitar:
+          "Es vereint einige der bedeutendsten in der Stadt gefundenen Stücke aus römischer und islamischer Zeit in einem Renaissance-Gebäude, das selbst schon ein Kunstwerk ist.",
+        historia:
+          "Seit 1868 im Palacio de los Páez de Castillejo untergebracht, einem Renaissance-Palast aus dem 16. Jahrhundert, entworfen von Hernán Ruiz II. Seine Bestände reichen von der Vorgeschichte bis zur islamischen Epoche, mit einer bemerkenswerten Sammlung von Mosaiken, römischen Skulpturen und kalifaler Keramik.",
+        consejoLocal: [
+          "Der Eintritt ist für EU-Bürger kostenlos: Bringen Sie Ihren Personalausweis oder Reisepass mit.",
+          "Verpassen Sie nicht den Innenhof des Palastes selbst mit seinen mudéjar-Bögen.",
+        ],
+        accesibilidad: "Verfügt über einen Aufzug und angepasste Zugänge entlang des Großteils des Rundgangs.",
       },
     },
     "san-lorenzo": {
@@ -659,6 +954,24 @@ const DATA_I18N = {
         ],
         accesibilidad: "Accès avec une marche à la porte principale ; intérieur à nef unique sans grand dénivelé.",
       },
+      de: {
+        nombre: "Kirche San Lorenzo",
+        descripcion:
+          "Eine der fernandinischen Kirchen aus dem 13. Jahrhundert im gotisch-mudéjarischen Stil, mit einer bemerkenswerten Fensterrose und einem Renaissance-Glockenturm von Hernán Ruiz II.",
+        horario: "Für Gottesdienste geöffnet; Besuchszeiten variieren",
+        precio: "Kostenlos",
+        tiempoVisita: "15-20 Minuten",
+        comoLlegar: "15 Minuten zu Fuß nordöstlich des Zentrums, im Stadtviertel San Lorenzo",
+        porQueVisitar:
+          "Sie ist eine der am besten erhaltenen 'fernandinischen Kirchen' Córdobas, mit einer gotischen Fensterrose, die nur wenige Touristen zu sehen bekommen, da sie abseits der meistbesuchten Route liegt.",
+        historia:
+          "Im 13. Jahrhundert nach der christlichen Eroberung der Stadt über einer ehemaligen Stadtteilmoschee erbaut, als Teil des Programms von zwölf Kirchen, die Ferdinand III. errichten ließ. Ihr im 16. Jahrhundert hinzugefügter Renaissance-Glockenturm stammt von Hernán Ruiz II., demselben Architekten, der auch den Turm der Mezquita-Kathedrale schuf.",
+        consejoLocal: [
+          "Sie liegt etwas außerhalb des touristischen Zentrums und ist daher meist ruhig.",
+          "Verbinden Sie den Besuch mit einem Spaziergang durch das Viertel San Lorenzo, eines der authentischsten und am wenigsten überlaufenen.",
+        ],
+        accesibilidad: "Eine Stufe am Haupteingang; das Innere besteht aus einem einzigen Schiff ohne größere Niveauunterschiede.",
+      },
     },
     "torre-malmuerta": {
       en: {
@@ -696,6 +1009,24 @@ const DATA_I18N = {
           "C'est un bon point de passage si vous marchez du centre vers la gare.",
         ],
         accesibilidad: "Se contemple depuis l'extérieur ; environnement urbain accessible.",
+      },
+      de: {
+        nombre: "Malmuerta-Turm",
+        descripcion:
+          "Ein Wehrturm aus dem 15. Jahrhundert, erbaut zum Schutz der Stadtmauer der Axerquía, umrankt von einer berühmten tragischen Legende Córdobas.",
+        horario: "Von außen rund um die Uhr zu besichtigen",
+        precio: "Kostenlos",
+        tiempoVisita: "10 Minuten",
+        comoLlegar: "15 Minuten zu Fuß nördlich des Zentrums, neben der Ronda de los Tejares",
+        porQueVisitar:
+          "Er ist einer der am besten erhaltenen Wehrtürme der alten Stadtmauer, mit einer tragischen Legende, die sich die Cordobeser noch heute erzählen.",
+        historia:
+          "Zwischen 1406 und 1408 im Auftrag Heinrichs III. von Kastilien erbaut, um die Stadtmauer der Axerquía zu verstärken, war er Teil des Verteidigungssystems, das die mittelalterliche Stadt umgab. Sein Name stammt von einer Legende aus dem 19. Jahrhundert über einen Adligen, der, nachdem er seine Frau irrtümlich für untreu gehalten und getötet hatte, gequält und im Turm eingesperrt zurückblieb.",
+        consejoLocal: [
+          "Man sieht ihn gut von der Straße aus, ohne hineingehen zu müssen (im Inneren finden normalerweise keine Besichtigungen statt).",
+          "Ein guter Zwischenstopp, wenn Sie vom Zentrum aus zum Bahnhof laufen.",
+        ],
+        accesibilidad: "Von außen zu betrachten; barrierefreie städtische Umgebung.",
       },
     },
     "caballerizas-reales": {
@@ -735,6 +1066,24 @@ const DATA_I18N = {
         ],
         accesibilidad: "Nef principale accessible sur surface plane.",
       },
+      de: {
+        nombre: "Königliche Pferdeställe von Córdoba",
+        descripcion:
+          "Königliche Pferdeställe aus dem 16. Jahrhundert, in denen die spanische Pferderasse (Pura Raza Española) entstand, neben dem Alcázar gelegen. Heute finden hier Reitshows und Führungen statt.",
+        horario: "Di 10:00-13:30 und 16:30-19:30 Uhr, Mi-Sa 10:00-13:30 und 17:30-20:30 Uhr",
+        precio: "16,50 € Erwachsene, 11,50 € Kinder 3-12 Jahre, kostenlos unter 3 Jahren",
+        tiempoVisita: "45 Minuten - 1 Stunde (länger bei einer Vorführung)",
+        comoLlegar: "Neben dem Alcázar, 5 Minuten zu Fuß von der Mezquita entfernt",
+        porQueVisitar:
+          "Hier wurde das andalusische Pferd (Pura Raza Española) geboren, in einer Halle, die García Lorca mit 'einer Kathedrale für Pferde' verglich.",
+        historia:
+          "1572 von Philipp II. gegründet, um Pferde für das Königshaus zu züchten, entstand hier durch Kreuzung einheimischer Pferde mit arabischen und Berberpferden die Pura Raza Española. Ein Brand Mitte des 18. Jahrhunderts machte einen fast vollständigen Wiederaufbau nötig. 1929 wurden sie zum Nationalen Historischen Denkmal erklärt.",
+        consejoLocal: [
+          "Wenn Sie Pferde lieben, reservieren Sie im Voraus eine der Reitshows.",
+          "Die Haupthalle mit ihren drei kreuzgratgewölbten Schiffen ist auch ohne Vorführung einen Besuch wert.",
+        ],
+        accesibilidad: "Die Haupthalle ist ebenerdig zugänglich.",
+      },
     },
   },
 
@@ -766,6 +1115,19 @@ const DATA_I18N = {
         impacto:
           "Étant la première des fêtes de mai, elle ne sature pas encore la ville comme les Patios ou la Feria, mais coïncide avec le début de la hausse des prix des hébergements du mois.",
       },
+      de: {
+        nombre: "Fest der Maikreuze",
+        fechaTexto: "Letzte Apriltage und Anfang Mai",
+        queEs:
+          "Mit Blumen, Umschlagtüchern und Silberschmuck geschmückte Kreuze wetteifern in Patios und auf Plätzen der ganzen Stadt. Zu jedem Kreuz gehört meist ein Stand mit Live-Musik, Tanz und Fino-Wein.",
+        consejos: [
+          "Besuchen Sie mehrere Viertel auf einmal: San Basilio, San Lorenzo und die Judería haben meist die gepflegtesten Kreuze.",
+          "Gehen Sie in der Abenddämmerung hin, wenn die Kreuze beleuchtet werden und die Stimmung an den Ständen auflebt.",
+          "Ein guter Auftakt vor den Patios: Es dauert nur wenige Tage und läutet die große Maisaison ein.",
+        ],
+        impacto:
+          "Als erstes der Maifeste sorgt es noch nicht für so viel Andrang wie die Patios oder die Feria, fällt aber bereits mit dem Beginn steigender Unterkunftspreise für den Monat zusammen.",
+      },
     },
     "patios-fest": {
       en: {
@@ -793,6 +1155,19 @@ const DATA_I18N = {
         ],
         impacto:
           "C'est le pic touristique de l'année : les hébergements du centre augmentent en général de 30 à 50 % (avec des pics ponctuels allant jusqu'au double pendant la semaine centrale) et les chambres se réservent des mois à l'avance.",
+      },
+      de: {
+        nombre: "Patio-Festival von Córdoba",
+        fechaTexto: "Erste zwei Maiwochen (genaue Termine jedes Jahr auf patios.cordoba.es)",
+        queEs:
+          "Die Einheimischen öffnen die Türen ihrer privaten Patios, geschmückt mit Hunderten Töpfen von Geranien und Nelken rund um jahrhundertealte Brunnen. 2012 von der UNESCO zum immateriellen Kulturerbe erklärt.",
+        consejos: [
+          "Gehen Sie früh morgens oder in der Abenddämmerung: Mittags können die Warteschlangen an den bekanntesten Patios über eine Stunde betragen.",
+          "San Basilio und Alcázar Viejo haben die meisten preisgekrönten Patios, aber die im Naranjo-Viertel oder in Santa Marina sind weniger überlaufen.",
+          "Bringen Sie Wasser und einen Hut mit: Die Maisonne ist bereits kräftig, und der Großteil der Route führt zu Fuß im Freien.",
+        ],
+        impacto:
+          "Dies ist der touristische Höhepunkt des Jahres: Die Unterkünfte im Zentrum werden in der Regel um 30-50 % teurer (mit Spitzen von bis zum Doppelten in der verkehrsreichsten Woche), und die Zimmer sind Monate im Voraus ausgebucht — buchen Sie daher so früh wie möglich, wenn Sie in dieser Zeit reisen.",
       },
     },
     "cata-vino": {
@@ -822,6 +1197,19 @@ const DATA_I18N = {
         impacto:
           "Elle coïncide avec la semaine de la Feria, donc le centre et le champ de foire sont particulièrement animés le soir.",
       },
+      de: {
+        nombre: "Weinprobe des Fino Montilla-Moriles",
+        fechaTexto: "Ein Wochenende im Mai, zeitgleich mit der Feria",
+        queEs:
+          "Eine Weinmesse auf der Plaza de la Corredera, die den Fino-Weinen der Herkunftsbezeichnung Montilla-Moriles gewidmet ist, mit Ständen lokaler Weingüter, geführten Verkostungen und Tapas.",
+        consejos: [
+          "Verbinden Sie sie mit einem Besuch der Plaza de la Corredera selbst, dem einzigen von Arkaden umgebenen Hauptplatz Andalusiens.",
+          "Bestellen Sie den Fino-Wein gut gekühlt mit Schinken oder Käse, die klassische Kombination aus Córdoba.",
+          "Wenn es Ihnen gefallen hat, lassen sich Montilla und Lucena (weniger als eine Stunde von Córdoba entfernt) besuchen, um ihre Weingüter kennenzulernen.",
+        ],
+        impacto:
+          "Sie überschneidet sich mit der Feria-Woche, sodass im Zentrum und auf dem Festgelände abends besonders viel los ist.",
+      },
     },
     "feria-salud": {
       en: {
@@ -849,6 +1237,19 @@ const DATA_I18N = {
         ],
         impacto:
           "Avec les Patios, c'est la semaine de plus forte occupation hôtelière de l'année à Cordoue ; l'animation et le bruit nocturnes dans le centre augmentent aussi nettement.",
+      },
+      de: {
+        nombre: "Feria Unserer Lieben Frau von der Gesundheit",
+        fechaTexto: "Letzte Maiwoche (reicht manchmal bis Anfang Juni)",
+        queEs:
+          "Die große jährliche Feria Córdobas: ein Festgelände in El Arenal mit Ständen, Fahrgeschäften und nächtlichen Konzerten, dazu die traditionelle Tagesferia mit Pferdevorführungen und Flamencokleidern auf dem Paseo de la Victoria.",
+        consejos: [
+          "Die Tagesferia (Paseo de la Victoria, vormittags) ist kostenlos und familienfreundlicher als das nächtliche Festgelände.",
+          "Viele Festzelte (Casetas) sind privat: Um ohne Einladung hineinzukommen, suchen Sie die städtischen Casetas, die für alle Besucher offen sind.",
+          "Verkehr und Buslinien ändern sich in dieser Woche: Prüfen Sie transporte.html, bevor Sie sich durch die Stadt bewegen.",
+        ],
+        impacto:
+          "Zusammen mit den Patios ist dies die Woche mit der höchsten Hotelauslastung des Jahres in Córdoba; auch der nächtliche Lärm und das Treiben im Zentrum nehmen spürbar zu.",
       },
     },
     "noche-flamenco": {
@@ -878,6 +1279,19 @@ const DATA_I18N = {
         impacto:
           "C'est une nuit très fréquentée dans le centre, mais étant un événement d'un seul jour, elle ne fait généralement pas grimper les prix des hébergements comme les Patios ou la Feria.",
       },
+      de: {
+        nombre: "Weiße Nacht des Flamenco",
+        fechaTexto: "Mitte oder Ende Juni (ein Samstag, die ganze Nacht)",
+        queEs:
+          "Eine einzige Nacht mit Dutzenden kostenlosen Live-Flamenco-Auftritten, verteilt auf Plätze und Bühnen in der gesamten Altstadt, bis zum Morgengrauen.",
+        consejos: [
+          "Besorgen Sie sich vorab das Programm mit Zeiten und Bühnen: Es gibt zu viele gleichzeitige Auftritte, um sie alle zu sehen.",
+          "Kommen Sie früh zu den kleineren, zentraler gelegenen Bühnen, die sich vor den größeren füllen.",
+          "Tragen Sie bequeme Schuhe: Es ist üblich, während der Nacht zwischen mehreren Bühnen zu Fuß zu wechseln.",
+        ],
+        impacto:
+          "Es ist eine sehr belebte Nacht im Zentrum, doch da es sich um eine eintägige Veranstaltung handelt, treibt sie die Unterkunftspreise normalerweise nicht so in die Höhe wie die Patios oder die Feria.",
+      },
     },
     "festival-guitarra": {
       en: {
@@ -905,6 +1319,19 @@ const DATA_I18N = {
         ],
         impacto:
           "Il augmente l'occupation hôtelière en plein juillet, mais de façon plus modérée que les fêtes de mai, car il coïncide avec la haute saison estivale habituelle liée à la chaleur.",
+      },
+      de: {
+        nombre: "Internationales Gitarrenfestival von Córdoba",
+        fechaTexto: "Erste zwei Juliwochen",
+        queEs:
+          "Eines der am längsten bestehenden Gitarrenfestivals der Welt (seit 1981), mit Konzerten klassischer, Flamenco- und Rockgitarre in der ganzen Stadt sowie internationalen Kursen und Workshops.",
+        consejos: [
+          "Achten Sie neben den kostenpflichtigen Konzerten auch auf das kostenlose Straßenprogramm: Auf zentralen Plätzen gibt es meist offene Auftritte.",
+          "Die Julihitze ist tagsüber stark; die Konzerte finden meist nachts statt, nutzen Sie also die Vormittage für anderes.",
+          "Die Kurse und Meisterklassen ziehen Gitarrenstudierende aus aller Welt an, sodass die musikalische Atmosphäre in diesen Wochen in der ganzen Stadt spürbar ist.",
+        ],
+        impacto:
+          "Es erhöht die Hotelauslastung mitten im Juli, wenn auch moderater als die Maifeste, da es mit der ohnehin hitzebedingten Hochsaison des Sommers zusammenfällt.",
       },
     },
     "concurso-flamenco": {
@@ -934,6 +1361,19 @@ const DATA_I18N = {
         impacto:
           "N'étant ni annuel ni à date fixe, il n'a pas d'effet prévisible sur les prix des hébergements, sauf les jours précis de la finale.",
       },
+      de: {
+        nombre: "Nationaler Wettbewerb der Flamenco-Kunst",
+        fechaTexto: "Kein fester Termin; die letzte Ausgabe fand im November 2025 statt",
+        queEs:
+          "Einer der angesehensten Flamenco-Wettbewerbe der Welt, seit 1956 im Gran Teatro von Córdoba ausgetragen. Er lanciert neue Talente im Flamencogesang, -tanz und in der Gitarre.",
+        consejos: [
+          "Er findet nicht jedes Jahr zu einem festen Termin statt: Prüfen Sie die Website des Gran Teatro de Córdoba, ob er mit Ihrem Besuch zusammenfällt.",
+          "Die Tickets für die Finalrunden sind unter Flamenco-Fans aus ganz Spanien im Voraus ausverkauft.",
+          "Fällt er nicht mit Ihrem Besuch zusammen, bieten die Flamenco-Tablaos im Zentrum das ganze Jahr über Live-Vorführungen.",
+        ],
+        impacto:
+          "Da er weder jährlich noch mit festem Termin stattfindet, hat er außer an den konkreten Finaltagen keine vorhersehbare Auswirkung auf die Unterkunftspreise.",
+      },
     },
     "semana-santa": {
       en: {
@@ -961,6 +1401,19 @@ const DATA_I18N = {
         ],
         impacto:
           "Le centre historique se remplit de chaises et de barrières pour les processions ; les prix des hébergements augmentent et il vaut mieux réserver à l'avance, quoique de façon plus modérée qu'en mai.",
+      },
+      de: {
+        nombre: "Karwoche in Córdoba",
+        fechaTexto: "Eine bewegliche Woche im März oder April (abhängig vom liturgischen Kalender)",
+        queEs:
+          "Zum Fest von nationalem touristischem Interesse erklärt. Jahrhundertealte Bruderschaften ziehen mit ihren Prozessionsfiguren von Christus und der Jungfrau durch die Straßen der Altstadt, oft im Morgengrauen, begleitet von Musikkapellen und dem Duft von Weihrauch und Orangenblüten.",
+        consejos: [
+          "Prüfen Sie die offizielle Route jeder Bruderschaft: Manche Prozessionen führen an emblematischen Orten wie der Mezquita-Catedral oder der Römischen Brücke vorbei.",
+          "Die Madrugá (die Nacht von Gründonnerstag auf Karfreitag) zeigt die feierlichsten und meistbesuchten Prozessionen.",
+          "Viele Straßen im Zentrum werden für den Verkehr gesperrt und ändern ihre übliche Route: Prüfen Sie die Karte, bevor Sie sich an diesen Tagen fortbewegen.",
+        ],
+        impacto:
+          "Die Altstadt füllt sich für die Prozessionen mit Stühlen und Absperrungen; die Unterkunftspreise steigen, und eine Vorausbuchung lohnt sich, wenn auch moderater als im Mai.",
       },
     },
     navidad: {
@@ -990,6 +1443,19 @@ const DATA_I18N = {
         impacto:
           "C'est une basse saison comparée à mai ou à la semaine sainte, avec de meilleurs prix d'hébergement en général, bien que le centre soit particulièrement animé les week-ends et le soir du Nouvel An.",
       },
+      de: {
+        nombre: "Weihnachten in Córdoba",
+        fechaTexto: "Den ganzen Dezember über, bis zum Dreikönigsumzug am 5. Januar",
+        queEs:
+          "Die Stadt erstrahlt im weihnachtlichen Lichterschmuck der Innenstadt, die städtische Krippe wird aufgebaut, und auf den Plätzen finden Märkte und Konzerte statt, bis zum Dreikönigsumzug in der Nacht des 5. Januar.",
+        consejos: [
+          "Die Beleuchtung wird meist Ende November oder Anfang Dezember eingeschaltet: ein guter Zeitpunkt für einen abendlichen Spaziergang durch die Innenstadt.",
+          "Die städtische Krippe sowie jene der Bruderschaften und Kirchen sind kostenlos und über die gesamte Altstadt verteilt.",
+          "Dezember ist Nebensaison für den Sonnentourismus, weshalb die Unterkunftspreise meist günstiger sind als im Mai, außer an Silvester.",
+        ],
+        impacto:
+          "Es ist im Vergleich zu Mai oder der Karwoche Nebensaison mit im Allgemeinen besseren Unterkunftspreisen, wobei das Zentrum an Wochenenden und Silvester besonders belebt ist.",
+      },
     },
   },
 
@@ -1007,6 +1473,12 @@ const DATA_I18N = {
         descripcion:
           "Crème froide de tomate, pain, ail et huile d'olive extra vierge, servie avec œuf dur et jambon en dés. Le plat le plus emblématique de Cordoue.",
       },
+      de: {
+        nombre: "Salmorejo cordobés",
+        tipo: "Traditionelles Gericht",
+        descripcion:
+          "Eine kalte Creme aus Tomaten, Brot, Knoblauch und nativem Olivenöl extra, serviert mit hartgekochtem Ei und Schinkenwürfeln. Das bekannteste Gericht Córdobas.",
+      },
     },
     flamenquin: {
       en: {
@@ -1020,6 +1492,12 @@ const DATA_I18N = {
         tipo: "Plat typique",
         descripcion:
           "Rouleau de longe de porc enveloppé de jambon serrano, pané et frit. Généralement servi avec des frites et de l'aïoli.",
+      },
+      de: {
+        nombre: "Flamenquín",
+        tipo: "Traditionelles Gericht",
+        descripcion:
+          "Eine mit Serranoschinken umwickelte Schweinelende-Rolle, paniert und frittiert. Wird meist mit Pommes frites und Knoblauchmayonnaise serviert.",
       },
     },
     "rabo-toro": {
@@ -1035,6 +1513,12 @@ const DATA_I18N = {
         descripcion:
           "Ragoût traditionnel de queue de taureau, mijoté lentement avec du vin, des légumes et des épices jusqu'à devenir tendre et onctueux.",
       },
+      de: {
+        nombre: "Rabo de Toro (Ochsenschwanz)",
+        tipo: "Traditionelles Gericht",
+        descripcion:
+          "Ein traditioneller Ochsenschwanz-Eintopf, langsam geschmort mit Wein, Gemüse und Gewürzen, bis er zart und kräftig im Geschmack ist.",
+      },
     },
     "berenjenas-miel": {
       en: {
@@ -1048,6 +1532,12 @@ const DATA_I18N = {
         tipo: "Tapa",
         descripcion:
           "Fines tranches d'aubergine frites et arrosées de miel de canne. Une tapa sucrée-salée très appréciée dans les tavernes.",
+      },
+      de: {
+        nombre: "Frittierte Auberginen mit Zuckerrohrhonig",
+        tipo: "Tapa",
+        descripcion:
+          "Dünn geschnittene Auberginen, frittiert und mit Zuckerrohrhonig beträufelt. Eine süß-salzige Tapa, die in den Tabernas sehr beliebt ist.",
       },
     },
     "vino-montilla": {
@@ -1063,6 +1553,12 @@ const DATA_I18N = {
         descripcion:
           "Vin bénéficiant d'une appellation d'origine propre à la province, élaboré à partir du cépage Pedro Ximénez. Idéal pour accompagner les tapas.",
       },
+      de: {
+        nombre: "Montilla-Moriles-Wein",
+        tipo: "Getränk",
+        descripcion:
+          "Ein Wein mit eigener Herkunftsbezeichnung aus der Provinz, hergestellt aus der Rebsorte Pedro Ximénez. Perfekt zu Tapas.",
+      },
     },
     mazamorra: {
       en: {
@@ -1077,6 +1573,12 @@ const DATA_I18N = {
         descripcion:
           "Crème froide d'amandes, de pain et d'ail, ancêtre du salmorejo aux racines arabes, servie avec des raisins secs ou de la pomme.",
       },
+      de: {
+        nombre: "Mazamorra cordobesa",
+        tipo: "Traditionelles Gericht",
+        descripcion:
+          "Eine kalte Creme aus Mandeln, Brot und Knoblauch, ein Vorläufer des Salmorejo mit arabischen Wurzeln, serviert mit Rosinen oder Apfel.",
+      },
     },
     "pastel-cordobes": {
       en: {
@@ -1090,6 +1592,12 @@ const DATA_I18N = {
         tipo: "Pâtisserie",
         descripcion:
           "Un feuilleté fourré au cabello de ángel (confiture de citrouille), saupoudré de sucre et de cannelle. Il existe aussi une version individuelle appelée « manolete » et une version salée au jambon.",
+      },
+      de: {
+        nombre: "Pastel cordobés",
+        tipo: "Gebäck",
+        descripcion:
+          "Ein Blätterteiggebäck gefüllt mit Cabello de Ángel (kandiertem Kürbis), bestreut mit Zucker und Zimt. Es gibt auch eine Mini-Version namens „Manolete“ und eine herzhafte Version mit Schinken.",
       },
     },
   },
@@ -1108,6 +1616,12 @@ const DATA_I18N = {
           "Le réseau de bus urbains relie le centre historique au reste de la ville. Ticket simple ou carte rechargeable Bus+.",
         info: "Tarif simple environ 1,30 €, forfaits multi-trajets disponibles",
       },
+      de: {
+        nombre: "Stadtbus (Aucorsa)",
+        descripcion:
+          "Das städtische Busnetz verbindet die Altstadt mit dem Rest der Stadt. Einzelfahrschein oder aufladbare Bus+-Karte.",
+        info: "Einzelfahrt ca. 1,30 €, Mehrfahrtenkarten erhältlich",
+      },
     },
     cordobici: {
       en: {
@@ -1121,6 +1635,12 @@ const DATA_I18N = {
         descripcion:
           "Système de vélos partagés avec des stations dans toute la ville, idéal pour circuler sur les pistes cyclables du centre.",
         info: "Inscription requise, 30 premières minutes gratuites selon l'abonnement",
+      },
+      de: {
+        nombre: "Öffentliches Fahrradverleihsystem (Cordobici)",
+        descripcion:
+          "Ein Fahrradverleihsystem mit Stationen in der ganzen Stadt, ideal um sich auf den Radwegen der Innenstadt fortzubewegen.",
+        info: "Anmeldung erforderlich, je nach Tarif die ersten 30 Minuten kostenlos",
       },
     },
     taxi: {
@@ -1136,6 +1656,12 @@ const DATA_I18N = {
           "Stations de taxis à des endroits clés comme la Mosquée-cathédrale, la gare et la Plaza de las Tendillas. Également disponibles via application.",
         info: "Tarif minimum environ 4 €, tarifs spéciaux pour l'aéroport et zones industrielles",
       },
+      de: {
+        nombre: "Taxi",
+        descripcion:
+          "Taxistände an wichtigen Orten wie der Mezquita-Catedral, dem Bahnhof und der Plaza de las Tendillas. Auch per App verfügbar.",
+        info: "Mindestpreis ca. 4 €, Sondertarife für Flughafen und Industriegebiete",
+      },
     },
     tren: {
       en: {
@@ -1149,6 +1675,12 @@ const DATA_I18N = {
         descripcion:
           "Gare bien desservie par le TGV espagnol (AVE) vers Madrid (moins de 2h) et Séville (45 min), ainsi que par des services régionaux dans toute l'Andalousie.",
         info: "15-20 min à pied du centre historique, ou bus/taxi",
+      },
+      de: {
+        nombre: "Zug (Bahnhof Córdoba)",
+        descripcion:
+          "Ein Bahnhof mit guter Anbindung durch AVE-Hochgeschwindigkeitszüge nach Madrid (unter 2 Std.) und Sevilla (45 Min.) sowie Regionalverbindungen in ganz Andalusien.",
+        info: "15-20 Min. zu Fuß zur Altstadt, oder Bus/Taxi",
       },
     },
     aeropuerto: {
@@ -1164,6 +1696,12 @@ const DATA_I18N = {
           "Cordoue possède son propre aéroport, mais avec des vols très limités. L'option habituelle consiste à voler vers Séville (~140 km) puis à continuer en train ou en bus.",
         info: "Aéroport de Séville : environ 1h20 en voiture ou en AVE/bus",
       },
+      de: {
+        nombre: "Flughafen",
+        descripcion:
+          "Córdoba hat einen eigenen Flughafen, jedoch mit sehr begrenztem Flugangebot. Üblicherweise fliegt man nach Sevilla (~140 km) und fährt von dort mit dem Zug oder Bus weiter.",
+        info: "Flughafen Sevilla: ca. 1 Std. 20 Min. mit dem Auto oder per AVE/Bus",
+      },
     },
     parking: {
       en: {
@@ -1177,6 +1715,12 @@ const DATA_I18N = {
         descripcion:
           "Le centre historique a un accès restreint aux véhicules (zone à faibles émissions). Il est recommandé d'utiliser les parkings publics en périphérie de la vieille ville.",
         info: "Parkings recommandés : San Basilio, Aparcamiento Norte, Vial Norte",
+      },
+      de: {
+        nombre: "Parken",
+        descripcion:
+          "Die Altstadt hat eingeschränkten Fahrzeugzugang (Umweltzone). Empfohlen werden öffentliche Parkplätze am Rand der Altstadt.",
+        info: "Empfohlene Parkhäuser: San Basilio, Aparcamiento Norte, Vial Norte",
       },
     },
   },
@@ -1205,6 +1749,17 @@ const DATA_I18N = {
           "Sésame blanc Karim au caviar du désert",
         ],
       },
+      de: {
+        distincion: "3 Michelin-Sterne",
+        tipo: "Gehobene Gastronomie, andalusische Autorenküche",
+        precio: "Degustationsmenü ab ca. 240 €",
+        carta: [
+          "Menü Tanwer",
+          "Menü Thawra",
+          "Menü Taqadum",
+          "Weißer Sesam Karim mit Wüstenkaviar",
+        ],
+      },
     },
     choco: {
       en: {
@@ -1225,6 +1780,16 @@ const DATA_I18N = {
           "Menus dégustation de saison",
           "Racines andalouses et techniques contemporaines",
           "Accord avec les vins de l'appellation Montilla-Moriles",
+        ],
+      },
+      de: {
+        distincion: "1 Michelin-Stern",
+        tipo: "Andalusische Autorenküche",
+        precio: "Hochwertiges Degustationsmenü",
+        carta: [
+          "Saisonale Degustationsmenüs",
+          "Andalusische Wurzeln mit zeitgenössischer Technik",
+          "Kombiniert mit Weinen der D.O. Montilla-Moriles",
         ],
       },
     },
@@ -1249,6 +1814,17 @@ const DATA_I18N = {
           "Queue de taureau",
           "Gaspacho blanc aux pignons",
           "Faux-filet ibérique grillé",
+        ],
+      },
+      de: {
+        distincion: "Empfehlung des Guide Michelin",
+        tipo: "Traditionelle kordobesische Küche (Grill)",
+        precio: "Mittel bis gehoben",
+        carta: [
+          "Churrasco nach kordobesischer Art mit roter und grüner Soße",
+          "Rabo de toro",
+          "Weißer Gazpacho mit Pinienkernen",
+          "Gegrilltes iberisches Filet",
         ],
       },
     },
@@ -1281,6 +1857,20 @@ const DATA_I18N = {
           "Fondée en 1908 par Domingo Campos del Santo comme bodega de vins ; ses salles à manger n'ont ouvert qu'en 1964. Elle conserve des patios andalous centenaires et une collection complète de vins de Montilla-Moriles.",
         queDeberiaPedir: "La queue de taureau et la salade molinera à la morue et à l'orange, accompagnées d'un fino maison.",
       },
+      de: {
+        distincion: "Historische Taverne seit 1908",
+        tipo: "Traditionelle kordobesische Küche",
+        precio: "Mittel bis gehoben",
+        carta: [
+          "Rabo de toro",
+          "Molinera-Salat mit Kabeljau und Orange",
+          "Schweinsfüße gefüllt mit Foie und Schinken",
+          "Frittierte Milch mit Zimteis",
+        ],
+        historia:
+          "1908 von Domingo Campos del Santo als Weinbodega gegründet; die Speisesäle wurden erst 1964 eröffnet. Bis heute besitzt das Haus jahrhundertealte andalusische Innenhöfe und eine vollständige Weinsammlung der D.O. Montilla-Moriles.",
+        queDeberiaPedir: "Den Rabo de toro und den Molinera-Salat mit Kabeljau und Orange, dazu einen Fino des Hauses.",
+      },
     },
     "taberna-salinas": {
       en: {
@@ -1310,6 +1900,20 @@ const DATA_I18N = {
         historia:
           "Ouverte en 1924 par Francisco de Paula Salinas près de l'ancien marché ; fermée en 1982, elle a rouvert en 1988 sous la direction de Manuel Jiménez Montoro. Son patio carrelé est l'un des plus photographiés de la ville.",
         queDeberiaPedir: "L'ajo blanco en entrée, puis le flamenquín en plat principal.",
+      },
+      de: {
+        distincion: "Historische Taverne seit 1924",
+        tipo: "Traditionelle kordobesische Küche",
+        precio: "Günstig bis mittel",
+        carta: [
+          "Ajo blanco (kalte Mandel-Knoblauchsuppe)",
+          "Flamenquín",
+          "Geschmorter Rabo de toro",
+          "Frittierte Auberginen mit Zuckerrohrhonig",
+        ],
+        historia:
+          "1924 von Francisco de Paula Salinas neben dem alten Markt eröffnet; 1982 geschlossen und 1988 unter Manuel Jiménez Montoro wiedereröffnet. Ihr gekachelter Innenhof zählt zu den meistfotografierten der Stadt.",
+        queDeberiaPedir: "Den Ajo blanco als Vorspeise und den Flamenquín als Hauptgericht.",
       },
     },
     "casa-pepe-juderia": {
@@ -1343,6 +1947,21 @@ const DATA_I18N = {
           "Taverne familiale ouverte en 1928 au cœur de la Judería, tout près de la Synagogue, reconnue par le Guide Michelin pour sa cuisine cordouane traditionnelle.",
         queDeberiaPedir: "Le salmorejo, puis la mazamorra en dessert : deux versions de la même recette à des siècles d'écart.",
       },
+      de: {
+        distincion: "Empfehlung des Guide Michelin, seit 1928",
+        tipo: "Traditionelle kordobesische Küche",
+        precio: "Mittel",
+        carta: [
+          "Salmorejo",
+          "Flamenquín",
+          "Rabo de toro",
+          "Mazamorra",
+          "Frittierte Auberginen mit Zuckerrohrhonig",
+        ],
+        historia:
+          "Eine 1928 im Herzen der Judería eröffnete Familientaverne, ganz in der Nähe der Synagoge, ausgezeichnet vom Guide Michelin für ihre traditionelle kordobesische Küche.",
+        queDeberiaPedir: "Den Salmorejo und zum Nachtisch die Mazamorra: zwei Versionen desselben Rezepts mit Jahrhunderten Abstand.",
+      },
     },
     "cuchara-san-lorenzo": {
       en: {
@@ -1356,6 +1975,12 @@ const DATA_I18N = {
         tipo: "Cuisine cordouane de marché",
         precio: "Moyen (~35 € par personne)",
         carta: ["Salmorejo", "Croquettes de veau", "Mini patatas bravas", "Flamenquín", "Queue de taureau", "Mazamorra"],
+      },
+      de: {
+        distincion: "Bib Gourmand, Guide Michelin",
+        tipo: "Marktfrische kordobesische Küche",
+        precio: "Mittel (~35 € pro Person)",
+        carta: ["Salmorejo", "Kalbskroketten", "Mini-Patatas bravas", "Flamenquín", "Rabo de toro", "Mazamorra"],
       },
     },
     "puerta-sevilla": {
@@ -1371,6 +1996,12 @@ const DATA_I18N = {
         precio: "Moyen (menu déjeuner ~20 €)",
         carta: ["Aubergines au miel", "Flamenquín", "Poisson frais du jour", "Menu du jour en semaine"],
       },
+      de: {
+        distincion: "Jahrhundertealtes Herrenhaus",
+        tipo: "Traditionelle kordobesische Küche",
+        precio: "Mittel (Tagesmenü ~20 €)",
+        carta: ["Auberginen mit Honig", "Flamenquín", "Frischer Fisch des Tages", "Wochentags-Tagesmenü"],
+      },
     },
     "ermita-candelaria": {
       en: {
@@ -1384,6 +2015,12 @@ const DATA_I18N = {
         tipo: "Cuisine cordouane d'auteur",
         precio: "Moyen-élevé",
         carta: ["Pisto maison", "Artichauts à la montillana", "Perdrix aux oignons"],
+      },
+      de: {
+        distincion: "Untergebracht in einer Einsiedelei aus dem 15. Jahrhundert",
+        tipo: "Kordobesische Autorenküche",
+        precio: "Mittel bis gehoben",
+        carta: ["Hausgemachtes Pisto", "Artischocken nach Montilla-Art", "Rebhuhn mit Zwiebeln"],
       },
     },
     almudaina: {
@@ -1411,6 +2048,18 @@ const DATA_I18N = {
           "Millefeuille d'aubergine au foie gras et fromage de chèvre",
         ],
       },
+      de: {
+        distincion: "Palast aus dem 16. Jahrhundert, in der Judería",
+        tipo: "Traditionelle kordobesische Küche",
+        precio: "Mittel bis gehoben",
+        carta: [
+          "Salmorejo",
+          "Flamenquín nach kordobesischer Art",
+          "Rabo de toro nach Almudaina-Art",
+          "Lammtajine mit Pflaumen",
+          "Auberginen-Millefeuille mit Foie und Ziegenkäse",
+        ],
+      },
     },
     "casa-mazal": {
       en: {
@@ -1424,6 +2073,12 @@ const DATA_I18N = {
         tipo: "Cuisine séfarade et andalouse",
         precio: "Moyen-élevé",
         carta: ["Menus dégustation séfarades et andalous", "Plats végétariens et végans", "Desserts sans lactose"],
+      },
+      de: {
+        distincion: "Sephardische Küche in einem Haus aus dem 14. Jahrhundert",
+        tipo: "Sephardische und andalusische Küche",
+        precio: "Mittel bis gehoben",
+        carta: ["Sephardische und andalusische Degustationsmenüs", "Vegetarische und vegane Gerichte", "Milchfreie Desserts"],
       },
     },
   },
@@ -1448,6 +2103,16 @@ const DATA_I18N = {
           "Salmorejo",
           "Aubergines califales au Pedro Ximénez",
           "Queue de taureau à la cordouane",
+        ],
+      },
+      de: {
+        distincion: "Bestes Restaurant der Welt 2025 (TripAdvisor Traveler's Choice)",
+        tipo: "Andalusische Tapas-Bar",
+        precio: "Günstig bis mittel",
+        carta: [
+          "Salmorejo",
+          "Kalifale Auberginen mit Pedro Ximénez",
+          "Rabo de toro nach kordobesischer Art",
         ],
       },
     },
@@ -1478,6 +2143,19 @@ const DATA_I18N = {
           "Ouverte en 1920 sous le nom de « Taberna de El Cojo de San Nicolás » près de la Puerta de Almodóvar ; en 1932, José María Jiménez Márquez l'a rachetée et rebaptisée Casa Rubio, nom qu'elle porte toujours.",
         queDeberiaPedir: "Les aubergines frites au miel de canne sur la terrasse en rooftop, avec vue sur les remparts.",
       },
+      de: {
+        distincion: "Historische Taverne seit 1920",
+        tipo: "Tapas-Bar mit Dachterrasse",
+        precio: "Günstig bis mittel",
+        carta: [
+          "Frittierte Auberginen mit Zuckerrohrhonig",
+          "Rabo de toro mit Kartoffeln",
+          "Tapas sephardischen Ursprungs",
+        ],
+        historia:
+          "1920 als „Taberna de El Cojo de San Nicolás“ an der Puerta de Almodóvar eröffnet; 1932 kaufte José María Jiménez Márquez das Lokal und benannte es in Casa Rubio um – der Name, den es bis heute trägt.",
+        queDeberiaPedir: "Die frittierten Auberginen mit Zuckerrohrhonig auf der Dachterrasse mit Blick auf die Stadtmauer.",
+      },
     },
     "sociedad-plateros": {
       en: {
@@ -1497,6 +2175,15 @@ const DATA_I18N = {
         historia:
           "La société mutualiste des orfèvres a été fondée en 1868, et sa taverne a ouvert en 1872 à côté du couvent de San Francisco — aujourd'hui l'une des plus anciennes tavernes de Cordoue.",
         queDeberiaPedir: "Le salmorejo et le ragoût maison du jour, accompagnés d'un vin de Montilla-Moriles.",
+      },
+      de: {
+        distincion: "Kordobesische Taverne seit 1872",
+        tipo: "Traditionelle Taverne mit Innenhof",
+        precio: "Günstig",
+        carta: ["Salmorejo", "Hausgemachte Eintöpfe", "Weine aus Montilla-Moriles"],
+        historia:
+          "Die Bruderschaft der Silberschmiede wurde 1868 gegründet, ihre Taverne öffnete 1872 neben dem Konvent San Francisco – heute eine der ältesten Tavernen Córdobas.",
+        queDeberiaPedir: "Salmorejo und den hausgemachten Eintopf des Tages, dazu einen Wein aus Montilla-Moriles.",
       },
     },
     "bar-santos": {
@@ -1518,6 +2205,15 @@ const DATA_I18N = {
           "Un bar-comptoir ouvert en 1966 juste à côté de la Mosquée-cathédrale, célèbre pour sa tortilla de pommes de terre géante servie en parts, paiement en espèces uniquement.",
         queDeberiaPedir: "Une part de tortilla de patatas, dégustée debout face aux remparts de la Mosquée.",
       },
+      de: {
+        distincion: "Ikonisch seit 1966, neben der Mezquita-Catedral",
+        tipo: "Tapas am Tresen (nur Barzahlung)",
+        precio: "Günstig",
+        carta: ["Riesige spanische Tortilla", "Kalte Tapas am Tresen"],
+        historia:
+          "Eine 1966 direkt neben der Mezquita-Catedral eröffnete Theken-Bar, berühmt für ihre riesige spanische Tortilla, die in Stücken serviert wird – Zahlung nur in bar.",
+        queDeberiaPedir: "Ein Stück Tortilla de patatas, im Stehen genossen mit Blick auf die Mauern der Mezquita.",
+      },
     },
     "bodega-guzman": {
       en: {
@@ -1531,6 +2227,12 @@ const DATA_I18N = {
         tipo: "Bar à vin tiré au fût",
         precio: "Économique",
         carta: ["Vin Amargoso et Fino tiré au fût", "Salmorejo", "Charcuterie et tapas froides"],
+      },
+      de: {
+        distincion: "Jahrhundertealte Bodega in der Judería",
+        tipo: "Weinbar mit Wein vom Fass",
+        precio: "Günstig",
+        carta: ["Amargoso- und Fino-Wein vom Fass", "Salmorejo", "Aufschnitt und kalte Tapas"],
       },
     },
     "cerveceria-califa": {
@@ -1546,6 +2248,12 @@ const DATA_I18N = {
         precio: "Économique-moyen",
         carta: ["Lager Premium", "Rousse grillée", "Double Malt", "Punch IPA", "Croquettes et plateau de fromages"],
       },
+      de: {
+        distincion: "Córdobas erste Craft-Brauerei",
+        tipo: "Craft-Brauerei mit eigener Braustätte",
+        precio: "Günstig bis mittel",
+        carta: ["Premium Lager", "Geröstetes Rotbier", "Doppelmalz", "Punch IPA", "Kroketten und Käseplatte"],
+      },
     },
     "trapperia-beer-shop": {
       en: {
@@ -1560,6 +2268,12 @@ const DATA_I18N = {
         precio: "Économique-moyen",
         carta: ["Bières artisanales tournantes", "Tapas et plats à partager"],
       },
+      de: {
+        distincion: "Spezialisiert ausschließlich auf Bier",
+        tipo: "Bierbar mit wechselnder nationaler und importierter Auswahl",
+        precio: "Günstig bis mittel",
+        carta: ["Wechselnde Craft-Biere", "Tapas und Portionen zum Teilen"],
+      },
     },
     "rafa-jimenez-cerveceria": {
       en: {
@@ -1573,6 +2287,12 @@ const DATA_I18N = {
         tipo: "Bar à bières avec sélection nationale et internationale",
         precio: "Moyen",
         carta: ["Flamenquín", "Croquettes", "Large sélection de bières"],
+      },
+      de: {
+        distincion: "Bekannt für seine große Terrasse",
+        tipo: "Bierbar mit nationaler und internationaler Auswahl",
+        precio: "Mittel",
+        carta: ["Flamenquín", "Kroketten", "Große Bierauswahl"],
       },
     },
     "taberna-fuenseca": {
@@ -1593,6 +2313,15 @@ const DATA_I18N = {
         historia:
           "Ouverte en 1852, c'est l'une des plus anciennes tavernes de Cordoue et une peña flamenca vivante : le chant peut jaillir spontanément parmi les habitués, sans scène ni horaire fixe.",
         queDeberiaPedir: "Le salmorejo et le flamenquín, avec un fino de Montilla-Moriles, en espérant que quelqu'un se mette à chanter.",
+      },
+      de: {
+        distincion: "Historische Taverne seit 1852",
+        tipo: "Traditionelle Taverne und Flamenco-Peña",
+        precio: "Günstig",
+        carta: ["Salmorejo", "Flamenquín", "Rabo de toro", "Mazamorra", "Frittierte Auberginen mit Honig", "Iberischer Schinken"],
+        historia:
+          "1852 eröffnet, zählt sie zu den ältesten Tavernen Córdobas und ist eine lebendige Flamenco-Peña: Unter den Stammgästen kann spontan Gesang aufkommen, ganz ohne Bühne oder festen Zeitplan.",
+        queDeberiaPedir: "Salmorejo und Flamenquín mit einem Fino aus Montilla-Moriles – und mit etwas Glück beginnt jemand zu singen.",
       },
     },
     "casa-bravo-1919": {
@@ -1628,6 +2357,22 @@ const DATA_I18N = {
           "Fondée en 1919 près de la Puerta de Almodóvar, elle conserve son carrelage original de 1914 à motifs de la Mosquée. Familiale depuis son ouverture.",
         queDeberiaPedir: "La queue de taureau et les abats à l'ail, en terminant par un pastel cordobés en dessert.",
       },
+      de: {
+        distincion: "Historische Taverne seit 1919",
+        tipo: "Traditionelle Taverne an der Puerta de Almodóvar",
+        precio: "Günstig",
+        carta: [
+          "Rabo de toro",
+          "Salmorejo",
+          "Innereien mit Knoblauch",
+          "Kutteln nach Cortijero-Art mit Schweinsfüßen",
+          "Hausgemachter Flamenquín",
+          "Pastel cordobés",
+        ],
+        historia:
+          "1919 an der Puerta de Almodóvar gegründet, bewahrt sie ihre originalen Kacheln von 1914 mit Motiven der Mezquita. Seit der Eröffnung in Familienhand.",
+        queDeberiaPedir: "Den Rabo de toro und die Innereien mit Knoblauch, zum Abschluss ein Pastel cordobés als Dessert.",
+      },
     },
     "casa-el-pisto": {
       en: {
@@ -1647,6 +2392,15 @@ const DATA_I18N = {
         historia:
           "Ouverte en 1880 sur la Plaza de San Miguel, elle est depuis longtemps liée au monde de la tauromachie : le père du légendaire Manolete comptait parmi ses habitués. La famille López-Acedo la dirige depuis 1974.",
         queDeberiaPedir: "Le pisto qui donne son nom à la maison, et la queue de taureau.",
+      },
+      de: {
+        distincion: "Historische Taverne seit 1880",
+        tipo: "Traditionelle Taverne mit Verbindung zur Stierkampfkultur",
+        precio: "Günstig bis mittel",
+        carta: ["Pisto", "Rabo de toro", "Schweinsfüße", "Iberische Bäckchen in altem Wein geschmort"],
+        historia:
+          "1880 an der Plaza de San Miguel eröffnet, ist sie seit langem mit der Stierkampfkultur verbunden: Der Vater des legendären Manolete zählte zu ihren Stammgästen. Die Familie López-Acedo führt sie seit 1974.",
+        queDeberiaPedir: "Das Pisto, das dem Haus seinen Namen gibt, und den Rabo de toro.",
       },
     },
     "taberna-regina": {
@@ -1668,6 +2422,15 @@ const DATA_I18N = {
           "Ouverte en 1904, elle avait autrefois une entrée discrète séparée pour les femmes, un détail social de l'époque qui fait aujourd'hui partie de son histoire.",
         queDeberiaPedir: "Les patatas bravas et la viande au xérès, sur la terrasse ou dans le patio cordouan.",
       },
+      de: {
+        distincion: "Historische Taverne seit 1904",
+        tipo: "Traditionelle Taverne mit kordobesischem Innenhof",
+        precio: "Günstig bis mittel",
+        carta: ["Patatas bravas", "Fleisch in Sherry geschmort", "Kutteln", "Rabo de toro", "Salmorejo", "Flamenquín"],
+        historia:
+          "1904 eröffnet, verfügte sie einst über einen diskreten separaten Eingang für Frauen – ein soziales Detail jener Zeit, das heute Teil ihrer Geschichte ist.",
+        queDeberiaPedir: "Die Patatas bravas und das Fleisch in Sherry, auf der Terrasse oder im kordobesischen Innenhof.",
+      },
     },
     "bar-santa-marina": {
       en: {
@@ -1681,6 +2444,12 @@ const DATA_I18N = {
         tipo: "Bar de quartier dans le historique Santa Marina",
         precio: "Économique",
         carta: ["Salmorejo", "Flamenquín", "Brochettes à la maure", "Aubergines au miel", "Croquettes de bolets"],
+      },
+      de: {
+        distincion: "Einer der ältesten Bars Córdobas",
+        tipo: "Nachbarschaftsbar im historischen Santa Marina",
+        precio: "Günstig",
+        carta: ["Salmorejo", "Flamenquín", "Spieße nach maurischer Art", "Frittierte Auberginen mit Honig", "Steinpilz-Kroketten"],
       },
     },
   },

@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isFav = it.esFavoriteable && Favorites.has(it.id);
     const media = it.imagen
       ? `<div class="card-media">
-           <img src="${it.imagen}" alt="${it.nombre}" />
+           <img src="${it.imagen}" alt="${it.nombre}" loading="lazy" />
            ${
              it.esFavoriteable
                ? `<button class="favorite-btn${isFav ? " active" : ""}" data-id="${it.id}" data-name="${it.nombre}" aria-label="${t("aria_favorite")}">

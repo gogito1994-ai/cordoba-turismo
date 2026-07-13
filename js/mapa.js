@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function sheetHtml(point) {
     const media = point.imagen
-      ? `<div class="map-sheet-media"><img src="${point.imagen}" alt="${pointName(point)}" /></div>`
+      ? `<div class="map-sheet-media"><img src="${point.imagen}" alt="${pointName(point)}" loading="lazy" /></div>`
       : `<div class="map-sheet-media map-sheet-media-fallback" style="background:${(MAP_CATEGORIES[point.categoria] || {}).color || "#bd4e2a"}">${Icon(point.icono)}</div>`;
 
     const badge = point.distincion
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const fichaBtn =
       point.collection === "places"
-        ? `<a class="btn btn-primary" href="lugar.html?id=${point.id}">${Icon("landmark")} ${t("map_sheet_view_place")}</a>`
+        ? `<a class="btn btn-primary" href="lugares/${point.slug || point.id}.html">${Icon("landmark")} ${t("map_sheet_view_place")}</a>`
         : "";
     const webBtn = point.web
       ? `<a class="btn btn-outline-dark" href="${point.web}" target="_blank" rel="noopener noreferrer">${Icon("external-link")} ${t("web_reserve_button")}</a>`

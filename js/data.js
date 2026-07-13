@@ -3,6 +3,7 @@
 const PLACES = [
   {
     id: "mezquita",
+    slug: "mezquita-catedral",
     nombre: "Mezquita-Catedral de Córdoba",
     categoria: "Monumento",
     icono: "landmark",
@@ -36,6 +37,7 @@ const PLACES = [
   },
   {
     id: "alcazar",
+    slug: "alcazar-de-los-reyes-cristianos",
     nombre: "Alcázar de los Reyes Cristianos",
     categoria: "Monumento",
     icono: "landmark",
@@ -69,6 +71,7 @@ const PLACES = [
   },
   {
     id: "puente-romano",
+    slug: "puente-romano",
     nombre: "Puente Romano",
     categoria: "Monumento",
     icono: "landmark",
@@ -101,6 +104,7 @@ const PLACES = [
   },
   {
     id: "juderia",
+    slug: "juderia-de-cordoba",
     nombre: "Judería de Córdoba",
     categoria: "Barrio histórico",
     icono: "map-pin",
@@ -133,6 +137,7 @@ const PLACES = [
   },
   {
     id: "sinagoga",
+    slug: "sinagoga-de-cordoba",
     nombre: "Sinagoga de Córdoba",
     categoria: "Monumento",
     icono: "landmark",
@@ -160,6 +165,7 @@ const PLACES = [
   },
   {
     id: "palacio-viana",
+    slug: "palacio-de-viana",
     nombre: "Palacio de Viana",
     categoria: "Museo",
     icono: "building",
@@ -193,6 +199,7 @@ const PLACES = [
   },
   {
     id: "templo-romano",
+    slug: "templo-romano",
     nombre: "Templo Romano",
     categoria: "Monumento",
     icono: "landmark",
@@ -220,6 +227,7 @@ const PLACES = [
   },
   {
     id: "calahorra",
+    slug: "torre-de-la-calahorra",
     nombre: "Torre de la Calahorra",
     categoria: "Museo",
     icono: "building",
@@ -248,6 +256,7 @@ const PLACES = [
   },
   {
     id: "corredera",
+    slug: "plaza-de-la-corredera",
     nombre: "Plaza de la Corredera",
     categoria: "Plaza",
     icono: "map-pin",
@@ -275,6 +284,7 @@ const PLACES = [
   },
   {
     id: "medina-azahara",
+    slug: "medina-azahara",
     nombre: "Medina Azahara",
     categoria: "Yacimiento arqueológico",
     icono: "compass",
@@ -308,6 +318,7 @@ const PLACES = [
   },
   {
     id: "molino-albolafia",
+    slug: "molino-de-la-albolafia",
     nombre: "Molino de la Albolafia",
     categoria: "Monumento",
     icono: "landmark",
@@ -335,6 +346,7 @@ const PLACES = [
   },
   {
     id: "puerta-puente",
+    slug: "puerta-del-puente",
     nombre: "Puerta del Puente",
     categoria: "Monumento",
     icono: "landmark",
@@ -362,6 +374,7 @@ const PLACES = [
   },
   {
     id: "banos-califales",
+    slug: "banos-del-alcazar-califal",
     nombre: "Baños del Alcázar Califal",
     categoria: "Museo",
     icono: "building",
@@ -389,6 +402,7 @@ const PLACES = [
   },
   {
     id: "tendillas",
+    slug: "plaza-de-las-tendillas",
     nombre: "Plaza de las Tendillas",
     categoria: "Plaza",
     icono: "map-pin",
@@ -416,6 +430,7 @@ const PLACES = [
   },
   {
     id: "casa-sefarad",
+    slug: "casa-de-sefarad",
     nombre: "Casa de Sefarad",
     categoria: "Museo",
     icono: "building",
@@ -443,6 +458,7 @@ const PLACES = [
   },
   {
     id: "museo-arqueologico",
+    slug: "museo-arqueologico-y-etnologico",
     nombre: "Museo Arqueológico y Etnológico",
     categoria: "Museo",
     icono: "building",
@@ -470,6 +486,7 @@ const PLACES = [
   },
   {
     id: "san-lorenzo",
+    slug: "iglesia-de-san-lorenzo",
     nombre: "Iglesia de San Lorenzo",
     categoria: "Iglesia",
     icono: "landmark",
@@ -497,6 +514,7 @@ const PLACES = [
   },
   {
     id: "torre-malmuerta",
+    slug: "torre-de-la-malmuerta",
     nombre: "Torre de la Malmuerta",
     categoria: "Monumento",
     icono: "landmark",
@@ -524,6 +542,7 @@ const PLACES = [
   },
   {
     id: "caballerizas-reales",
+    slug: "caballerizas-reales",
     nombre: "Caballerizas Reales",
     categoria: "Monumento",
     icono: "landmark",

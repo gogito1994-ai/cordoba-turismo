@@ -73,11 +73,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- contexto de página ---------- */
 
+  function currentPlaceId() {
+    const fromBody = document.body.dataset.placeId;
+    if (fromBody) return fromBody;
+    if (window.location.pathname.split("/").pop() === "lugar.html") {
+      return new URLSearchParams(window.location.search).get("id");
+    }
+    return null;
+  }
+
   function getPageContext() {
     const path = window.location.pathname.split("/").pop() || "index.html";
     let placeName = null;
-    if (path === "lugar.html" && typeof PLACES !== "undefined") {
-      const id = new URLSearchParams(window.location.search).get("id");
+    const id = currentPlaceId();
+    if (id && typeof PLACES !== "undefined") {
       const place = PLACES.find((p) => p.id === id);
       if (place) placeName = tr(place, "places", "nombre");
     }
@@ -88,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname.split("/").pop() || "index.html";
     const hour = new Date().getHours();
 
-    if (path === "lugar.html") return ["chat_suggestion_lugar_1", "chat_suggestion_lugar_2", "chat_suggestion_lugar_3"];
+    if (currentPlaceId()) return ["chat_suggestion_lugar_1", "chat_suggestion_lugar_2", "chat_suggestion_lugar_3"];
     if (path === "mapa.html") return ["chat_suggestion_mapa_1", "chat_suggestion_mapa_2", "chat_suggestion_3"];
     if (path === "planificar.html") return ["chat_suggestion_planificar_1", "chat_suggestion_planificar_2"];
     if (path === "gastronomia.html") return ["chat_suggestion_gastro_1", "chat_suggestion_gastro_2", "chat_suggestion_1"];
@@ -208,14 +217,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!place) return "";
         const name = tr(place, "places", "nombre");
         const media = place.imagen
-          ? `<img src="${place.imagen}" alt="${name}" />`
+          ? `<img src="${place.imagen}" alt="${name}" loading="lazy" />`
           : `<span class="chat-place-card-fallback">${Icon(place.icono)}</span>`;
-        return `<a class="chat-place-card" href="lugar.html?id=${place.id}">${media}<span>${name}</span></a>`;
+        return `<a class="chat-place-card" href="/lugares/${place.slug || place.id}.html">${media}<span>${name}</span></a>`;
       })
       .join("");
     let html = `<div class="chat-place-cards">${cards}</div>`;
     if (ids.length > 1) {
-      const mapHref = `mapa.html?focus=${ids.join(",")}`;
+      const mapHref = `/mapa.html?focus=${ids.join(",")}`;
       html += `<a class="chat-inline-btn" href="${mapHref}">${Icon("map")} ${t("chat_view_on_map")}</a>`;
     }
     return html;
@@ -229,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     try {
       const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(compact))));
-      return `planificar.html#i=${encoded}`;
+      return `/planificar.html#i=${encoded}`;
     } catch {
       return null;
     }

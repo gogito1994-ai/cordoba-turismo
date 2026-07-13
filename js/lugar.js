@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!content) return;
 
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
+  const id = document.body.dataset.placeId || params.get("id");
   const place = PLACES.find((p) => p.id === id);
 
   if (!place) {
     content.innerHTML = `
       <p class="empty-state">${t("lugar_not_found")}</p>
-      <p style="text-align:center;"><a class="btn btn-primary" href="lugares.html">${t("lugar_back_link")}</a></p>
+      <p style="text-align:center;"><a class="btn btn-primary" href="/lugares.html">${t("lugar_back_link")}</a></p>
     `;
     return;
   }
@@ -46,7 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>`;
     }
     const thumbs = images
-      .map((src) => `<div class="card-media lugar-gallery-thumb"><img src="${src}" alt="${nombre}" /></div>`)
+      .map(
+        (src, i) =>
+          `<div class="card-media lugar-gallery-thumb"><img src="${src}" alt="${nombre}"${i === 0 ? "" : ' loading="lazy"'} /></div>`
+      )
       .join("");
     return `<div class="lugar-gallery">${thumbs}</div>`;
   }
@@ -104,22 +107,88 @@ document.addEventListener("DOMContentLoaded", () => {
     const chips = nearby
       .map(
         (p) =>
-          `<a class="lugar-nearby-chip" href="lugar.html?id=${p.id}">${Icon(p.icono)} ${tr(p, "places", "nombre")}</a>`
+          `<a class="lugar-nearby-chip" href="/lugares/${p.slug || p.id}.html">${Icon(p.icono)} ${tr(p, "places", "nombre")}</a>`
       )
       .join("");
     return `<div class="lugar-nearby"><h2>${t("lugar_nearby_heading")}</h2><div class="lugar-nearby-chips">${chips}</div></div>`;
   }
 
+  function setMetaTag(attr, key, value) {
+    if (!value) return;
+    let el = document.querySelector(`meta[${attr}="${key}"]`);
+    if (!el) {
+      el = document.createElement("meta");
+      el.setAttribute(attr, key);
+      document.head.appendChild(el);
+    }
+    el.setAttribute("content", value);
+  }
+
+  function updateSeoTags() {
+    const nombre = tr(place, "places", "nombre");
+    const desc = tr(place, "places", "porQueVisitar").replace(/\s+/g, " ").slice(0, 155);
+    const slug = place.slug || place.id;
+    const url = `https://cordobapp.com/lugares/${slug}.html`;
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", url);
+
+    setMetaTag("name", "description", desc);
+    setMetaTag("property", "og:type", "website");
+    setMetaTag("property", "og:site_name", "Descubre Córdoba");
+    setMetaTag("property", "og:title", nombre);
+    setMetaTag("property", "og:description", desc);
+    setMetaTag("property", "og:url", url);
+    setMetaTag("property", "og:image", place.imagen);
+    setMetaTag("name", "twitter:card", "summary_large_image");
+    setMetaTag("name", "twitter:title", nombre);
+    setMetaTag("name", "twitter:description", desc);
+    setMetaTag("name", "twitter:image", place.imagen);
+
+    let ld = document.getElementById("place-jsonld");
+    if (!ld) {
+      ld = document.createElement("script");
+      ld.type = "application/ld+json";
+      ld.id = "place-jsonld";
+      document.head.appendChild(ld);
+    }
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      name: nombre,
+      description: tr(place, "places", "porQueVisitar"),
+      image: place.imagen,
+      url,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Córdoba",
+        addressCountry: "ES",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: place.lat,
+        longitude: place.lng,
+      },
+      isAccessibleForFree: !!place.esGratis,
+    });
+  }
+
   function render() {
     const nombre = tr(place, "places", "nombre");
     document.title = `${nombre} — ${t("brand")}`;
+    updateSeoTags();
 
     const badge = place.imprescindible
       ? `<span class="lugar-badge">${Icon("star")} ${t("lugar_essential_badge")}</span>`
       : "";
 
     content.innerHTML = `
-      <a class="lugar-back" href="lugares.html">${Icon("arrow-up")} ${t("lugar_back_link")}</a>
+      <a class="lugar-back" href="/lugares.html">${Icon("arrow-up")} ${t("lugar_back_link")}</a>
 
       ${galleryHtml()}
 
@@ -148,9 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
           ${nearbyHtml()}
 
           <div class="lugar-actions">
-            <a class="btn btn-outline-dark" href="mapa.html?focus=${place.id}">${Icon("map")} ${t("lugar_view_map")}</a>
+            <a class="btn btn-outline-dark" href="/mapa.html?focus=${place.id}">${Icon("map")} ${t("lugar_view_map")}</a>
             <button class="btn btn-outline-dark favorite-btn route-btn" data-id="${place.id}" data-name="${nombre}">${Icon("heart")} <span class="route-btn-label"></span></button>
-            <a class="btn btn-outline-dark" href="index.html?ask=${encodeURIComponent(t("chat_ask_prefill", { name: nombre }))}">${Icon("chat")} ${t("lugar_ask_assistant")}</a>
+            <a class="btn btn-outline-dark" href="/index.html?ask=${encodeURIComponent(t("chat_ask_prefill", { name: nombre }))}">${Icon("chat")} ${t("lugar_ask_assistant")}</a>
           </div>
         </div>
 

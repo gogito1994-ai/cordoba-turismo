@@ -291,10 +291,7 @@ function renderThisMonthBlock(container, opts) {
   if (!container) return;
   const compact = !!(opts && opts.compact);
   const now = new Date();
-  const monthName = now.toLocaleDateString(
-    Lang.get() === "es" ? "es-ES" : Lang.get() === "fr" ? "fr-FR" : "en-GB",
-    { month: "long" }
-  );
+  const monthName = now.toLocaleDateString(localeForLang(), { month: "long" });
   const active = getActiveFixedEvents(now);
   const upcoming = getUpcomingPunctualEvents(now, compact ? 2 : 4);
 
