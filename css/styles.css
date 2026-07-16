@@ -1667,15 +1667,21 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
   #map {
-    height: 460px;
+    height: 520px;
   }
 
   .map-toolbar {
     flex-direction: column;
   }
 
+  .map-search {
+    flex-basis: auto;
+    padding: 10px 16px;
+  }
+
   .map-locate-btn {
     justify-content: center;
+    padding: 10px 16px;
   }
 }
 
