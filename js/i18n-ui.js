@@ -73,6 +73,17 @@ const UI_STRINGS = {
     home_card_transport_title: "Transporte",
     home_card_transport_desc: "Cómo moverte por la ciudad y llegar hasta ella",
 
+    welcome_title: "¡Bienvenido a tu apartamento en Córdoba!",
+    welcome_subtitle: "Aquí tienes accesos rápidos para aprovechar tu estancia.",
+    welcome_card_itinerary_title: "Planifica tu visita",
+    welcome_card_itinerary_desc: "Genera un itinerario a medida para tu estancia",
+    welcome_card_dinner_title: "¿Dónde cenar cerca?",
+    welcome_card_dinner_desc: "Restaurantes y tabernas recomendados",
+    welcome_card_whatsapp_title: "¿Dudas con tu estancia?",
+    welcome_card_whatsapp_desc: "Escríbenos por WhatsApp",
+    welcome_whatsapp_message: "Hola, tengo una consulta sobre mi estancia (apartamento {apt}).",
+    welcome_whatsapp_message_generic: "Hola, tengo una consulta sobre mi estancia.",
+
     partner_kicker: "Recomendado por Cordobapp",
     partner_title: "Guarda tus maletas con Dcanlock",
     partner_description:
@@ -356,6 +367,17 @@ const UI_STRINGS = {
     home_card_transport_title: "Transport",
     home_card_transport_desc: "How to get around and reach the city",
 
+    welcome_title: "Welcome to your apartment in Córdoba!",
+    welcome_subtitle: "Here are some quick shortcuts to make the most of your stay.",
+    welcome_card_itinerary_title: "Plan your visit",
+    welcome_card_itinerary_desc: "Generate a tailor-made itinerary for your stay",
+    welcome_card_dinner_title: "Where to eat nearby?",
+    welcome_card_dinner_desc: "Recommended restaurants and taverns",
+    welcome_card_whatsapp_title: "Questions about your stay?",
+    welcome_card_whatsapp_desc: "Message us on WhatsApp",
+    welcome_whatsapp_message: "Hi, I have a question about my stay (apartment {apt}).",
+    welcome_whatsapp_message_generic: "Hi, I have a question about my stay.",
+
     partner_kicker: "Recommended by Cordobapp",
     partner_title: "Store your luggage with Dcanlock",
     partner_description:
@@ -637,6 +659,17 @@ const UI_STRINGS = {
     home_card_gastronomy_desc: "Salmorejo, flamenquín et la meilleure cuisine locale",
     home_card_transport_title: "Transports",
     home_card_transport_desc: "Comment se déplacer et rejoindre la ville",
+
+    welcome_title: "Bienvenue dans votre appartement à Cordoue !",
+    welcome_subtitle: "Voici quelques raccourcis pour profiter au maximum de votre séjour.",
+    welcome_card_itinerary_title: "Planifiez votre visite",
+    welcome_card_itinerary_desc: "Générez un itinéraire sur mesure pour votre séjour",
+    welcome_card_dinner_title: "Où manger à proximité ?",
+    welcome_card_dinner_desc: "Restaurants et tavernes recommandés",
+    welcome_card_whatsapp_title: "Une question sur votre séjour ?",
+    welcome_card_whatsapp_desc: "Écrivez-nous sur WhatsApp",
+    welcome_whatsapp_message: "Bonjour, j'ai une question sur mon séjour (appartement {apt}).",
+    welcome_whatsapp_message_generic: "Bonjour, j'ai une question sur mon séjour.",
 
     partner_kicker: "Recommandé par Cordobapp",
     partner_title: "Déposez vos bagages chez Dcanlock",
@@ -920,6 +953,17 @@ const UI_STRINGS = {
     home_card_gastronomy_desc: "Salmorejo, Flamenquín und die beste lokale Küche",
     home_card_transport_title: "Transport",
     home_card_transport_desc: "Wie man sich in der Stadt bewegt und sie erreicht",
+
+    welcome_title: "Willkommen in Ihrer Wohnung in Córdoba!",
+    welcome_subtitle: "Hier sind ein paar schnelle Zugänge, um Ihren Aufenthalt optimal zu nutzen.",
+    welcome_card_itinerary_title: "Planen Sie Ihren Besuch",
+    welcome_card_itinerary_desc: "Erstellen Sie ein maßgeschneidertes Reiseprogramm für Ihren Aufenthalt",
+    welcome_card_dinner_title: "Wo isst man in der Nähe?",
+    welcome_card_dinner_desc: "Empfohlene Restaurants und Tabernas",
+    welcome_card_whatsapp_title: "Fragen zu Ihrem Aufenthalt?",
+    welcome_card_whatsapp_desc: "Schreiben Sie uns auf WhatsApp",
+    welcome_whatsapp_message: "Hallo, ich habe eine Frage zu meinem Aufenthalt (Wohnung {apt}).",
+    welcome_whatsapp_message_generic: "Hallo, ich habe eine Frage zu meinem Aufenthalt.",
 
     partner_kicker: "Empfohlen von Cordobapp",
     partner_title: "Geben Sie Ihr Gepäck bei Dcanlock ab",

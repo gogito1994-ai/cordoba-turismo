@@ -1,3 +1,9 @@
+function trackEvent(name, props) {
+  if (typeof window.umami === "object" && typeof window.umami.track === "function") {
+    window.umami.track(name, props);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupStaticIcons();
   setupThemeToggle();

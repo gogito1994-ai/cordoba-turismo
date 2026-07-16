@@ -1,0 +1,247 @@
+{
+  "categorias": ["gastronomia", "tours", "flamenco", "bienestar", "movilidad", "servicios"],
+  "partners": [
+    {
+      "id": "dcanlock",
+      "nombre": "Dcanlock",
+      "categoria": "servicios",
+      "destacado": true,
+      "descripcion": {
+        "es": "Consigna de maletas en pleno centro de Córdoba, a 15 minutos andando de la estación de tren. Taquillas seguras con vigilancia 24h para que explores la ciudad sin cargar equipaje.",
+        "en": "Luggage storage in the heart of Córdoba, a 15-minute walk from the train station. Secure lockers with 24h surveillance so you can explore the city hands-free.",
+        "fr": "Consigne à bagages en plein centre de Cordoue, à 15 minutes à pied de la gare. Casiers sécurisés avec surveillance 24h/24 pour explorer la ville les mains libres.",
+        "de": "Gepäckaufbewahrung mitten im Zentrum von Córdoba, 15 Gehminuten vom Bahnhof entfernt. Sichere Schließfächer mit 24-Stunden-Überwachung, damit Sie die Stadt ohne Gepäck erkunden können."
+      },
+      "codigo": "CORDOBAPP",
+      "descuento": "20%",
+      "url": "https://dcanlock.com/",
+      "telefono": "",
+      "direccion": "Calle María Cristina, 3, Córdoba",
+      "lat": 37.8851064,
+      "lng": -4.7769327,
+      "horario": "Consultar disponibilidad en la web",
+      "imagen": "",
+      "activo": true
+    },
+    {
+      "id": "tablao-cardenal",
+      "nombre": "Tablao Flamenco El Cardenal",
+      "categoria": "flamenco",
+      "destacado": false,
+      "descripcion": {
+        "es": "Tablao flamenco en un palacio señorial del siglo XVIII en la Judería, a pocos minutos de la Mezquita-Catedral, con más de 25 años de espectáculos en directo.",
+        "en": "Flamenco tablao in an 18th-century manor palace in the Jewish Quarter, minutes from the Mosque-Cathedral, with over 25 years of live shows.",
+        "fr": "Tablao flamenco dans un palais seigneurial du XVIIIe siècle dans la Judería, à quelques minutes de la Mosquée-cathédrale, avec plus de 25 ans de spectacles en direct.",
+        "de": "Flamenco-Tablao in einem Herrenpalast aus dem 18. Jahrhundert in der Judería, wenige Minuten von der Mezquita-Catedral entfernt, mit über 25 Jahren Live-Vorführungen."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://www.tablaoflamencocardenal.es/",
+      "telefono": "+34 691 21 79 22",
+      "direccion": "Calle Buen Pastor, 2, Córdoba",
+      "lat": 37.8808338,
+      "lng": -4.7816186,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "hammam-alandalus",
+      "nombre": "Hammam Al Ándalus Córdoba",
+      "categoria": "bienestar",
+      "destacado": false,
+      "descripcion": {
+        "es": "Baños árabes con circuito de aguas termales, masajes y tratamientos de relajación en pleno centro histórico, junto a la Mezquita-Catedral.",
+        "en": "Arab baths with a thermal water circuit, massages and relaxation treatments in the historic center, next to the Mosque-Cathedral.",
+        "fr": "Bains arabes avec circuit d'eaux thermales, massages et soins de détente en plein centre historique, à côté de la Mosquée-cathédrale.",
+        "de": "Arabische Bäder mit Thermalwasser-Rundgang, Massagen und Entspannungsbehandlungen mitten in der Altstadt, direkt neben der Mezquita-Catedral."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://cordoba.hammamalandalus.com/",
+      "telefono": "+34 957 48 47 46",
+      "direccion": "Calle Corregidor Luis de la Cerda, 51, Córdoba",
+      "lat": 37.8785,
+      "lng": -4.779,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "artencordoba",
+      "nombre": "ArtenCórdoba",
+      "categoria": "tours",
+      "destacado": false,
+      "descripcion": {
+        "es": "Visitas guiadas por la Mezquita-Catedral, la Judería, Medina Azahara y los patios, con un equipo de más de 15 guías profesionales, principalmente historiadores.",
+        "en": "Guided tours of the Mosque-Cathedral, the Jewish Quarter, Medina Azahara and the patios, with a team of over 15 professional guides, mostly historians.",
+        "fr": "Visites guidées de la Mosquée-cathédrale, de la Judería, de Medina Azahara et des patios, avec une équipe de plus de 15 guides professionnels, principalement historiens.",
+        "de": "Geführte Besichtigungen der Mezquita-Catedral, der Judería, von Medina Azahara und der Patios, mit einem Team von über 15 professionellen Guides, überwiegend Historiker."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://www.artencordoba.com/",
+      "telefono": "+34 692 35 63 98",
+      "direccion": "",
+      "lat": 0,
+      "lng": 0,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "oway-tours",
+      "nombre": "Oway Tours",
+      "categoria": "tours",
+      "destacado": false,
+      "descripcion": {
+        "es": "Tours guiados a pie por Córdoba: free tour diario, Mezquita-Catedral, Alcázar, Medina Azahara y patios, en español e inglés. Los puntos de encuentro se comunican al reservar.",
+        "en": "Guided walking tours of Córdoba: daily free tour, Mosque-Cathedral, Alcázar, Medina Azahara and patios, in Spanish and English. Meeting points are confirmed on booking.",
+        "fr": "Visites guidées à pied de Cordoue : free tour quotidien, Mosquée-cathédrale, Alcázar, Medina Azahara et patios, en espagnol et en anglais. Les points de rendez-vous sont communiqués à la réservation.",
+        "de": "Geführte Rundgänge durch Córdoba: täglicher Free Tour, Mezquita-Catedral, Alcázar, Medina Azahara und Patios, auf Spanisch und Englisch. Die Treffpunkte werden bei der Buchung mitgeteilt."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://owaytours.com/es/cordoba/",
+      "telefono": "+34 688 37 65 81",
+      "direccion": "",
+      "lat": 0,
+      "lng": 0,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "woow-cordoba",
+      "nombre": "Woow Córdoba",
+      "categoria": "tours",
+      "destacado": false,
+      "descripcion": {
+        "es": "Guías turísticos oficiales que ofrecen rutas por la Mezquita-Catedral, Medina Azahara, la Judería y los patios, además de experiencias gastronómicas por el centro histórico.",
+        "en": "Official tourist guides offering tours of the Mosque-Cathedral, Medina Azahara, the Jewish Quarter and the patios, plus food experiences in the historic center.",
+        "fr": "Guides touristiques officiels proposant des visites de la Mosquée-cathédrale, de Medina Azahara, de la Judería et des patios, ainsi que des expériences gastronomiques dans le centre historique.",
+        "de": "Offizielle Fremdenführer mit Touren durch die Mezquita-Catedral, Medina Azahara, die Judería und die Patios sowie gastronomischen Erlebnissen in der Altstadt."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://woowcordoba.es/",
+      "telefono": "+34 626 05 76 13",
+      "direccion": "",
+      "lat": 0,
+      "lng": 0,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "elektrik-rentabike",
+      "nombre": "Elektrik — Rent a Bike Córdoba",
+      "categoria": "movilidad",
+      "destacado": false,
+      "descripcion": {
+        "es": "Alquiler de bicicletas y patinetes eléctricos en el centro de Córdoba, junto a las Tendillas, con taller propio y tours guiados en bici.",
+        "en": "Bike and e-scooter rental in the center of Córdoba, next to Las Tendillas, with its own workshop and guided bike tours.",
+        "fr": "Location de vélos et de trottinettes électriques dans le centre de Cordoue, près de Las Tendillas, avec atelier et visites guidées à vélo.",
+        "de": "Fahrrad- und E-Scooter-Verleih im Zentrum von Córdoba, bei Las Tendillas, mit eigener Werkstatt und geführten Radtouren."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://rentabikecordoba.com/",
+      "telefono": "+34 957 943 700",
+      "direccion": "Calle María Cristina, 5, Córdoba",
+      "lat": 37.8849391,
+      "lng": -4.7769339,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "casa-pepe-juderia",
+      "nombre": "Casa Pepe de la Judería",
+      "categoria": "gastronomia",
+      "destacado": false,
+      "descripcion": {
+        "es": "Restaurante emblemático de la Judería desde 1928, especializado en cocina tradicional cordobesa: salmorejo, flamenquín, rabo de toro y berenjenas fritas.",
+        "en": "Iconic Jewish Quarter restaurant since 1928, specializing in traditional Córdoba cuisine: salmorejo, flamenquín, oxtail stew and fried eggplant.",
+        "fr": "Restaurant emblématique de la Judería depuis 1928, spécialisé dans la cuisine traditionnelle cordouane : salmorejo, flamenquín, queue de taureau et aubergines frites.",
+        "de": "Emblematisches Restaurant der Judería seit 1928, spezialisiert auf traditionelle kordobesische Küche: Salmorejo, Flamenquín, Rabo de toro und frittierte Auberginen."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://restaurantecasapepedelajuderia.com/",
+      "telefono": "+34 957 20 07 44",
+      "direccion": "Calle Romero, 1, Córdoba",
+      "lat": 37.8797903,
+      "lng": -4.7813005,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "rincon-de-carmen",
+      "nombre": "El Rincón de Carmen",
+      "categoria": "gastronomia",
+      "destacado": false,
+      "descripcion": {
+        "es": "Restaurante familiar desde 1996 en un patio cordobés tradicional en plena Judería, con producto de la Sierra de Córdoba: jamón de los Pedroches, berenjenas con miel y rabo de toro.",
+        "en": "Family restaurant since 1996 in a traditional Cordoban patio in the heart of the Jewish Quarter, with produce from the Córdoba sierra: Pedroches ham, eggplant with honey and oxtail stew.",
+        "fr": "Restaurant familial depuis 1996 dans un patio cordouan traditionnel en pleine Judería, avec des produits de la sierra de Cordoue : jambon des Pedroches, aubergines au miel et queue de taureau.",
+        "de": "Familienrestaurant seit 1996 in einem traditionellen kordobesischen Patio mitten in der Judería, mit Produkten aus der Sierra von Córdoba: Pedroches-Schinken, Auberginen mit Honig und Rabo de toro."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://restauranterincondecarmen.es/",
+      "telefono": "",
+      "direccion": "Calle Romero, 4, Córdoba",
+      "lat": 37.8798332,
+      "lng": -4.7813197,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "esquinita-juderia",
+      "nombre": "La Esquinita de la Judería",
+      "categoria": "gastronomia",
+      "destacado": false,
+      "descripcion": {
+        "es": "Cocina tradicional cordobesa con dos locales en la Judería: uno con patio típico (Calle Céspedes) y otro con terraza a 50 metros de la Mezquita-Catedral.",
+        "en": "Traditional Córdoba cuisine with two locations in the Jewish Quarter: one with a typical patio (Calle Céspedes) and one with a terrace 50 meters from the Mosque-Cathedral.",
+        "fr": "Cuisine traditionnelle cordouane avec deux adresses dans la Judería : l'une avec un patio typique (Calle Céspedes) et l'autre avec une terrasse à 50 mètres de la Mosquée-cathédrale.",
+        "de": "Traditionelle kordobesische Küche mit zwei Lokalen in der Judería: eines mit typischem Patio (Calle Céspedes) und eines mit Terrasse, 50 Meter von der Mezquita-Catedral entfernt."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://www.laesquinitadelajuderia.com/",
+      "telefono": "+34 744 78 59 98",
+      "direccion": "Calle Céspedes, 6, Córdoba",
+      "lat": 37.8803221,
+      "lng": -4.7802586,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    },
+    {
+      "id": "bodegas-el-monte",
+      "nombre": "Bodegas El Monte",
+      "categoria": "gastronomia",
+      "destacado": false,
+      "descripcion": {
+        "es": "Bodega familiar de tercera generación en Moriles (D.O. Montilla-Moriles), con 28 hectáreas de viñedo y más de 1.250 barricas; produce finos y generosos como el reconocido Fino Cebolla.",
+        "en": "Third-generation family winery in Moriles (Montilla-Moriles D.O.), with 28 hectares of vineyard and over 1,250 barrels; it produces fino and fortified wines such as the acclaimed Fino Cebolla.",
+        "fr": "Cave familiale de troisième génération à Moriles (D.O. Montilla-Moriles), avec 28 hectares de vignes et plus de 1 250 barriques ; elle produit des finos et vins généreux comme le réputé Fino Cebolla.",
+        "de": "Familienweingut in dritter Generation in Moriles (D.O. Montilla-Moriles), mit 28 Hektar Weinbergen und über 1.250 Fässern; es erzeugt Fino- und Likörweine wie den renommierten Fino Cebolla."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://bodegaselmonte.com/",
+      "telefono": "+34 957 53 71 03",
+      "direccion": "Carretera Moriles-Aguilar, km 1, Moriles (Córdoba)",
+      "lat": 37.4353584,
+      "lng": -4.6095901,
+      "horario": "",
+      "imagen": "",
+      "activo": false
+    }
+  ]
+}
