@@ -41,6 +41,7 @@
       <li><a href="eventos.html" data-page="eventos" data-i18n="nav_events">Eventos</a></li>
       <li><a href="gastronomia.html" data-page="gastronomia" data-i18n="nav_gastronomy">Gastronomía</a></li>
       <li><a href="transporte.html" data-page="transporte" data-i18n="nav_transport">Transporte</a></li>
+      <li><a href="recomendados.html" data-page="recomendados" data-i18n="nav_recommended">Recomendados</a></li>
     </ul>
     <div class="nav-utils">
       <a href="buscar.html" data-page="buscar" class="nav-search-link" data-i18n-aria="aria_search" aria-label="Buscar"><span data-icon="search"></span></a>
@@ -165,24 +166,7 @@
 </section>
 
 <section class="section container">
-  <div class="partner-banner">
-    <div class="partner-banner-icon"><span data-icon="suitcase"></span></div>
-    <div class="partner-banner-content">
-      <span class="partner-banner-kicker" data-i18n="partner_kicker">Recomendado por Cordobapp</span>
-      <h3 class="partner-banner-title" data-i18n="partner_title">Guarda tus maletas con Dcanlock</h3>
-      <p class="partner-banner-desc" data-i18n="partner_description">Consigna de maletas en pleno centro de Córdoba, a 15 minutos andando de la estación de tren. Taquillas seguras con vigilancia 24h para que explores la ciudad sin cargar equipaje.</p>
-      <div class="partner-banner-discount">
-        <span data-icon="tag"></span>
-        <span data-i18n="partner_discount">20% de descuento con el código</span>
-        <code>CORDOBAPP</code>
-      </div>
-      <div class="partner-banner-actions">
-        <a class="btn btn-primary" href="https://dcanlock.com/" target="_blank" rel="noopener noreferrer sponsored">
-          <span data-icon="suitcase"></span> <span data-i18n="partner_cta">Reservar taquilla</span>
-        </a>
-      </div>
-    </div>
-  </div>
+  <div id="partner-featured-slot" hidden></div>
 </section>
 
 <section class="section container faq-section">
@@ -264,6 +248,8 @@
         <li><a href="eventos.html" data-i18n="nav_events">Eventos</a></li>
         <li><a href="gastronomia.html" data-i18n="nav_gastronomy">Gastronomía</a></li>
         <li><a href="transporte.html" data-i18n="nav_transport">Transporte</a></li>
+        <li><a href="recomendados.html" data-i18n="nav_recommended">Recomendados</a></li>
+        <li><a href="aviso-legal.html" data-i18n="legal_title">Aviso legal y transparencia</a></li>
       </ul>
     </div>
     <div>
@@ -280,6 +266,7 @@
   </div>
 </footer>
 
+<script src="js/config.js"></script>
 <script src="js/data.js"></script>
 <script src="js/events-data.js"></script>
 <script src="js/icons.js"></script>
@@ -287,6 +274,7 @@
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>
 <script src="js/lang.js"></script>
+<script src="js/partners.js"></script>
 <script src="js/app.js"></script>
 <script src="js/chat.js"></script>
 </body>

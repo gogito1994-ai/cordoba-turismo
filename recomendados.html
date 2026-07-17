@@ -4,9 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script defer src="https://eu.umami.is/script.js" data-website-id="8d5f4392-de93-4647-a9a6-01e4041d692f"></script>
-<title>Lugar — Cordobapp</title>
-<meta name="description" content="Horarios, precios, cómo llegar, historia y consejos de local para visitar los monumentos y rincones de Córdoba." />
-<meta name="robots" content="noindex, follow" />
+<title>Recomendados por Cordobapp: locales y servicios de confianza en Córdoba</title>
+<meta name="description" content="Restaurantes, tours, flamenco, bienestar y servicios de confianza en Córdoba, recomendados por Cordobapp, con ventajas y códigos de descuento para nuestros lectores." />
+<link rel="canonical" href="https://cordobapp.com/recomendados.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cordobapp" />
+<meta property="og:title" content="Recomendados por Cordobapp" />
+<meta property="og:description" content="Locales y servicios de confianza en Córdoba, con ventajas para nuestros lectores." />
+<meta property="og:url" content="https://cordobapp.com/recomendados.html" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosque_Cordoba_edited.jpg/1280px-Mosque_Cordoba_edited.jpg" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Recomendados por Cordobapp" />
+<meta name="twitter:description" content="Locales y servicios de confianza en Córdoba, con ventajas para nuestros lectores." />
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosque_Cordoba_edited.jpg/1280px-Mosque_Cordoba_edited.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,14 +28,8 @@
 <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
 <link rel="icon" type="image/png" sizes="256x256" href="icons/favicon-256.png" />
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
 </head>
-<body data-page="lugares">
+<body data-page="recomendados" data-i18n-title="recommended_title">
 
 <header class="site-header">
   <nav class="nav-bar">
@@ -52,8 +57,14 @@
   </nav>
 </header>
 
-<section class="section container" id="lugar-content">
-  <p class="empty-state" data-i18n="lugar_loading">Cargando...</p>
+<section class="section container">
+  <h2 class="section-title" data-i18n="recommended_title">Recomendados por Cordobapp</h2>
+  <p class="section-subtitle" data-i18n="recommended_subtitle">Locales y servicios de confianza en Córdoba, con ventajas para nuestros lectores.</p>
+
+  <div class="recomendados-filters" id="recomendados-filters"></div>
+  <div class="grid" id="recomendados-grid"></div>
+
+  <p class="disclosure-line"><span data-i18n="disclosure_line">Algunas recomendaciones incluyen acuerdos comerciales o enlaces de afiliado que ayudan a mantener esta guía gratuita.</span> <a href="aviso-legal.html" data-i18n="disclosure_more">Más información</a></p>
 </section>
 
 <footer class="site-footer">
@@ -93,18 +104,14 @@
   </div>
 </footer>
 
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
+<script src="js/config.js"></script>
 <script src="js/data.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/i18n-ui.js"></script>
 <script src="js/i18n-data.js"></script>
 <script src="js/favorites.js"></script>
 <script src="js/lang.js"></script>
-<script src="js/lugar.js"></script>
+<script src="js/partners.js"></script>
 <script src="js/app.js"></script>
 <script src="js/chat.js"></script>
 </body>

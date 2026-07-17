@@ -3971,6 +3971,90 @@ body.event-modal-open {
   margin: 14px 0 0;
 }
 
+/* ============ Partners / recomendados ============ */
+
+.partner-card-badge {
+  background: var(--ocre-light);
+  color: var(--terracota-dark);
+}
+
+.partner-card-code {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--crema);
+  border: 1px dashed var(--terracota);
+  border-radius: var(--radio-sm);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+.partner-card-code code {
+  font-weight: 700;
+  color: var(--terracota-dark);
+}
+
+.partner-card-code .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--terracota);
+}
+
+.partner-copy-btn {
+  margin-left: auto;
+  border: 1px solid var(--terracota);
+  background: var(--blanco-cal);
+  color: var(--terracota-dark);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  min-height: 32px;
+}
+
+.partner-copy-btn:hover {
+  background: var(--terracota);
+  color: var(--blanco);
+}
+
+.partner-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.partner-tel-link {
+  color: var(--anil);
+  text-decoration: none;
+}
+
+.partner-tel-link:hover {
+  text-decoration: underline;
+}
+
+.disclosure-line {
+  margin: 18px 0 0;
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+}
+
+.disclosure-line a {
+  color: var(--texto-suave);
+  text-decoration: underline;
+}
+
+.recomendados-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
 /* ============ Transporte: tarjetas desplegables ============ */
 
 .transport-card {
