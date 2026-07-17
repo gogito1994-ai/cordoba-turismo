@@ -58,14 +58,25 @@ document.addEventListener("DOMContentLoaded", () => {
     if (precioFiltro === "gratis") lista = lista.filter((p) => p.esGratis);
     if (precioFiltro === "pago") lista = lista.filter((p) => !p.esGratis);
 
-    lista = [...lista].sort((a, b) => (b.imprescindible ? 1 : 0) - (a.imprescindible ? 1 : 0));
+    const hasReserva = (p) =>
+      typeof affiliateActsFor === "function" && affiliateActsFor(p.id).length > 0;
+    lista = [...lista].sort(
+      (a, b) =>
+        (hasReserva(b) ? 1 : 0) - (hasReserva(a) ? 1 : 0) ||
+        (b.imprescindible ? 1 : 0) - (a.imprescindible ? 1 : 0)
+    );
+    // Caballerizas Reales fijo en el 4º puesto (petición de negocio).
+    const cab = lista.findIndex((p) => p.id === "caballerizas-reales");
+    if (cab !== -1 && lista.length > 3) {
+      lista.splice(3, 0, lista.splice(cab, 1)[0]);
+    }
 
     if (lista.length === 0) {
       grid.innerHTML = `<p class="empty-state">${t("places_empty")}</p>`;
       return;
     }
 
-    grid.innerHTML = `<p class="filter-note">${t("sort_essential")}</p>` + lista.map((p) => placeCard(p)).join("");
+    grid.innerHTML = `<p class="filter-note">${t("sort_note")}</p>` + lista.map((p) => placeCard(p)).join("");
   }
 
   function placeCard(p) {

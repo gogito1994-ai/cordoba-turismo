@@ -151,7 +151,7 @@ const UI_STRINGS = {
     places_empty: "No hay lugares que coincidan con este filtro.",
     filter_free: "Gratis",
     filter_paid: "De pago",
-    sort_essential: "Imprescindibles primero",
+    sort_note: "Lugares con reserva disponible primero",
 
     lugar_loading: "Cargando...",
     lugar_not_found: "No encontramos este lugar.",
@@ -485,7 +485,7 @@ const UI_STRINGS = {
     places_empty: "No places match this filter.",
     filter_free: "Free",
     filter_paid: "Paid",
-    sort_essential: "Must-see first",
+    sort_note: "Places you can book shown first",
 
     lugar_loading: "Loading...",
     lugar_not_found: "We couldn't find this place.",
@@ -818,7 +818,7 @@ const UI_STRINGS = {
     places_empty: "Aucun lieu ne correspond à ce filtre.",
     filter_free: "Gratuit",
     filter_paid: "Payant",
-    sort_essential: "Incontournables d'abord",
+    sort_note: "Lieux avec réservation en premier",
 
     lugar_loading: "Chargement...",
     lugar_not_found: "Nous n'avons pas trouvé ce lieu.",
@@ -1152,7 +1152,7 @@ const UI_STRINGS = {
     places_empty: "Es gibt keine Orte, die diesem Filter entsprechen.",
     filter_free: "Kostenlos",
     filter_paid: "Kostenpflichtig",
-    sort_essential: "Unverzichtbare zuerst",
+    sort_note: "Orte mit Reservierung zuerst",
 
     lugar_loading: "Wird geladen...",
     lugar_not_found: "Wir konnten diesen Ort nicht finden.",
