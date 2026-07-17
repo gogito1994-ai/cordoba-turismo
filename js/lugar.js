@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function infoCardHtml() {
-    const ticketBtn = place.ticketUrl
-      ? `<a class="btn btn-primary btn-ticket" href="${place.ticketUrl}" target="_blank" rel="noopener noreferrer">${Icon("ticket")} ${t("ticket_button")}</a>`
-      : "";
     return `
       <aside class="lugar-info-card">
         <h2>${t("lugar_info_heading")}</h2>
@@ -81,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="lugar-info-icon">${Icon("info")}</span>
           <div><strong>${t("lugar_accessibility_label")}</strong><p>${tr(place, "places", "accesibilidad")}</p></div>
         </div>
-        ${ticketBtn}
         ${typeof affiliateBlockHtml === "function" ? affiliateBlockHtml(place.id) : ""}
       </aside>`;
   }

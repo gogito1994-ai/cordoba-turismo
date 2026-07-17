@@ -84,9 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
          </div>`
       : "";
 
-    const ticketBtn = p.ticketUrl
-      ? `<a class="btn btn-primary btn-ticket" href="${p.ticketUrl}" target="_blank" rel="noopener noreferrer">${Icon("ticket")} ${t("ticket_button")}</a>`
-      : "";
     const affiliateBtn =
       typeof affiliateCardLinkHtml === "function" ? affiliateCardLinkHtml(p.id) : "";
 
@@ -101,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${tr(p, "places", "descripcion")}</p>
           <div class="meta">${Icon("compass")} ${tr(p, "places", "tiempoVisita")}</div>
           <div class="meta">${Icon("tag")} ${tr(p, "places", "precio")}</div>
-          ${ticketBtn}
           ${affiliateBtn}
         </div>
       </article>`;

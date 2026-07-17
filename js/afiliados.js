@@ -37,7 +37,10 @@ function affiliateBlockHtml(placeId) {
   const acts = affiliateActsFor(placeId);
   if (!acts.length) return "";
   const links = acts
-    .map((act) => `<a class="btn btn-outline-dark affiliate-btn" ${affiliateLinkAttrs(act)}>${Icon("ticket")} ${affiliateTitle(act)}</a>`)
+    .map(
+      (act, i) =>
+        `<a class="btn ${i === 0 ? "btn-primary" : "btn-outline-dark"} affiliate-btn" ${affiliateLinkAttrs(act)}>${Icon("ticket")} ${affiliateTitle(act)}</a>`
+    )
     .join("");
   return `
     <div class="affiliate-block">
@@ -52,7 +55,7 @@ function affiliateCardLinkHtml(placeId) {
   const acts = affiliateActsFor(placeId);
   if (!acts.length) return "";
   const act = acts[0];
-  return `<a class="btn btn-outline-dark affiliate-btn affiliate-card-btn" ${affiliateLinkAttrs(act)}>${Icon("ticket")} ${t("reserve_block_title")}</a>`;
+  return `<a class="btn btn-primary affiliate-btn affiliate-card-btn" ${affiliateLinkAttrs(act)}>${Icon("ticket")} ${t("reserve_block_title")}</a>`;
 }
 
 /* Enlace "Reservar entrada →" para las paradas del planificador. */
