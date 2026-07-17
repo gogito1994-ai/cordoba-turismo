@@ -338,6 +338,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (profile.interests.length === 0) profile.interests = ["historia"];
       clearDayMaps();
       renderItinerary(generateItinerary(profile));
+      if (typeof trackEvent === "function") {
+        trackEvent("itinerario_generado", {
+          dias: profile.days,
+          compania: profile.companions,
+          intereses: profile.interests.join(","),
+        });
+      }
     });
   }
 
