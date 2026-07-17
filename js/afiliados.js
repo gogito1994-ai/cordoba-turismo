@@ -13,9 +13,10 @@ function affiliateUrl(act) {
   if (!AFILIADOS_DATA) return "";
   const plat = AFILIADOS_DATA.config[act.plataforma];
   if (!plat) return "";
-  const isPlaceholder = /_AFF_ID|_PARTNER_ID/.test(plat.id);
+  const query = plat.query || "";
+  const isPlaceholder = !query || /_AFF_ID|_PARTNER_ID/.test(query);
   const url = plat.base + act.path;
-  return isPlaceholder ? url : `${url}?${plat.param}=${encodeURIComponent(plat.id)}`;
+  return isPlaceholder ? url : `${url}?${query}`;
 }
 
 function affiliateTitle(act) {
