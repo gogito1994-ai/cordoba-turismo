@@ -3127,8 +3127,76 @@ body.chat-open {
 
 .planner-stop-metas {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 4px 14px;
   margin-bottom: 10px;
+}
+
+.planner-stop-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--ocre);
+  color: var(--texto);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.planner-stop-carta {
+  margin: 0 0 8px;
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
+
+.planner-stop-history {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+}
+
+.planner-stop-history summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--terracota-dark);
+  min-height: 44px;
+}
+
+.planner-stop-history summary .icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.planner-stop-history p {
+  margin: 4px 0 0;
+  color: var(--texto-suave);
+  line-height: 1.55;
+}
+
+.planner-stop-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  border-left: 3px solid var(--ocre);
+  background: rgba(212, 160, 62, 0.08);
+  border-radius: 0 8px 8px 0;
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
+
+.planner-stop-tip .icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--ocre);
 }
 
 .planner-stop-meta {

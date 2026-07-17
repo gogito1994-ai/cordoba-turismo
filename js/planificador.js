@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dayCount = prof.days === "medio" ? 1 : prof.days === "3+" ? 3 : parseInt(prof.days, 10);
     const isHalfDay = prof.days === "medio";
     const includeMedina = prof.days === "3+";
-    const stopsPerSlot = prof.pace === "intenso" ? 2 : 1;
+    const stopsPerSlot = prof.pace === "intenso" ? 3 : 2;
     const preferRestaurant = prof.interests.includes("gastronomia");
 
     const candidatePool = buildCandidatePlaces(prof, includeMedina);
@@ -371,34 +371,68 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const item = resolveMapPoint({ collection: stop.collection, id: stop.id });
     if (!item) return "";
+    const isPlace = stop.collection === "places";
     const name = tr(item, stop.collection, "nombre");
-    const desc = item.descripcion
+    // Mini-guía: los lugares muestran el "por qué visitar" (más rico que la
+    // descripción corta del listado); los sitios de comer, su tipo de cocina.
+    const desc = isPlace && item.porQueVisitar
+      ? tr(item, "places", "porQueVisitar")
+      : item.descripcion
       ? tr(item, stop.collection, "descripcion")
       : item.tipo
       ? tr(item, stop.collection, "tipo")
       : "";
+    const distincion = item.distincion
+      ? `<span class="planner-stop-badge">${tr(item, stop.collection, "distincion")}</span>`
+      : "";
+    const historia =
+      isPlace && item.historia
+        ? `<details class="planner-stop-history">
+            <summary>${Icon("landmark")} ${t("planner_stop_history")}</summary>
+            <p>${tr(item, "places", "historia")}</p>
+          </details>`
+        : "";
+    const tips = isPlace ? tr(item, "places", "consejoLocal") : null;
+    const tip =
+      tips && tips.length
+        ? `<p class="planner-stop-tip">${Icon("star")} <span><strong>${t("planner_stop_tip")}:</strong> ${tips[0]}</span></p>`
+        : "";
+    const carta =
+      !isPlace && item.carta && item.carta.length
+        ? `<p class="planner-stop-carta"><strong>${t("planner_stop_order")}:</strong> ${tr(item, stop.collection, "carta")
+            .slice(0, 2)
+            .join(" · ")}</p>`
+        : "";
     const media = item.imagen
       ? `<div class="planner-stop-media"><img src="${item.imagen}" alt="${name}" loading="lazy" /></div>`
       : `<div class="planner-stop-media planner-stop-media-fallback">${Icon(item.icono)}</div>`;
-    const duration = item.tiempoVisita
-      ? `<span class="planner-stop-meta">${Icon("clock")} ${tr(item, stop.collection, "tiempoVisita")}</span>`
+    const metas = [
+      item.tiempoVisita
+        ? `<span class="planner-stop-meta">${Icon("compass")} ${tr(item, stop.collection, "tiempoVisita")}</span>`
+        : "",
+      item.horario
+        ? `<span class="planner-stop-meta">${Icon("clock")} ${tr(item, stop.collection, "horario")}</span>`
+        : "",
+      item.precio
+        ? `<span class="planner-stop-meta">${Icon("tag")} ${tr(item, stop.collection, "precio")}</span>`
+        : "",
+    ].join("");
+    const ficha = isPlace
+      ? `<a class="planner-stop-link" href="lugares/${item.slug || item.id}.html">${t("map_sheet_view_place")}</a>`
       : "";
-    const ficha =
-      stop.collection === "places"
-        ? `<a class="planner-stop-link" href="lugares/${item.slug || item.id}.html">${t("map_sheet_view_place")}</a>`
-        : "";
     const reservar =
-      stop.collection === "places" && typeof affiliateStopLinkHtml === "function"
-        ? affiliateStopLinkHtml(item.id)
-        : "";
+      isPlace && typeof affiliateStopLinkHtml === "function" ? affiliateStopLinkHtml(item.id) : "";
 
     return `
       <div class="planner-stop">
         ${media}
         <div class="planner-stop-body">
-          <h4>${name}</h4>
+          <h4>${name}${distincion}</h4>
           ${desc ? `<p class="planner-stop-desc">${desc}</p>` : ""}
-          <div class="planner-stop-metas">${duration}</div>
+          ${carta}
+          ${historia}
+          ${tip}
+          <div class="planner-stop-metas">${metas}</div>
           <div class="planner-stop-actions">
             ${ficha}
             ${reservar}
