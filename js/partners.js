@@ -157,9 +157,11 @@ function renderFeaturedPartner() {
         <p class="partner-banner-desc">${partnerDesc(p)}</p>
         ${p.codigo ? `
           <div class="partner-banner-discount">
-            ${Icon("tag")}
-            <span>${t("partner_discount")}</span>
-            <code>${p.codigo}</code>
+            <div class="partner-banner-discount-line">
+              ${Icon("tag")}
+              <span>${t("partner_discount")}</span>
+              <code>${p.codigo}</code>
+            </div>
             <button type="button" class="partner-copy-btn" data-partner="${p.id}" data-code="${p.codigo}">${t("partner_copy_code")}</button>
           </div>` : ""}
         <div class="partner-banner-actions">

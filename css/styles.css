@@ -2820,16 +2820,27 @@ body.chat-open {
 
 .partner-banner-discount {
   display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 100%;
-  gap: 8px;
+  gap: 10px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 7px 16px;
+  padding: 12px 16px;
   border-radius: 18px;
   font-size: 0.85rem;
   margin-bottom: 20px;
+}
+
+.partner-banner-discount-line {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.partner-banner-discount .partner-copy-btn {
+  margin-left: 0;
 }
 
 .partner-banner-actions {

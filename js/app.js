@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFooterYear();
   setupSeasonalTheme();
   setupHeroSlideshow();
-  setupMonthHighlight();
   setupHomeWeather();
   setupServiceWorker();
   setupInstallBanner();
@@ -279,13 +278,6 @@ function setupSeasonalTheme() {
     </div>
   `;
   applyStaticI18n();
-}
-
-function setupMonthHighlight() {
-  const container = document.getElementById("events-this-month");
-  if (!container || typeof renderThisMonthBlock !== "function") return;
-  renderThisMonthBlock(container, { compact: true });
-  document.addEventListener("lang-changed", () => renderThisMonthBlock(container, { compact: true }));
 }
 
 function setupServiceWorker() {

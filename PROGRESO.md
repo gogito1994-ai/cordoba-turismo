@@ -22,7 +22,7 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 | Configuración | `js/config.js` | WhatsApp de la gestora y endpoint de Formspree |
 | Idiomas | `js/i18n-ui.js` (interfaz) + `js/i18n-data.js` (contenido) + `js/lang.js` | El idioma elegido persiste en localStorage |
 | Chat IA | `worker/index.js` (Cloudflare Worker → API de Anthropic) | Streaming + tarjetas de lugares (marcadores `PLACES:`/`ITINERARY:`); despliegue manual del propietario (ver `README-chat-ia.md`) |
-| PWA | `manifest.json` + `sw.js` (caché `cordoba-v2`) | Funciona offline tras la primera visita, incluidos los JSON de negocio |
+| PWA | `manifest.json` + `sw.js` (caché `cordoba-v3`) | Funciona offline tras la primera visita, incluidos los JSON de negocio |
 | Analítica | Umami Cloud (región EU), script en las 30 páginas | Sin cookies ni banner; eventos personalizados vía `trackEvent()` |
 
 ## Hecho — roadmap original (Prompts 1–9)
@@ -33,7 +33,7 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 4. **Rediseño visual**: hero con arcos de herradura, patrón andalusí, modo oscuro, contraste AA.
 5. **PWA**: manifest, service worker, banner de instalación, táctiles ≥44px, nav inferior móvil.
 6. **Chat IA**: Worker de Cloudflare como proxy seguro (la API key nunca toca el navegador), streaming, contexto de página/ubicación, tarjetas de lugares y botón "abrir en el planificador", límites anti-abuso.
-7. **Eventos vivos**: 9 grandes citas anuales + eventos puntuales mantenibles, calendario por meses, banner de temporada (Patios/Feria/Semana Santa/Navidad), "Este mes en Córdoba" en portada.
+7. **Eventos vivos**: 9 grandes citas anuales + eventos puntuales mantenibles, calendario por meses, banner de temporada (Patios/Feria/Semana Santa/Navidad), "Este mes en Córdoba" en la página de eventos.
 8. **Gastronomía**: fichas de platos con "dónde probarlo", tabernas históricas con año de fundación documentado, filtros prácticos, Ruta de la Tapa, glosario para visitantes.
 9. **SEO + alemán**: metadatos únicos por página, JSON-LD (TouristAttraction, Event, Restaurant/BarOrPub, FAQPage), sitemap/robots, lazy-loading, alemán como 4º idioma completo.
 
@@ -75,6 +75,13 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 - Aviso "Hoy aprieta el calor" en portada si la máxima supera 38 °C → nueva `planes-calor.html`.
 - **Arreglo importante**: el service worker llevaba roto desde la eliminación de "Ahora" (el modo offline no funcionaba); reparado con caché v2.
 - "Mi lista" (favoritos) en el footer; breadcrumbs JSON-LD en fichas; LocalBusiness para partners; `srcset` con variantes de 320px de Wikimedia; pre-render estático de los 19 enlaces del listado de lugares.
+
+## Hecho — ajustes posteriores a la v2
+
+- **Móvil**: bloqueado el desplazamiento horizontal en todo el sitio (solo se puede hacer scroll vertical); esto también arregla la barra inferior que a veces quedaba "a mitad de pantalla". El botón "Copiar código" ya no desborda el banner de Dcanlock.
+- **Portada**: las 7 secciones como tarjetas de arco en el hero; eliminados los bloques "Este mes en Córdoba" y "Explora la ciudad" (redundantes con las tarjetas); el botón "Copiar código" va justo debajo del código CORDOBAPP en el banner de Dcanlock.
+- **Entradas**: eliminados los botones de compra oficiales de listado y fichas; el único CTA de compra es el enlace de afiliado de Civitatis, en estilo de botón principal. Los 5 monumentos sin actividad en Civitatis (Calahorra, Puerta del Puente, Baños Califales, Casa de Sefarad, Museo Arqueológico) quedan sin botón de compra hasta mapearles actividad en `data/afiliados.json`.
+- Caché del service worker en `cordoba-v3`.
 
 ## Cómo se gestiona el negocio (sin tocar código)
 
