@@ -1,0 +1,71 @@
+{
+  "_instrucciones": "Extras de la estancia. Edita precios y textos aquí sin tocar código. 'precio' es texto libre (se muestra tal cual). 'partner' enlaza opcionalmente con un id de data/partners.json para mostrar su botón. 'activo': false oculta el extra.",
+  "extras": [
+    {
+      "id": "late-checkout",
+      "icono": "clock",
+      "titulo": { "es": "Late check-out", "en": "Late check-out", "fr": "Départ tardif", "de": "Später Check-out" },
+      "descripcion": {
+        "es": "Apura tu último día en Córdoba y sal del apartamento más tarde, según disponibilidad.",
+        "en": "Make the most of your last day in Córdoba and leave the apartment later, subject to availability.",
+        "fr": "Profitez de votre dernier jour à Cordoue et quittez l'appartement plus tard, selon disponibilité.",
+        "de": "Nutzen Sie Ihren letzten Tag in Córdoba und verlassen Sie die Wohnung später, je nach Verfügbarkeit."
+      },
+      "precio": "Desde 15 €",
+      "activo": true
+    },
+    {
+      "id": "early-checkin",
+      "icono": "clock",
+      "titulo": { "es": "Early check-in", "en": "Early check-in", "fr": "Arrivée anticipée", "de": "Früher Check-in" },
+      "descripcion": {
+        "es": "Entra en el apartamento antes de la hora estándar y empieza a disfrutar de la ciudad desde primera hora.",
+        "en": "Get into the apartment before the standard time and start enjoying the city from early on.",
+        "fr": "Entrez dans l'appartement avant l'heure standard et profitez de la ville dès le matin.",
+        "de": "Beziehen Sie die Wohnung vor der Standardzeit und genießen Sie die Stadt schon am Morgen."
+      },
+      "precio": "Consultar",
+      "activo": true
+    },
+    {
+      "id": "traslado-ave",
+      "icono": "train",
+      "titulo": { "es": "Traslado estación AVE ↔ apartamento", "en": "AVE station ↔ apartment transfer", "fr": "Transfert gare AVE ↔ appartement", "de": "Transfer AVE-Bahnhof ↔ Wohnung" },
+      "descripcion": {
+        "es": "Te recogemos o te llevamos a la estación de tren con conductor, sin esperas ni cargar maletas por el centro.",
+        "en": "We pick you up or drop you off at the train station with a driver — no waiting, no dragging luggage through the center.",
+        "fr": "Nous venons vous chercher ou vous déposons à la gare avec chauffeur, sans attente ni bagages à traîner dans le centre.",
+        "de": "Wir holen Sie mit Fahrer am Bahnhof ab oder bringen Sie hin – ohne Wartezeit und ohne Gepäckschleppen durch das Zentrum."
+      },
+      "precio": "Consultar",
+      "activo": true
+    },
+    {
+      "id": "cesta-bienvenida",
+      "icono": "utensils",
+      "titulo": { "es": "Cesta de bienvenida gourmet", "en": "Gourmet welcome basket", "fr": "Panier de bienvenue gourmand", "de": "Gourmet-Willkommenskorb" },
+      "descripcion": {
+        "es": "Productos cordobeses seleccionados (aceite, vino Montilla-Moriles, dulces) esperándote en el apartamento al llegar.",
+        "en": "Selected Córdoba products (olive oil, Montilla-Moriles wine, sweets) waiting for you in the apartment on arrival.",
+        "fr": "Produits cordouans sélectionnés (huile d'olive, vin Montilla-Moriles, douceurs) qui vous attendent à l'appartement à votre arrivée.",
+        "de": "Ausgewählte Produkte aus Córdoba (Olivenöl, Montilla-Moriles-Wein, Süßes) erwarten Sie bei der Ankunft in der Wohnung."
+      },
+      "precio": "Consultar",
+      "activo": true
+    },
+    {
+      "id": "consigna",
+      "icono": "suitcase",
+      "titulo": { "es": "Consigna de equipaje", "en": "Luggage storage", "fr": "Consigne à bagages", "de": "Gepäckaufbewahrung" },
+      "descripcion": {
+        "es": "El día de salida, deja las maletas en la consigna de nuestro partner en el centro y aprovecha hasta el último minuto.",
+        "en": "On checkout day, leave your bags at our partner's storage in the center and make the most of every last minute.",
+        "fr": "Le jour du départ, laissez vos valises à la consigne de notre partenaire dans le centre et profitez jusqu'à la dernière minute.",
+        "de": "Geben Sie am Abreisetag Ihr Gepäck bei der Aufbewahrung unseres Partners im Zentrum ab und nutzen Sie jede letzte Minute."
+      },
+      "precio": "20% dto. con el código CORDOBAPP",
+      "partner": "dcanlock",
+      "activo": true
+    }
+  ]
+}

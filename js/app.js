@@ -22,7 +22,108 @@ document.addEventListener("DOMContentLoaded", () => {
   setupHomeWeather();
   setupServiceWorker();
   setupInstallBanner();
+  setupGuestNav();
+  setupWhatsAppFloat();
+  setupCityPass();
 });
+
+/* "Mi estancia" en el menú y botón flotante de WhatsApp: solo para huéspedes
+   (con apartamento guardado en localStorage vía bienvenida.html?apt=XX),
+   para no molestar a los visitantes orgánicos. */
+
+function guestApt() {
+  return localStorage.getItem("cordoba-apt");
+}
+
+function sitePrefix() {
+  return location.pathname.includes("/lugares/") ? "../" : "";
+}
+
+function setupGuestNav() {
+  if (!guestApt()) return;
+  const navList = document.querySelector(".nav-links");
+  if (!navList || navList.querySelector('[data-page="estancia"]')) return;
+  const li = document.createElement("li");
+  li.innerHTML = `<a href="${sitePrefix()}estancia.html" data-page="estancia" data-i18n="nav_estancia">${t("nav_estancia")}</a>`;
+  navList.appendChild(li);
+  const current = document.body.dataset.page;
+  if (current === "estancia") li.querySelector("a").classList.add("active");
+}
+
+function setupWhatsAppFloat() {
+  const apt = guestApt();
+  if (!apt) return;
+  if (document.body.dataset.page === "bienvenida") return;
+
+  const number = (typeof CORDOBAPP_CONFIG !== "undefined" && CORDOBAPP_CONFIG.WHATSAPP_GESTORA) || "";
+  const btn = document.createElement("a");
+  btn.className = "whatsapp-float";
+  btn.target = "_blank";
+  btn.rel = "noopener noreferrer";
+  btn.setAttribute("aria-label", t("whatsapp_float_label"));
+
+  function updateHref() {
+    const message = t("welcome_whatsapp_message", { apt });
+    btn.href = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+    btn.title = t("whatsapp_float_label");
+    btn.setAttribute("aria-label", t("whatsapp_float_label"));
+  }
+
+  btn.innerHTML = Icon("chat");
+  updateHref();
+  btn.addEventListener("click", () => {
+    trackEvent("whatsapp_click", { apt, pagina: document.body.dataset.page || location.pathname });
+  });
+  document.body.appendChild(btn);
+  document.addEventListener("lang-changed", updateHref);
+}
+
+/* Preventa del Córdoba Pass: la sección solo aparece cuando el endpoint de
+   Formspree está configurado en js/config.js (sin el placeholder TU_FORM_ID). */
+
+function setupCityPass() {
+  const slot = document.getElementById("citypass-slot");
+  if (!slot) return;
+  const endpoint = (typeof CORDOBAPP_CONFIG !== "undefined" && CORDOBAPP_CONFIG.FORMSPREE_ENDPOINT) || "";
+  if (!endpoint || endpoint.includes("TU_FORM_ID")) {
+    slot.hidden = true;
+    return;
+  }
+  slot.hidden = false;
+
+  function render() {
+    slot.innerHTML = `
+      <div class="citypass-banner">
+        <h3>${t("citypass_title")}</h3>
+        <p>${t("citypass_desc")}</p>
+        <form class="citypass-form" novalidate>
+          <input type="email" required placeholder="${t("citypass_placeholder")}" aria-label="${t("citypass_placeholder")}" />
+          <button type="submit" class="btn btn-primary">${t("citypass_button")}</button>
+        </form>
+      </div>`;
+    slot.querySelector(".citypass-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const input = slot.querySelector("input[type=email]");
+      const email = input.value.trim();
+      if (!email || !input.checkValidity()) return;
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ email, origen: "citypass" }),
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error("send failed");
+          showToast(t("citypass_done"));
+          trackEvent("citypass_interes", {});
+          input.value = "";
+        })
+        .catch(() => showToast(t("citypass_error")));
+    });
+  }
+
+  render();
+  document.addEventListener("lang-changed", render);
+}
 
 function setupHomeWeather() {
   const widget = document.getElementById("home-weather");
