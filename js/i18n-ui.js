@@ -109,6 +109,9 @@ const UI_STRINGS = {
     legal_p2: "Algunos enlaces a actividades y entradas son enlaces de afiliado: si reservas a través de ellos, recibimos una pequeña comisión sin coste adicional para ti.",
     legal_p3: "Estos ingresos ayudan a mantener la guía gratuita y actualizada. Las recomendaciones editoriales (lugares, historia, consejos) se redactan con independencia de estos acuerdos.",
     legal_contact: "Si tienes cualquier duda, escríbenos.",
+    reserve_block_title: "Reserva tu visita",
+    reserve_entry_link: "Reservar entrada",
+    affiliate_experiences_title: "Experiencias en Córdoba",
 
     partner_kicker: "Recomendado por Cordobapp",
     partner_title: "Guarda tus maletas con Dcanlock",
@@ -429,6 +432,9 @@ const UI_STRINGS = {
     legal_p2: "Some links to activities and tickets are affiliate links: if you book through them, we receive a small commission at no extra cost to you.",
     legal_p3: "This income helps keep the guide free and up to date. Editorial recommendations (places, history, tips) are written independently of these agreements.",
     legal_contact: "If you have any questions, write to us.",
+    reserve_block_title: "Book your visit",
+    reserve_entry_link: "Book tickets",
+    affiliate_experiences_title: "Experiences in Córdoba",
 
     partner_kicker: "Recommended by Cordobapp",
     partner_title: "Store your luggage with Dcanlock",
@@ -748,6 +754,9 @@ const UI_STRINGS = {
     legal_p2: "Certains liens vers des activités et billets sont des liens d'affiliation : si vous réservez via ces liens, nous percevons une petite commission sans coût supplémentaire pour vous.",
     legal_p3: "Ces revenus aident à maintenir le guide gratuit et à jour. Les recommandations éditoriales (lieux, histoire, conseils) sont rédigées indépendamment de ces accords.",
     legal_contact: "Pour toute question, écrivez-nous.",
+    reserve_block_title: "Réservez votre visite",
+    reserve_entry_link: "Réserver des billets",
+    affiliate_experiences_title: "Expériences à Cordoue",
 
     partner_kicker: "Recommandé par Cordobapp",
     partner_title: "Déposez vos bagages chez Dcanlock",
@@ -1068,6 +1077,9 @@ const UI_STRINGS = {
     legal_p2: "Einige Links zu Aktivitäten und Tickets sind Affiliate-Links: Wenn Sie darüber buchen, erhalten wir eine kleine Provision ohne Mehrkosten für Sie.",
     legal_p3: "Diese Einnahmen helfen, den Reiseführer kostenlos und aktuell zu halten. Redaktionelle Empfehlungen (Orte, Geschichte, Tipps) entstehen unabhängig von diesen Vereinbarungen.",
     legal_contact: "Bei Fragen schreiben Sie uns gerne.",
+    reserve_block_title: "Besuch buchen",
+    reserve_entry_link: "Tickets buchen",
+    affiliate_experiences_title: "Erlebnisse in Córdoba",
 
     partner_kicker: "Empfohlen von Cordobapp",
     partner_title: "Geben Sie Ihr Gepäck bei Dcanlock ab",

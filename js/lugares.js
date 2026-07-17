@@ -87,6 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const ticketBtn = p.ticketUrl
       ? `<a class="btn btn-primary btn-ticket" href="${p.ticketUrl}" target="_blank" rel="noopener noreferrer">${Icon("ticket")} ${t("ticket_button")}</a>`
       : "";
+    const affiliateBtn =
+      typeof affiliateCardLinkHtml === "function" ? affiliateCardLinkHtml(p.id) : "";
 
     return `
       <article class="card card-clickable">
@@ -100,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="meta">${Icon("compass")} ${tr(p, "places", "tiempoVisita")}</div>
           <div class="meta">${Icon("tag")} ${tr(p, "places", "precio")}</div>
           ${ticketBtn}
+          ${affiliateBtn}
         </div>
       </article>`;
   }
@@ -112,6 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderFiltros();
     renderGrid();
   });
+
+  document.addEventListener("afiliados-loaded", renderGrid);
 
   renderFiltros();
   renderGrid();

@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div><strong>${t("lugar_accessibility_label")}</strong><p>${tr(place, "places", "accesibilidad")}</p></div>
         </div>
         ${ticketBtn}
+        ${typeof affiliateBlockHtml === "function" ? affiliateBlockHtml(place.id) : ""}
       </aside>`;
   }
 
@@ -261,6 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("favorites-changed", updateRouteBtn);
 
   document.addEventListener("lang-changed", render);
+  document.addEventListener("afiliados-loaded", render);
 
   render();
 });

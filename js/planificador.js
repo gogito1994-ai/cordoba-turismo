@@ -380,6 +380,10 @@ document.addEventListener("DOMContentLoaded", () => {
       stop.collection === "places"
         ? `<a class="planner-stop-link" href="lugares/${item.slug || item.id}.html">${t("map_sheet_view_place")}</a>`
         : "";
+    const reservar =
+      stop.collection === "places" && typeof affiliateStopLinkHtml === "function"
+        ? affiliateStopLinkHtml(item.id)
+        : "";
 
     return `
       <div class="planner-stop">
@@ -390,6 +394,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="planner-stop-metas">${duration}</div>
           <div class="planner-stop-actions">
             ${ficha}
+            ${reservar}
             <button class="planner-regenerate-btn" data-day="${dayIndex}" data-stop="${stopIndex}">${Icon("route")} ${t("planner_regenerate")}</button>
           </div>
         </div>
@@ -664,6 +669,13 @@ document.addEventListener("DOMContentLoaded", () => {
       renderItinerary(currentItinerary);
     } else {
       renderQuiz();
+    }
+  });
+
+  document.addEventListener("afiliados-loaded", () => {
+    if (currentItinerary) {
+      clearDayMaps();
+      renderItinerary(currentItinerary);
     }
   });
 

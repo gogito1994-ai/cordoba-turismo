@@ -1,0 +1,94 @@
+{
+  "config": {
+    "_instrucciones": "SUSTITUIR AQUÍ: cambia CIVITATIS_AFF_ID por tu ID de afiliado de Civitatis (parámetro aid) y GYG_PARTNER_ID por tu partner_id de GetYourGuide. Mientras el valor sea el placeholder, los enlaces se generan SIN parámetro de afiliado: funcionan igual para el usuario, pero no acumulan comisión. No hace falta tocar nada más.",
+    "civitatis": { "base": "https://www.civitatis.com", "param": "aid", "id": "CIVITATIS_AFF_ID" },
+    "getyourguide": { "base": "https://www.getyourguide.es", "param": "partner_id", "id": "GYG_PARTNER_ID" }
+  },
+  "actividades": {
+    "mezquita": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-guiada-mezquita-cordoba/",
+        "titulo": { "es": "Entrada + visita guiada", "en": "Ticket + guided tour", "fr": "Billet + visite guidée", "de": "Ticket + Führung" }
+      },
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-guiada-mezquita-juderia/",
+        "titulo": { "es": "Mezquita + Judería", "en": "Mosque + Jewish Quarter", "fr": "Mosquée + Judería", "de": "Mezquita + Judería" }
+      }
+    ],
+    "alcazar": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-guiada-alcazar-cordoba/",
+        "titulo": { "es": "Entrada + visita guiada", "en": "Ticket + guided tour", "fr": "Billet + visite guidée", "de": "Ticket + Führung" }
+      }
+    ],
+    "medina-azahara": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-guiada-medina-azahara/",
+        "titulo": { "es": "Visita guiada con traslado", "en": "Guided tour with transfer", "fr": "Visite guidée avec transfert", "de": "Führung mit Transfer" }
+      },
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/tour-nocturno-medina-azahara/",
+        "titulo": { "es": "Tour nocturno", "en": "Night tour", "fr": "Visite nocturne", "de": "Nachttour" }
+      }
+    ],
+    "palacio-viana": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-patios-palacio-viana/",
+        "titulo": { "es": "Visita a los patios", "en": "Patios tour", "fr": "Visite des patios", "de": "Patio-Besichtigung" }
+      }
+    ],
+    "sinagoga": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/visita-guiada-mezquita-juderia/",
+        "titulo": { "es": "Tour por la Judería", "en": "Jewish Quarter tour", "fr": "Visite de la Judería", "de": "Judería-Tour" }
+      }
+    ],
+    "juderia": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/free-tour-cordoba/",
+        "titulo": { "es": "Free tour por Córdoba", "en": "Córdoba free tour", "fr": "Free tour à Cordoue", "de": "Free Tour durch Córdoba" }
+      }
+    ],
+    "caballerizas-reales": [
+      {
+        "plataforma": "civitatis",
+        "path": "/es/cordoba/espectaculo-ecuestre-caballerizas-reales/",
+        "titulo": { "es": "Espectáculo ecuestre", "en": "Equestrian show", "fr": "Spectacle équestre", "de": "Pferdeshow" }
+      }
+    ]
+  },
+  "experiencias": [
+    {
+      "plataforma": "civitatis",
+      "path": "/es/cordoba/actividades-gastronomicas/",
+      "icono": "utensils",
+      "titulo": { "es": "Tours gastronómicos y catas", "en": "Food tours and tastings", "fr": "Tours gastronomiques et dégustations", "de": "Gastro-Touren und Verkostungen" }
+    },
+    {
+      "plataforma": "civitatis",
+      "path": "/es/cordoba/espectaculo-flamenco-patio-juderia/",
+      "icono": "star",
+      "titulo": { "es": "Espectáculo flamenco en la Judería", "en": "Flamenco show in the Jewish Quarter", "fr": "Spectacle flamenco dans la Judería", "de": "Flamenco-Show in der Judería" }
+    },
+    {
+      "plataforma": "civitatis",
+      "path": "/es/cordoba/tour-nocturno-medina-azahara/",
+      "icono": "landmark",
+      "titulo": { "es": "Medina Azahara nocturna", "en": "Medina Azahara by night", "fr": "Medina Azahara de nuit", "de": "Medina Azahara bei Nacht" }
+    },
+    {
+      "plataforma": "civitatis",
+      "path": "/es/cordoba/hammam-al-andalus-cordoba/",
+      "icono": "sun",
+      "titulo": { "es": "Baños árabes Hammam Al Ándalus", "en": "Hammam Al Ándalus Arab baths", "fr": "Bains arabes Hammam Al Ándalus", "de": "Arabische Bäder Hammam Al Ándalus" }
+    }
+  ]
+}
