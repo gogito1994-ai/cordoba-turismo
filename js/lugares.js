@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const categorias = ["Todos", ...new Set(PLACES.map((p) => p.categoria))];
   let activa = "Todos";
-  let soloFavoritos = false;
+  let soloFavoritos = new URLSearchParams(location.search).get("favoritos") === "1";
   let precioFiltro = "todos";
 
   function categoryLabel(cat) {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : "";
     const media = p.imagen
       ? `<div class="card-media">
-           <img src="${p.imagen}" alt="${nombre}" loading="lazy" />
+           <img src="${p.imagen}" ${typeof wmSrcset === "function" ? wmSrcset(p.imagen) : ""} alt="${nombre}" loading="lazy" />
            <button class="favorite-btn${isFav ? " active" : ""}" data-id="${p.id}" data-name="${nombre}" aria-label="${t("aria_favorite")}">
              ${Icon("heart")}
            </button>

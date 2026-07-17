@@ -210,6 +210,29 @@ function renderRecomendados() {
     list.map(partnerCardHtml).join("") ||
     `<p class="empty-state">${t("recommended_empty")}</p>`;
   bindPartnerEvents(grid);
+  injectPartnersJsonLd();
+}
+
+function injectPartnersJsonLd() {
+  const graph = activePartners().map((p) => ({
+    "@type": "LocalBusiness",
+    name: p.nombre,
+    description: partnerDesc(p),
+    ...(p.url ? { url: p.url } : {}),
+    ...(p.telefono ? { telephone: p.telefono } : {}),
+    ...(p.direccion
+      ? { address: { "@type": "PostalAddress", streetAddress: p.direccion, addressLocality: "Córdoba", addressCountry: "ES" } }
+      : {}),
+    ...(p.lat && p.lng ? { geo: { "@type": "GeoCoordinates", latitude: p.lat, longitude: p.lng } } : {}),
+  }));
+  let ld = document.getElementById("partners-jsonld");
+  if (!ld) {
+    ld = document.createElement("script");
+    ld.type = "application/ld+json";
+    ld.id = "partners-jsonld";
+    document.head.appendChild(ld);
+  }
+  ld.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
 }
 
 /* ---------- carga ---------- */

@@ -177,6 +177,23 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       isAccessibleForFree: !!place.esGratis,
     });
+
+    let bc = document.getElementById("breadcrumb-jsonld");
+    if (!bc) {
+      bc = document.createElement("script");
+      bc.type = "application/ld+json";
+      bc.id = "breadcrumb-jsonld";
+      document.head.appendChild(bc);
+    }
+    bc.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Cordobapp", item: "https://cordobapp.com/index.html" },
+        { "@type": "ListItem", position: 2, name: t("nav_places"), item: "https://cordobapp.com/lugares.html" },
+        { "@type": "ListItem", position: 3, name: nombre, item: url },
+      ],
+    });
   }
 
   function render() {

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function foodCard(f) {
     const media = f.imagen
-      ? `<div class="card-media"><img src="${f.imagen}" alt="${tr(f, "food", "nombre")}" loading="lazy" /></div>`
+      ? `<div class="card-media"><img src="${f.imagen}" ${typeof wmSrcset === "function" ? wmSrcset(f.imagen) : ""} alt="${tr(f, "food", "nombre")}" loading="lazy" /></div>`
       : "";
 
     return `

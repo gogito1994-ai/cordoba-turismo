@@ -25,7 +25,28 @@ document.addEventListener("DOMContentLoaded", () => {
   setupGuestNav();
   setupWhatsAppFloat();
   setupCityPass();
+  setupMyListLink();
 });
+
+/* srcset para miniaturas de Wikimedia Commons: genera una variante de 320px
+   (siempre disponible, al ser menor que la actual) para ahorrar datos en
+   pantallas pequeñas. Devuelve "" si la URL no es una miniatura estándar. */
+function wmSrcset(url) {
+  const m = url && url.match(/^(.*\/thumb\/.*\/)(\d+)px-([^/]+)$/);
+  if (!m) return "";
+  const width = parseInt(m[2], 10);
+  if (width <= 320) return "";
+  return `srcset="${m[1]}320px-${m[3]} 320w, ${url} ${width}w" sizes="(max-width: 640px) 92vw, 360px"`;
+}
+
+/* Enlace "Mi lista" (favoritos) en el footer de todas las páginas. */
+function setupMyListLink() {
+  const footerList = document.querySelector(".footer-links");
+  if (!footerList || footerList.querySelector('[data-milista]')) return;
+  const li = document.createElement("li");
+  li.innerHTML = `<a href="${sitePrefix()}lugares.html?favoritos=1" data-milista data-i18n="nav_milista">${t("nav_milista")}</a>`;
+  footerList.appendChild(li);
+}
 
 /* "Mi estancia" en el menú y botón flotante de WhatsApp: solo para huéspedes
    (con apartamento guardado en localStorage vía bienvenida.html?apt=XX),
@@ -189,26 +210,46 @@ function setupHomeWeather() {
     tipBanner.hidden = false;
   }
 
+  let lastMax = null;
+
+  function renderHeatWarning() {
+    const banner = document.getElementById("home-heat");
+    if (!banner) return;
+    if (lastMax === null || lastMax < 38) {
+      banner.hidden = true;
+      return;
+    }
+    const max = Math.round(lastMax);
+    document.getElementById("home-heat-text").textContent = t("heat_warning_text", { max });
+    document.getElementById("home-heat-cta").textContent = `${t("heat_warning_cta")} →`;
+    banner.hidden = false;
+  }
+
   fetch(
-    `https://api.open-meteo.com/v1/forecast?latitude=${CORDOBA_LAT}&longitude=${CORDOBA_LNG}&current=temperature_2m,weather_code&timezone=Europe%2FMadrid`
+    `https://api.open-meteo.com/v1/forecast?latitude=${CORDOBA_LAT}&longitude=${CORDOBA_LNG}&current=temperature_2m,weather_code&daily=temperature_2m_max&forecast_days=1&timezone=Europe%2FMadrid`
   )
     .then((res) => res.json())
     .then((data) => {
       const current = data && data.current;
       if (!current) throw new Error("sin datos");
       lastTemp = current.temperature_2m;
+      lastMax = data.daily && data.daily.temperature_2m_max ? data.daily.temperature_2m_max[0] : null;
       if (widget) {
         widget.querySelector(".home-weather-icon").textContent = WEATHER_ICON[current.weather_code] || "🌡";
         widget.querySelector(".home-weather-temp").textContent = `${Math.round(current.temperature_2m)}°C`;
         widget.hidden = false;
       }
       renderTip();
+      renderHeatWarning();
     })
     .catch(() => {
       renderTip();
     });
 
-  document.addEventListener("lang-changed", renderTip);
+  document.addEventListener("lang-changed", () => {
+    renderTip();
+    renderHeatWarning();
+  });
 }
 
 function setupSeasonalTheme() {
@@ -300,11 +341,16 @@ function setupBottomNav() {
   const nav = document.createElement("nav");
   nav.className = "bottom-nav";
   nav.setAttribute("aria-label", "Navegación principal");
+  const pre = sitePrefix();
+  const fifth = guestApt()
+    ? `<a href="${pre}estancia.html" data-page="estancia" class="bottom-nav-item"><span data-icon="suitcase"></span><span data-i18n="nav_estancia">Mi estancia</span></a>`
+    : `<a href="${pre}gastronomia.html" data-page="gastronomia" class="bottom-nav-item"><span data-icon="utensils"></span><span data-i18n="nav_gastronomy">Gastronomía</span></a>`;
   nav.innerHTML = `
-    <a href="index.html" data-page="home" class="bottom-nav-item"><span data-icon="home"></span><span data-i18n="nav_home">Inicio</span></a>
-    <a href="mapa.html" data-page="mapa" class="bottom-nav-item"><span data-icon="map"></span><span data-i18n="nav_map">Mapa</span></a>
-    <a href="planificar.html" data-page="planificar" class="bottom-nav-item"><span data-icon="route"></span><span data-i18n="nav_planner">Planificar</span></a>
-    <a href="index.html?chat=1" class="bottom-nav-item"><span data-icon="chat"></span><span data-i18n="nav_assistant">Asistente</span></a>
+    <a href="${pre}index.html" data-page="home" class="bottom-nav-item"><span data-icon="home"></span><span data-i18n="nav_home">Inicio</span></a>
+    <a href="${pre}lugares.html" data-page="lugares" class="bottom-nav-item"><span data-icon="landmark"></span><span data-i18n="nav_places">Lugares</span></a>
+    <a href="${pre}mapa.html" data-page="mapa" class="bottom-nav-item"><span data-icon="map"></span><span data-i18n="nav_map">Mapa</span></a>
+    <a href="${pre}planificar.html" data-page="planificar" class="bottom-nav-item"><span data-icon="route"></span><span data-i18n="nav_planner">Planificar</span></a>
+    ${fifth}
   `;
   document.body.appendChild(nav);
   nav.querySelectorAll("[data-icon]").forEach((el) => {

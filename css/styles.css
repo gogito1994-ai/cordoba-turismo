@@ -3299,6 +3299,30 @@ body.chat-open {
   opacity: 0.92;
 }
 
+.home-heat-banner {
+  text-decoration: none;
+  background: rgba(189, 78, 42, 0.55);
+  border-color: rgba(255, 255, 255, 0.55);
+  transition: background 0.15s;
+}
+
+/* Enlaces estáticos del listado de lugares: contenido indexable/visible antes
+   de que el JS pinte las tarjetas completas (que los reemplazan al cargar). */
+.static-place-link {
+  display: block;
+  padding: 14px 18px;
+  background: var(--blanco-cal);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-heat-banner:hover {
+  background: rgba(189, 78, 42, 0.75);
+}
+
 /* ============ Eventos: "este mes", calendario, fichas y temporada ============ */
 
 .events-subheading {
