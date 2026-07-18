@@ -47,6 +47,7 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 - Buscador del mapa arreglado en móvil vertical (bug de flexbox) y mapa más protagonista.
 - Navegación rápida por secciones en Gastronomía; tarjeta de Gastronomía en el hero.
 - **Iconos al añadir a inicio (iPhone/Android) y a favoritos de Safari corregidos**: `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` y `icon-512-maskable.png` tenían las esquinas transparentes (heredadas del favicon redondeado), lo que iOS y varios launchers de Android pintaban de negro. Regenerados como cuadrados opacos con el mismo diseño del arco a rayas. Añadido `icons/mask-icon.svg` (silueta monocromo) para el pinned-tab/favoritos de Safari en macOS, y las meta `apple-mobile-web-app-*` en las 33 páginas para que se abra en modo standalone con el nombre correcto. Caché del service worker a v8.
+- **Portada simplificada**: eliminado el aviso "Planes para el calor" y la barra de búsqueda falsa "Pregúntame lo que quieras" del hero. Se descubrió que el botón flotante terracota de preguntar (`chat-fab`, ya presente en todas las páginas) estaba oculto a propósito en móvil (`display:none`), así que en el móvil solo se podía preguntar desde esa barra de la portada — al salir de la vista se perdía el acceso al asistente. Arreglado: el botón flotante ahora es visible y fijo en móvil en todas las páginas, colocado por encima de la barra inferior (y del flotante de WhatsApp de huéspedes, sin solaparse). Caché del service worker a v9.
 
 ## Hecho — versión 2: monetización + huésped (5 fases completas)
 

@@ -212,21 +212,6 @@ function setupHomeWeather() {
     tipBanner.hidden = false;
   }
 
-  let lastMax = null;
-
-  function renderHeatWarning() {
-    const banner = document.getElementById("home-heat");
-    if (!banner) return;
-    if (lastMax === null || lastMax < 38) {
-      banner.hidden = true;
-      return;
-    }
-    const max = Math.round(lastMax);
-    document.getElementById("home-heat-text").textContent = t("heat_warning_text", { max });
-    document.getElementById("home-heat-cta").textContent = `${t("heat_warning_cta")} →`;
-    banner.hidden = false;
-  }
-
   fetch(
     `https://api.open-meteo.com/v1/forecast?latitude=${CORDOBA_LAT}&longitude=${CORDOBA_LNG}&current=temperature_2m,weather_code&daily=temperature_2m_max&forecast_days=1&timezone=Europe%2FMadrid`
   )
@@ -235,23 +220,18 @@ function setupHomeWeather() {
       const current = data && data.current;
       if (!current) throw new Error("sin datos");
       lastTemp = current.temperature_2m;
-      lastMax = data.daily && data.daily.temperature_2m_max ? data.daily.temperature_2m_max[0] : null;
       if (widget) {
         widget.querySelector(".home-weather-icon").textContent = WEATHER_ICON[current.weather_code] || "🌡";
         widget.querySelector(".home-weather-temp").textContent = `${Math.round(current.temperature_2m)}°C`;
         widget.hidden = false;
       }
       renderTip();
-      renderHeatWarning();
     })
     .catch(() => {
       renderTip();
     });
 
-  document.addEventListener("lang-changed", () => {
-    renderTip();
-    renderHeatWarning();
-  });
+  document.addEventListener("lang-changed", renderTip);
 }
 
 function setupSeasonalTheme() {
