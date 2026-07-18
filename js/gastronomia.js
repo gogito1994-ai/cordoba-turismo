@@ -56,6 +56,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- tabernas históricas ---------- */
 
+  function gastroMapsUrl(v) {
+    if (v.lat && v.lng) {
+      return `https://www.google.com/maps/dir/?api=1&destination=${v.lat},${v.lng}`;
+    }
+    if (v.direccion) {
+      return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.direccion + ", Córdoba")}`;
+    }
+    return "";
+  }
+
+  function directionsBtnHtml(v) {
+    const url = gastroMapsUrl(v);
+    return url
+      ? `<a class="btn btn-outline-dark" href="${url}" target="_blank" rel="noopener noreferrer">${Icon("map-pin")} ${t("map_sheet_directions")}</a>`
+      : "";
+  }
+
   function historicCard(v, collection) {
     const media = v.imagen
       ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}"${v.creditoFoto ? ` title="${v.creditoFoto}"` : ""} loading="lazy" /></div>`
@@ -73,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <strong>${t("gastronomy_should_order")}</strong>
             <p>${tr(v, collection, "queDeberiaPedir")}</p>
           </div>
+          <div class="partner-card-actions">${directionsBtnHtml(v)}</div>
         </div>
       </article>`;
   }
@@ -123,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <strong>${t("carta_label")}</strong>
             <ul>${cartaItems}</ul>
           </div>
-          ${webBtn}
+          <div class="partner-card-actions">${webBtn}${directionsBtnHtml(v)}</div>
         </div>
       </article>`;
   }
