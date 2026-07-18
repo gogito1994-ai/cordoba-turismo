@@ -14,6 +14,11 @@ function partnerDesc(p) {
   return (p.descripcion && (p.descripcion[lang] || p.descripcion.es)) || "";
 }
 
+function partnerCta(p) {
+  const lang = Lang.get();
+  return (p.ctaLabel && (p.ctaLabel[lang] || p.ctaLabel.es)) || t("partner_cta");
+}
+
 function partnerMapsUrl(p) {
   if (p.lat && p.lng) {
     return `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
@@ -157,7 +162,7 @@ function featuredBannerHtml(p) {
             <button type="button" class="partner-copy-btn" data-partner="${p.id}" data-code="${p.codigo}">${t("partner_copy_code")}</button>
           </div>` : ""}
         <div class="partner-banner-actions">
-          ${p.url ? `<a class="btn btn-primary" href="${p.url}" target="_blank" rel="noopener noreferrer sponsored" data-partner-action="web" data-partner="${p.id}" data-categoria="${p.categoria}">${Icon("suitcase")} ${t("partner_cta")}</a>` : ""}
+          ${p.url ? `<a class="btn btn-primary" href="${p.url}" target="_blank" rel="noopener noreferrer sponsored" data-partner-action="web" data-partner="${p.id}" data-categoria="${p.categoria}">${Icon("suitcase")} ${partnerCta(p)}</a>` : ""}
           ${mapsUrl ? `<a class="btn btn-outline-dark" href="${mapsUrl}" target="_blank" rel="noopener noreferrer" data-partner-action="maps" data-partner="${p.id}" data-categoria="${p.categoria}">${Icon("map-pin")} ${t("map_sheet_directions")}</a>` : ""}
         </div>
       </div>

@@ -234,6 +234,12 @@
       },
       "codigo": "",
       "descuento": "",
+      "ctaLabel": {
+        "es": "Reservar",
+        "en": "Book",
+        "fr": "Réserver",
+        "de": "Reservieren"
+      },
       "url": "https://www.conacentoparrilla.com/",
       "telefono": "+34 614 03 18 23",
       "direccion": "Avenida Al-Nasir, 13, Córdoba",
