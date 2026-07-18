@@ -46,6 +46,7 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 - Fotos reales de los 10 locales de gastronomía que las tienen con licencia libre verificada (8 de Wikimedia Commons + 2 de Flickr con crédito CC BY/CC BY-SA en el propio `title` de la imagen); el resto sin foto a propósito.
 - Buscador del mapa arreglado en móvil vertical (bug de flexbox) y mapa más protagonista.
 - Navegación rápida por secciones en Gastronomía; tarjeta de Gastronomía en el hero.
+- **Iconos al añadir a inicio (iPhone/Android) y a favoritos de Safari corregidos**: `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` y `icon-512-maskable.png` tenían las esquinas transparentes (heredadas del favicon redondeado), lo que iOS y varios launchers de Android pintaban de negro. Regenerados como cuadrados opacos con el mismo diseño del arco a rayas. Añadido `icons/mask-icon.svg` (silueta monocromo) para el pinned-tab/favoritos de Safari en macOS, y las meta `apple-mobile-web-app-*` en las 33 páginas para que se abra en modo standalone con el nombre correcto. Caché del service worker a v8.
 
 ## Hecho — versión 2: monetización + huésped (5 fases completas)
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = "cordoba-v7";
+const CACHE_NAME = "cordoba-v8";
 
 const APP_SHELL = [
   "index.html",
@@ -47,6 +47,8 @@ const APP_SHELL = [
   "icons/favicon.svg",
   "icons/icon-192.png",
   "icons/icon-512.png",
+  "icons/apple-touch-icon.png",
+  "icons/mask-icon.svg",
 ];
 
 self.addEventListener("install", (event) => {
