@@ -222,6 +222,28 @@
       "activo": false
     },
     {
+      "id": "con-acento-parrilla",
+      "nombre": "Con Acento Parrilla",
+      "categoria": "gastronomia",
+      "destacado": false,
+      "descripcion": {
+        "es": "Parrilla de carnes y pescados con maduraciones de hasta 90 días, en el Vial Norte de Córdoba. Empanadas criollas, chuletón a la brasa y espacios privados para grupos de hasta 140 personas; 4,6★ en Google con más de 1.000 reseñas.",
+        "en": "Grill restaurant serving meat and fish aged up to 90 days, in Córdoba's Vial Norte. Argentine-style empanadas, chargrilled chuletón steak and private spaces for groups of up to 140; rated 4.6★ on Google with over 1,000 reviews.",
+        "fr": "Grillades de viandes et poissons maturés jusqu'à 90 jours, dans le Vial Norte de Cordoue. Empanadas à l'argentine, côte de bœuf à la braise et espaces privés pour des groupes jusqu'à 140 personnes ; noté 4,6★ sur Google avec plus de 1 000 avis.",
+        "de": "Grillrestaurant mit bis zu 90 Tage gereiftem Fleisch und Fisch im Vial Norte von Córdoba. Argentinische Empanadas, gegrilltes Chuletón-Steak und private Räume für Gruppen bis zu 140 Personen; 4,6★ bei Google mit über 1.000 Bewertungen."
+      },
+      "codigo": "",
+      "descuento": "",
+      "url": "https://www.conacentoparrilla.com/",
+      "telefono": "+34 614 03 18 23",
+      "direccion": "Avenida Al-Nasir, 13, Córdoba",
+      "lat": 37.8950360,
+      "lng": -4.7765832,
+      "horario": "",
+      "imagen": "",
+      "activo": true
+    },
+    {
       "id": "bodegas-el-monte",
       "nombre": "Bodegas El Monte",
       "categoria": "gastronomia",
