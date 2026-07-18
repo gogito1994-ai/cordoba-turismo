@@ -2017,43 +2017,6 @@ h1, h2, h3 {
 
 /* ============ Back to top ============ */
 
-.back-to-top {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: none;
-  background: var(--terracota);
-  color: var(--blanco);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--sombra-hover);
-  opacity: 0;
-  transform: translateY(12px);
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease;
-  z-index: 90;
-}
-
-.back-to-top .icon {
-  width: 20px;
-  height: 20px;
-}
-
-.back-to-top.show {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.back-to-top:hover {
-  background: var(--terracota-dark);
-}
-
 /* ============ Footer ============ */
 
 .site-footer {
@@ -2535,8 +2498,8 @@ body.chat-open {
 
 .chat-fab {
   position: fixed;
-  right: 24px;
-  bottom: 90px;
+  right: 86px;
+  bottom: 24px;
   z-index: 850;
   width: 58px;
   height: 58px;
@@ -2699,8 +2662,8 @@ body.chat-open {
     border-radius: 0;
   }
   .chat-fab {
-    right: 18px;
-    bottom: calc(140px + env(safe-area-inset-bottom, 0px));
+    right: 86px;
+    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -3268,7 +3231,6 @@ body.chat-open {
   .planner-edit-btn,
   .planner-share-bar,
   .planner-regenerate-btn,
-  .back-to-top,
   .chat-widget,
   .chat-fab,
   .planner-day-map {

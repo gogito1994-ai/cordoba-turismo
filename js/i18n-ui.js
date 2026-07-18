@@ -16,7 +16,6 @@ const UI_STRINGS = {
     install_banner_cta: "Instalar",
     aria_open_menu: "Abrir menú",
     aria_favorite: "Marcar como favorito",
-    aria_back_to_top: "Volver arriba",
     aria_close: "Cerrar",
     aria_send: "Enviar",
 
@@ -350,7 +349,6 @@ const UI_STRINGS = {
     install_banner_cta: "Install",
     aria_open_menu: "Open menu",
     aria_favorite: "Mark as favorite",
-    aria_back_to_top: "Back to top",
     aria_close: "Close",
     aria_send: "Send",
 
@@ -683,7 +681,6 @@ const UI_STRINGS = {
     install_banner_cta: "Installer",
     aria_open_menu: "Ouvrir le menu",
     aria_favorite: "Ajouter aux favoris",
-    aria_back_to_top: "Retour en haut",
     aria_close: "Fermer",
     aria_send: "Envoyer",
 
@@ -1017,7 +1014,6 @@ const UI_STRINGS = {
     install_banner_cta: "Installieren",
     aria_open_menu: "Menü öffnen",
     aria_favorite: "Als Favorit markieren",
-    aria_back_to_top: "Nach oben",
     aria_close: "Schließen",
     aria_send: "Senden",
 

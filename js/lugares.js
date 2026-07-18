@@ -3,38 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const filtersEl = document.getElementById("filters");
   if (!grid || !filtersEl) return;
 
-  const categorias = ["Todos", ...new Set(PLACES.map((p) => p.categoria))];
-  let activa = "Todos";
   let soloFavoritos = new URLSearchParams(location.search).get("favoritos") === "1";
   let precioFiltro = "todos";
 
-  function categoryLabel(cat) {
-    return cat === "Todos" ? t("filter_all") : trCategory(cat);
-  }
-
   function renderFiltros() {
-    const catBtns = categorias
-      .map(
-        (cat) =>
-          `<button class="filter-btn${cat === activa ? " active" : ""}" data-cat="${cat}">${categoryLabel(cat)}</button>`
-      )
-      .join("");
+    const todosActivo = precioFiltro === "todos" && !soloFavoritos;
 
-    const precioBtns = `
+    filtersEl.innerHTML = `
+      <button class="filter-btn${todosActivo ? " active" : ""}" id="filter-todos">${t("filter_all")}</button>
       <button class="filter-btn${precioFiltro === "gratis" ? " active" : ""}" data-precio="gratis">${t("filter_free")}</button>
       <button class="filter-btn${precioFiltro === "pago" ? " active" : ""}" data-precio="pago">${t("filter_paid")}</button>
+      <button class="filter-btn favorite-filter${soloFavoritos ? " active" : ""}" id="fav-filter">${Icon("heart")} ${t("filter_favorites")}</button>
     `;
 
-    filtersEl.innerHTML = `${catBtns}${precioBtns}<button class="filter-btn favorite-filter${
-      soloFavoritos ? " active" : ""
-    }" id="fav-filter">${Icon("heart")} ${t("filter_favorites")}</button>`;
-
-    filtersEl.querySelectorAll(".filter-btn[data-cat]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        activa = btn.dataset.cat;
-        renderFiltros();
-        renderGrid();
-      });
+    document.getElementById("filter-todos").addEventListener("click", () => {
+      precioFiltro = "todos";
+      soloFavoritos = false;
+      renderFiltros();
+      renderGrid();
     });
 
     filtersEl.querySelectorAll(".filter-btn[data-precio]").forEach((btn) => {
@@ -53,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderGrid() {
-    let lista = activa === "Todos" ? PLACES : PLACES.filter((p) => p.categoria === activa);
+    let lista = PLACES;
     if (soloFavoritos) lista = lista.filter((p) => Favorites.has(p.id));
     if (precioFiltro === "gratis") lista = lista.filter((p) => p.esGratis);
     if (precioFiltro === "pago") lista = lista.filter((p) => !p.esGratis);

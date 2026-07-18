@@ -1,4 +1,4 @@
-const CACHE_NAME = "cordoba-v9";
+const CACHE_NAME = "cordoba-v10";
 
 const APP_SHELL = [
   "index.html",

@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setupBottomNav();
   setupHeaderScroll();
-  setupBackToTop();
   setupLightbox();
   setupFavorites();
   setupRipple();
@@ -406,23 +405,6 @@ function setupHeaderScroll() {
 function setupFooterYear() {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-}
-
-function setupBackToTop() {
-  const btn = document.createElement("button");
-  btn.className = "back-to-top";
-  btn.dataset.i18nAria = "aria_back_to_top";
-  btn.setAttribute("aria-label", t("aria_back_to_top"));
-  btn.innerHTML = Icon("arrow-up");
-  document.body.appendChild(btn);
-
-  window.addEventListener("scroll", () => {
-    btn.classList.toggle("show", window.scrollY > 400);
-  });
-
-  btn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
 }
 
 function setupLightbox() {
