@@ -104,12 +104,15 @@ function setupWhatsAppFloat() {
 function setupCityPass() {
   const slot = document.getElementById("citypass-slot");
   if (!slot) return;
+  const section = slot.closest("section");
   const endpoint = (typeof CORDOBAPP_CONFIG !== "undefined" && CORDOBAPP_CONFIG.FORMSPREE_ENDPOINT) || "";
   if (!endpoint || endpoint.includes("TU_FORM_ID")) {
     slot.hidden = true;
+    if (section) section.hidden = true;
     return;
   }
   slot.hidden = false;
+  if (section) section.hidden = false;
 
   function render() {
     slot.innerHTML = `
