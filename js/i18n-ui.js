@@ -329,7 +329,7 @@ const UI_STRINGS = {
     footer_location_heading: "Ubicación",
     footer_location_city: "Córdoba, España",
     footer_text: "Cordobapp — Guía turística no oficial.",
-    footer_credit_photos: "Fotografías: Wikimedia Commons",
+    footer_credit_photos: "Fotografías: Wikimedia Commons y Flickr (Creative Commons)",
     footer_credit_full: "Fotografías: Wikimedia Commons · Mapa: OpenStreetMap",
 
     toast_added: "{name} añadido a favoritos",
@@ -665,7 +665,7 @@ const UI_STRINGS = {
     footer_location_heading: "Location",
     footer_location_city: "Córdoba, Spain",
     footer_text: "Cordobapp — Unofficial tourist guide.",
-    footer_credit_photos: "Photos: Wikimedia Commons",
+    footer_credit_photos: "Photos: Wikimedia Commons and Flickr (Creative Commons)",
     footer_credit_full: "Photos: Wikimedia Commons · Map: OpenStreetMap",
 
     toast_added: "{name} added to favorites",
@@ -1002,7 +1002,7 @@ const UI_STRINGS = {
     footer_location_heading: "Emplacement",
     footer_location_city: "Cordoue, Espagne",
     footer_text: "Cordobapp — Guide touristique non officiel.",
-    footer_credit_photos: "Photos : Wikimedia Commons",
+    footer_credit_photos: "Photos : Wikimedia Commons et Flickr (Creative Commons)",
     footer_credit_full: "Photos : Wikimedia Commons · Carte : OpenStreetMap",
 
     toast_added: "{name} ajouté aux favoris",
@@ -1339,7 +1339,7 @@ const UI_STRINGS = {
     footer_location_heading: "Standort",
     footer_location_city: "Córdoba, Spanien",
     footer_text: "Cordobapp — Inoffizieller Reiseführer.",
-    footer_credit_photos: "Fotos: Wikimedia Commons",
+    footer_credit_photos: "Fotos: Wikimedia Commons und Flickr (Creative Commons)",
     footer_credit_full: "Fotos: Wikimedia Commons · Karte: OpenStreetMap",
 
     toast_added: "{name} zu Favoriten hinzugefügt",

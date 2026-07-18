@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function historicCard(v, collection) {
     const media = v.imagen
-      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}" loading="lazy" /></div>`
+      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}"${v.creditoFoto ? ` title="${v.creditoFoto}"` : ""} loading="lazy" /></div>`
       : "";
     return `
       <article class="card">
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : "";
     const verificar = v.verificar ? `<p class="map-sheet-flag">${t("gastronomy_hours_unverified")}</p>` : "";
     const media = v.imagen
-      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}" loading="lazy" /></div>`
+      ? `<div class="card-media"><img src="${v.imagen}" alt="${v.nombre}"${v.creditoFoto ? ` title="${v.creditoFoto}"` : ""} loading="lazy" /></div>`
       : "";
 
     return `
