@@ -356,18 +356,7 @@ h1, h2, h3 {
   }
 }
 
-/* ============ Bottom nav (móvil) ============ */
-
-.bottom-nav {
-  display: none;
-}
-
 @media (max-width: 640px) {
-  .nav-toggle,
-  .nav-links {
-    display: none !important;
-  }
-
   .nav-bar {
     justify-content: space-between;
     padding: 14px 16px;
@@ -381,46 +370,6 @@ h1, h2, h3 {
 
   .lang-btn {
     padding: 6px 5px;
-  }
-
-  body {
-    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
-  }
-
-  .bottom-nav {
-    display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 800;
-    background: var(--blanco-cal);
-    border-top: 1px solid var(--borde);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-    box-shadow: 0 -4px 16px rgba(42, 33, 24, 0.08);
-  }
-
-  .bottom-nav-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    min-height: 56px;
-    color: var(--texto-suave);
-    text-decoration: none;
-    font-size: 0.68rem;
-    font-weight: 600;
-  }
-
-  .bottom-nav-item .icon {
-    width: 21px;
-    height: 21px;
-  }
-
-  .bottom-nav-item.active {
-    color: var(--terracota);
   }
 
   /* Área táctil mínima de 44px en botones de icono */
@@ -529,7 +478,7 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
   .install-banner {
-    bottom: calc(60px + 12px + env(safe-area-inset-bottom, 0px));
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -2498,8 +2447,8 @@ body.chat-open {
 
 .chat-fab {
   position: fixed;
-  right: 86px;
-  bottom: 24px;
+  right: 18px;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
   z-index: 850;
   width: 58px;
   height: 58px;
@@ -2660,10 +2609,6 @@ body.chat-open {
     width: 100%;
     height: 100%;
     border-radius: 0;
-  }
-  .chat-fab {
-    right: 86px;
-    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -4069,38 +4014,6 @@ body.event-modal-open {
 }
 
 /* ============ Servicios para huéspedes (Fase 4) ============ */
-
-.whatsapp-float {
-  position: fixed;
-  right: 18px;
-  bottom: calc(78px + env(safe-area-inset-bottom, 0px));
-  z-index: 80;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: #25d366;
-  color: #fff;
-  box-shadow: var(--sombra-hover);
-  transition: transform 0.15s;
-}
-
-.whatsapp-float:hover {
-  transform: translateY(-3px);
-}
-
-.whatsapp-float .icon {
-  width: 24px;
-  height: 24px;
-}
-
-@media (min-width: 641px) {
-  .whatsapp-float {
-    bottom: 24px;
-  }
-}
 
 .citypass-banner {
   background: var(--crema);

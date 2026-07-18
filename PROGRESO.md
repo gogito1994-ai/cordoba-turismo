@@ -51,6 +51,8 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 - **Filtros de Lugares simplificados**: solo Todos / Gratuitos / De pago / Favoritos (se quitaron los filtros por categoría — Monumento, Museo, Iglesia...); la categoría de cada lugar se sigue mostrando en su tarjeta y en su ficha, solo desapareció como filtro.
 - **Botón "volver arriba" eliminado** de todo el sitio (JS, CSS e i18n).
 - **Botón de preguntar reposicionado**: ahora al mismo nivel que el flotante de WhatsApp de huéspedes (cuando existe), uno junto al otro sin solaparse, en vez de quedar muy por encima. Caché del service worker a v10.
+- **Flotante de WhatsApp de huéspedes eliminado**; el botón de preguntar ocupa ahora exactamente su sitio (pegado a la derecha, mismo nivel). El botón "Solicitar por WhatsApp" de cada extra en `estancia.html` no se toca, sigue funcionando igual.
+- **Barra de navegación inferior eliminada en móvil** para una interfaz más limpia. Al quitarla se descubrió que el menú hamburguesa también estaba forzado a `display:none` por debajo de 640px (la barra inferior era la única navegación ahí); se reactivó para que el móvil no se quede sin forma de navegar entre secciones — ahora usa el mismo menú desplegable que ya funcionaba en tablet. Caché del service worker a v11.
 
 ## Hecho — versión 2: monetización + huésped (5 fases completas)
 

@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupStaticIcons();
   setupThemeToggle();
   setupNav();
-  setupBottomNav();
   setupHeaderScroll();
   setupLightbox();
   setupFavorites();
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupServiceWorker();
   setupInstallBanner();
   setupGuestNav();
-  setupWhatsAppFloat();
   setupCityPass();
   setupMyListLink();
 });
@@ -67,34 +65,6 @@ function setupGuestNav() {
   navList.appendChild(li);
   const current = document.body.dataset.page;
   if (current === "estancia") li.querySelector("a").classList.add("active");
-}
-
-function setupWhatsAppFloat() {
-  const apt = guestApt();
-  if (!apt) return;
-  if (document.body.dataset.page === "bienvenida") return;
-
-  const number = (typeof CORDOBAPP_CONFIG !== "undefined" && CORDOBAPP_CONFIG.WHATSAPP_GESTORA) || "";
-  const btn = document.createElement("a");
-  btn.className = "whatsapp-float";
-  btn.target = "_blank";
-  btn.rel = "noopener noreferrer";
-  btn.setAttribute("aria-label", t("whatsapp_float_label"));
-
-  function updateHref() {
-    const message = t("welcome_whatsapp_message", { apt });
-    btn.href = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
-    btn.title = t("whatsapp_float_label");
-    btn.setAttribute("aria-label", t("whatsapp_float_label"));
-  }
-
-  btn.innerHTML = Icon("chat");
-  updateHref();
-  btn.addEventListener("click", () => {
-    trackEvent("whatsapp_click", { apt, pagina: document.body.dataset.page || location.pathname });
-  });
-  document.body.appendChild(btn);
-  document.addEventListener("lang-changed", updateHref);
 }
 
 /* Preventa del Córdoba Pass: la sección solo aparece cuando el endpoint de
@@ -308,42 +278,6 @@ function setupInstallBanner() {
       banner.remove();
     });
   }
-}
-
-function setupBottomNav() {
-  if (document.querySelector(".bottom-nav")) return;
-  const nav = document.createElement("nav");
-  nav.className = "bottom-nav";
-  nav.setAttribute("aria-label", "Navegación principal");
-  const pre = sitePrefix();
-  const fifth = guestApt()
-    ? `<a href="${pre}estancia.html" data-page="estancia" class="bottom-nav-item"><span data-icon="suitcase"></span><span data-i18n="nav_estancia">Mi estancia</span></a>`
-    : `<a href="${pre}gastronomia.html" data-page="gastronomia" class="bottom-nav-item"><span data-icon="utensils"></span><span data-i18n="nav_gastronomy">Gastronomía</span></a>`;
-  nav.innerHTML = `
-    <a href="${pre}index.html" data-page="home" class="bottom-nav-item"><span data-icon="home"></span><span data-i18n="nav_home">Inicio</span></a>
-    <a href="${pre}lugares.html" data-page="lugares" class="bottom-nav-item"><span data-icon="landmark"></span><span data-i18n="nav_places">Lugares</span></a>
-    <a href="${pre}mapa.html" data-page="mapa" class="bottom-nav-item"><span data-icon="map"></span><span data-i18n="nav_map">Mapa</span></a>
-    <a href="${pre}planificar.html" data-page="planificar" class="bottom-nav-item"><span data-icon="route"></span><span data-i18n="nav_planner">Planificar</span></a>
-    ${fifth}
-  `;
-  document.body.appendChild(nav);
-  nav.querySelectorAll("[data-icon]").forEach((el) => {
-    el.innerHTML = Icon(el.dataset.icon);
-  });
-  nav.querySelectorAll("[data-i18n]").forEach((el) => {
-    el.textContent = t(el.dataset.i18n);
-  });
-
-  const current = document.body.dataset.page;
-  nav.querySelectorAll(".bottom-nav-item[data-page]").forEach((a) => {
-    if (a.dataset.page === current) a.classList.add("active");
-  });
-
-  document.addEventListener("lang-changed", () => {
-    nav.querySelectorAll("[data-i18n]").forEach((el) => {
-      el.textContent = t(el.dataset.i18n);
-    });
-  });
 }
 
 function setupThemeToggle() {
