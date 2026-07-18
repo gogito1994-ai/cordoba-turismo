@@ -843,6 +843,8 @@ const RESTAURANTS = [
     categoria: "Restaurante",
     lat: 37.8897912,
     lng: -4.7584891,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Noor_Interior.jpg/500px-Noor_Interior.jpg",
     distincion: "3 Estrellas Michelin",
     tipo: "Alta cocina andalusí de autor",
     chef: "Paco Morales",

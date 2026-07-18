@@ -43,7 +43,7 @@ HTML/CSS/JS puro, sin frameworks ni build; todo se publica con `git push` a
 - Favicon propio (arco de herradura de la Mezquita, SVG + PNG).
 - Sección "Ahora" eliminada; el consejo del día y el tiempo viven en la portada.
 - Transporte con tarjetas desplegables; Aparcamiento incluye 4 parkings públicos reales del centro con dirección.
-- Fotos reales (Wikimedia Commons, verificadas) de los 7 locales de gastronomía que las tienen con licencia libre; el resto sin foto a propósito.
+- Fotos reales (Wikimedia Commons, verificadas) de los 8 locales de gastronomía que las tienen con licencia libre; el resto sin foto a propósito.
 - Buscador del mapa arreglado en móvil vertical (bug de flexbox) y mapa más protagonista.
 - Navegación rápida por secciones en Gastronomía; tarjeta de Gastronomía en el hero.
 
@@ -105,7 +105,7 @@ URL de los QR físicos: `https://cordobapp.com/bienvenida.html?apt=NUMERO`
 6. **Precios definitivos de los extras** en `data/extras.json` (varios en "Consultar").
 7. **Redes sociales propias**: el footer enlaza a las cuentas oficiales de Turismo de Córdoba, no a cuentas de la marca.
 8. **Lighthouse móvil ≥ 90**: pendiente de verificar por el propietario (Chrome → F12 → Lighthouse) en portada y una ficha.
-9. **Fotos de los otros 17 locales de gastronomía**: no existen con licencia libre; se añadirán si el propietario consigue fotos propias o autorizadas.
+9. **Fotos de los otros 16 locales de gastronomía**: búsqueda exhaustiva en Wikimedia Commons (julio 2026) sin resultado — Commons apenas cubre negocios de hostelería pequeños/medianos, solo monumentos y lugares notables (por eso Noor, con 3 estrellas Michelin, sí tenía foto). Se añadirán si el propietario consigue fotos propias o autorizadas.
 10. **Dato a confirmar**: el horario de la Sinagoga difiere entre el texto español (9:00-21:00) y el inglés/francés (9:00-15:00); confirmar el real y unificar.
 
 ## Decisiones técnicas documentadas
