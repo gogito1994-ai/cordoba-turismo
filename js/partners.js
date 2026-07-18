@@ -138,17 +138,9 @@ function renderPartnerBlocks() {
 
 /* ---------- banner destacado de portada ---------- */
 
-function renderFeaturedPartner() {
-  const slot = document.getElementById("partner-featured-slot");
-  if (!slot) return;
-  const p = activePartners().find((x) => x.destacado);
-  if (!p) {
-    slot.hidden = true;
-    return;
-  }
+function featuredBannerHtml(p) {
   const mapsUrl = partnerMapsUrl(p);
-  slot.hidden = false;
-  slot.innerHTML = `
+  return `
     <div class="partner-banner">
       <div class="partner-banner-icon">${Icon("suitcase")}</div>
       <div class="partner-banner-content">
@@ -169,8 +161,19 @@ function renderFeaturedPartner() {
           ${mapsUrl ? `<a class="btn btn-outline-dark" href="${mapsUrl}" target="_blank" rel="noopener noreferrer" data-partner-action="maps" data-partner="${p.id}" data-categoria="${p.categoria}">${Icon("map-pin")} ${t("map_sheet_directions")}</a>` : ""}
         </div>
       </div>
-    </div>
-    ${disclosureHtml()}`;
+    </div>`;
+}
+
+function renderFeaturedPartner() {
+  const slot = document.getElementById("partner-featured-slot");
+  if (!slot) return;
+  const list = activePartners().filter((x) => x.destacado);
+  if (!list.length) {
+    slot.hidden = true;
+    return;
+  }
+  slot.hidden = false;
+  slot.innerHTML = list.map(featuredBannerHtml).join("") + disclosureHtml();
   bindPartnerEvents(slot);
 }
 

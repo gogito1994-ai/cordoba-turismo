@@ -2868,6 +2868,10 @@ body.chat-open {
   display: flex;
 }
 
+.partner-banner + .partner-banner {
+  margin-top: 20px;
+}
+
 @media (max-width: 600px) {
   .partner-banner {
     padding: 28px 22px;
